@@ -18,7 +18,7 @@ namespace Platform.Data.Sequences
     /// Ограничение на уровень глубины рекурсии может позволить использовать уменьшенный размер стека.
     /// Можно использовать глобальный стек (или несколько глобальных стеков на каждый поток).
     /// </remarks>
-    public class StopableSequenceWalker
+    public static class StopableSequenceWalker
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WalkRight<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Action<TLink> enter, Action<TLink> exit, Func<TLink, bool> canEnter, Func<TLink, bool> visit)
@@ -43,7 +43,7 @@ namespace Platform.Data.Sequences
                     exited++;
                     var source = getSource(element);
                     var target = getTarget(element);
-                    if ((isElement(source) || exited == 1 && !canEnter(source)) && !visit(source))
+                    if ((isElement(source) || (exited == 1 && !canEnter(source))) && !visit(source))
                     {
                         return false;
                     }
@@ -73,7 +73,7 @@ namespace Platform.Data.Sequences
                         exited++;
                         var source = getSource(element);
                         var target = getTarget(element);
-                        if ((isElement(source) || exited == 1 && !canEnter(source)) && !visit(source))
+                        if ((isElement(source) || (exited == 1 && !canEnter(source))) && !visit(source))
                         {
                             return false;
                         }

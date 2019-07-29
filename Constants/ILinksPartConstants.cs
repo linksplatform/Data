@@ -1,6 +1,6 @@
 ﻿namespace Platform.Data.Constants
 {
-    public interface ILinksPartConstants<TPartIndex>
+    public interface ILinksPartConstants<out TPartIndex>
     {
         /// <summary>Возвращает индекс части, которая отвечает за индекс (адрес, идентификатор) самой связи.</summary>
         TPartIndex IndexPart { get; }

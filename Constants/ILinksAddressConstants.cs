@@ -1,6 +1,6 @@
 ﻿namespace Platform.Data.Constants
 {
-    public interface ILinksAddressConstants<TAddress>
+    public interface ILinksAddressConstants<out TAddress>
     {
         /// <summary>Возвращает значение, обозначающее отсутствие связи.</summary>
         TAddress Null { get; }

@@ -17,6 +17,6 @@ namespace Platform.Data.Constants
 
         /// <summary>Возвращает булевское значение, обозначающее остановку прохода по связям.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
-        public TDecision Break { get; } = default; // The same as Null
+        public TDecision Break { get; }
     }
 }

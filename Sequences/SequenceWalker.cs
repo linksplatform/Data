@@ -20,7 +20,7 @@ namespace Platform.Data.Sequences
     /// 
     /// TODO: Попробовать реализовать алгоритм используя Sigil (MSIL) и низкоуровневый стек и сравнить производительность.
     /// </remarks>
-    public class SequenceWalker
+    public static class SequenceWalker
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void WalkRight<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Action<TLink> visit)

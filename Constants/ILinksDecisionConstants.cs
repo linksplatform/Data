@@ -1,6 +1,6 @@
 ﻿namespace Platform.Data.Constants
 {
-    public interface ILinksDecisionConstants<TDecision>
+    public interface ILinksDecisionConstants<out TDecision>
     {
         /// <summary>Возвращает булевское значение, обозначающее продолжение прохода по связям.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
