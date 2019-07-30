@@ -1,0 +1,476 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/travis/build/linksplatform/Data",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "xXC0O5WFsqK6ygG0XMEXQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.ILinksAddressConstants-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.ILinksAddressConstants-1.html",
+          "hash": "NAzTab1mPi9KzhfcN7OUug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.ILinksCombinedConstants-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.ILinksCombinedConstants-4.html",
+          "hash": "7bCVNfesuwEGnVsemzvmxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.ILinksDecisionConstants-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.ILinksDecisionConstants-1.html",
+          "hash": "Yq9Lk8iPl63++0xx6tkSJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.ILinksPartConstants-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.ILinksPartConstants-1.html",
+          "hash": "Sg4PFcyk8/GWU9atfSpSeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.LinksCombinedConstants-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.LinksCombinedConstants-2.html",
+          "hash": "MUbiWJRY1ptrWw+HWZtSEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.LinksCombinedConstants-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.LinksCombinedConstants-3.html",
+          "hash": "DDESsPCaUNdZhZSxgAEtCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.LinksDecisionConstants-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.LinksDecisionConstants-1.html",
+          "hash": "1uU9q6+eDfINWwsevE6PqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Constants.html",
+          "hash": "QLE+q+Jps39z2Y0/AflF1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html",
+          "hash": "ZnIrT2U6GN1lK1NrbXbfVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html",
+          "hash": "tNfEYJpXMxU5U3Oayy3inA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html",
+          "hash": "/PVBVwGB9rt2tnw5gRee4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Exceptions.LinksLimitReachedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Exceptions.LinksLimitReachedException.html",
+          "hash": "a8WyVMA01ICyxw7zryCwmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Exceptions.html",
+          "hash": "UwvvI6G5r06KyFTgVqOZxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.ILinks-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.ILinks-2.html",
+          "hash": "cViSXwxWxytzrTfJ/Ly1mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.ILinksExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.ILinksExtensions.html",
+          "hash": "trohs+GA5/GF/EPUofdXbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.ISynchronizedLinks-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.ISynchronizedLinks-3.html",
+          "hash": "V6uykYkNu9tqgB99Fj4QuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Point-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Point-1.html",
+          "hash": "44iM5Ub2zXew4LxM1jxIOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Sequences.ISequenceAppender-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Sequences.ISequenceAppender-1.html",
+          "hash": "K7a+ILsqt6JU/a5XbvuAaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Sequences.ISequenceWalker-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Sequences.ISequenceWalker-1.html",
+          "hash": "dIkzuOEf9RVr1f8LoSt+Iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Sequences.ISequences-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Sequences.ISequences-1.html",
+          "hash": "wJl3a2JTtYeeX+eqwbhYyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Sequences.SequenceWalker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Sequences.SequenceWalker.html",
+          "hash": "c9ARCNhgQKk/F1qM+i7lFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Sequences.StopableSequenceWalker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Sequences.StopableSequenceWalker.html",
+          "hash": "WyN2q98+ujDr8RgKN4qcSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Sequences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Sequences.html",
+          "hash": "s5MXMVVtCOuKf6LZm8UyIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.IUniLinks-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.IUniLinks-1.html",
+          "hash": "p3erTdTMZsLpeJCT7+HIaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.IUniLinksCRUD-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.IUniLinksCRUD-1.html",
+          "hash": "XzAjC6xktPzr1k0jRrmcQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.IUniLinksGS-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.IUniLinksGS-1.html",
+          "hash": "FeN+iKVzGPDT9TACrqdzaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.IUniLinksIO-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.IUniLinksIO-1.html",
+          "hash": "szyBVDpPAtmvaq/M9uMYLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html",
+          "hash": "2JUVRIe6qEFCq8JLFnzn+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.IUniLinksRW-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.IUniLinksRW-1.html",
+          "hash": "+Zzt8snT6obsP6jHbJ6SZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Universal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Universal.html",
+          "hash": "Pxhx6F3pXdFc7MXgNqgbPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.html",
+          "hash": "NF4gbiWkGz/QMDpMP3HTuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "qnyloPYmLSiH48eaG5dAyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "lKE0JSVddWQ8AsMXQXRvgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 31,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
