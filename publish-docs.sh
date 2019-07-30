@@ -46,8 +46,7 @@ git remote add origin https://linksplatform-docs:$TOKEN@$REPOSITORY.git
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git rm $(git ls-files --deleted)
-git add -A .
+git add --all
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Now that we're all set up, we can push.
