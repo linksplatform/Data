@@ -12,7 +12,7 @@ Forked from: [Konard/LinksPlatform/Platform/Platform.Data](https://github.com/Ko
 
 NuGet package: [Platform.Data](https://www.nuget.org/packages/Platform.Data)
 
-## [Documentation](https://linksplatform.github.io/Data.Doublets/)
+## [Documentation](https://linksplatform.github.io/Data/)
 
 Interface [ILinks\<TLink, TConstants\>](https://linksplatform.github.io/Data/api/Platform.Data.ILinks-2.html).
 
