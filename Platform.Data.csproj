@@ -4,13 +4,13 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
-    <PackageTags>LinksPlatform;Data;ILinks;ISequences</PackageTags>
+    <PackageTags>LinksPlatform;Data;ILinks;ISequences;ISynchronizedLinks;Point;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;ILinksCombinedConstants;LinksCombinedConstants</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Data</PackageProjectUrl>
     <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
@@ -22,6 +22,12 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Platform.Threading dependency updated from 0.0.4 to 0.0.5.
+Platform.Numbers dependency updated from 0.0.2 to 0.1.0.
+Platform.Helpers dependency replaced with Platform.Setters (0.0.1).
+Using new EnsureExtensions.
+XML documentation file generation turned on.
+Travis CI connected.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
