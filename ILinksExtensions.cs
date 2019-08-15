@@ -78,7 +78,7 @@ namespace Platform.Data
             where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
         {
             var constants = links.Constants;
-            var linkPartsSetter = new Setter<IList<TLink>, TLink>(constants.Continue, constants.Break, default);
+            var linkPartsSetter = new Setter<IList<TLink>, TLink>(constants.Continue, constants.Break);
             links.Each(linkPartsSetter.SetAndReturnTrue, link);
             return linkPartsSetter.Result;
         }
