@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Collections;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Data
 {
     public static class Point<TLink>

@@ -5,6 +5,8 @@ using Platform.Setters;
 using Platform.Data.Constants;
 using Platform.Data.Exceptions;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Data
 {
     public static class ILinksExtensions
@@ -26,6 +28,7 @@ namespace Platform.Data
             => Comparer<TLink>.Default.Compare(links.Count(link), default) > 0;
 
         /// <param name="links">Хранилище связей.</param>
+        /// <param name="link">Индекс проверяемой на существование связи.</param>
         /// <remarks>
         /// TODO: May be move to EnsureExtensions or make it both there and here
         /// </remarks>
@@ -40,6 +43,8 @@ namespace Platform.Data
         }
 
         /// <param name="links">Хранилище связей.</param>
+        /// <param name="link">Индекс проверяемой на существование связи.</param>
+        /// <param name="argumentName">Имя аргумента, в который передаётся индекс связи.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnsureLinkExists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link, string argumentName)
             where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
@@ -55,7 +60,7 @@ namespace Platform.Data
         /// </summary>
         /// <param name="links">Хранилище связей.</param>
         /// <param name="handler">Обработчик каждой подходящей связи.</param>
-        /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный адрес связи.</param>
+        /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLink Each<TLink, TConstants>(this ILinks<TLink, TConstants> links, Func<IList<TLink>, TLink> handler, params TLink[] restrictions)

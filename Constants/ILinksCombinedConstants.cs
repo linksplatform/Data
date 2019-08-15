@@ -1,4 +1,6 @@
-﻿namespace Platform.Data.Constants
+﻿#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
+namespace Platform.Data.Constants
 {
     public interface ILinksCombinedConstants<TDecision, TAddress, TPartIndex, TLinksConstants> :
         ILinksDecisionConstants<TDecision>,
