@@ -12,17 +12,27 @@ Forked from: [Konard/LinksPlatform/Platform/Platform.Data](https://github.com/Ko
 
 NuGet package: [Platform.Data](https://www.nuget.org/packages/Platform.Data)
 
-## [Documentation](https://linksplatform.github.io/Data/)
-
+## [Documentation](https://linksplatform.github.io/Data)
 Interface [ILinks\<TLink, TConstants\>](https://linksplatform.github.io/Data/api/Platform.Data.ILinks-2.html).
+
+[PDF file](https://linksplatform.github.io/Data/Platform.Data.pdf) with code for e-readers.
 
 ## Depend on
 
 * [Platform.Threading](https://github.com/linksplatform/Threading)
 * [Platform.Numbers](https://github.com/linksplatform/Numbers)
-* [Platform.Helpers](https://github.com/linksplatform/Helpers)
+* [Platform.Setters](https://github.com/linksplatform/Setters)
 
 ## Dependent libraries
 
 * [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets)
 * [Platform.Data.Triplets](https://github.com/linksplatform/Data.Triplets)
+
+## Mystery files
+* [.travis.yml](https://github.com/linksplatform/Data/blob/master/.travis.yml) - Travis CI build configuration.
+* [docfx.json](https://github.com/linksplatform/Data/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Data/blob/master/toc.yml) - DocFX build configuration.
+* [format-document.sh](https://github.com/linksplatform/Data/blob/master/format-document.sh) - script for formating `tex` file for generating PDF from it.
+* [format-csharp-files.py](https://github.com/linksplatform/Data/blob/master/format-csharp-files.py) - script for formating single `.cs` file as a part of `tex` file.
+* [generate-pdf.sh](https://github.com/linksplatform/Data/blob/master/generate-pdf.sh) - script that generates PDF with code for e-readers.
+* [publish-docs.sh](https://github.com/linksplatform/Data/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
+* [push-nuget.bat](https://github.com/linksplatform/Data/blob/master/push-nuget.bat) - Windows script for publishing current version of NuGet package.
