@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
+using Platform.Ranges;
 using Platform.Collections;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
@@ -18,10 +19,7 @@ namespace Platform.Data
         public static bool IsFullPoint(IList<TLink> link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
-            if (link.Count <= 1)
-            {
-                throw new ArgumentOutOfRangeException(nameof(link), "Cannot determine link's pointness using only its identifier.");
-            }
+            Ensure.Always.ArgumentInRange(link.Count, new Range<int>(2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
             return IsFullPointUnchecked(link);
         }
 
@@ -42,10 +40,7 @@ namespace Platform.Data
         public static bool IsPartialPoint(IList<TLink> link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
-            if (link.Count <= 1)
-            {
-                throw new ArgumentOutOfRangeException(nameof(link), "Cannot determine link's pointness using only its identifier.");
-            }
+            Ensure.Always.ArgumentInRange(link.Count, new Range<int>(2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
             return IsPartialPointUnchecked(link);
         }
 
