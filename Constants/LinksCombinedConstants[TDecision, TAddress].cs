@@ -28,9 +28,9 @@ namespace Platform.Data.Constants
         {
             Null = Integer<TAddress>.Zero;
             MinPossibleIndex = Integer<TAddress>.One;
-            MaxPossibleIndex = ArithmeticHelpers.Subtract<TAddress>(ulong.MaxValue, 3);
-            Itself = ArithmeticHelpers.Subtract<TAddress>(ulong.MaxValue, 2);
-            Any = ArithmeticHelpers.Subtract<TAddress>(ulong.MaxValue, 1);
+            MaxPossibleIndex = Arithmetic.Subtract<TAddress>(ulong.MaxValue, 3);
+            Itself = Arithmetic.Subtract<TAddress>(ulong.MaxValue, 2);
+            Any = Arithmetic.Subtract<TAddress>(ulong.MaxValue, 1);
             // ulong.MaxValue is reserved for "Continue"
         }
     }

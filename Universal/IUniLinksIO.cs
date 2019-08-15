@@ -23,7 +23,7 @@ namespace Platform.Data.Universal
         /// 
         /// Stops and returns false if handler return false.
         /// 
-        /// Acts as Each, Foreach, Select, Search, Match & ...
+        /// Acts as Each, Foreach, Select, Search, Match &amp; ...
         /// 
         /// Handles all links in store if pattern/restrictions is not defined.
         /// </remarks>
@@ -34,8 +34,8 @@ namespace Platform.Data.Universal
         /// Equivalent to:
         /// * creation if before == null
         /// * deletion if after == null
-        /// * update if before != null && after != null
-        /// * default(TLink) if before == null && after == null
+        /// * update if before != null &amp;&amp; after != null
+        /// * default(TLink) if before == null &amp;&amp; after == null
         /// 
         /// Possible interpretation
         /// * In(null, new[] { }) creates point (link that points to itself using minimum number of parts).

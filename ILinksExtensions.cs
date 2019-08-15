@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using Platform.Helpers.Setters;
+using Platform.Setters;
 using Platform.Data.Constants;
 using Platform.Data.Exceptions;
 
@@ -95,8 +95,8 @@ namespace Platform.Data
         /// самостоятельный цикл через себя? Что если предоставить все варианты использования связей?
         /// Что если разрешить и нули, а так же частичные варианты?
         /// 
-        /// Что если точка, это только в том случае когда link.Source == link && link.Target == link , т.е. дважды ссылка на себя.
-        /// А пара это тогда, когда link.Source == link.Target && link.Source != link , т.е. ссылка не на себя а во вне.
+        /// Что если точка, это только в том случае когда link.Source == link &amp;&amp; link.Target == link , т.е. дважды ссылка на себя.
+        /// А пара это тогда, когда link.Source == link.Target &amp;&amp; link.Source != link , т.е. ссылка не на себя а во вне.
         /// 
         /// Тогда если у нас уже создана пара, но нам нужна точка, мы можем используя промежуточную связь,
         /// например "DoubletOf" обозначить что является точно парой, а что точно точкой.
