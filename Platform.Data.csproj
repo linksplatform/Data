@@ -28,7 +28,7 @@
   <ItemGroup>
     <PackageReference Include="Platform.Numbers" Version="0.1.1" />
     <PackageReference Include="Platform.Threading" Version="0.0.5" />
-    <PackageReference Include="Platform.Setters" Version="0.0.1" />
+    <PackageReference Include="Platform.Setters" Version="0.0.2" />
   </ItemGroup>
 
 </Project>
