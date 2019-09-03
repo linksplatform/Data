@@ -7,269 +7,6 @@ references:
   commentId: N:Platform.Data
   fullName: Platform.Data
   nameWithType: Platform.Data
-- uid: Platform.Data.Constants
-  name: Platform.Data.Constants
-  href: api/Platform.Data.Constants.html
-  commentId: N:Platform.Data.Constants
-  fullName: Platform.Data.Constants
-  nameWithType: Platform.Data.Constants
-- uid: Platform.Data.Constants.LinksConstants`1
-  name: LinksConstants<TAddress>
-  href: api/Platform.Data.Constants.LinksConstants-1.html
-  commentId: T:Platform.Data.Constants.LinksConstants`1
-  name.vb: LinksConstants(Of TAddress)
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress)
-  nameWithType: LinksConstants<TAddress>
-  nameWithType.vb: LinksConstants(Of TAddress)
-- uid: Platform.Data.Constants.LinksConstants`1.#ctor
-  name: LinksConstants()
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1__ctor
-  commentId: M:Platform.Data.Constants.LinksConstants`1.#ctor
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.LinksConstants()
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).LinksConstants()
-  nameWithType: LinksConstants<TAddress>.LinksConstants()
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants()
-- uid: Platform.Data.Constants.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
-  name: LinksConstants(Range<TAddress>)
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1__ctor_Platform_Ranges_Range__0__
-  commentId: M:Platform.Data.Constants.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
-  name.vb: LinksConstants(Range(Of TAddress))
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.LinksConstants(Platform.Ranges.Range<TAddress>)
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).LinksConstants(Platform.Ranges.Range(Of TAddress))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Range<TAddress>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Range(Of TAddress))
-- uid: Platform.Data.Constants.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name: LinksConstants(Range<TAddress>, Nullable<Range<TAddress>>)
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1__ctor_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
-  commentId: M:Platform.Data.Constants.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name.vb: LinksConstants(Range(Of TAddress), Nullable(Of Range(Of TAddress)))
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.LinksConstants(Platform.Ranges.Range<TAddress>, System.Nullable<Platform.Ranges.Range<TAddress>>)
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).LinksConstants(Platform.Ranges.Range(Of TAddress), System.Nullable(Of Platform.Ranges.Range(Of TAddress)))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Range<TAddress>, Nullable<Range<TAddress>>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Range(Of TAddress), Nullable(Of Range(Of TAddress)))
-- uid: Platform.Data.Constants.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
-  name: LinksConstants(Int32, Range<TAddress>)
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__
-  commentId: M:Platform.Data.Constants.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
-  name.vb: LinksConstants(Int32, Range(Of TAddress))
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TAddress>)
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TAddress))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Int32, Range<TAddress>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Int32, Range(Of TAddress))
-- uid: Platform.Data.Constants.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name: LinksConstants(Int32, Range<TAddress>, Nullable<Range<TAddress>>)
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
-  commentId: M:Platform.Data.Constants.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name.vb: LinksConstants(Int32, Range(Of TAddress), Nullable(Of Range(Of TAddress)))
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TAddress>, System.Nullable<Platform.Ranges.Range<TAddress>>)
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TAddress), System.Nullable(Of Platform.Ranges.Range(Of TAddress)))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Int32, Range<TAddress>, Nullable<Range<TAddress>>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Int32, Range(Of TAddress), Nullable(Of Range(Of TAddress)))
-- uid: Platform.Data.Constants.LinksConstants`1.#ctor*
-  name: LinksConstants
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1__ctor_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.#ctor
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.LinksConstants
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).LinksConstants
-  nameWithType: LinksConstants<TAddress>.LinksConstants
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants
-- uid: Platform.Data.Constants.LinksConstants`1.Any
-  name: Any
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Any
-  commentId: P:Platform.Data.Constants.LinksConstants`1.Any
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Any
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Any
-  nameWithType: LinksConstants<TAddress>.Any
-  nameWithType.vb: LinksConstants(Of TAddress).Any
-- uid: Platform.Data.Constants.LinksConstants`1.Any*
-  name: Any
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Any_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.Any
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Any
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Any
-  nameWithType: LinksConstants<TAddress>.Any
-  nameWithType.vb: LinksConstants(Of TAddress).Any
-- uid: Platform.Data.Constants.LinksConstants`1.Break
-  name: Break
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Break
-  commentId: P:Platform.Data.Constants.LinksConstants`1.Break
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Break
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Break
-  nameWithType: LinksConstants<TAddress>.Break
-  nameWithType.vb: LinksConstants(Of TAddress).Break
-- uid: Platform.Data.Constants.LinksConstants`1.Break*
-  name: Break
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Break_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.Break
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Break
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Break
-  nameWithType: LinksConstants<TAddress>.Break
-  nameWithType.vb: LinksConstants(Of TAddress).Break
-- uid: Platform.Data.Constants.LinksConstants`1.Continue
-  name: Continue
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Continue
-  commentId: P:Platform.Data.Constants.LinksConstants`1.Continue
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Continue
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Continue
-  nameWithType: LinksConstants<TAddress>.Continue
-  nameWithType.vb: LinksConstants(Of TAddress).Continue
-- uid: Platform.Data.Constants.LinksConstants`1.Continue*
-  name: Continue
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Continue_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.Continue
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Continue
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Continue
-  nameWithType: LinksConstants<TAddress>.Continue
-  nameWithType.vb: LinksConstants(Of TAddress).Continue
-- uid: Platform.Data.Constants.LinksConstants`1.DefaultTargetPart
-  name: DefaultTargetPart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_DefaultTargetPart
-  commentId: F:Platform.Data.Constants.LinksConstants`1.DefaultTargetPart
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.DefaultTargetPart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).DefaultTargetPart
-  nameWithType: LinksConstants<TAddress>.DefaultTargetPart
-  nameWithType.vb: LinksConstants(Of TAddress).DefaultTargetPart
-- uid: Platform.Data.Constants.LinksConstants`1.IndexPart
-  name: IndexPart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_IndexPart
-  commentId: P:Platform.Data.Constants.LinksConstants`1.IndexPart
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.IndexPart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).IndexPart
-  nameWithType: LinksConstants<TAddress>.IndexPart
-  nameWithType.vb: LinksConstants(Of TAddress).IndexPart
-- uid: Platform.Data.Constants.LinksConstants`1.IndexPart*
-  name: IndexPart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_IndexPart_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.IndexPart
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.IndexPart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).IndexPart
-  nameWithType: LinksConstants<TAddress>.IndexPart
-  nameWithType.vb: LinksConstants(Of TAddress).IndexPart
-- uid: Platform.Data.Constants.LinksConstants`1.Itself
-  name: Itself
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Itself
-  commentId: P:Platform.Data.Constants.LinksConstants`1.Itself
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Itself
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Itself
-  nameWithType: LinksConstants<TAddress>.Itself
-  nameWithType.vb: LinksConstants(Of TAddress).Itself
-- uid: Platform.Data.Constants.LinksConstants`1.Itself*
-  name: Itself
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Itself_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.Itself
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Itself
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Itself
-  nameWithType: LinksConstants<TAddress>.Itself
-  nameWithType.vb: LinksConstants(Of TAddress).Itself
-- uid: Platform.Data.Constants.LinksConstants`1.Null
-  name: "Null"
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Null
-  commentId: P:Platform.Data.Constants.LinksConstants`1.Null
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Null
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Null
-  nameWithType: LinksConstants<TAddress>.Null
-  nameWithType.vb: LinksConstants(Of TAddress).Null
-- uid: Platform.Data.Constants.LinksConstants`1.Null*
-  name: "Null"
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Null_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.Null
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Null
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Null
-  nameWithType: LinksConstants<TAddress>.Null
-  nameWithType.vb: LinksConstants(Of TAddress).Null
-- uid: Platform.Data.Constants.LinksConstants`1.PossibleExternalReferencesRange
-  name: PossibleExternalReferencesRange
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_PossibleExternalReferencesRange
-  commentId: P:Platform.Data.Constants.LinksConstants`1.PossibleExternalReferencesRange
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.PossibleExternalReferencesRange
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).PossibleExternalReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleExternalReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleExternalReferencesRange
-- uid: Platform.Data.Constants.LinksConstants`1.PossibleExternalReferencesRange*
-  name: PossibleExternalReferencesRange
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_PossibleExternalReferencesRange_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.PossibleExternalReferencesRange
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.PossibleExternalReferencesRange
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).PossibleExternalReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleExternalReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleExternalReferencesRange
-- uid: Platform.Data.Constants.LinksConstants`1.PossibleInnerReferencesRange
-  name: PossibleInnerReferencesRange
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_PossibleInnerReferencesRange
-  commentId: P:Platform.Data.Constants.LinksConstants`1.PossibleInnerReferencesRange
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.PossibleInnerReferencesRange
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).PossibleInnerReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleInnerReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleInnerReferencesRange
-- uid: Platform.Data.Constants.LinksConstants`1.PossibleInnerReferencesRange*
-  name: PossibleInnerReferencesRange
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_PossibleInnerReferencesRange_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.PossibleInnerReferencesRange
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.PossibleInnerReferencesRange
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).PossibleInnerReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleInnerReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleInnerReferencesRange
-- uid: Platform.Data.Constants.LinksConstants`1.Skip
-  name: Skip
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Skip
-  commentId: P:Platform.Data.Constants.LinksConstants`1.Skip
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Skip
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Skip
-  nameWithType: LinksConstants<TAddress>.Skip
-  nameWithType.vb: LinksConstants(Of TAddress).Skip
-- uid: Platform.Data.Constants.LinksConstants`1.Skip*
-  name: Skip
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_Skip_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.Skip
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.Skip
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).Skip
-  nameWithType: LinksConstants<TAddress>.Skip
-  nameWithType.vb: LinksConstants(Of TAddress).Skip
-- uid: Platform.Data.Constants.LinksConstants`1.SourcePart
-  name: SourcePart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_SourcePart
-  commentId: P:Platform.Data.Constants.LinksConstants`1.SourcePart
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.SourcePart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).SourcePart
-  nameWithType: LinksConstants<TAddress>.SourcePart
-  nameWithType.vb: LinksConstants(Of TAddress).SourcePart
-- uid: Platform.Data.Constants.LinksConstants`1.SourcePart*
-  name: SourcePart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_SourcePart_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.SourcePart
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.SourcePart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).SourcePart
-  nameWithType: LinksConstants<TAddress>.SourcePart
-  nameWithType.vb: LinksConstants(Of TAddress).SourcePart
-- uid: Platform.Data.Constants.LinksConstants`1.TargetPart
-  name: TargetPart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_TargetPart
-  commentId: P:Platform.Data.Constants.LinksConstants`1.TargetPart
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.TargetPart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).TargetPart
-  nameWithType: LinksConstants<TAddress>.TargetPart
-  nameWithType.vb: LinksConstants(Of TAddress).TargetPart
-- uid: Platform.Data.Constants.LinksConstants`1.TargetPart*
-  name: TargetPart
-  href: api/Platform.Data.Constants.LinksConstants-1.html#Platform_Data_Constants_LinksConstants_1_TargetPart_
-  commentId: Overload:Platform.Data.Constants.LinksConstants`1.TargetPart
-  isSpec: "True"
-  fullName: Platform.Data.Constants.LinksConstants<TAddress>.TargetPart
-  fullName.vb: Platform.Data.Constants.LinksConstants(Of TAddress).TargetPart
-  nameWithType: LinksConstants<TAddress>.TargetPart
-  nameWithType.vb: LinksConstants(Of TAddress).TargetPart
 - uid: Platform.Data.Exceptions
   name: Platform.Data.Exceptions
   href: api/Platform.Data.Exceptions.html
@@ -662,6 +399,317 @@ references:
   fullName.vb: Platform.Data.ISynchronizedLinks(Of TLink, TLinks, TConstants)
   nameWithType: ISynchronizedLinks<TLink, TLinks, TConstants>
   nameWithType.vb: ISynchronizedLinks(Of TLink, TLinks, TConstants)
+- uid: Platform.Data.LinksConstants`1
+  name: LinksConstants<TAddress>
+  href: api/Platform.Data.LinksConstants-1.html
+  commentId: T:Platform.Data.LinksConstants`1
+  name.vb: LinksConstants(Of TAddress)
+  fullName: Platform.Data.LinksConstants<TAddress>
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress)
+  nameWithType: LinksConstants<TAddress>
+  nameWithType.vb: LinksConstants(Of TAddress)
+- uid: Platform.Data.LinksConstants`1.#ctor
+  name: LinksConstants()
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor
+  commentId: M:Platform.Data.LinksConstants`1.#ctor
+  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants()
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants()
+  nameWithType: LinksConstants<TAddress>.LinksConstants()
+  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants()
+- uid: Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
+  name: LinksConstants(Range<TAddress>)
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Platform_Ranges_Range__0__
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
+  name.vb: LinksConstants(Range(Of TAddress))
+  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(Platform.Ranges.Range<TAddress>)
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(Platform.Ranges.Range(Of TAddress))
+  nameWithType: LinksConstants<TAddress>.LinksConstants(Range<TAddress>)
+  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Range(Of TAddress))
+- uid: Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+  name: LinksConstants(Range<TAddress>, Nullable<Range<TAddress>>)
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+  name.vb: LinksConstants(Range(Of TAddress), Nullable(Of Range(Of TAddress)))
+  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(Platform.Ranges.Range<TAddress>, System.Nullable<Platform.Ranges.Range<TAddress>>)
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(Platform.Ranges.Range(Of TAddress), System.Nullable(Of Platform.Ranges.Range(Of TAddress)))
+  nameWithType: LinksConstants<TAddress>.LinksConstants(Range<TAddress>, Nullable<Range<TAddress>>)
+  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Range(Of TAddress), Nullable(Of Range(Of TAddress)))
+- uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
+  name: LinksConstants(Int32, Range<TAddress>)
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
+  name.vb: LinksConstants(Int32, Range(Of TAddress))
+  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TAddress>)
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TAddress))
+  nameWithType: LinksConstants<TAddress>.LinksConstants(Int32, Range<TAddress>)
+  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Int32, Range(Of TAddress))
+- uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+  name: LinksConstants(Int32, Range<TAddress>, Nullable<Range<TAddress>>)
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+  name.vb: LinksConstants(Int32, Range(Of TAddress), Nullable(Of Range(Of TAddress)))
+  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TAddress>, System.Nullable<Platform.Ranges.Range<TAddress>>)
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TAddress), System.Nullable(Of Platform.Ranges.Range(Of TAddress)))
+  nameWithType: LinksConstants<TAddress>.LinksConstants(Int32, Range<TAddress>, Nullable<Range<TAddress>>)
+  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Int32, Range(Of TAddress), Nullable(Of Range(Of TAddress)))
+- uid: Platform.Data.LinksConstants`1.#ctor*
+  name: LinksConstants
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_
+  commentId: Overload:Platform.Data.LinksConstants`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants
+  nameWithType: LinksConstants<TAddress>.LinksConstants
+  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants
+- uid: Platform.Data.LinksConstants`1.Any
+  name: Any
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Any
+  commentId: P:Platform.Data.LinksConstants`1.Any
+  fullName: Platform.Data.LinksConstants<TAddress>.Any
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Any
+  nameWithType: LinksConstants<TAddress>.Any
+  nameWithType.vb: LinksConstants(Of TAddress).Any
+- uid: Platform.Data.LinksConstants`1.Any*
+  name: Any
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Any_
+  commentId: Overload:Platform.Data.LinksConstants`1.Any
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.Any
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Any
+  nameWithType: LinksConstants<TAddress>.Any
+  nameWithType.vb: LinksConstants(Of TAddress).Any
+- uid: Platform.Data.LinksConstants`1.Break
+  name: Break
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Break
+  commentId: P:Platform.Data.LinksConstants`1.Break
+  fullName: Platform.Data.LinksConstants<TAddress>.Break
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Break
+  nameWithType: LinksConstants<TAddress>.Break
+  nameWithType.vb: LinksConstants(Of TAddress).Break
+- uid: Platform.Data.LinksConstants`1.Break*
+  name: Break
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Break_
+  commentId: Overload:Platform.Data.LinksConstants`1.Break
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.Break
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Break
+  nameWithType: LinksConstants<TAddress>.Break
+  nameWithType.vb: LinksConstants(Of TAddress).Break
+- uid: Platform.Data.LinksConstants`1.Continue
+  name: Continue
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Continue
+  commentId: P:Platform.Data.LinksConstants`1.Continue
+  fullName: Platform.Data.LinksConstants<TAddress>.Continue
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Continue
+  nameWithType: LinksConstants<TAddress>.Continue
+  nameWithType.vb: LinksConstants(Of TAddress).Continue
+- uid: Platform.Data.LinksConstants`1.Continue*
+  name: Continue
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Continue_
+  commentId: Overload:Platform.Data.LinksConstants`1.Continue
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.Continue
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Continue
+  nameWithType: LinksConstants<TAddress>.Continue
+  nameWithType.vb: LinksConstants(Of TAddress).Continue
+- uid: Platform.Data.LinksConstants`1.DefaultTargetPart
+  name: DefaultTargetPart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_DefaultTargetPart
+  commentId: F:Platform.Data.LinksConstants`1.DefaultTargetPart
+  fullName: Platform.Data.LinksConstants<TAddress>.DefaultTargetPart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).DefaultTargetPart
+  nameWithType: LinksConstants<TAddress>.DefaultTargetPart
+  nameWithType.vb: LinksConstants(Of TAddress).DefaultTargetPart
+- uid: Platform.Data.LinksConstants`1.IndexPart
+  name: IndexPart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_IndexPart
+  commentId: P:Platform.Data.LinksConstants`1.IndexPart
+  fullName: Platform.Data.LinksConstants<TAddress>.IndexPart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).IndexPart
+  nameWithType: LinksConstants<TAddress>.IndexPart
+  nameWithType.vb: LinksConstants(Of TAddress).IndexPart
+- uid: Platform.Data.LinksConstants`1.IndexPart*
+  name: IndexPart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_IndexPart_
+  commentId: Overload:Platform.Data.LinksConstants`1.IndexPart
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.IndexPart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).IndexPart
+  nameWithType: LinksConstants<TAddress>.IndexPart
+  nameWithType.vb: LinksConstants(Of TAddress).IndexPart
+- uid: Platform.Data.LinksConstants`1.Itself
+  name: Itself
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Itself
+  commentId: P:Platform.Data.LinksConstants`1.Itself
+  fullName: Platform.Data.LinksConstants<TAddress>.Itself
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Itself
+  nameWithType: LinksConstants<TAddress>.Itself
+  nameWithType.vb: LinksConstants(Of TAddress).Itself
+- uid: Platform.Data.LinksConstants`1.Itself*
+  name: Itself
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Itself_
+  commentId: Overload:Platform.Data.LinksConstants`1.Itself
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.Itself
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Itself
+  nameWithType: LinksConstants<TAddress>.Itself
+  nameWithType.vb: LinksConstants(Of TAddress).Itself
+- uid: Platform.Data.LinksConstants`1.Null
+  name: "Null"
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Null
+  commentId: P:Platform.Data.LinksConstants`1.Null
+  fullName: Platform.Data.LinksConstants<TAddress>.Null
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Null
+  nameWithType: LinksConstants<TAddress>.Null
+  nameWithType.vb: LinksConstants(Of TAddress).Null
+- uid: Platform.Data.LinksConstants`1.Null*
+  name: "Null"
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Null_
+  commentId: Overload:Platform.Data.LinksConstants`1.Null
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.Null
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Null
+  nameWithType: LinksConstants<TAddress>.Null
+  nameWithType.vb: LinksConstants(Of TAddress).Null
+- uid: Platform.Data.LinksConstants`1.PossibleExternalReferencesRange
+  name: PossibleExternalReferencesRange
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleExternalReferencesRange
+  commentId: P:Platform.Data.LinksConstants`1.PossibleExternalReferencesRange
+  fullName: Platform.Data.LinksConstants<TAddress>.PossibleExternalReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleExternalReferencesRange
+  nameWithType: LinksConstants<TAddress>.PossibleExternalReferencesRange
+  nameWithType.vb: LinksConstants(Of TAddress).PossibleExternalReferencesRange
+- uid: Platform.Data.LinksConstants`1.PossibleExternalReferencesRange*
+  name: PossibleExternalReferencesRange
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleExternalReferencesRange_
+  commentId: Overload:Platform.Data.LinksConstants`1.PossibleExternalReferencesRange
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.PossibleExternalReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleExternalReferencesRange
+  nameWithType: LinksConstants<TAddress>.PossibleExternalReferencesRange
+  nameWithType.vb: LinksConstants(Of TAddress).PossibleExternalReferencesRange
+- uid: Platform.Data.LinksConstants`1.PossibleInnerReferencesRange
+  name: PossibleInnerReferencesRange
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleInnerReferencesRange
+  commentId: P:Platform.Data.LinksConstants`1.PossibleInnerReferencesRange
+  fullName: Platform.Data.LinksConstants<TAddress>.PossibleInnerReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleInnerReferencesRange
+  nameWithType: LinksConstants<TAddress>.PossibleInnerReferencesRange
+  nameWithType.vb: LinksConstants(Of TAddress).PossibleInnerReferencesRange
+- uid: Platform.Data.LinksConstants`1.PossibleInnerReferencesRange*
+  name: PossibleInnerReferencesRange
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleInnerReferencesRange_
+  commentId: Overload:Platform.Data.LinksConstants`1.PossibleInnerReferencesRange
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.PossibleInnerReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleInnerReferencesRange
+  nameWithType: LinksConstants<TAddress>.PossibleInnerReferencesRange
+  nameWithType.vb: LinksConstants(Of TAddress).PossibleInnerReferencesRange
+- uid: Platform.Data.LinksConstants`1.Skip
+  name: Skip
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Skip
+  commentId: P:Platform.Data.LinksConstants`1.Skip
+  fullName: Platform.Data.LinksConstants<TAddress>.Skip
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Skip
+  nameWithType: LinksConstants<TAddress>.Skip
+  nameWithType.vb: LinksConstants(Of TAddress).Skip
+- uid: Platform.Data.LinksConstants`1.Skip*
+  name: Skip
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Skip_
+  commentId: Overload:Platform.Data.LinksConstants`1.Skip
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.Skip
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Skip
+  nameWithType: LinksConstants<TAddress>.Skip
+  nameWithType.vb: LinksConstants(Of TAddress).Skip
+- uid: Platform.Data.LinksConstants`1.SourcePart
+  name: SourcePart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_SourcePart
+  commentId: P:Platform.Data.LinksConstants`1.SourcePart
+  fullName: Platform.Data.LinksConstants<TAddress>.SourcePart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).SourcePart
+  nameWithType: LinksConstants<TAddress>.SourcePart
+  nameWithType.vb: LinksConstants(Of TAddress).SourcePart
+- uid: Platform.Data.LinksConstants`1.SourcePart*
+  name: SourcePart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_SourcePart_
+  commentId: Overload:Platform.Data.LinksConstants`1.SourcePart
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.SourcePart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).SourcePart
+  nameWithType: LinksConstants<TAddress>.SourcePart
+  nameWithType.vb: LinksConstants(Of TAddress).SourcePart
+- uid: Platform.Data.LinksConstants`1.TargetPart
+  name: TargetPart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_TargetPart
+  commentId: P:Platform.Data.LinksConstants`1.TargetPart
+  fullName: Platform.Data.LinksConstants<TAddress>.TargetPart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).TargetPart
+  nameWithType: LinksConstants<TAddress>.TargetPart
+  nameWithType.vb: LinksConstants(Of TAddress).TargetPart
+- uid: Platform.Data.LinksConstants`1.TargetPart*
+  name: TargetPart
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_TargetPart_
+  commentId: Overload:Platform.Data.LinksConstants`1.TargetPart
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TAddress>.TargetPart
+  fullName.vb: Platform.Data.LinksConstants(Of TAddress).TargetPart
+  nameWithType: LinksConstants<TAddress>.TargetPart
+  nameWithType.vb: LinksConstants(Of TAddress).TargetPart
+- uid: Platform.Data.LinksConstantsExtensions
+  name: LinksConstantsExtensions
+  href: api/Platform.Data.LinksConstantsExtensions.html
+  commentId: T:Platform.Data.LinksConstantsExtensions
+  fullName: Platform.Data.LinksConstantsExtensions
+  nameWithType: LinksConstantsExtensions
+- uid: Platform.Data.LinksConstantsExtensions.IsExternalReference*
+  name: IsExternalReference
+  href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsExternalReference_
+  commentId: Overload:Platform.Data.LinksConstantsExtensions.IsExternalReference
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstantsExtensions.IsExternalReference
+  nameWithType: LinksConstantsExtensions.IsExternalReference
+- uid: Platform.Data.LinksConstantsExtensions.IsExternalReference``1(Platform.Data.LinksConstants{``0},``0)
+  name: IsExternalReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsExternalReference__1_Platform_Data_LinksConstants___0____0_
+  commentId: M:Platform.Data.LinksConstantsExtensions.IsExternalReference``1(Platform.Data.LinksConstants{``0},``0)
+  name.vb: IsExternalReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+  fullName: Platform.Data.LinksConstantsExtensions.IsExternalReference<TAddress>(Platform.Data.LinksConstants<TAddress>, TAddress)
+  fullName.vb: Platform.Data.LinksConstantsExtensions.IsExternalReference(Of TAddress)(Platform.Data.LinksConstants(Of TAddress), TAddress)
+  nameWithType: LinksConstantsExtensions.IsExternalReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  nameWithType.vb: LinksConstantsExtensions.IsExternalReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+- uid: Platform.Data.LinksConstantsExtensions.IsInnerReference*
+  name: IsInnerReference
+  href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsInnerReference_
+  commentId: Overload:Platform.Data.LinksConstantsExtensions.IsInnerReference
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstantsExtensions.IsInnerReference
+  nameWithType: LinksConstantsExtensions.IsInnerReference
+- uid: Platform.Data.LinksConstantsExtensions.IsInnerReference``1(Platform.Data.LinksConstants{``0},``0)
+  name: IsInnerReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsInnerReference__1_Platform_Data_LinksConstants___0____0_
+  commentId: M:Platform.Data.LinksConstantsExtensions.IsInnerReference``1(Platform.Data.LinksConstants{``0},``0)
+  name.vb: IsInnerReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+  fullName: Platform.Data.LinksConstantsExtensions.IsInnerReference<TAddress>(Platform.Data.LinksConstants<TAddress>, TAddress)
+  fullName.vb: Platform.Data.LinksConstantsExtensions.IsInnerReference(Of TAddress)(Platform.Data.LinksConstants(Of TAddress), TAddress)
+  nameWithType: LinksConstantsExtensions.IsInnerReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  nameWithType.vb: LinksConstantsExtensions.IsInnerReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+- uid: Platform.Data.LinksConstantsExtensions.IsReference*
+  name: IsReference
+  href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsReference_
+  commentId: Overload:Platform.Data.LinksConstantsExtensions.IsReference
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstantsExtensions.IsReference
+  nameWithType: LinksConstantsExtensions.IsReference
+- uid: Platform.Data.LinksConstantsExtensions.IsReference``1(Platform.Data.LinksConstants{``0},``0)
+  name: IsReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsReference__1_Platform_Data_LinksConstants___0____0_
+  commentId: M:Platform.Data.LinksConstantsExtensions.IsReference``1(Platform.Data.LinksConstants{``0},``0)
+  name.vb: IsReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+  fullName: Platform.Data.LinksConstantsExtensions.IsReference<TAddress>(Platform.Data.LinksConstants<TAddress>, TAddress)
+  fullName.vb: Platform.Data.LinksConstantsExtensions.IsReference(Of TAddress)(Platform.Data.LinksConstants(Of TAddress), TAddress)
+  nameWithType: LinksConstantsExtensions.IsReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  nameWithType.vb: LinksConstantsExtensions.IsReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
 - uid: Platform.Data.Point`1
   name: Point<TLink>
   href: api/Platform.Data.Point-1.html
