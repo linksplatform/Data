@@ -13,7 +13,7 @@ namespace Platform.Data
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLink Count<TLink, TConstants>(this ILinks<TLink, TConstants> links, params TLink[] restrictions)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
             => links.Count(restrictions);
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace Platform.Data
         /// <returns>Значение, определяющее существует ли связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool Exists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
             => Comparer<TLink>.Default.Compare(links.Count(link), default) > 0;
 
         /// <param name="links">Хранилище связей.</param>
@@ -34,7 +34,7 @@ namespace Platform.Data
         /// </remarks>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnsureLinkExists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
         {
             if (!links.Exists(link))
             {
@@ -47,7 +47,7 @@ namespace Platform.Data
         /// <param name="argumentName">Имя аргумента, в который передаётся индекс связи.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnsureLinkExists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link, string argumentName)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
         {
             if (!links.Exists(link))
             {
@@ -64,7 +64,7 @@ namespace Platform.Data
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLink Each<TLink, TConstants>(this ILinks<TLink, TConstants> links, Func<IList<TLink>, TLink> handler, params TLink[] restrictions)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
             => links.Each(handler, restrictions);
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace Platform.Data
         /// <returns>Уникальную связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static IList<TLink> GetLink<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
         {
             var constants = links.Constants;
             var linkPartsSetter = new Setter<IList<TLink>, TLink>(constants.Continue, constants.Break);
@@ -108,7 +108,7 @@ namespace Platform.Data
         /// И наоборот этот же метод поможет, если уже существует точка, но нам нужна пара.
         /// </remarks>
         public static bool IsFullPoint<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
         {
             links.EnsureLinkExists(link);
             return Point<TLink>.IsFullPoint(links.GetLink(link));
@@ -123,7 +123,7 @@ namespace Platform.Data
         /// Также в будущем можно будет проверять и всех родителей, чтобы проверить есть ли ссылки на себя (на эту связь).
         /// </remarks>
         public static bool IsPartialPoint<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+            where TConstants : LinksConstants<TLink>
         {
             links.EnsureLinkExists(link);
             return Point<TLink>.IsPartialPoint(links.GetLink(link));

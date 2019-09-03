@@ -14,7 +14,7 @@ namespace Platform.Data
     /// Возможно этот интерфейс подходит даже для Sequences.
     /// </remarks>
     public interface ILinks<TLink, TConstants>
-        where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+        where TConstants : LinksConstants<TLink>
     {
         #region Constants
 

@@ -6,7 +6,7 @@ using Platform.Data.Constants;
 namespace Platform.Data
 {
     public interface ISynchronizedLinks<TLink, TLinks, TConstants> : ISynchronized<TLinks>, ILinks<TLink, TConstants>
-        where TConstants : ILinksCombinedConstants<TLink, TLink, int, TConstants>
+        where TConstants : LinksConstants<TLink>
         where TLinks : ILinks<TLink, TConstants>
     {
     }
