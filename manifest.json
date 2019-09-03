@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html",
-          "hash": "wQymjo63kjhWRWrzYzHANQ=="
+          "hash": "gB91EYleZhGKlkulQ0MCiA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html",
-          "hash": "EZl9QwaNhU1pOdUsBNYkPw=="
+          "hash": "Efjx6WKni44IuwxxZyTRCg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html",
-          "hash": "CrlKeazZNy3Vs/PGv8+OPQ=="
+          "hash": "KBSvK3cQ1p2v0W7m3iha7g=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Exceptions.LinksLimitReachedException-1.html",
-          "hash": "vX6/1wP1gDc9p0I8JYeTCw=="
+          "hash": "UN3UzuNTnM3fBT8M+BE58Q=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.ILinks-2.html",
-          "hash": "BNwCp+4EzeCm/Lhn8FOTjQ=="
+          "hash": "LAAHrvhd6/3S0E70ex9gww=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.ILinksExtensions.html",
-          "hash": "HWRe+ogLoT2Qf8Zg0JR15Q=="
+          "hash": "A5UfkeoyU/3iZuE3zVYPsA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.ISynchronizedLinks-3.html",
-          "hash": "laCcXViKYoPWLySSeQwvRw=="
+          "hash": "vprq375NC9sQsXQdLAJDIQ=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.LinkAddress-1.html",
-          "hash": "Ol+u5yzDXAs6Ro7u/eWIHA=="
+          "hash": "Og68o5e82pd+U24jEKO5Ng=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.LinksConstants-1.html",
-          "hash": "wGahHryrOJ/rf509jpOlZQ=="
+          "hash": "eLJEV4x686m0HGSfdvT7Lg=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.LinksConstantsExtensions.html",
-          "hash": "oJ0uYDPN2R4z1G3AMqZVaA=="
+          "hash": "Q2jrHtBZ7XH3n9gmXFTSAw=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Point-1.html",
-          "hash": "1WLYw9nmVF70rMlEaj2nOQ=="
+          "hash": "Iab5/kE6fVmPLut8Ae32yA=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Sequences.ISequenceAppender-1.html",
-          "hash": "z7LlIY2xscIItqNLzQMyyw=="
+          "hash": "m8FcTSDDApgTCLdluhB1BA=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Sequences.ISequenceWalker-1.html",
-          "hash": "oJdaGjcZhxWmpVUVlqQ9+Q=="
+          "hash": "OUgC3hKemQ0E4hdeYl8owQ=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Sequences.SequenceWalker.html",
-          "hash": "8rSwVQM+2zrS0KZ4Vz/87Q=="
+          "hash": "31L5s1NAEDBP2eBvNrfgng=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Sequences.StopableSequenceWalker.html",
-          "hash": "QZJbPFiKdQFzpiqqWXASjQ=="
+          "hash": "lI/KHNnLuLvHZv4AifYfxw=="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Universal.IUniLinks-1.html",
-          "hash": "HOj2VpBPfpQYswiHe8DdJA=="
+          "hash": "M4y4fACrhqG5saFUHzl7sg=="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Universal.IUniLinksCRUD-1.html",
-          "hash": "sWYOkYuHplQ5Pzyepka3ug=="
+          "hash": "xHDhwU8mc4FcwuOfhKdeXA=="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Universal.IUniLinksGS-1.html",
-          "hash": "tVYDnC7Y4TQTzEUIkrgYNA=="
+          "hash": "tBMYgXEA8i21yUQVWDobwg=="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Universal.IUniLinksIO-1.html",
-          "hash": "vx7D57Xa4OcfDnnQW73c0w=="
+          "hash": "qVNEnH7Kw/RZxpLMCOr93w=="
         }
       },
       "is_incremental": false,
@@ -282,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html",
-          "hash": "LEw20mM5F9tdoQdi0QZhWA=="
+          "hash": "mjogbH9qkyPPf/6er2XPSg=="
         }
       },
       "is_incremental": false,
@@ -294,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Universal.IUniLinksRW-1.html",
-          "hash": "F3w35OXPkiIQgMBdcsQG7Q=="
+          "hash": "UWvMNjTP0DXnB/9cH4kS1w=="
         }
       },
       "is_incremental": false,
