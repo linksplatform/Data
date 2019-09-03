@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 // ReSharper disable TypeParameterCanBeVariant
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
@@ -28,7 +29,7 @@ namespace Platform.Data.Universal
         /// 
         /// Handles all links in store if pattern/restrictions is not defined.
         /// </remarks>
-        bool Out(Func<TLinkAddress[], bool> handler, params TLinkAddress[] pattern);
+        bool Out(Func<IList<TLinkAddress>, bool> handler, IList<TLinkAddress> pattern);
 
         /// <remarks>
         /// default(TLinkAddress) means itself.
@@ -45,6 +46,6 @@ namespace Platform.Data.Universal
         /// * In(new[] { 4 }, new [] { 0, 2, 3 }) replaces 4th link with new doublet link (with 2 as source and 3 as target), 0 means it can be placed in any address.
         /// ...
         /// </remarks>
-        TLinkAddress In(TLinkAddress[] before, TLinkAddress[] after);
+        TLinkAddress In(IList<TLinkAddress> before, IList<TLinkAddress> after);
     }
 }

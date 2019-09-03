@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 // ReSharper disable TypeParameterCanBeVariant
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
@@ -10,8 +11,8 @@ namespace Platform.Data.Universal
     /// </remarks>
     public interface IUniLinksGS<TLinkAddress>
     {
-        TLinkAddress Get(ulong partType, TLinkAddress link);
-        bool Get(Func<TLinkAddress, bool> handler, params TLinkAddress[] pattern);
-        TLinkAddress Set(TLinkAddress[] before, TLinkAddress[] after);
+        TLinkAddress Get(int partType, TLinkAddress link);
+        TLinkAddress Get(Func<TLinkAddress, bool> handler, IList<TLinkAddress> pattern);
+        TLinkAddress Set(IList<TLinkAddress> before, IList<TLinkAddress> after);
     }
 }
