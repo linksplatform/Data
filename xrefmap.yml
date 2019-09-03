@@ -14,110 +14,123 @@ references:
   fullName: Platform.Data.Exceptions
   nameWithType: Platform.Data.Exceptions
 - uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1
-  name: ArgumentLinkDoesNotExistsException<TLink>
+  name: ArgumentLinkDoesNotExistsException<TLinkAddress>
   href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html
   commentId: T:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1
-  name.vb: ArgumentLinkDoesNotExistsException(Of TLink)
-  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLink>
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLink)
-  nameWithType: ArgumentLinkDoesNotExistsException<TLink>
-  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLink)
+  name.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress)
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress)
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress)
 - uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(`0)
-  name: ArgumentLinkDoesNotExistsException(TLink)
+  name: ArgumentLinkDoesNotExistsException(TLinkAddress)
   href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor__0_
   commentId: M:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(`0)
-  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLink>.ArgumentLinkDoesNotExistsException(TLink)
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLink).ArgumentLinkDoesNotExistsException(TLink)
-  nameWithType: ArgumentLinkDoesNotExistsException<TLink>.ArgumentLinkDoesNotExistsException(TLink)
-  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLink).ArgumentLinkDoesNotExistsException(TLink)
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(TLinkAddress)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(TLinkAddress)
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(TLinkAddress)
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(TLinkAddress)
 - uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(`0,System.String)
-  name: ArgumentLinkDoesNotExistsException(TLink, String)
+  name: ArgumentLinkDoesNotExistsException(TLinkAddress, String)
   href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor__0_System_String_
   commentId: M:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(`0,System.String)
-  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLink>.ArgumentLinkDoesNotExistsException(TLink, System.String)
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLink).ArgumentLinkDoesNotExistsException(TLink, System.String)
-  nameWithType: ArgumentLinkDoesNotExistsException<TLink>.ArgumentLinkDoesNotExistsException(TLink, String)
-  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLink).ArgumentLinkDoesNotExistsException(TLink, String)
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(TLinkAddress, System.String)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(TLinkAddress, System.String)
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(TLinkAddress, String)
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(TLinkAddress, String)
 - uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor*
   name: ArgumentLinkDoesNotExistsException
   href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor_
   commentId: Overload:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor
   isSpec: "True"
-  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLink>.ArgumentLinkDoesNotExistsException
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLink).ArgumentLinkDoesNotExistsException
-  nameWithType: ArgumentLinkDoesNotExistsException<TLink>.ArgumentLinkDoesNotExistsException
-  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLink).ArgumentLinkDoesNotExistsException
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException
 - uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1
-  name: ArgumentLinkHasDependenciesException<TLink>
+  name: ArgumentLinkHasDependenciesException<TLinkAddress>
   href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html
   commentId: T:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1
-  name.vb: ArgumentLinkHasDependenciesException(Of TLink)
-  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLink>
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLink)
-  nameWithType: ArgumentLinkHasDependenciesException<TLink>
-  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLink)
+  name.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress)
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress)
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress)
 - uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(`0)
-  name: ArgumentLinkHasDependenciesException(TLink)
+  name: ArgumentLinkHasDependenciesException(TLinkAddress)
   href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor__0_
   commentId: M:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(`0)
-  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLink>.ArgumentLinkHasDependenciesException(TLink)
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLink).ArgumentLinkHasDependenciesException(TLink)
-  nameWithType: ArgumentLinkHasDependenciesException<TLink>.ArgumentLinkHasDependenciesException(TLink)
-  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLink).ArgumentLinkHasDependenciesException(TLink)
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(TLinkAddress)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(TLinkAddress)
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(TLinkAddress)
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(TLinkAddress)
 - uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(`0,System.String)
-  name: ArgumentLinkHasDependenciesException(TLink, String)
+  name: ArgumentLinkHasDependenciesException(TLinkAddress, String)
   href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor__0_System_String_
   commentId: M:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(`0,System.String)
-  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLink>.ArgumentLinkHasDependenciesException(TLink, System.String)
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLink).ArgumentLinkHasDependenciesException(TLink, System.String)
-  nameWithType: ArgumentLinkHasDependenciesException<TLink>.ArgumentLinkHasDependenciesException(TLink, String)
-  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLink).ArgumentLinkHasDependenciesException(TLink, String)
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(TLinkAddress, System.String)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(TLinkAddress, System.String)
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(TLinkAddress, String)
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(TLinkAddress, String)
 - uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor*
   name: ArgumentLinkHasDependenciesException
   href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor_
   commentId: Overload:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor
   isSpec: "True"
-  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLink>.ArgumentLinkHasDependenciesException
-  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLink).ArgumentLinkHasDependenciesException
-  nameWithType: ArgumentLinkHasDependenciesException<TLink>.ArgumentLinkHasDependenciesException
-  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLink).ArgumentLinkHasDependenciesException
-- uid: Platform.Data.Exceptions.LinksLimitReachedException
-  name: LinksLimitReachedException
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException.html
-  commentId: T:Platform.Data.Exceptions.LinksLimitReachedException
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException
-  nameWithType: LinksLimitReachedException
-- uid: Platform.Data.Exceptions.LinksLimitReachedException.#ctor
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1
+  name: LinksLimitReachedException<TLinkAddress>
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html
+  commentId: T:Platform.Data.Exceptions.LinksLimitReachedException`1
+  name.vb: LinksLimitReachedException(Of TLinkAddress)
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress)
+  nameWithType: LinksLimitReachedException<TLinkAddress>
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress)
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor
   name: LinksLimitReachedException()
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException.html#Platform_Data_Exceptions_LinksLimitReachedException__ctor
-  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException.#ctor
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException.LinksLimitReachedException()
-  nameWithType: LinksLimitReachedException.LinksLimitReachedException()
-- uid: Platform.Data.Exceptions.LinksLimitReachedException.#ctor(System.String)
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1__ctor
+  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException()
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException()
+  nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException()
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException()
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor(`0)
+  name: LinksLimitReachedException(TLinkAddress)
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1__ctor__0_
+  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor(`0)
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(TLinkAddress)
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(TLinkAddress)
+  nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(TLinkAddress)
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(TLinkAddress)
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor(System.String)
   name: LinksLimitReachedException(String)
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException.html#Platform_Data_Exceptions_LinksLimitReachedException__ctor_System_String_
-  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException.#ctor(System.String)
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException.LinksLimitReachedException(System.String)
-  nameWithType: LinksLimitReachedException.LinksLimitReachedException(String)
-- uid: Platform.Data.Exceptions.LinksLimitReachedException.#ctor(System.UInt64)
-  name: LinksLimitReachedException(UInt64)
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException.html#Platform_Data_Exceptions_LinksLimitReachedException__ctor_System_UInt64_
-  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException.#ctor(System.UInt64)
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException.LinksLimitReachedException(System.UInt64)
-  nameWithType: LinksLimitReachedException.LinksLimitReachedException(UInt64)
-- uid: Platform.Data.Exceptions.LinksLimitReachedException.#ctor*
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1__ctor_System_String_
+  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor(System.String)
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(System.String)
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(System.String)
+  nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(String)
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(String)
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor*
   name: LinksLimitReachedException
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException.html#Platform_Data_Exceptions_LinksLimitReachedException__ctor_
-  commentId: Overload:Platform.Data.Exceptions.LinksLimitReachedException.#ctor
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1__ctor_
+  commentId: Overload:Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor
   isSpec: "True"
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException.LinksLimitReachedException
-  nameWithType: LinksLimitReachedException.LinksLimitReachedException
-- uid: Platform.Data.Exceptions.LinksLimitReachedException.DefaultMessage
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException
+  nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.DefaultMessage
   name: DefaultMessage
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException.html#Platform_Data_Exceptions_LinksLimitReachedException_DefaultMessage
-  commentId: F:Platform.Data.Exceptions.LinksLimitReachedException.DefaultMessage
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException.DefaultMessage
-  nameWithType: LinksLimitReachedException.DefaultMessage
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1_DefaultMessage
+  commentId: F:Platform.Data.Exceptions.LinksLimitReachedException`1.DefaultMessage
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.DefaultMessage
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).DefaultMessage
+  nameWithType: LinksLimitReachedException<TLinkAddress>.DefaultMessage
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).DefaultMessage
 - uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException
   name: LinkWithSameValueAlreadyExistsException
   href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html
@@ -150,119 +163,121 @@ references:
   fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
   nameWithType: LinkWithSameValueAlreadyExistsException.DefaultMessage
 - uid: Platform.Data.ILinks`2
-  name: ILinks<TLink, TConstants>
+  name: ILinks<TLinkAddress, TConstants>
   href: api/Platform.Data.ILinks-2.html
   commentId: T:Platform.Data.ILinks`2
-  name.vb: ILinks(Of TLink, TConstants)
-  fullName: Platform.Data.ILinks<TLink, TConstants>
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants)
-  nameWithType: ILinks<TLink, TConstants>
-  nameWithType.vb: ILinks(Of TLink, TConstants)
+  name.vb: ILinks(Of TLinkAddress, TConstants)
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants)
+  nameWithType: ILinks<TLinkAddress, TConstants>
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants)
 - uid: Platform.Data.ILinks`2.Constants
   name: Constants
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Constants
   commentId: P:Platform.Data.ILinks`2.Constants
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Constants
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Constants
-  nameWithType: ILinks<TLink, TConstants>.Constants
-  nameWithType.vb: ILinks(Of TLink, TConstants).Constants
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Constants
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Constants
+  nameWithType: ILinks<TLinkAddress, TConstants>.Constants
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Constants
 - uid: Platform.Data.ILinks`2.Constants*
   name: Constants
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Constants_
   commentId: Overload:Platform.Data.ILinks`2.Constants
   isSpec: "True"
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Constants
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Constants
-  nameWithType: ILinks<TLink, TConstants>.Constants
-  nameWithType.vb: ILinks(Of TLink, TConstants).Constants
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Constants
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Constants
+  nameWithType: ILinks<TLinkAddress, TConstants>.Constants
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Constants
 - uid: Platform.Data.ILinks`2.Count(System.Collections.Generic.IList{`0})
-  name: Count(IList<TLink>)
+  name: Count(IList<TLinkAddress>)
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Count_System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.ILinks`2.Count(System.Collections.Generic.IList{`0})
-  name.vb: Count(IList(Of TLink))
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Count(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Count(System.Collections.Generic.IList(Of TLink))
-  nameWithType: ILinks<TLink, TConstants>.Count(IList<TLink>)
-  nameWithType.vb: ILinks(Of TLink, TConstants).Count(IList(Of TLink))
+  name.vb: Count(IList(Of TLinkAddress))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Count(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Count(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Count(IList<TLinkAddress>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Count(IList(Of TLinkAddress))
 - uid: Platform.Data.ILinks`2.Count*
   name: Count
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Count_
   commentId: Overload:Platform.Data.ILinks`2.Count
   isSpec: "True"
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Count
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Count
-  nameWithType: ILinks<TLink, TConstants>.Count
-  nameWithType.vb: ILinks(Of TLink, TConstants).Count
-- uid: Platform.Data.ILinks`2.Create
-  name: Create()
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Create
-  commentId: M:Platform.Data.ILinks`2.Create
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Create()
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Create()
-  nameWithType: ILinks<TLink, TConstants>.Create()
-  nameWithType.vb: ILinks(Of TLink, TConstants).Create()
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Count
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Count
+  nameWithType: ILinks<TLinkAddress, TConstants>.Count
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Count
+- uid: Platform.Data.ILinks`2.Create(System.Collections.Generic.IList{`0})
+  name: Create(IList<TLinkAddress>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Create_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.ILinks`2.Create(System.Collections.Generic.IList{`0})
+  name.vb: Create(IList(Of TLinkAddress))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Create(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Create(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Create(IList<TLinkAddress>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Create(IList(Of TLinkAddress))
 - uid: Platform.Data.ILinks`2.Create*
   name: Create
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Create_
   commentId: Overload:Platform.Data.ILinks`2.Create
   isSpec: "True"
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Create
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Create
-  nameWithType: ILinks<TLink, TConstants>.Create
-  nameWithType.vb: ILinks(Of TLink, TConstants).Create
-- uid: Platform.Data.ILinks`2.Delete(`0)
-  name: Delete(TLink)
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Delete__0_
-  commentId: M:Platform.Data.ILinks`2.Delete(`0)
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Delete(TLink)
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Delete(TLink)
-  nameWithType: ILinks<TLink, TConstants>.Delete(TLink)
-  nameWithType.vb: ILinks(Of TLink, TConstants).Delete(TLink)
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Create
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Create
+  nameWithType: ILinks<TLinkAddress, TConstants>.Create
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Create
+- uid: Platform.Data.ILinks`2.Delete(System.Collections.Generic.IList{`0})
+  name: Delete(IList<TLinkAddress>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Delete_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.ILinks`2.Delete(System.Collections.Generic.IList{`0})
+  name.vb: Delete(IList(Of TLinkAddress))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Delete(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Delete(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Delete(IList<TLinkAddress>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Delete(IList(Of TLinkAddress))
 - uid: Platform.Data.ILinks`2.Delete*
   name: Delete
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Delete_
   commentId: Overload:Platform.Data.ILinks`2.Delete
   isSpec: "True"
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Delete
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Delete
-  nameWithType: ILinks<TLink, TConstants>.Delete
-  nameWithType.vb: ILinks(Of TLink, TConstants).Delete
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Delete
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Delete
+  nameWithType: ILinks<TLinkAddress, TConstants>.Delete
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Delete
 - uid: Platform.Data.ILinks`2.Each(System.Func{System.Collections.Generic.IList{`0},`0},System.Collections.Generic.IList{`0})
-  name: Each(Func<IList<TLink>, TLink>, IList<TLink>)
+  name: Each(Func<IList<TLinkAddress>, TLinkAddress>, IList<TLinkAddress>)
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Each_System_Func_System_Collections_Generic_IList__0___0__System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.ILinks`2.Each(System.Func{System.Collections.Generic.IList{`0},`0},System.Collections.Generic.IList{`0})
-  name.vb: Each(Func(Of IList(Of TLink), TLink), IList(Of TLink))
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Each(System.Func<System.Collections.Generic.IList<TLink>, TLink>, System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Each(System.Func(Of System.Collections.Generic.IList(Of TLink), TLink), System.Collections.Generic.IList(Of TLink))
-  nameWithType: ILinks<TLink, TConstants>.Each(Func<IList<TLink>, TLink>, IList<TLink>)
-  nameWithType.vb: ILinks(Of TLink, TConstants).Each(Func(Of IList(Of TLink), TLink), IList(Of TLink))
+  name.vb: Each(Func(Of IList(Of TLinkAddress), TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Each(System.Func<System.Collections.Generic.IList<TLinkAddress>, TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Each(System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Each(Func<IList<TLinkAddress>, TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Each(Func(Of IList(Of TLinkAddress), TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.ILinks`2.Each*
   name: Each
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Each_
   commentId: Overload:Platform.Data.ILinks`2.Each
   isSpec: "True"
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Each
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Each
-  nameWithType: ILinks<TLink, TConstants>.Each
-  nameWithType.vb: ILinks(Of TLink, TConstants).Each
-- uid: Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0})
-  name: Update(IList<TLink>)
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Update_System_Collections_Generic_IList__0__
-  commentId: M:Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0})
-  name.vb: Update(IList(Of TLink))
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Update(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Update(System.Collections.Generic.IList(Of TLink))
-  nameWithType: ILinks<TLink, TConstants>.Update(IList<TLink>)
-  nameWithType.vb: ILinks(Of TLink, TConstants).Update(IList(Of TLink))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Each
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Each
+  nameWithType: ILinks<TLinkAddress, TConstants>.Each
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Each
+- uid: Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name: Update(IList<TLinkAddress>, IList<TLinkAddress>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Update_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name.vb: Update(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Update(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Update(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Update(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Update(IList(Of TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.ILinks`2.Update*
   name: Update
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Update_
   commentId: Overload:Platform.Data.ILinks`2.Update
   isSpec: "True"
-  fullName: Platform.Data.ILinks<TLink, TConstants>.Update
-  fullName.vb: Platform.Data.ILinks(Of TLink, TConstants).Update
-  nameWithType: ILinks<TLink, TConstants>.Update
-  nameWithType.vb: ILinks(Of TLink, TConstants).Update
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Update
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Update
+  nameWithType: ILinks<TLinkAddress, TConstants>.Update
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Update
 - uid: Platform.Data.ILinksExtensions
   name: ILinksExtensions
   href: api/Platform.Data.ILinksExtensions.html
@@ -277,14 +292,14 @@ references:
   fullName: Platform.Data.ILinksExtensions.Count
   nameWithType: ILinksExtensions.Count
 - uid: Platform.Data.ILinksExtensions.Count``2(Platform.Data.ILinks{``0,``1},``0[])
-  name: Count<TLink, TConstants>(ILinks<TLink, TConstants>, TLink[])
+  name: Count<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress[])
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Count__2_Platform_Data_ILinks___0___1____0___
   commentId: M:Platform.Data.ILinksExtensions.Count``2(Platform.Data.ILinks{``0,``1},``0[])
-  name.vb: Count(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink())
-  fullName: Platform.Data.ILinksExtensions.Count<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink[])
-  fullName.vb: Platform.Data.ILinksExtensions.Count(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink())
-  nameWithType: ILinksExtensions.Count<TLink, TConstants>(ILinks<TLink, TConstants>, TLink[])
-  nameWithType.vb: ILinksExtensions.Count(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink())
+  name.vb: Count(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress())
+  fullName: Platform.Data.ILinksExtensions.Count<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress[])
+  fullName.vb: Platform.Data.ILinksExtensions.Count(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress())
+  nameWithType: ILinksExtensions.Count<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress[])
+  nameWithType.vb: ILinksExtensions.Count(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress())
 - uid: Platform.Data.ILinksExtensions.Each*
   name: Each
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Each_
@@ -293,14 +308,14 @@ references:
   fullName: Platform.Data.ILinksExtensions.Each
   nameWithType: ILinksExtensions.Each
 - uid: Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},System.Func{System.Collections.Generic.IList{``0},``0},``0[])
-  name: Each<TLink, TConstants>(ILinks<TLink, TConstants>, Func<IList<TLink>, TLink>, TLink[])
+  name: Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, Func<IList<TLinkAddress>, TLinkAddress>, TLinkAddress[])
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Each__2_Platform_Data_ILinks___0___1__System_Func_System_Collections_Generic_IList___0____0____0___
   commentId: M:Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},System.Func{System.Collections.Generic.IList{``0},``0},``0[])
-  name.vb: Each(Of TLink, TConstants)(ILinks(Of TLink, TConstants), Func(Of IList(Of TLink), TLink), TLink())
-  fullName: Platform.Data.ILinksExtensions.Each<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, System.Func<System.Collections.Generic.IList<TLink>, TLink>, TLink[])
-  fullName.vb: Platform.Data.ILinksExtensions.Each(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), System.Func(Of System.Collections.Generic.IList(Of TLink), TLink), TLink())
-  nameWithType: ILinksExtensions.Each<TLink, TConstants>(ILinks<TLink, TConstants>, Func<IList<TLink>, TLink>, TLink[])
-  nameWithType.vb: ILinksExtensions.Each(Of TLink, TConstants)(ILinks(Of TLink, TConstants), Func(Of IList(Of TLink), TLink), TLink())
+  name.vb: Each(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), Func(Of IList(Of TLinkAddress), TLinkAddress), TLinkAddress())
+  fullName: Platform.Data.ILinksExtensions.Each<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, System.Func<System.Collections.Generic.IList<TLinkAddress>, TLinkAddress>, TLinkAddress[])
+  fullName.vb: Platform.Data.ILinksExtensions.Each(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), TLinkAddress), TLinkAddress())
+  nameWithType: ILinksExtensions.Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, Func<IList<TLinkAddress>, TLinkAddress>, TLinkAddress[])
+  nameWithType.vb: ILinksExtensions.Each(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), Func(Of IList(Of TLinkAddress), TLinkAddress), TLinkAddress())
 - uid: Platform.Data.ILinksExtensions.EnsureLinkExists*
   name: EnsureLinkExists
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_EnsureLinkExists_
@@ -309,23 +324,23 @@ references:
   fullName: Platform.Data.ILinksExtensions.EnsureLinkExists
   nameWithType: ILinksExtensions.EnsureLinkExists
 - uid: Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0)
-  name: EnsureLinkExists<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
+  name: EnsureLinkExists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_
   commentId: M:Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0)
-  name.vb: EnsureLinkExists(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
-  fullName: Platform.Data.ILinksExtensions.EnsureLinkExists<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink)
-  fullName.vb: Platform.Data.ILinksExtensions.EnsureLinkExists(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink)
-  nameWithType: ILinksExtensions.EnsureLinkExists<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
-  nameWithType.vb: ILinksExtensions.EnsureLinkExists(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
+  name.vb: EnsureLinkExists(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  fullName: Platform.Data.ILinksExtensions.EnsureLinkExists<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  fullName.vb: Platform.Data.ILinksExtensions.EnsureLinkExists(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  nameWithType: ILinksExtensions.EnsureLinkExists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  nameWithType.vb: ILinksExtensions.EnsureLinkExists(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
 - uid: Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0,System.String)
-  name: EnsureLinkExists<TLink, TConstants>(ILinks<TLink, TConstants>, TLink, String)
+  name: EnsureLinkExists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress, String)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_System_String_
   commentId: M:Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0,System.String)
-  name.vb: EnsureLinkExists(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink, String)
-  fullName: Platform.Data.ILinksExtensions.EnsureLinkExists<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink, System.String)
-  fullName.vb: Platform.Data.ILinksExtensions.EnsureLinkExists(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink, System.String)
-  nameWithType: ILinksExtensions.EnsureLinkExists<TLink, TConstants>(ILinks<TLink, TConstants>, TLink, String)
-  nameWithType.vb: ILinksExtensions.EnsureLinkExists(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink, String)
+  name.vb: EnsureLinkExists(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress, String)
+  fullName: Platform.Data.ILinksExtensions.EnsureLinkExists<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress, System.String)
+  fullName.vb: Platform.Data.ILinksExtensions.EnsureLinkExists(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress, System.String)
+  nameWithType: ILinksExtensions.EnsureLinkExists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress, String)
+  nameWithType.vb: ILinksExtensions.EnsureLinkExists(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress, String)
 - uid: Platform.Data.ILinksExtensions.Exists*
   name: Exists
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Exists_
@@ -334,14 +349,14 @@ references:
   fullName: Platform.Data.ILinksExtensions.Exists
   nameWithType: ILinksExtensions.Exists
 - uid: Platform.Data.ILinksExtensions.Exists``2(Platform.Data.ILinks{``0,``1},``0)
-  name: Exists<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
+  name: Exists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Exists__2_Platform_Data_ILinks___0___1____0_
   commentId: M:Platform.Data.ILinksExtensions.Exists``2(Platform.Data.ILinks{``0,``1},``0)
-  name.vb: Exists(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
-  fullName: Platform.Data.ILinksExtensions.Exists<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink)
-  fullName.vb: Platform.Data.ILinksExtensions.Exists(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink)
-  nameWithType: ILinksExtensions.Exists<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
-  nameWithType.vb: ILinksExtensions.Exists(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
+  name.vb: Exists(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  fullName: Platform.Data.ILinksExtensions.Exists<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  fullName.vb: Platform.Data.ILinksExtensions.Exists(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  nameWithType: ILinksExtensions.Exists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  nameWithType.vb: ILinksExtensions.Exists(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
 - uid: Platform.Data.ILinksExtensions.GetLink*
   name: GetLink
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_GetLink_
@@ -350,14 +365,14 @@ references:
   fullName: Platform.Data.ILinksExtensions.GetLink
   nameWithType: ILinksExtensions.GetLink
 - uid: Platform.Data.ILinksExtensions.GetLink``2(Platform.Data.ILinks{``0,``1},``0)
-  name: GetLink<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
+  name: GetLink<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_GetLink__2_Platform_Data_ILinks___0___1____0_
   commentId: M:Platform.Data.ILinksExtensions.GetLink``2(Platform.Data.ILinks{``0,``1},``0)
-  name.vb: GetLink(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
-  fullName: Platform.Data.ILinksExtensions.GetLink<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink)
-  fullName.vb: Platform.Data.ILinksExtensions.GetLink(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink)
-  nameWithType: ILinksExtensions.GetLink<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
-  nameWithType.vb: ILinksExtensions.GetLink(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
+  name.vb: GetLink(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  fullName: Platform.Data.ILinksExtensions.GetLink<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  fullName.vb: Platform.Data.ILinksExtensions.GetLink(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  nameWithType: ILinksExtensions.GetLink<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  nameWithType.vb: ILinksExtensions.GetLink(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
 - uid: Platform.Data.ILinksExtensions.IsFullPoint*
   name: IsFullPoint
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_IsFullPoint_
@@ -366,14 +381,14 @@ references:
   fullName: Platform.Data.ILinksExtensions.IsFullPoint
   nameWithType: ILinksExtensions.IsFullPoint
 - uid: Platform.Data.ILinksExtensions.IsFullPoint``2(Platform.Data.ILinks{``0,``1},``0)
-  name: IsFullPoint<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
+  name: IsFullPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_IsFullPoint__2_Platform_Data_ILinks___0___1____0_
   commentId: M:Platform.Data.ILinksExtensions.IsFullPoint``2(Platform.Data.ILinks{``0,``1},``0)
-  name.vb: IsFullPoint(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
-  fullName: Platform.Data.ILinksExtensions.IsFullPoint<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink)
-  fullName.vb: Platform.Data.ILinksExtensions.IsFullPoint(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink)
-  nameWithType: ILinksExtensions.IsFullPoint<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
-  nameWithType.vb: ILinksExtensions.IsFullPoint(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
+  name.vb: IsFullPoint(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  fullName: Platform.Data.ILinksExtensions.IsFullPoint<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  fullName.vb: Platform.Data.ILinksExtensions.IsFullPoint(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  nameWithType: ILinksExtensions.IsFullPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  nameWithType.vb: ILinksExtensions.IsFullPoint(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
 - uid: Platform.Data.ILinksExtensions.IsPartialPoint*
   name: IsPartialPoint
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_IsPartialPoint_
@@ -382,280 +397,627 @@ references:
   fullName: Platform.Data.ILinksExtensions.IsPartialPoint
   nameWithType: ILinksExtensions.IsPartialPoint
 - uid: Platform.Data.ILinksExtensions.IsPartialPoint``2(Platform.Data.ILinks{``0,``1},``0)
-  name: IsPartialPoint<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
+  name: IsPartialPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_IsPartialPoint__2_Platform_Data_ILinks___0___1____0_
   commentId: M:Platform.Data.ILinksExtensions.IsPartialPoint``2(Platform.Data.ILinks{``0,``1},``0)
-  name.vb: IsPartialPoint(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
-  fullName: Platform.Data.ILinksExtensions.IsPartialPoint<TLink, TConstants>(Platform.Data.ILinks<TLink, TConstants>, TLink)
-  fullName.vb: Platform.Data.ILinksExtensions.IsPartialPoint(Of TLink, TConstants)(Platform.Data.ILinks(Of TLink, TConstants), TLink)
-  nameWithType: ILinksExtensions.IsPartialPoint<TLink, TConstants>(ILinks<TLink, TConstants>, TLink)
-  nameWithType.vb: ILinksExtensions.IsPartialPoint(Of TLink, TConstants)(ILinks(Of TLink, TConstants), TLink)
+  name.vb: IsPartialPoint(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  fullName: Platform.Data.ILinksExtensions.IsPartialPoint<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  fullName.vb: Platform.Data.ILinksExtensions.IsPartialPoint(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+  nameWithType: ILinksExtensions.IsPartialPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
+  nameWithType.vb: ILinksExtensions.IsPartialPoint(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
 - uid: Platform.Data.ISynchronizedLinks`3
-  name: ISynchronizedLinks<TLink, TLinks, TConstants>
+  name: ISynchronizedLinks<TLinkAddress, TLinks, TConstants>
   href: api/Platform.Data.ISynchronizedLinks-3.html
   commentId: T:Platform.Data.ISynchronizedLinks`3
-  name.vb: ISynchronizedLinks(Of TLink, TLinks, TConstants)
-  fullName: Platform.Data.ISynchronizedLinks<TLink, TLinks, TConstants>
-  fullName.vb: Platform.Data.ISynchronizedLinks(Of TLink, TLinks, TConstants)
-  nameWithType: ISynchronizedLinks<TLink, TLinks, TConstants>
-  nameWithType.vb: ISynchronizedLinks(Of TLink, TLinks, TConstants)
+  name.vb: ISynchronizedLinks(Of TLinkAddress, TLinks, TConstants)
+  fullName: Platform.Data.ISynchronizedLinks<TLinkAddress, TLinks, TConstants>
+  fullName.vb: Platform.Data.ISynchronizedLinks(Of TLinkAddress, TLinks, TConstants)
+  nameWithType: ISynchronizedLinks<TLinkAddress, TLinks, TConstants>
+  nameWithType.vb: ISynchronizedLinks(Of TLinkAddress, TLinks, TConstants)
+- uid: Platform.Data.LinkAddress`1
+  name: LinkAddress<TLinkAddress>
+  href: api/Platform.Data.LinkAddress-1.html
+  commentId: T:Platform.Data.LinkAddress`1
+  name.vb: LinkAddress(Of TLinkAddress)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>
+  nameWithType.vb: LinkAddress(Of TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.#ctor(`0)
+  name: LinkAddress(TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1__ctor__0_
+  commentId: M:Platform.Data.LinkAddress`1.#ctor(`0)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.LinkAddress(TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).LinkAddress(TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.LinkAddress(TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).LinkAddress(TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.#ctor*
+  name: LinkAddress
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1__ctor_
+  commentId: Overload:Platform.Data.LinkAddress`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.LinkAddress
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).LinkAddress
+  nameWithType: LinkAddress<TLinkAddress>.LinkAddress
+  nameWithType.vb: LinkAddress(Of TLinkAddress).LinkAddress
+- uid: Platform.Data.LinkAddress`1.Add(`0)
+  name: Add(TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Add__0_
+  commentId: M:Platform.Data.LinkAddress`1.Add(`0)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Add(TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Add(TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.Add(TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Add(TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.Add*
+  name: Add
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Add_
+  commentId: Overload:Platform.Data.LinkAddress`1.Add
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Add
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Add
+  nameWithType: LinkAddress<TLinkAddress>.Add
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Add
+- uid: Platform.Data.LinkAddress`1.Clear
+  name: Clear()
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Clear
+  commentId: M:Platform.Data.LinkAddress`1.Clear
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Clear()
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Clear()
+  nameWithType: LinkAddress<TLinkAddress>.Clear()
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Clear()
+- uid: Platform.Data.LinkAddress`1.Clear*
+  name: Clear
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Clear_
+  commentId: Overload:Platform.Data.LinkAddress`1.Clear
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Clear
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Clear
+  nameWithType: LinkAddress<TLinkAddress>.Clear
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Clear
+- uid: Platform.Data.LinkAddress`1.Contains(`0)
+  name: Contains(TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Contains__0_
+  commentId: M:Platform.Data.LinkAddress`1.Contains(`0)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Contains(TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Contains(TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.Contains(TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Contains(TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.Contains*
+  name: Contains
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Contains_
+  commentId: Overload:Platform.Data.LinkAddress`1.Contains
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Contains
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Contains
+  nameWithType: LinkAddress<TLinkAddress>.Contains
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Contains
+- uid: Platform.Data.LinkAddress`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(TLinkAddress[], Int32)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_CopyTo__0___System_Int32_
+  commentId: M:Platform.Data.LinkAddress`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(TLinkAddress(), Int32)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.CopyTo(TLinkAddress[], System.Int32)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).CopyTo(TLinkAddress(), System.Int32)
+  nameWithType: LinkAddress<TLinkAddress>.CopyTo(TLinkAddress[], Int32)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).CopyTo(TLinkAddress(), Int32)
+- uid: Platform.Data.LinkAddress`1.CopyTo*
+  name: CopyTo
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_CopyTo_
+  commentId: Overload:Platform.Data.LinkAddress`1.CopyTo
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.CopyTo
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).CopyTo
+  nameWithType: LinkAddress<TLinkAddress>.CopyTo
+  nameWithType.vb: LinkAddress(Of TLinkAddress).CopyTo
+- uid: Platform.Data.LinkAddress`1.Count
+  name: Count
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Count
+  commentId: P:Platform.Data.LinkAddress`1.Count
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Count
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Count
+  nameWithType: LinkAddress<TLinkAddress>.Count
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Count
+- uid: Platform.Data.LinkAddress`1.Count*
+  name: Count
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Count_
+  commentId: Overload:Platform.Data.LinkAddress`1.Count
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Count
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Count
+  nameWithType: LinkAddress<TLinkAddress>.Count
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Count
+- uid: Platform.Data.LinkAddress`1.Equals(Platform.Data.LinkAddress{`0})
+  name: Equals(LinkAddress<TLinkAddress>)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Equals_Platform_Data_LinkAddress__0__
+  commentId: M:Platform.Data.LinkAddress`1.Equals(Platform.Data.LinkAddress{`0})
+  name.vb: Equals(LinkAddress(Of TLinkAddress))
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Equals(Platform.Data.LinkAddress<TLinkAddress>)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Equals(Platform.Data.LinkAddress(Of TLinkAddress))
+  nameWithType: LinkAddress<TLinkAddress>.Equals(LinkAddress<TLinkAddress>)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Equals(LinkAddress(Of TLinkAddress))
+- uid: Platform.Data.LinkAddress`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Equals_System_Object_
+  commentId: M:Platform.Data.LinkAddress`1.Equals(System.Object)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Equals(System.Object)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Equals(System.Object)
+  nameWithType: LinkAddress<TLinkAddress>.Equals(Object)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Equals(Object)
+- uid: Platform.Data.LinkAddress`1.Equals*
+  name: Equals
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Equals_
+  commentId: Overload:Platform.Data.LinkAddress`1.Equals
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Equals
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Equals
+  nameWithType: LinkAddress<TLinkAddress>.Equals
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Equals
+- uid: Platform.Data.LinkAddress`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_GetEnumerator
+  commentId: M:Platform.Data.LinkAddress`1.GetEnumerator
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.GetEnumerator()
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).GetEnumerator()
+  nameWithType: LinkAddress<TLinkAddress>.GetEnumerator()
+  nameWithType.vb: LinkAddress(Of TLinkAddress).GetEnumerator()
+- uid: Platform.Data.LinkAddress`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_GetEnumerator_
+  commentId: Overload:Platform.Data.LinkAddress`1.GetEnumerator
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.GetEnumerator
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).GetEnumerator
+  nameWithType: LinkAddress<TLinkAddress>.GetEnumerator
+  nameWithType.vb: LinkAddress(Of TLinkAddress).GetEnumerator
+- uid: Platform.Data.LinkAddress`1.GetHashCode
+  name: GetHashCode()
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_GetHashCode
+  commentId: M:Platform.Data.LinkAddress`1.GetHashCode
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.GetHashCode()
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).GetHashCode()
+  nameWithType: LinkAddress<TLinkAddress>.GetHashCode()
+  nameWithType.vb: LinkAddress(Of TLinkAddress).GetHashCode()
+- uid: Platform.Data.LinkAddress`1.GetHashCode*
+  name: GetHashCode
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_GetHashCode_
+  commentId: Overload:Platform.Data.LinkAddress`1.GetHashCode
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.GetHashCode
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).GetHashCode
+  nameWithType: LinkAddress<TLinkAddress>.GetHashCode
+  nameWithType.vb: LinkAddress(Of TLinkAddress).GetHashCode
+- uid: Platform.Data.LinkAddress`1.Index
+  name: Index
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Index
+  commentId: F:Platform.Data.LinkAddress`1.Index
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Index
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Index
+  nameWithType: LinkAddress<TLinkAddress>.Index
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Index
+- uid: Platform.Data.LinkAddress`1.IndexOf(`0)
+  name: IndexOf(TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_IndexOf__0_
+  commentId: M:Platform.Data.LinkAddress`1.IndexOf(`0)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.IndexOf(TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).IndexOf(TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.IndexOf(TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).IndexOf(TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.IndexOf*
+  name: IndexOf
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_IndexOf_
+  commentId: Overload:Platform.Data.LinkAddress`1.IndexOf
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.IndexOf
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).IndexOf
+  nameWithType: LinkAddress<TLinkAddress>.IndexOf
+  nameWithType.vb: LinkAddress(Of TLinkAddress).IndexOf
+- uid: Platform.Data.LinkAddress`1.Insert(System.Int32,`0)
+  name: Insert(Int32, TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Insert_System_Int32__0_
+  commentId: M:Platform.Data.LinkAddress`1.Insert(System.Int32,`0)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Insert(System.Int32, TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Insert(System.Int32, TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.Insert(Int32, TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Insert(Int32, TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.Insert*
+  name: Insert
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Insert_
+  commentId: Overload:Platform.Data.LinkAddress`1.Insert
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Insert
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Insert
+  nameWithType: LinkAddress<TLinkAddress>.Insert
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Insert
+- uid: Platform.Data.LinkAddress`1.IsReadOnly
+  name: IsReadOnly
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_IsReadOnly
+  commentId: P:Platform.Data.LinkAddress`1.IsReadOnly
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.IsReadOnly
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).IsReadOnly
+  nameWithType: LinkAddress<TLinkAddress>.IsReadOnly
+  nameWithType.vb: LinkAddress(Of TLinkAddress).IsReadOnly
+- uid: Platform.Data.LinkAddress`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_IsReadOnly_
+  commentId: Overload:Platform.Data.LinkAddress`1.IsReadOnly
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.IsReadOnly
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).IsReadOnly
+  nameWithType: LinkAddress<TLinkAddress>.IsReadOnly
+  nameWithType.vb: LinkAddress(Of TLinkAddress).IsReadOnly
+- uid: Platform.Data.LinkAddress`1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Item_System_Int32_
+  commentId: P:Platform.Data.LinkAddress`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Item[System.Int32]
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Item(System.Int32)
+  nameWithType: LinkAddress<TLinkAddress>.Item[Int32]
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Item(Int32)
+- uid: Platform.Data.LinkAddress`1.Item*
+  name: Item
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Item_
+  commentId: Overload:Platform.Data.LinkAddress`1.Item
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Item
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Item
+  nameWithType: LinkAddress<TLinkAddress>.Item
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Item
+- uid: Platform.Data.LinkAddress`1.op_Implicit(`0)~Platform.Data.LinkAddress{`0}
+  name: Implicit(TLinkAddress to LinkAddress<TLinkAddress>)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Implicit__0__Platform_Data_LinkAddress__0_
+  commentId: M:Platform.Data.LinkAddress`1.op_Implicit(`0)~Platform.Data.LinkAddress{`0}
+  name.vb: Widening(TLinkAddress to LinkAddress(Of TLinkAddress))
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Implicit(TLinkAddress to Platform.Data.LinkAddress<TLinkAddress>)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Widening(TLinkAddress to Platform.Data.LinkAddress(Of TLinkAddress))
+  nameWithType: LinkAddress<TLinkAddress>.Implicit(TLinkAddress to LinkAddress<TLinkAddress>)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Widening(TLinkAddress to LinkAddress(Of TLinkAddress))
+- uid: Platform.Data.LinkAddress`1.op_Implicit(Platform.Data.LinkAddress{`0})~`0
+  name: Implicit(LinkAddress<TLinkAddress> to TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Implicit_Platform_Data_LinkAddress__0____0
+  commentId: M:Platform.Data.LinkAddress`1.op_Implicit(Platform.Data.LinkAddress{`0})~`0
+  name.vb: Widening(LinkAddress(Of TLinkAddress) to TLinkAddress)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Implicit(Platform.Data.LinkAddress<TLinkAddress> to TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Widening(Platform.Data.LinkAddress(Of TLinkAddress) to TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.Implicit(LinkAddress<TLinkAddress> to TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Widening(LinkAddress(Of TLinkAddress) to TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.op_Implicit*
+  name: Implicit
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Implicit_
+  commentId: Overload:Platform.Data.LinkAddress`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Implicit
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Widening
+  nameWithType: LinkAddress<TLinkAddress>.Implicit
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Widening
+- uid: Platform.Data.LinkAddress`1.Remove(`0)
+  name: Remove(TLinkAddress)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Remove__0_
+  commentId: M:Platform.Data.LinkAddress`1.Remove(`0)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Remove(TLinkAddress)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Remove(TLinkAddress)
+  nameWithType: LinkAddress<TLinkAddress>.Remove(TLinkAddress)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Remove(TLinkAddress)
+- uid: Platform.Data.LinkAddress`1.Remove*
+  name: Remove
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Remove_
+  commentId: Overload:Platform.Data.LinkAddress`1.Remove
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Remove
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Remove
+  nameWithType: LinkAddress<TLinkAddress>.Remove
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Remove
+- uid: Platform.Data.LinkAddress`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_RemoveAt_System_Int32_
+  commentId: M:Platform.Data.LinkAddress`1.RemoveAt(System.Int32)
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.RemoveAt(System.Int32)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).RemoveAt(System.Int32)
+  nameWithType: LinkAddress<TLinkAddress>.RemoveAt(Int32)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).RemoveAt(Int32)
+- uid: Platform.Data.LinkAddress`1.RemoveAt*
+  name: RemoveAt
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_RemoveAt_
+  commentId: Overload:Platform.Data.LinkAddress`1.RemoveAt
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.RemoveAt
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).RemoveAt
+  nameWithType: LinkAddress<TLinkAddress>.RemoveAt
+  nameWithType.vb: LinkAddress(Of TLinkAddress).RemoveAt
+- uid: Platform.Data.LinkAddress`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Platform.Data.LinkAddress`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: LinkAddress<TLinkAddress>.IEnumerable.GetEnumerator()
+  nameWithType.vb: LinkAddress(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator()
+- uid: Platform.Data.LinkAddress`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Platform.Data.LinkAddress`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: LinkAddress<TLinkAddress>.IEnumerable.GetEnumerator
+  nameWithType.vb: LinkAddress(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator
+- uid: Platform.Data.LinkAddress`1.ToString
+  name: ToString()
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_ToString
+  commentId: M:Platform.Data.LinkAddress`1.ToString
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.ToString()
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).ToString()
+  nameWithType: LinkAddress<TLinkAddress>.ToString()
+  nameWithType.vb: LinkAddress(Of TLinkAddress).ToString()
+- uid: Platform.Data.LinkAddress`1.ToString*
+  name: ToString
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_ToString_
+  commentId: Overload:Platform.Data.LinkAddress`1.ToString
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.ToString
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).ToString
+  nameWithType: LinkAddress<TLinkAddress>.ToString
+  nameWithType.vb: LinkAddress(Of TLinkAddress).ToString
 - uid: Platform.Data.LinksConstants`1
-  name: LinksConstants<TAddress>
+  name: LinksConstants<TLinkAddress>
   href: api/Platform.Data.LinksConstants-1.html
   commentId: T:Platform.Data.LinksConstants`1
-  name.vb: LinksConstants(Of TAddress)
-  fullName: Platform.Data.LinksConstants<TAddress>
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress)
-  nameWithType: LinksConstants<TAddress>
-  nameWithType.vb: LinksConstants(Of TAddress)
+  name.vb: LinksConstants(Of TLinkAddress)
+  fullName: Platform.Data.LinksConstants<TLinkAddress>
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress)
+  nameWithType: LinksConstants<TLinkAddress>
+  nameWithType.vb: LinksConstants(Of TLinkAddress)
 - uid: Platform.Data.LinksConstants`1.#ctor
   name: LinksConstants()
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor
   commentId: M:Platform.Data.LinksConstants`1.#ctor
-  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants()
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants()
-  nameWithType: LinksConstants<TAddress>.LinksConstants()
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants()
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants()
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants()
+  nameWithType: LinksConstants<TLinkAddress>.LinksConstants()
+  nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants()
 - uid: Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
-  name: LinksConstants(Range<TAddress>)
+  name: LinksConstants(Range<TLinkAddress>)
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Platform_Ranges_Range__0__
   commentId: M:Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
-  name.vb: LinksConstants(Range(Of TAddress))
-  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(Platform.Ranges.Range<TAddress>)
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(Platform.Ranges.Range(Of TAddress))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Range<TAddress>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Range(Of TAddress))
+  name.vb: LinksConstants(Range(Of TLinkAddress))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(Platform.Ranges.Range<TLinkAddress>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(Platform.Ranges.Range(Of TLinkAddress))
+  nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Range<TLinkAddress>)
+  nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Range(Of TLinkAddress))
 - uid: Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name: LinksConstants(Range<TAddress>, Nullable<Range<TAddress>>)
+  name: LinksConstants(Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
   commentId: M:Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name.vb: LinksConstants(Range(Of TAddress), Nullable(Of Range(Of TAddress)))
-  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(Platform.Ranges.Range<TAddress>, System.Nullable<Platform.Ranges.Range<TAddress>>)
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(Platform.Ranges.Range(Of TAddress), System.Nullable(Of Platform.Ranges.Range(Of TAddress)))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Range<TAddress>, Nullable<Range<TAddress>>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Range(Of TAddress), Nullable(Of Range(Of TAddress)))
+  name.vb: LinksConstants(Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(Platform.Ranges.Range<TLinkAddress>, System.Nullable<Platform.Ranges.Range<TLinkAddress>>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(Platform.Ranges.Range(Of TLinkAddress), System.Nullable(Of Platform.Ranges.Range(Of TLinkAddress)))
+  nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
+  nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
 - uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
-  name: LinksConstants(Int32, Range<TAddress>)
+  name: LinksConstants(Int32, Range<TLinkAddress>)
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__
   commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
-  name.vb: LinksConstants(Int32, Range(Of TAddress))
-  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TAddress>)
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TAddress))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Int32, Range<TAddress>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Int32, Range(Of TAddress))
+  name.vb: LinksConstants(Int32, Range(Of TLinkAddress))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TLinkAddress>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TLinkAddress))
+  nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Int32, Range<TLinkAddress>)
+  nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Int32, Range(Of TLinkAddress))
 - uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name: LinksConstants(Int32, Range<TAddress>, Nullable<Range<TAddress>>)
+  name: LinksConstants(Int32, Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
   commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
-  name.vb: LinksConstants(Int32, Range(Of TAddress), Nullable(Of Range(Of TAddress)))
-  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TAddress>, System.Nullable<Platform.Ranges.Range<TAddress>>)
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TAddress), System.Nullable(Of Platform.Ranges.Range(Of TAddress)))
-  nameWithType: LinksConstants<TAddress>.LinksConstants(Int32, Range<TAddress>, Nullable<Range<TAddress>>)
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants(Int32, Range(Of TAddress), Nullable(Of Range(Of TAddress)))
+  name.vb: LinksConstants(Int32, Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TLinkAddress>, System.Nullable<Platform.Ranges.Range<TLinkAddress>>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TLinkAddress), System.Nullable(Of Platform.Ranges.Range(Of TLinkAddress)))
+  nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Int32, Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
+  nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Int32, Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
 - uid: Platform.Data.LinksConstants`1.#ctor*
   name: LinksConstants
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_
   commentId: Overload:Platform.Data.LinksConstants`1.#ctor
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.LinksConstants
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).LinksConstants
-  nameWithType: LinksConstants<TAddress>.LinksConstants
-  nameWithType.vb: LinksConstants(Of TAddress).LinksConstants
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants
+  nameWithType: LinksConstants<TLinkAddress>.LinksConstants
+  nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants
 - uid: Platform.Data.LinksConstants`1.Any
   name: Any
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Any
   commentId: P:Platform.Data.LinksConstants`1.Any
-  fullName: Platform.Data.LinksConstants<TAddress>.Any
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Any
-  nameWithType: LinksConstants<TAddress>.Any
-  nameWithType.vb: LinksConstants(Of TAddress).Any
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Any
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Any
+  nameWithType: LinksConstants<TLinkAddress>.Any
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Any
 - uid: Platform.Data.LinksConstants`1.Any*
   name: Any
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Any_
   commentId: Overload:Platform.Data.LinksConstants`1.Any
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.Any
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Any
-  nameWithType: LinksConstants<TAddress>.Any
-  nameWithType.vb: LinksConstants(Of TAddress).Any
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Any
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Any
+  nameWithType: LinksConstants<TLinkAddress>.Any
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Any
 - uid: Platform.Data.LinksConstants`1.Break
   name: Break
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Break
   commentId: P:Platform.Data.LinksConstants`1.Break
-  fullName: Platform.Data.LinksConstants<TAddress>.Break
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Break
-  nameWithType: LinksConstants<TAddress>.Break
-  nameWithType.vb: LinksConstants(Of TAddress).Break
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Break
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Break
+  nameWithType: LinksConstants<TLinkAddress>.Break
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Break
 - uid: Platform.Data.LinksConstants`1.Break*
   name: Break
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Break_
   commentId: Overload:Platform.Data.LinksConstants`1.Break
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.Break
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Break
-  nameWithType: LinksConstants<TAddress>.Break
-  nameWithType.vb: LinksConstants(Of TAddress).Break
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Break
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Break
+  nameWithType: LinksConstants<TLinkAddress>.Break
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Break
 - uid: Platform.Data.LinksConstants`1.Continue
   name: Continue
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Continue
   commentId: P:Platform.Data.LinksConstants`1.Continue
-  fullName: Platform.Data.LinksConstants<TAddress>.Continue
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Continue
-  nameWithType: LinksConstants<TAddress>.Continue
-  nameWithType.vb: LinksConstants(Of TAddress).Continue
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Continue
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Continue
+  nameWithType: LinksConstants<TLinkAddress>.Continue
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Continue
 - uid: Platform.Data.LinksConstants`1.Continue*
   name: Continue
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Continue_
   commentId: Overload:Platform.Data.LinksConstants`1.Continue
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.Continue
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Continue
-  nameWithType: LinksConstants<TAddress>.Continue
-  nameWithType.vb: LinksConstants(Of TAddress).Continue
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Continue
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Continue
+  nameWithType: LinksConstants<TLinkAddress>.Continue
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Continue
 - uid: Platform.Data.LinksConstants`1.DefaultTargetPart
   name: DefaultTargetPart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_DefaultTargetPart
   commentId: F:Platform.Data.LinksConstants`1.DefaultTargetPart
-  fullName: Platform.Data.LinksConstants<TAddress>.DefaultTargetPart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).DefaultTargetPart
-  nameWithType: LinksConstants<TAddress>.DefaultTargetPart
-  nameWithType.vb: LinksConstants(Of TAddress).DefaultTargetPart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.DefaultTargetPart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).DefaultTargetPart
+  nameWithType: LinksConstants<TLinkAddress>.DefaultTargetPart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).DefaultTargetPart
 - uid: Platform.Data.LinksConstants`1.IndexPart
   name: IndexPart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_IndexPart
   commentId: P:Platform.Data.LinksConstants`1.IndexPart
-  fullName: Platform.Data.LinksConstants<TAddress>.IndexPart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).IndexPart
-  nameWithType: LinksConstants<TAddress>.IndexPart
-  nameWithType.vb: LinksConstants(Of TAddress).IndexPart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.IndexPart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).IndexPart
+  nameWithType: LinksConstants<TLinkAddress>.IndexPart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).IndexPart
 - uid: Platform.Data.LinksConstants`1.IndexPart*
   name: IndexPart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_IndexPart_
   commentId: Overload:Platform.Data.LinksConstants`1.IndexPart
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.IndexPart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).IndexPart
-  nameWithType: LinksConstants<TAddress>.IndexPart
-  nameWithType.vb: LinksConstants(Of TAddress).IndexPart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.IndexPart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).IndexPart
+  nameWithType: LinksConstants<TLinkAddress>.IndexPart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).IndexPart
 - uid: Platform.Data.LinksConstants`1.Itself
   name: Itself
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Itself
   commentId: P:Platform.Data.LinksConstants`1.Itself
-  fullName: Platform.Data.LinksConstants<TAddress>.Itself
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Itself
-  nameWithType: LinksConstants<TAddress>.Itself
-  nameWithType.vb: LinksConstants(Of TAddress).Itself
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Itself
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Itself
+  nameWithType: LinksConstants<TLinkAddress>.Itself
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Itself
 - uid: Platform.Data.LinksConstants`1.Itself*
   name: Itself
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Itself_
   commentId: Overload:Platform.Data.LinksConstants`1.Itself
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.Itself
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Itself
-  nameWithType: LinksConstants<TAddress>.Itself
-  nameWithType.vb: LinksConstants(Of TAddress).Itself
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Itself
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Itself
+  nameWithType: LinksConstants<TLinkAddress>.Itself
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Itself
 - uid: Platform.Data.LinksConstants`1.Null
   name: "Null"
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Null
   commentId: P:Platform.Data.LinksConstants`1.Null
-  fullName: Platform.Data.LinksConstants<TAddress>.Null
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Null
-  nameWithType: LinksConstants<TAddress>.Null
-  nameWithType.vb: LinksConstants(Of TAddress).Null
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Null
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Null
+  nameWithType: LinksConstants<TLinkAddress>.Null
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Null
 - uid: Platform.Data.LinksConstants`1.Null*
   name: "Null"
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Null_
   commentId: Overload:Platform.Data.LinksConstants`1.Null
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.Null
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Null
-  nameWithType: LinksConstants<TAddress>.Null
-  nameWithType.vb: LinksConstants(Of TAddress).Null
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Null
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Null
+  nameWithType: LinksConstants<TLinkAddress>.Null
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Null
 - uid: Platform.Data.LinksConstants`1.PossibleExternalReferencesRange
   name: PossibleExternalReferencesRange
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleExternalReferencesRange
   commentId: P:Platform.Data.LinksConstants`1.PossibleExternalReferencesRange
-  fullName: Platform.Data.LinksConstants<TAddress>.PossibleExternalReferencesRange
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleExternalReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleExternalReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleExternalReferencesRange
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.PossibleExternalReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).PossibleExternalReferencesRange
+  nameWithType: LinksConstants<TLinkAddress>.PossibleExternalReferencesRange
+  nameWithType.vb: LinksConstants(Of TLinkAddress).PossibleExternalReferencesRange
 - uid: Platform.Data.LinksConstants`1.PossibleExternalReferencesRange*
   name: PossibleExternalReferencesRange
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleExternalReferencesRange_
   commentId: Overload:Platform.Data.LinksConstants`1.PossibleExternalReferencesRange
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.PossibleExternalReferencesRange
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleExternalReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleExternalReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleExternalReferencesRange
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.PossibleExternalReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).PossibleExternalReferencesRange
+  nameWithType: LinksConstants<TLinkAddress>.PossibleExternalReferencesRange
+  nameWithType.vb: LinksConstants(Of TLinkAddress).PossibleExternalReferencesRange
 - uid: Platform.Data.LinksConstants`1.PossibleInnerReferencesRange
   name: PossibleInnerReferencesRange
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleInnerReferencesRange
   commentId: P:Platform.Data.LinksConstants`1.PossibleInnerReferencesRange
-  fullName: Platform.Data.LinksConstants<TAddress>.PossibleInnerReferencesRange
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleInnerReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleInnerReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleInnerReferencesRange
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.PossibleInnerReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).PossibleInnerReferencesRange
+  nameWithType: LinksConstants<TLinkAddress>.PossibleInnerReferencesRange
+  nameWithType.vb: LinksConstants(Of TLinkAddress).PossibleInnerReferencesRange
 - uid: Platform.Data.LinksConstants`1.PossibleInnerReferencesRange*
   name: PossibleInnerReferencesRange
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_PossibleInnerReferencesRange_
   commentId: Overload:Platform.Data.LinksConstants`1.PossibleInnerReferencesRange
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.PossibleInnerReferencesRange
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).PossibleInnerReferencesRange
-  nameWithType: LinksConstants<TAddress>.PossibleInnerReferencesRange
-  nameWithType.vb: LinksConstants(Of TAddress).PossibleInnerReferencesRange
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.PossibleInnerReferencesRange
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).PossibleInnerReferencesRange
+  nameWithType: LinksConstants<TLinkAddress>.PossibleInnerReferencesRange
+  nameWithType.vb: LinksConstants(Of TLinkAddress).PossibleInnerReferencesRange
 - uid: Platform.Data.LinksConstants`1.Skip
   name: Skip
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Skip
   commentId: P:Platform.Data.LinksConstants`1.Skip
-  fullName: Platform.Data.LinksConstants<TAddress>.Skip
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Skip
-  nameWithType: LinksConstants<TAddress>.Skip
-  nameWithType.vb: LinksConstants(Of TAddress).Skip
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Skip
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Skip
+  nameWithType: LinksConstants<TLinkAddress>.Skip
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Skip
 - uid: Platform.Data.LinksConstants`1.Skip*
   name: Skip
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Skip_
   commentId: Overload:Platform.Data.LinksConstants`1.Skip
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.Skip
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).Skip
-  nameWithType: LinksConstants<TAddress>.Skip
-  nameWithType.vb: LinksConstants(Of TAddress).Skip
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Skip
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Skip
+  nameWithType: LinksConstants<TLinkAddress>.Skip
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Skip
 - uid: Platform.Data.LinksConstants`1.SourcePart
   name: SourcePart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_SourcePart
   commentId: P:Platform.Data.LinksConstants`1.SourcePart
-  fullName: Platform.Data.LinksConstants<TAddress>.SourcePart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).SourcePart
-  nameWithType: LinksConstants<TAddress>.SourcePart
-  nameWithType.vb: LinksConstants(Of TAddress).SourcePart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.SourcePart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).SourcePart
+  nameWithType: LinksConstants<TLinkAddress>.SourcePart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).SourcePart
 - uid: Platform.Data.LinksConstants`1.SourcePart*
   name: SourcePart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_SourcePart_
   commentId: Overload:Platform.Data.LinksConstants`1.SourcePart
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.SourcePart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).SourcePart
-  nameWithType: LinksConstants<TAddress>.SourcePart
-  nameWithType.vb: LinksConstants(Of TAddress).SourcePart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.SourcePart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).SourcePart
+  nameWithType: LinksConstants<TLinkAddress>.SourcePart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).SourcePart
 - uid: Platform.Data.LinksConstants`1.TargetPart
   name: TargetPart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_TargetPart
   commentId: P:Platform.Data.LinksConstants`1.TargetPart
-  fullName: Platform.Data.LinksConstants<TAddress>.TargetPart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).TargetPart
-  nameWithType: LinksConstants<TAddress>.TargetPart
-  nameWithType.vb: LinksConstants(Of TAddress).TargetPart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.TargetPart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).TargetPart
+  nameWithType: LinksConstants<TLinkAddress>.TargetPart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).TargetPart
 - uid: Platform.Data.LinksConstants`1.TargetPart*
   name: TargetPart
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_TargetPart_
   commentId: Overload:Platform.Data.LinksConstants`1.TargetPart
   isSpec: "True"
-  fullName: Platform.Data.LinksConstants<TAddress>.TargetPart
-  fullName.vb: Platform.Data.LinksConstants(Of TAddress).TargetPart
-  nameWithType: LinksConstants<TAddress>.TargetPart
-  nameWithType.vb: LinksConstants(Of TAddress).TargetPart
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.TargetPart
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).TargetPart
+  nameWithType: LinksConstants<TLinkAddress>.TargetPart
+  nameWithType.vb: LinksConstants(Of TLinkAddress).TargetPart
 - uid: Platform.Data.LinksConstantsExtensions
   name: LinksConstantsExtensions
   href: api/Platform.Data.LinksConstantsExtensions.html
@@ -670,14 +1032,14 @@ references:
   fullName: Platform.Data.LinksConstantsExtensions.IsExternalReference
   nameWithType: LinksConstantsExtensions.IsExternalReference
 - uid: Platform.Data.LinksConstantsExtensions.IsExternalReference``1(Platform.Data.LinksConstants{``0},``0)
-  name: IsExternalReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  name: IsExternalReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
   href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsExternalReference__1_Platform_Data_LinksConstants___0____0_
   commentId: M:Platform.Data.LinksConstantsExtensions.IsExternalReference``1(Platform.Data.LinksConstants{``0},``0)
-  name.vb: IsExternalReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
-  fullName: Platform.Data.LinksConstantsExtensions.IsExternalReference<TAddress>(Platform.Data.LinksConstants<TAddress>, TAddress)
-  fullName.vb: Platform.Data.LinksConstantsExtensions.IsExternalReference(Of TAddress)(Platform.Data.LinksConstants(Of TAddress), TAddress)
-  nameWithType: LinksConstantsExtensions.IsExternalReference<TAddress>(LinksConstants<TAddress>, TAddress)
-  nameWithType.vb: LinksConstantsExtensions.IsExternalReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+  name.vb: IsExternalReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
+  fullName: Platform.Data.LinksConstantsExtensions.IsExternalReference<TLinkAddress>(Platform.Data.LinksConstants<TLinkAddress>, TLinkAddress)
+  fullName.vb: Platform.Data.LinksConstantsExtensions.IsExternalReference(Of TLinkAddress)(Platform.Data.LinksConstants(Of TLinkAddress), TLinkAddress)
+  nameWithType: LinksConstantsExtensions.IsExternalReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
+  nameWithType.vb: LinksConstantsExtensions.IsExternalReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
 - uid: Platform.Data.LinksConstantsExtensions.IsInnerReference*
   name: IsInnerReference
   href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsInnerReference_
@@ -686,14 +1048,14 @@ references:
   fullName: Platform.Data.LinksConstantsExtensions.IsInnerReference
   nameWithType: LinksConstantsExtensions.IsInnerReference
 - uid: Platform.Data.LinksConstantsExtensions.IsInnerReference``1(Platform.Data.LinksConstants{``0},``0)
-  name: IsInnerReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  name: IsInnerReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
   href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsInnerReference__1_Platform_Data_LinksConstants___0____0_
   commentId: M:Platform.Data.LinksConstantsExtensions.IsInnerReference``1(Platform.Data.LinksConstants{``0},``0)
-  name.vb: IsInnerReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
-  fullName: Platform.Data.LinksConstantsExtensions.IsInnerReference<TAddress>(Platform.Data.LinksConstants<TAddress>, TAddress)
-  fullName.vb: Platform.Data.LinksConstantsExtensions.IsInnerReference(Of TAddress)(Platform.Data.LinksConstants(Of TAddress), TAddress)
-  nameWithType: LinksConstantsExtensions.IsInnerReference<TAddress>(LinksConstants<TAddress>, TAddress)
-  nameWithType.vb: LinksConstantsExtensions.IsInnerReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+  name.vb: IsInnerReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
+  fullName: Platform.Data.LinksConstantsExtensions.IsInnerReference<TLinkAddress>(Platform.Data.LinksConstants<TLinkAddress>, TLinkAddress)
+  fullName.vb: Platform.Data.LinksConstantsExtensions.IsInnerReference(Of TLinkAddress)(Platform.Data.LinksConstants(Of TLinkAddress), TLinkAddress)
+  nameWithType: LinksConstantsExtensions.IsInnerReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
+  nameWithType.vb: LinksConstantsExtensions.IsInnerReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
 - uid: Platform.Data.LinksConstantsExtensions.IsReference*
   name: IsReference
   href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsReference_
@@ -702,113 +1064,113 @@ references:
   fullName: Platform.Data.LinksConstantsExtensions.IsReference
   nameWithType: LinksConstantsExtensions.IsReference
 - uid: Platform.Data.LinksConstantsExtensions.IsReference``1(Platform.Data.LinksConstants{``0},``0)
-  name: IsReference<TAddress>(LinksConstants<TAddress>, TAddress)
+  name: IsReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
   href: api/Platform.Data.LinksConstantsExtensions.html#Platform_Data_LinksConstantsExtensions_IsReference__1_Platform_Data_LinksConstants___0____0_
   commentId: M:Platform.Data.LinksConstantsExtensions.IsReference``1(Platform.Data.LinksConstants{``0},``0)
-  name.vb: IsReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
-  fullName: Platform.Data.LinksConstantsExtensions.IsReference<TAddress>(Platform.Data.LinksConstants<TAddress>, TAddress)
-  fullName.vb: Platform.Data.LinksConstantsExtensions.IsReference(Of TAddress)(Platform.Data.LinksConstants(Of TAddress), TAddress)
-  nameWithType: LinksConstantsExtensions.IsReference<TAddress>(LinksConstants<TAddress>, TAddress)
-  nameWithType.vb: LinksConstantsExtensions.IsReference(Of TAddress)(LinksConstants(Of TAddress), TAddress)
+  name.vb: IsReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
+  fullName: Platform.Data.LinksConstantsExtensions.IsReference<TLinkAddress>(Platform.Data.LinksConstants<TLinkAddress>, TLinkAddress)
+  fullName.vb: Platform.Data.LinksConstantsExtensions.IsReference(Of TLinkAddress)(Platform.Data.LinksConstants(Of TLinkAddress), TLinkAddress)
+  nameWithType: LinksConstantsExtensions.IsReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
+  nameWithType.vb: LinksConstantsExtensions.IsReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
 - uid: Platform.Data.Point`1
-  name: Point<TLink>
+  name: Point<TLinkAddress>
   href: api/Platform.Data.Point-1.html
   commentId: T:Platform.Data.Point`1
-  name.vb: Point(Of TLink)
-  fullName: Platform.Data.Point<TLink>
-  fullName.vb: Platform.Data.Point(Of TLink)
-  nameWithType: Point<TLink>
-  nameWithType.vb: Point(Of TLink)
+  name.vb: Point(Of TLinkAddress)
+  fullName: Platform.Data.Point<TLinkAddress>
+  fullName.vb: Platform.Data.Point(Of TLinkAddress)
+  nameWithType: Point<TLinkAddress>
+  nameWithType.vb: Point(Of TLinkAddress)
 - uid: Platform.Data.Point`1.IsFullPoint(`0[])
-  name: IsFullPoint(TLink[])
+  name: IsFullPoint(TLinkAddress[])
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsFullPoint__0___
   commentId: M:Platform.Data.Point`1.IsFullPoint(`0[])
-  name.vb: IsFullPoint(TLink())
-  fullName: Platform.Data.Point<TLink>.IsFullPoint(TLink[])
-  fullName.vb: Platform.Data.Point(Of TLink).IsFullPoint(TLink())
-  nameWithType: Point<TLink>.IsFullPoint(TLink[])
-  nameWithType.vb: Point(Of TLink).IsFullPoint(TLink())
+  name.vb: IsFullPoint(TLinkAddress())
+  fullName: Platform.Data.Point<TLinkAddress>.IsFullPoint(TLinkAddress[])
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsFullPoint(TLinkAddress())
+  nameWithType: Point<TLinkAddress>.IsFullPoint(TLinkAddress[])
+  nameWithType.vb: Point(Of TLinkAddress).IsFullPoint(TLinkAddress())
 - uid: Platform.Data.Point`1.IsFullPoint(System.Collections.Generic.IList{`0})
-  name: IsFullPoint(IList<TLink>)
+  name: IsFullPoint(IList<TLinkAddress>)
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsFullPoint_System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.Point`1.IsFullPoint(System.Collections.Generic.IList{`0})
-  name.vb: IsFullPoint(IList(Of TLink))
-  fullName: Platform.Data.Point<TLink>.IsFullPoint(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Point(Of TLink).IsFullPoint(System.Collections.Generic.IList(Of TLink))
-  nameWithType: Point<TLink>.IsFullPoint(IList<TLink>)
-  nameWithType.vb: Point(Of TLink).IsFullPoint(IList(Of TLink))
+  name.vb: IsFullPoint(IList(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.IsFullPoint(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsFullPoint(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.IsFullPoint(IList<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).IsFullPoint(IList(Of TLinkAddress))
 - uid: Platform.Data.Point`1.IsFullPoint*
   name: IsFullPoint
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsFullPoint_
   commentId: Overload:Platform.Data.Point`1.IsFullPoint
   isSpec: "True"
-  fullName: Platform.Data.Point<TLink>.IsFullPoint
-  fullName.vb: Platform.Data.Point(Of TLink).IsFullPoint
-  nameWithType: Point<TLink>.IsFullPoint
-  nameWithType.vb: Point(Of TLink).IsFullPoint
+  fullName: Platform.Data.Point<TLinkAddress>.IsFullPoint
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsFullPoint
+  nameWithType: Point<TLinkAddress>.IsFullPoint
+  nameWithType.vb: Point(Of TLinkAddress).IsFullPoint
 - uid: Platform.Data.Point`1.IsFullPointUnchecked(System.Collections.Generic.IList{`0})
-  name: IsFullPointUnchecked(IList<TLink>)
+  name: IsFullPointUnchecked(IList<TLinkAddress>)
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsFullPointUnchecked_System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.Point`1.IsFullPointUnchecked(System.Collections.Generic.IList{`0})
-  name.vb: IsFullPointUnchecked(IList(Of TLink))
-  fullName: Platform.Data.Point<TLink>.IsFullPointUnchecked(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Point(Of TLink).IsFullPointUnchecked(System.Collections.Generic.IList(Of TLink))
-  nameWithType: Point<TLink>.IsFullPointUnchecked(IList<TLink>)
-  nameWithType.vb: Point(Of TLink).IsFullPointUnchecked(IList(Of TLink))
+  name.vb: IsFullPointUnchecked(IList(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.IsFullPointUnchecked(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsFullPointUnchecked(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.IsFullPointUnchecked(IList<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).IsFullPointUnchecked(IList(Of TLinkAddress))
 - uid: Platform.Data.Point`1.IsFullPointUnchecked*
   name: IsFullPointUnchecked
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsFullPointUnchecked_
   commentId: Overload:Platform.Data.Point`1.IsFullPointUnchecked
   isSpec: "True"
-  fullName: Platform.Data.Point<TLink>.IsFullPointUnchecked
-  fullName.vb: Platform.Data.Point(Of TLink).IsFullPointUnchecked
-  nameWithType: Point<TLink>.IsFullPointUnchecked
-  nameWithType.vb: Point(Of TLink).IsFullPointUnchecked
+  fullName: Platform.Data.Point<TLinkAddress>.IsFullPointUnchecked
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsFullPointUnchecked
+  nameWithType: Point<TLinkAddress>.IsFullPointUnchecked
+  nameWithType.vb: Point(Of TLinkAddress).IsFullPointUnchecked
 - uid: Platform.Data.Point`1.IsPartialPoint(`0[])
-  name: IsPartialPoint(TLink[])
+  name: IsPartialPoint(TLinkAddress[])
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsPartialPoint__0___
   commentId: M:Platform.Data.Point`1.IsPartialPoint(`0[])
-  name.vb: IsPartialPoint(TLink())
-  fullName: Platform.Data.Point<TLink>.IsPartialPoint(TLink[])
-  fullName.vb: Platform.Data.Point(Of TLink).IsPartialPoint(TLink())
-  nameWithType: Point<TLink>.IsPartialPoint(TLink[])
-  nameWithType.vb: Point(Of TLink).IsPartialPoint(TLink())
+  name.vb: IsPartialPoint(TLinkAddress())
+  fullName: Platform.Data.Point<TLinkAddress>.IsPartialPoint(TLinkAddress[])
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsPartialPoint(TLinkAddress())
+  nameWithType: Point<TLinkAddress>.IsPartialPoint(TLinkAddress[])
+  nameWithType.vb: Point(Of TLinkAddress).IsPartialPoint(TLinkAddress())
 - uid: Platform.Data.Point`1.IsPartialPoint(System.Collections.Generic.IList{`0})
-  name: IsPartialPoint(IList<TLink>)
+  name: IsPartialPoint(IList<TLinkAddress>)
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsPartialPoint_System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.Point`1.IsPartialPoint(System.Collections.Generic.IList{`0})
-  name.vb: IsPartialPoint(IList(Of TLink))
-  fullName: Platform.Data.Point<TLink>.IsPartialPoint(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Point(Of TLink).IsPartialPoint(System.Collections.Generic.IList(Of TLink))
-  nameWithType: Point<TLink>.IsPartialPoint(IList<TLink>)
-  nameWithType.vb: Point(Of TLink).IsPartialPoint(IList(Of TLink))
+  name.vb: IsPartialPoint(IList(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.IsPartialPoint(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsPartialPoint(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.IsPartialPoint(IList<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).IsPartialPoint(IList(Of TLinkAddress))
 - uid: Platform.Data.Point`1.IsPartialPoint*
   name: IsPartialPoint
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsPartialPoint_
   commentId: Overload:Platform.Data.Point`1.IsPartialPoint
   isSpec: "True"
-  fullName: Platform.Data.Point<TLink>.IsPartialPoint
-  fullName.vb: Platform.Data.Point(Of TLink).IsPartialPoint
-  nameWithType: Point<TLink>.IsPartialPoint
-  nameWithType.vb: Point(Of TLink).IsPartialPoint
+  fullName: Platform.Data.Point<TLinkAddress>.IsPartialPoint
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsPartialPoint
+  nameWithType: Point<TLinkAddress>.IsPartialPoint
+  nameWithType.vb: Point(Of TLinkAddress).IsPartialPoint
 - uid: Platform.Data.Point`1.IsPartialPointUnchecked(System.Collections.Generic.IList{`0})
-  name: IsPartialPointUnchecked(IList<TLink>)
+  name: IsPartialPointUnchecked(IList<TLinkAddress>)
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsPartialPointUnchecked_System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.Point`1.IsPartialPointUnchecked(System.Collections.Generic.IList{`0})
-  name.vb: IsPartialPointUnchecked(IList(Of TLink))
-  fullName: Platform.Data.Point<TLink>.IsPartialPointUnchecked(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Point(Of TLink).IsPartialPointUnchecked(System.Collections.Generic.IList(Of TLink))
-  nameWithType: Point<TLink>.IsPartialPointUnchecked(IList<TLink>)
-  nameWithType.vb: Point(Of TLink).IsPartialPointUnchecked(IList(Of TLink))
+  name.vb: IsPartialPointUnchecked(IList(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.IsPartialPointUnchecked(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsPartialPointUnchecked(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.IsPartialPointUnchecked(IList<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).IsPartialPointUnchecked(IList(Of TLinkAddress))
 - uid: Platform.Data.Point`1.IsPartialPointUnchecked*
   name: IsPartialPointUnchecked
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsPartialPointUnchecked_
   commentId: Overload:Platform.Data.Point`1.IsPartialPointUnchecked
   isSpec: "True"
-  fullName: Platform.Data.Point<TLink>.IsPartialPointUnchecked
-  fullName.vb: Platform.Data.Point(Of TLink).IsPartialPointUnchecked
-  nameWithType: Point<TLink>.IsPartialPointUnchecked
-  nameWithType.vb: Point(Of TLink).IsPartialPointUnchecked
+  fullName: Platform.Data.Point<TLinkAddress>.IsPartialPointUnchecked
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsPartialPointUnchecked
+  nameWithType: Point<TLinkAddress>.IsPartialPointUnchecked
+  nameWithType.vb: Point(Of TLinkAddress).IsPartialPointUnchecked
 - uid: Platform.Data.Sequences
   name: Platform.Data.Sequences
   href: api/Platform.Data.Sequences.html
@@ -816,174 +1178,57 @@ references:
   fullName: Platform.Data.Sequences
   nameWithType: Platform.Data.Sequences
 - uid: Platform.Data.Sequences.ISequenceAppender`1
-  name: ISequenceAppender<TLink>
+  name: ISequenceAppender<TLinkAddress>
   href: api/Platform.Data.Sequences.ISequenceAppender-1.html
   commentId: T:Platform.Data.Sequences.ISequenceAppender`1
-  name.vb: ISequenceAppender(Of TLink)
-  fullName: Platform.Data.Sequences.ISequenceAppender<TLink>
-  fullName.vb: Platform.Data.Sequences.ISequenceAppender(Of TLink)
-  nameWithType: ISequenceAppender<TLink>
-  nameWithType.vb: ISequenceAppender(Of TLink)
+  name.vb: ISequenceAppender(Of TLinkAddress)
+  fullName: Platform.Data.Sequences.ISequenceAppender<TLinkAddress>
+  fullName.vb: Platform.Data.Sequences.ISequenceAppender(Of TLinkAddress)
+  nameWithType: ISequenceAppender<TLinkAddress>
+  nameWithType.vb: ISequenceAppender(Of TLinkAddress)
 - uid: Platform.Data.Sequences.ISequenceAppender`1.Append(`0,`0)
-  name: Append(TLink, TLink)
+  name: Append(TLinkAddress, TLinkAddress)
   href: api/Platform.Data.Sequences.ISequenceAppender-1.html#Platform_Data_Sequences_ISequenceAppender_1_Append__0__0_
   commentId: M:Platform.Data.Sequences.ISequenceAppender`1.Append(`0,`0)
-  fullName: Platform.Data.Sequences.ISequenceAppender<TLink>.Append(TLink, TLink)
-  fullName.vb: Platform.Data.Sequences.ISequenceAppender(Of TLink).Append(TLink, TLink)
-  nameWithType: ISequenceAppender<TLink>.Append(TLink, TLink)
-  nameWithType.vb: ISequenceAppender(Of TLink).Append(TLink, TLink)
+  fullName: Platform.Data.Sequences.ISequenceAppender<TLinkAddress>.Append(TLinkAddress, TLinkAddress)
+  fullName.vb: Platform.Data.Sequences.ISequenceAppender(Of TLinkAddress).Append(TLinkAddress, TLinkAddress)
+  nameWithType: ISequenceAppender<TLinkAddress>.Append(TLinkAddress, TLinkAddress)
+  nameWithType.vb: ISequenceAppender(Of TLinkAddress).Append(TLinkAddress, TLinkAddress)
 - uid: Platform.Data.Sequences.ISequenceAppender`1.Append*
   name: Append
   href: api/Platform.Data.Sequences.ISequenceAppender-1.html#Platform_Data_Sequences_ISequenceAppender_1_Append_
   commentId: Overload:Platform.Data.Sequences.ISequenceAppender`1.Append
   isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequenceAppender<TLink>.Append
-  fullName.vb: Platform.Data.Sequences.ISequenceAppender(Of TLink).Append
-  nameWithType: ISequenceAppender<TLink>.Append
-  nameWithType.vb: ISequenceAppender(Of TLink).Append
-- uid: Platform.Data.Sequences.ISequences`1
-  name: ISequences<TLink>
-  href: api/Platform.Data.Sequences.ISequences-1.html
-  commentId: T:Platform.Data.Sequences.ISequences`1
-  name.vb: ISequences(Of TLink)
-  fullName: Platform.Data.Sequences.ISequences<TLink>
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink)
-  nameWithType: ISequences<TLink>
-  nameWithType.vb: ISequences(Of TLink)
-- uid: Platform.Data.Sequences.ISequences`1.Count(`0[])
-  name: Count(TLink[])
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Count__0___
-  commentId: M:Platform.Data.Sequences.ISequences`1.Count(`0[])
-  name.vb: Count(TLink())
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Count(TLink[])
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Count(TLink())
-  nameWithType: ISequences<TLink>.Count(TLink[])
-  nameWithType.vb: ISequences(Of TLink).Count(TLink())
-- uid: Platform.Data.Sequences.ISequences`1.Count*
-  name: Count
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Count_
-  commentId: Overload:Platform.Data.Sequences.ISequences`1.Count
-  isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Count
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Count
-  nameWithType: ISequences<TLink>.Count
-  nameWithType.vb: ISequences(Of TLink).Count
-- uid: Platform.Data.Sequences.ISequences`1.Create(`0[])
-  name: Create(TLink[])
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Create__0___
-  commentId: M:Platform.Data.Sequences.ISequences`1.Create(`0[])
-  name.vb: Create(TLink())
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Create(TLink[])
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Create(TLink())
-  nameWithType: ISequences<TLink>.Create(TLink[])
-  nameWithType.vb: ISequences(Of TLink).Create(TLink())
-- uid: Platform.Data.Sequences.ISequences`1.Create*
-  name: Create
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Create_
-  commentId: Overload:Platform.Data.Sequences.ISequences`1.Create
-  isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Create
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Create
-  nameWithType: ISequences<TLink>.Create
-  nameWithType.vb: ISequences(Of TLink).Create
-- uid: Platform.Data.Sequences.ISequences`1.Delete(`0[])
-  name: Delete(TLink[])
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Delete__0___
-  commentId: M:Platform.Data.Sequences.ISequences`1.Delete(`0[])
-  name.vb: Delete(TLink())
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Delete(TLink[])
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Delete(TLink())
-  nameWithType: ISequences<TLink>.Delete(TLink[])
-  nameWithType.vb: ISequences(Of TLink).Delete(TLink())
-- uid: Platform.Data.Sequences.ISequences`1.Delete*
-  name: Delete
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Delete_
-  commentId: Overload:Platform.Data.Sequences.ISequences`1.Delete
-  isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Delete
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Delete
-  nameWithType: ISequences<TLink>.Delete
-  nameWithType.vb: ISequences(Of TLink).Delete
-- uid: Platform.Data.Sequences.ISequences`1.Each(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
-  name: Each(Func<TLink, Boolean>, IList<TLink>)
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Each_System_Func__0_System_Boolean__System_Collections_Generic_IList__0__
-  commentId: M:Platform.Data.Sequences.ISequences`1.Each(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
-  name.vb: Each(Func(Of TLink, Boolean), IList(Of TLink))
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Each(System.Func<TLink, System.Boolean>, System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Each(System.Func(Of TLink, System.Boolean), System.Collections.Generic.IList(Of TLink))
-  nameWithType: ISequences<TLink>.Each(Func<TLink, Boolean>, IList<TLink>)
-  nameWithType.vb: ISequences(Of TLink).Each(Func(Of TLink, Boolean), IList(Of TLink))
-- uid: Platform.Data.Sequences.ISequences`1.Each*
-  name: Each
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Each_
-  commentId: Overload:Platform.Data.Sequences.ISequences`1.Each
-  isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Each
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Each
-  nameWithType: ISequences<TLink>.Each
-  nameWithType.vb: ISequences(Of TLink).Each
-- uid: Platform.Data.Sequences.ISequences`1.EachPart(System.Func{`0,System.Boolean},`0)
-  name: EachPart(Func<TLink, Boolean>, TLink)
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_EachPart_System_Func__0_System_Boolean___0_
-  commentId: M:Platform.Data.Sequences.ISequences`1.EachPart(System.Func{`0,System.Boolean},`0)
-  name.vb: EachPart(Func(Of TLink, Boolean), TLink)
-  fullName: Platform.Data.Sequences.ISequences<TLink>.EachPart(System.Func<TLink, System.Boolean>, TLink)
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).EachPart(System.Func(Of TLink, System.Boolean), TLink)
-  nameWithType: ISequences<TLink>.EachPart(Func<TLink, Boolean>, TLink)
-  nameWithType.vb: ISequences(Of TLink).EachPart(Func(Of TLink, Boolean), TLink)
-- uid: Platform.Data.Sequences.ISequences`1.EachPart*
-  name: EachPart
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_EachPart_
-  commentId: Overload:Platform.Data.Sequences.ISequences`1.EachPart
-  isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequences<TLink>.EachPart
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).EachPart
-  nameWithType: ISequences<TLink>.EachPart
-  nameWithType.vb: ISequences(Of TLink).EachPart
-- uid: Platform.Data.Sequences.ISequences`1.Update(`0[],`0[])
-  name: Update(TLink[], TLink[])
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Update__0____0___
-  commentId: M:Platform.Data.Sequences.ISequences`1.Update(`0[],`0[])
-  name.vb: Update(TLink(), TLink())
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Update(TLink[], TLink[])
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Update(TLink(), TLink())
-  nameWithType: ISequences<TLink>.Update(TLink[], TLink[])
-  nameWithType.vb: ISequences(Of TLink).Update(TLink(), TLink())
-- uid: Platform.Data.Sequences.ISequences`1.Update*
-  name: Update
-  href: api/Platform.Data.Sequences.ISequences-1.html#Platform_Data_Sequences_ISequences_1_Update_
-  commentId: Overload:Platform.Data.Sequences.ISequences`1.Update
-  isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequences<TLink>.Update
-  fullName.vb: Platform.Data.Sequences.ISequences(Of TLink).Update
-  nameWithType: ISequences<TLink>.Update
-  nameWithType.vb: ISequences(Of TLink).Update
+  fullName: Platform.Data.Sequences.ISequenceAppender<TLinkAddress>.Append
+  fullName.vb: Platform.Data.Sequences.ISequenceAppender(Of TLinkAddress).Append
+  nameWithType: ISequenceAppender<TLinkAddress>.Append
+  nameWithType.vb: ISequenceAppender(Of TLinkAddress).Append
 - uid: Platform.Data.Sequences.ISequenceWalker`1
-  name: ISequenceWalker<TLink>
+  name: ISequenceWalker<TLinkAddress>
   href: api/Platform.Data.Sequences.ISequenceWalker-1.html
   commentId: T:Platform.Data.Sequences.ISequenceWalker`1
-  name.vb: ISequenceWalker(Of TLink)
-  fullName: Platform.Data.Sequences.ISequenceWalker<TLink>
-  fullName.vb: Platform.Data.Sequences.ISequenceWalker(Of TLink)
-  nameWithType: ISequenceWalker<TLink>
-  nameWithType.vb: ISequenceWalker(Of TLink)
+  name.vb: ISequenceWalker(Of TLinkAddress)
+  fullName: Platform.Data.Sequences.ISequenceWalker<TLinkAddress>
+  fullName.vb: Platform.Data.Sequences.ISequenceWalker(Of TLinkAddress)
+  nameWithType: ISequenceWalker<TLinkAddress>
+  nameWithType.vb: ISequenceWalker(Of TLinkAddress)
 - uid: Platform.Data.Sequences.ISequenceWalker`1.Walk(`0)
-  name: Walk(TLink)
+  name: Walk(TLinkAddress)
   href: api/Platform.Data.Sequences.ISequenceWalker-1.html#Platform_Data_Sequences_ISequenceWalker_1_Walk__0_
   commentId: M:Platform.Data.Sequences.ISequenceWalker`1.Walk(`0)
-  fullName: Platform.Data.Sequences.ISequenceWalker<TLink>.Walk(TLink)
-  fullName.vb: Platform.Data.Sequences.ISequenceWalker(Of TLink).Walk(TLink)
-  nameWithType: ISequenceWalker<TLink>.Walk(TLink)
-  nameWithType.vb: ISequenceWalker(Of TLink).Walk(TLink)
+  fullName: Platform.Data.Sequences.ISequenceWalker<TLinkAddress>.Walk(TLinkAddress)
+  fullName.vb: Platform.Data.Sequences.ISequenceWalker(Of TLinkAddress).Walk(TLinkAddress)
+  nameWithType: ISequenceWalker<TLinkAddress>.Walk(TLinkAddress)
+  nameWithType.vb: ISequenceWalker(Of TLinkAddress).Walk(TLinkAddress)
 - uid: Platform.Data.Sequences.ISequenceWalker`1.Walk*
   name: Walk
   href: api/Platform.Data.Sequences.ISequenceWalker-1.html#Platform_Data_Sequences_ISequenceWalker_1_Walk_
   commentId: Overload:Platform.Data.Sequences.ISequenceWalker`1.Walk
   isSpec: "True"
-  fullName: Platform.Data.Sequences.ISequenceWalker<TLink>.Walk
-  fullName.vb: Platform.Data.Sequences.ISequenceWalker(Of TLink).Walk
-  nameWithType: ISequenceWalker<TLink>.Walk
-  nameWithType.vb: ISequenceWalker(Of TLink).Walk
+  fullName: Platform.Data.Sequences.ISequenceWalker<TLinkAddress>.Walk
+  fullName.vb: Platform.Data.Sequences.ISequenceWalker(Of TLinkAddress).Walk
+  nameWithType: ISequenceWalker<TLinkAddress>.Walk
+  nameWithType.vb: ISequenceWalker(Of TLinkAddress).Walk
 - uid: Platform.Data.Sequences.SequenceWalker
   name: SequenceWalker
   href: api/Platform.Data.Sequences.SequenceWalker.html
@@ -998,14 +1243,14 @@ references:
   fullName: Platform.Data.Sequences.SequenceWalker.WalkLeft
   nameWithType: SequenceWalker.WalkLeft
 - uid: Platform.Data.Sequences.SequenceWalker.WalkLeft``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Action{``0})
-  name: WalkLeft<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Action<TLink>)
+  name: WalkLeft<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Action<TLinkAddress>)
   href: api/Platform.Data.Sequences.SequenceWalker.html#Platform_Data_Sequences_SequenceWalker_WalkLeft__1___0_System_Func___0___0__System_Func___0___0__System_Func___0_System_Boolean__System_Action___0__
   commentId: M:Platform.Data.Sequences.SequenceWalker.WalkLeft``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Action{``0})
-  name.vb: WalkLeft(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Action(Of TLink))
-  fullName: Platform.Data.Sequences.SequenceWalker.WalkLeft<TLink>(TLink, System.Func<TLink, TLink>, System.Func<TLink, TLink>, System.Func<TLink, System.Boolean>, System.Action<TLink>)
-  fullName.vb: Platform.Data.Sequences.SequenceWalker.WalkLeft(Of TLink)(TLink, System.Func(Of TLink, TLink), System.Func(Of TLink, TLink), System.Func(Of TLink, System.Boolean), System.Action(Of TLink))
-  nameWithType: SequenceWalker.WalkLeft<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Action<TLink>)
-  nameWithType.vb: SequenceWalker.WalkLeft(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Action(Of TLink))
+  name.vb: WalkLeft(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Action(Of TLinkAddress))
+  fullName: Platform.Data.Sequences.SequenceWalker.WalkLeft<TLinkAddress>(TLinkAddress, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, System.Boolean>, System.Action<TLinkAddress>)
+  fullName.vb: Platform.Data.Sequences.SequenceWalker.WalkLeft(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Action(Of TLinkAddress))
+  nameWithType: SequenceWalker.WalkLeft<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Action<TLinkAddress>)
+  nameWithType.vb: SequenceWalker.WalkLeft(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Action(Of TLinkAddress))
 - uid: Platform.Data.Sequences.SequenceWalker.WalkRight*
   name: WalkRight
   href: api/Platform.Data.Sequences.SequenceWalker.html#Platform_Data_Sequences_SequenceWalker_WalkRight_
@@ -1014,14 +1259,14 @@ references:
   fullName: Platform.Data.Sequences.SequenceWalker.WalkRight
   nameWithType: SequenceWalker.WalkRight
 - uid: Platform.Data.Sequences.SequenceWalker.WalkRight``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Action{``0})
-  name: WalkRight<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Action<TLink>)
+  name: WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Action<TLinkAddress>)
   href: api/Platform.Data.Sequences.SequenceWalker.html#Platform_Data_Sequences_SequenceWalker_WalkRight__1___0_System_Func___0___0__System_Func___0___0__System_Func___0_System_Boolean__System_Action___0__
   commentId: M:Platform.Data.Sequences.SequenceWalker.WalkRight``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Action{``0})
-  name.vb: WalkRight(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Action(Of TLink))
-  fullName: Platform.Data.Sequences.SequenceWalker.WalkRight<TLink>(TLink, System.Func<TLink, TLink>, System.Func<TLink, TLink>, System.Func<TLink, System.Boolean>, System.Action<TLink>)
-  fullName.vb: Platform.Data.Sequences.SequenceWalker.WalkRight(Of TLink)(TLink, System.Func(Of TLink, TLink), System.Func(Of TLink, TLink), System.Func(Of TLink, System.Boolean), System.Action(Of TLink))
-  nameWithType: SequenceWalker.WalkRight<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Action<TLink>)
-  nameWithType.vb: SequenceWalker.WalkRight(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Action(Of TLink))
+  name.vb: WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Action(Of TLinkAddress))
+  fullName: Platform.Data.Sequences.SequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, System.Boolean>, System.Action<TLinkAddress>)
+  fullName.vb: Platform.Data.Sequences.SequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Action(Of TLinkAddress))
+  nameWithType: SequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Action<TLinkAddress>)
+  nameWithType.vb: SequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Action(Of TLinkAddress))
 - uid: Platform.Data.Sequences.StopableSequenceWalker
   name: StopableSequenceWalker
   href: api/Platform.Data.Sequences.StopableSequenceWalker.html
@@ -1036,14 +1281,14 @@ references:
   fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkLeft
   nameWithType: StopableSequenceWalker.WalkLeft
 - uid: Platform.Data.Sequences.StopableSequenceWalker.WalkLeft``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean})
-  name: WalkLeft<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Func<TLink, Boolean>)
+  name: WalkLeft<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
   href: api/Platform.Data.Sequences.StopableSequenceWalker.html#Platform_Data_Sequences_StopableSequenceWalker_WalkLeft__1___0_System_Func___0___0__System_Func___0___0__System_Func___0_System_Boolean__System_Func___0_System_Boolean__
   commentId: M:Platform.Data.Sequences.StopableSequenceWalker.WalkLeft``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean})
-  name.vb: WalkLeft(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Func(Of TLink, Boolean))
-  fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkLeft<TLink>(TLink, System.Func<TLink, TLink>, System.Func<TLink, TLink>, System.Func<TLink, System.Boolean>, System.Func<TLink, System.Boolean>)
-  fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkLeft(Of TLink)(TLink, System.Func(Of TLink, TLink), System.Func(Of TLink, TLink), System.Func(Of TLink, System.Boolean), System.Func(Of TLink, System.Boolean))
-  nameWithType: StopableSequenceWalker.WalkLeft<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Func<TLink, Boolean>)
-  nameWithType.vb: StopableSequenceWalker.WalkLeft(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Func(Of TLink, Boolean))
+  name.vb: WalkLeft(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
+  fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkLeft<TLinkAddress>(TLinkAddress, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, System.Boolean>, System.Func<TLinkAddress, System.Boolean>)
+  fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkLeft(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Func(Of TLinkAddress, System.Boolean))
+  nameWithType: StopableSequenceWalker.WalkLeft<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
+  nameWithType.vb: StopableSequenceWalker.WalkLeft(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
 - uid: Platform.Data.Sequences.StopableSequenceWalker.WalkRight*
   name: WalkRight
   href: api/Platform.Data.Sequences.StopableSequenceWalker.html#Platform_Data_Sequences_StopableSequenceWalker_WalkRight_
@@ -1052,23 +1297,23 @@ references:
   fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkRight
   nameWithType: StopableSequenceWalker.WalkRight
 - uid: Platform.Data.Sequences.StopableSequenceWalker.WalkRight``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Action{``0},System.Action{``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean})
-  name: WalkRight<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Action<TLink>, Action<TLink>, Func<TLink, Boolean>, Func<TLink, Boolean>)
+  name: WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Action<TLinkAddress>, Action<TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
   href: api/Platform.Data.Sequences.StopableSequenceWalker.html#Platform_Data_Sequences_StopableSequenceWalker_WalkRight__1___0_System_Func___0___0__System_Func___0___0__System_Func___0_System_Boolean__System_Action___0__System_Action___0__System_Func___0_System_Boolean__System_Func___0_System_Boolean__
   commentId: M:Platform.Data.Sequences.StopableSequenceWalker.WalkRight``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Action{``0},System.Action{``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean})
-  name.vb: WalkRight(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Action(Of TLink), Action(Of TLink), Func(Of TLink, Boolean), Func(Of TLink, Boolean))
-  fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkRight<TLink>(TLink, System.Func<TLink, TLink>, System.Func<TLink, TLink>, System.Func<TLink, System.Boolean>, System.Action<TLink>, System.Action<TLink>, System.Func<TLink, System.Boolean>, System.Func<TLink, System.Boolean>)
-  fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkRight(Of TLink)(TLink, System.Func(Of TLink, TLink), System.Func(Of TLink, TLink), System.Func(Of TLink, System.Boolean), System.Action(Of TLink), System.Action(Of TLink), System.Func(Of TLink, System.Boolean), System.Func(Of TLink, System.Boolean))
-  nameWithType: StopableSequenceWalker.WalkRight<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Action<TLink>, Action<TLink>, Func<TLink, Boolean>, Func<TLink, Boolean>)
-  nameWithType.vb: StopableSequenceWalker.WalkRight(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Action(Of TLink), Action(Of TLink), Func(Of TLink, Boolean), Func(Of TLink, Boolean))
+  name.vb: WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Action(Of TLinkAddress), Action(Of TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
+  fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, System.Boolean>, System.Action<TLinkAddress>, System.Action<TLinkAddress>, System.Func<TLinkAddress, System.Boolean>, System.Func<TLinkAddress, System.Boolean>)
+  fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Action(Of TLinkAddress), System.Action(Of TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Func(Of TLinkAddress, System.Boolean))
+  nameWithType: StopableSequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Action<TLinkAddress>, Action<TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
+  nameWithType.vb: StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Action(Of TLinkAddress), Action(Of TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
 - uid: Platform.Data.Sequences.StopableSequenceWalker.WalkRight``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean})
-  name: WalkRight<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Func<TLink, Boolean>)
+  name: WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
   href: api/Platform.Data.Sequences.StopableSequenceWalker.html#Platform_Data_Sequences_StopableSequenceWalker_WalkRight__1___0_System_Func___0___0__System_Func___0___0__System_Func___0_System_Boolean__System_Func___0_System_Boolean__
   commentId: M:Platform.Data.Sequences.StopableSequenceWalker.WalkRight``1(``0,System.Func{``0,``0},System.Func{``0,``0},System.Func{``0,System.Boolean},System.Func{``0,System.Boolean})
-  name.vb: WalkRight(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Func(Of TLink, Boolean))
-  fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkRight<TLink>(TLink, System.Func<TLink, TLink>, System.Func<TLink, TLink>, System.Func<TLink, System.Boolean>, System.Func<TLink, System.Boolean>)
-  fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkRight(Of TLink)(TLink, System.Func(Of TLink, TLink), System.Func(Of TLink, TLink), System.Func(Of TLink, System.Boolean), System.Func(Of TLink, System.Boolean))
-  nameWithType: StopableSequenceWalker.WalkRight<TLink>(TLink, Func<TLink, TLink>, Func<TLink, TLink>, Func<TLink, Boolean>, Func<TLink, Boolean>)
-  nameWithType.vb: StopableSequenceWalker.WalkRight(Of TLink)(TLink, Func(Of TLink, TLink), Func(Of TLink, TLink), Func(Of TLink, Boolean), Func(Of TLink, Boolean))
+  name.vb: WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
+  fullName: Platform.Data.Sequences.StopableSequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, TLinkAddress>, System.Func<TLinkAddress, System.Boolean>, System.Func<TLinkAddress, System.Boolean>)
+  fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Func(Of TLinkAddress, System.Boolean))
+  nameWithType: StopableSequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
+  nameWithType.vb: StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
 - uid: Platform.Data.Universal
   name: Platform.Data.Universal
   href: api/Platform.Data.Universal.html
@@ -1076,368 +1321,368 @@ references:
   fullName: Platform.Data.Universal
   nameWithType: Platform.Data.Universal
 - uid: Platform.Data.Universal.IUniLinks`1
-  name: IUniLinks<TLink>
+  name: IUniLinks<TLinkAddress>
   href: api/Platform.Data.Universal.IUniLinks-1.html
   commentId: T:Platform.Data.Universal.IUniLinks`1
-  name.vb: IUniLinks(Of TLink)
-  fullName: Platform.Data.Universal.IUniLinks<TLink>
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink)
-  nameWithType: IUniLinks<TLink>
-  nameWithType.vb: IUniLinks(Of TLink)
+  name.vb: IUniLinks(Of TLinkAddress)
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress)
+  nameWithType: IUniLinks<TLinkAddress>
+  nameWithType.vb: IUniLinks(Of TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinks`1.Count(System.Collections.Generic.IList{`0})
-  name: Count(IList<TLink>)
+  name: Count(IList<TLinkAddress>)
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Count_System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.Universal.IUniLinks`1.Count(System.Collections.Generic.IList{`0})
-  name.vb: Count(IList(Of TLink))
-  fullName: Platform.Data.Universal.IUniLinks<TLink>.Count(System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink).Count(System.Collections.Generic.IList(Of TLink))
-  nameWithType: IUniLinks<TLink>.Count(IList<TLink>)
-  nameWithType.vb: IUniLinks(Of TLink).Count(IList(Of TLink))
+  name.vb: Count(IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Count(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Count(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinks<TLinkAddress>.Count(IList<TLinkAddress>)
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Count(IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinks`1.Count*
   name: Count
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Count_
   commentId: Overload:Platform.Data.Universal.IUniLinks`1.Count
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinks<TLink>.Count
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink).Count
-  nameWithType: IUniLinks<TLink>.Count
-  nameWithType.vb: IUniLinks(Of TLink).Count
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Count
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Count
+  nameWithType: IUniLinks<TLinkAddress>.Count
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Count
 - uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
-  name: Trigger(IList<TLink>, IList<TLink>)
+  name: Trigger(IList<TLinkAddress>, IList<TLinkAddress>)
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
   commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
-  name.vb: Trigger(IList(Of TLink), IList(Of TLink))
-  fullName: Platform.Data.Universal.IUniLinks<TLink>.Trigger(System.Collections.Generic.IList<TLink>, System.Collections.Generic.IList<TLink>)
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink).Trigger(System.Collections.Generic.IList(Of TLink), System.Collections.Generic.IList(Of TLink))
-  nameWithType: IUniLinks<TLink>.Trigger(IList<TLink>, IList<TLink>)
-  nameWithType.vb: IUniLinks(Of TLink).Trigger(IList(Of TLink), IList(Of TLink))
+  name.vb: Trigger(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},`0},System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},`0})
-  name: Trigger(IList<TLink>, Func<IList<TLink>, TLink>, IList<TLink>, Func<IList<TLink>, IList<TLink>, TLink>)
+  name: Trigger(IList<TLinkAddress>, Func<IList<TLinkAddress>, TLinkAddress>, IList<TLinkAddress>, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress>)
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__System_Func_System_Collections_Generic_IList__0___0__System_Collections_Generic_IList__0__System_Func_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0___0__
   commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},`0},System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},`0})
-  name.vb: Trigger(IList(Of TLink), Func(Of IList(Of TLink), TLink), IList(Of TLink), Func(Of IList(Of TLink), IList(Of TLink), TLink))
-  fullName: Platform.Data.Universal.IUniLinks<TLink>.Trigger(System.Collections.Generic.IList<TLink>, System.Func<System.Collections.Generic.IList<TLink>, TLink>, System.Collections.Generic.IList<TLink>, System.Func<System.Collections.Generic.IList<TLink>, System.Collections.Generic.IList<TLink>, TLink>)
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink).Trigger(System.Collections.Generic.IList(Of TLink), System.Func(Of System.Collections.Generic.IList(Of TLink), TLink), System.Collections.Generic.IList(Of TLink), System.Func(Of System.Collections.Generic.IList(Of TLink), System.Collections.Generic.IList(Of TLink), TLink))
-  nameWithType: IUniLinks<TLink>.Trigger(IList<TLink>, Func<IList<TLink>, TLink>, IList<TLink>, Func<IList<TLink>, IList<TLink>, TLink>)
-  nameWithType.vb: IUniLinks(Of TLink).Trigger(IList(Of TLink), Func(Of IList(Of TLink), TLink), IList(Of TLink), Func(Of IList(Of TLink), IList(Of TLink), TLink))
+  name.vb: Trigger(IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), TLinkAddress), IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), IList(Of TLinkAddress), TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, System.Func<System.Collections.Generic.IList<TLinkAddress>, TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, System.Func<System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), TLinkAddress))
+  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, Func<IList<TLinkAddress>, TLinkAddress>, IList<TLinkAddress>, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress>)
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), TLinkAddress), IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), IList(Of TLinkAddress), TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},`0},System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},`0})
-  name: Trigger(IList<TLink>, Func<IList<TLink>, IList<TLink>, TLink>, IList<TLink>, Func<IList<TLink>, IList<TLink>, TLink>)
+  name: Trigger(IList<TLinkAddress>, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress>, IList<TLinkAddress>, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress>)
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__System_Func_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0___0__System_Collections_Generic_IList__0__System_Func_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0___0__
   commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},`0},System.Collections.Generic.IList{`0},System.Func{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},`0})
-  name.vb: Trigger(IList(Of TLink), Func(Of IList(Of TLink), IList(Of TLink), TLink), IList(Of TLink), Func(Of IList(Of TLink), IList(Of TLink), TLink))
-  fullName: Platform.Data.Universal.IUniLinks<TLink>.Trigger(System.Collections.Generic.IList<TLink>, System.Func<System.Collections.Generic.IList<TLink>, System.Collections.Generic.IList<TLink>, TLink>, System.Collections.Generic.IList<TLink>, System.Func<System.Collections.Generic.IList<TLink>, System.Collections.Generic.IList<TLink>, TLink>)
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink).Trigger(System.Collections.Generic.IList(Of TLink), System.Func(Of System.Collections.Generic.IList(Of TLink), System.Collections.Generic.IList(Of TLink), TLink), System.Collections.Generic.IList(Of TLink), System.Func(Of System.Collections.Generic.IList(Of TLink), System.Collections.Generic.IList(Of TLink), TLink))
-  nameWithType: IUniLinks<TLink>.Trigger(IList<TLink>, Func<IList<TLink>, IList<TLink>, TLink>, IList<TLink>, Func<IList<TLink>, IList<TLink>, TLink>)
-  nameWithType.vb: IUniLinks(Of TLink).Trigger(IList(Of TLink), Func(Of IList(Of TLink), IList(Of TLink), TLink), IList(Of TLink), Func(Of IList(Of TLink), IList(Of TLink), TLink))
+  name.vb: Trigger(IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), IList(Of TLinkAddress), TLinkAddress), IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), IList(Of TLinkAddress), TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, System.Func<System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, System.Func<System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), TLinkAddress))
+  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress>, IList<TLinkAddress>, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress>)
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), IList(Of TLinkAddress), TLinkAddress), IList(Of TLinkAddress), Func(Of IList(Of TLinkAddress), IList(Of TLinkAddress), TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinks`1.Trigger*
   name: Trigger
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_
   commentId: Overload:Platform.Data.Universal.IUniLinks`1.Trigger
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinks<TLink>.Trigger
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLink).Trigger
-  nameWithType: IUniLinks<TLink>.Trigger
-  nameWithType.vb: IUniLinks(Of TLink).Trigger
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger
+  nameWithType: IUniLinks<TLinkAddress>.Trigger
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger
 - uid: Platform.Data.Universal.IUniLinksCRUD`1
-  name: IUniLinksCRUD<TLink>
+  name: IUniLinksCRUD<TLinkAddress>
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html
   commentId: T:Platform.Data.Universal.IUniLinksCRUD`1
-  name.vb: IUniLinksCRUD(Of TLink)
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink)
-  nameWithType: IUniLinksCRUD<TLink>
-  nameWithType.vb: IUniLinksCRUD(Of TLink)
+  name.vb: IUniLinksCRUD(Of TLinkAddress)
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress)
+  nameWithType: IUniLinksCRUD<TLinkAddress>
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Create(`0[])
-  name: Create(TLink[])
+  name: Create(TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Create__0___
   commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Create(`0[])
-  name.vb: Create(TLink())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Create(TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Create(TLink())
-  nameWithType: IUniLinksCRUD<TLink>.Create(TLink[])
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Create(TLink())
+  name.vb: Create(TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Create(TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Create(TLinkAddress())
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Create(TLinkAddress[])
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Create(TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Create*
   name: Create
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Create_
   commentId: Overload:Platform.Data.Universal.IUniLinksCRUD`1.Create
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Create
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Create
-  nameWithType: IUniLinksCRUD<TLink>.Create
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Create
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Create
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Create
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Create
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Create
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Delete(`0[])
-  name: Delete(TLink[])
+  name: Delete(TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Delete__0___
   commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Delete(`0[])
-  name.vb: Delete(TLink())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Delete(TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Delete(TLink())
-  nameWithType: IUniLinksCRUD<TLink>.Delete(TLink[])
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Delete(TLink())
+  name.vb: Delete(TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Delete(TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Delete(TLinkAddress())
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Delete(TLinkAddress[])
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Delete(TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Delete*
   name: Delete
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Delete_
   commentId: Overload:Platform.Data.Universal.IUniLinksCRUD`1.Delete
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Delete
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Delete
-  nameWithType: IUniLinksCRUD<TLink>.Delete
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Delete
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Delete
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Delete
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Delete
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Delete
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Func{`0,System.Boolean},`0[])
-  name: Read(Func<TLink, Boolean>, TLink[])
+  name: Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_System_Func__0_System_Boolean___0___
   commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Func{`0,System.Boolean},`0[])
-  name.vb: Read(Func(Of TLink, Boolean), TLink())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Read(System.Func<TLink, System.Boolean>, TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Read(System.Func(Of TLink, System.Boolean), TLink())
-  nameWithType: IUniLinksCRUD<TLink>.Read(Func<TLink, Boolean>, TLink[])
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Read(Func(Of TLink, Boolean), TLink())
+  name.vb: Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read(System.Func<TLinkAddress, System.Boolean>, TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read(System.Func(Of TLinkAddress, System.Boolean), TLinkAddress())
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Read(System.UInt64,`0)
-  name: Read(UInt64, TLink)
+  name: Read(UInt64, TLinkAddress)
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_System_UInt64__0_
   commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Read(System.UInt64,`0)
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Read(System.UInt64, TLink)
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Read(System.UInt64, TLink)
-  nameWithType: IUniLinksCRUD<TLink>.Read(UInt64, TLink)
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Read(UInt64, TLink)
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read(System.UInt64, TLinkAddress)
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read(System.UInt64, TLinkAddress)
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Read(UInt64, TLinkAddress)
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read(UInt64, TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Read*
   name: Read
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_
   commentId: Overload:Platform.Data.Universal.IUniLinksCRUD`1.Read
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Read
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Read
-  nameWithType: IUniLinksCRUD<TLink>.Read
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Read
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Read
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Update(`0[],`0[])
-  name: Update(TLink[], TLink[])
+  name: Update(TLinkAddress[], TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Update__0____0___
   commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Update(`0[],`0[])
-  name.vb: Update(TLink(), TLink())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Update(TLink[], TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Update(TLink(), TLink())
-  nameWithType: IUniLinksCRUD<TLink>.Update(TLink[], TLink[])
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Update(TLink(), TLink())
+  name.vb: Update(TLinkAddress(), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Update(TLinkAddress[], TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Update(TLinkAddress(), TLinkAddress())
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Update(TLinkAddress[], TLinkAddress[])
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Update(TLinkAddress(), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Update*
   name: Update
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Update_
   commentId: Overload:Platform.Data.Universal.IUniLinksCRUD`1.Update
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLink>.Update
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLink).Update
-  nameWithType: IUniLinksCRUD<TLink>.Update
-  nameWithType.vb: IUniLinksCRUD(Of TLink).Update
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Update
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Update
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Update
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Update
 - uid: Platform.Data.Universal.IUniLinksGS`1
-  name: IUniLinksGS<TLink>
+  name: IUniLinksGS<TLinkAddress>
   href: api/Platform.Data.Universal.IUniLinksGS-1.html
   commentId: T:Platform.Data.Universal.IUniLinksGS`1
-  name.vb: IUniLinksGS(Of TLink)
-  fullName: Platform.Data.Universal.IUniLinksGS<TLink>
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLink)
-  nameWithType: IUniLinksGS<TLink>
-  nameWithType.vb: IUniLinksGS(Of TLink)
+  name.vb: IUniLinksGS(Of TLinkAddress)
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress)
+  nameWithType: IUniLinksGS<TLinkAddress>
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksGS`1.Get(System.Func{`0,System.Boolean},`0[])
-  name: Get(Func<TLink, Boolean>, TLink[])
+  name: Get(Func<TLinkAddress, Boolean>, TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_System_Func__0_System_Boolean___0___
   commentId: M:Platform.Data.Universal.IUniLinksGS`1.Get(System.Func{`0,System.Boolean},`0[])
-  name.vb: Get(Func(Of TLink, Boolean), TLink())
-  fullName: Platform.Data.Universal.IUniLinksGS<TLink>.Get(System.Func<TLink, System.Boolean>, TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLink).Get(System.Func(Of TLink, System.Boolean), TLink())
-  nameWithType: IUniLinksGS<TLink>.Get(Func<TLink, Boolean>, TLink[])
-  nameWithType.vb: IUniLinksGS(Of TLink).Get(Func(Of TLink, Boolean), TLink())
+  name.vb: Get(Func(Of TLinkAddress, Boolean), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get(System.Func<TLinkAddress, System.Boolean>, TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get(System.Func(Of TLinkAddress, System.Boolean), TLinkAddress())
+  nameWithType: IUniLinksGS<TLinkAddress>.Get(Func<TLinkAddress, Boolean>, TLinkAddress[])
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get(Func(Of TLinkAddress, Boolean), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksGS`1.Get(System.UInt64,`0)
-  name: Get(UInt64, TLink)
+  name: Get(UInt64, TLinkAddress)
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_System_UInt64__0_
   commentId: M:Platform.Data.Universal.IUniLinksGS`1.Get(System.UInt64,`0)
-  fullName: Platform.Data.Universal.IUniLinksGS<TLink>.Get(System.UInt64, TLink)
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLink).Get(System.UInt64, TLink)
-  nameWithType: IUniLinksGS<TLink>.Get(UInt64, TLink)
-  nameWithType.vb: IUniLinksGS(Of TLink).Get(UInt64, TLink)
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get(System.UInt64, TLinkAddress)
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get(System.UInt64, TLinkAddress)
+  nameWithType: IUniLinksGS<TLinkAddress>.Get(UInt64, TLinkAddress)
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get(UInt64, TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksGS`1.Get*
   name: Get
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_
   commentId: Overload:Platform.Data.Universal.IUniLinksGS`1.Get
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksGS<TLink>.Get
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLink).Get
-  nameWithType: IUniLinksGS<TLink>.Get
-  nameWithType.vb: IUniLinksGS(Of TLink).Get
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get
+  nameWithType: IUniLinksGS<TLinkAddress>.Get
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get
 - uid: Platform.Data.Universal.IUniLinksGS`1.Set(`0[],`0[])
-  name: Set(TLink[], TLink[])
+  name: Set(TLinkAddress[], TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Set__0____0___
   commentId: M:Platform.Data.Universal.IUniLinksGS`1.Set(`0[],`0[])
-  name.vb: Set(TLink(), TLink())
-  fullName: Platform.Data.Universal.IUniLinksGS<TLink>.Set(TLink[], TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLink).Set(TLink(), TLink())
-  nameWithType: IUniLinksGS<TLink>.Set(TLink[], TLink[])
-  nameWithType.vb: IUniLinksGS(Of TLink).Set(TLink(), TLink())
+  name.vb: Set(TLinkAddress(), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Set(TLinkAddress[], TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Set(TLinkAddress(), TLinkAddress())
+  nameWithType: IUniLinksGS<TLinkAddress>.Set(TLinkAddress[], TLinkAddress[])
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Set(TLinkAddress(), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksGS`1.Set*
   name: Set
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Set_
   commentId: Overload:Platform.Data.Universal.IUniLinksGS`1.Set
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksGS<TLink>.Set
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLink).Set
-  nameWithType: IUniLinksGS<TLink>.Set
-  nameWithType.vb: IUniLinksGS(Of TLink).Set
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Set
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Set
+  nameWithType: IUniLinksGS<TLinkAddress>.Set
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Set
 - uid: Platform.Data.Universal.IUniLinksIO`1
-  name: IUniLinksIO<TLink>
+  name: IUniLinksIO<TLinkAddress>
   href: api/Platform.Data.Universal.IUniLinksIO-1.html
   commentId: T:Platform.Data.Universal.IUniLinksIO`1
-  name.vb: IUniLinksIO(Of TLink)
-  fullName: Platform.Data.Universal.IUniLinksIO<TLink>
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLink)
-  nameWithType: IUniLinksIO<TLink>
-  nameWithType.vb: IUniLinksIO(Of TLink)
+  name.vb: IUniLinksIO(Of TLinkAddress)
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress)
+  nameWithType: IUniLinksIO<TLinkAddress>
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksIO`1.In(`0[],`0[])
-  name: In(TLink[], TLink[])
+  name: In(TLinkAddress[], TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_In__0____0___
   commentId: M:Platform.Data.Universal.IUniLinksIO`1.In(`0[],`0[])
-  name.vb: In(TLink(), TLink())
-  fullName: Platform.Data.Universal.IUniLinksIO<TLink>.In(TLink[], TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLink).In(TLink(), TLink())
-  nameWithType: IUniLinksIO<TLink>.In(TLink[], TLink[])
-  nameWithType.vb: IUniLinksIO(Of TLink).In(TLink(), TLink())
+  name.vb: In(TLinkAddress(), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.In(TLinkAddress[], TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).In(TLinkAddress(), TLinkAddress())
+  nameWithType: IUniLinksIO<TLinkAddress>.In(TLinkAddress[], TLinkAddress[])
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress).In(TLinkAddress(), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksIO`1.In*
   name: In
   href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_In_
   commentId: Overload:Platform.Data.Universal.IUniLinksIO`1.In
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksIO<TLink>.In
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLink).In
-  nameWithType: IUniLinksIO<TLink>.In
-  nameWithType.vb: IUniLinksIO(Of TLink).In
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.In
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).In
+  nameWithType: IUniLinksIO<TLinkAddress>.In
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress).In
 - uid: Platform.Data.Universal.IUniLinksIO`1.Out(System.Func{`0[],System.Boolean},`0[])
-  name: Out(Func<TLink[], Boolean>, TLink[])
+  name: Out(Func<TLinkAddress[], Boolean>, TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_Out_System_Func__0___System_Boolean___0___
   commentId: M:Platform.Data.Universal.IUniLinksIO`1.Out(System.Func{`0[],System.Boolean},`0[])
-  name.vb: Out(Func(Of TLink(), Boolean), TLink())
-  fullName: Platform.Data.Universal.IUniLinksIO<TLink>.Out(System.Func<TLink[], System.Boolean>, TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLink).Out(System.Func(Of TLink(), System.Boolean), TLink())
-  nameWithType: IUniLinksIO<TLink>.Out(Func<TLink[], Boolean>, TLink[])
-  nameWithType.vb: IUniLinksIO(Of TLink).Out(Func(Of TLink(), Boolean), TLink())
+  name.vb: Out(Func(Of TLinkAddress(), Boolean), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.Out(System.Func<TLinkAddress[], System.Boolean>, TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).Out(System.Func(Of TLinkAddress(), System.Boolean), TLinkAddress())
+  nameWithType: IUniLinksIO<TLinkAddress>.Out(Func<TLinkAddress[], Boolean>, TLinkAddress[])
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress).Out(Func(Of TLinkAddress(), Boolean), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksIO`1.Out*
   name: Out
   href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_Out_
   commentId: Overload:Platform.Data.Universal.IUniLinksIO`1.Out
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksIO<TLink>.Out
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLink).Out
-  nameWithType: IUniLinksIO<TLink>.Out
-  nameWithType.vb: IUniLinksIO(Of TLink).Out
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.Out
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).Out
+  nameWithType: IUniLinksIO<TLinkAddress>.Out
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress).Out
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1
-  name: IUniLinksIOWithExtensions<TLink>
+  name: IUniLinksIOWithExtensions<TLinkAddress>
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html
   commentId: T:Platform.Data.Universal.IUniLinksIOWithExtensions`1
-  name.vb: IUniLinksIOWithExtensions(Of TLink)
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink)
-  nameWithType: IUniLinksIOWithExtensions<TLink>
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink)
+  name.vb: IUniLinksIOWithExtensions(Of TLinkAddress)
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress)
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll(`0[])
-  name: OutAll(TLink[])
+  name: OutAll(TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutAll__0___
   commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll(`0[])
-  name.vb: OutAll(TLink())
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>.OutAll(TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink).OutAll(TLink())
-  nameWithType: IUniLinksIOWithExtensions<TLink>.OutAll(TLink[])
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink).OutAll(TLink())
+  name.vb: OutAll(TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutAll(TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutAll(TLinkAddress())
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutAll(TLinkAddress[])
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutAll(TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll*
   name: OutAll
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutAll_
   commentId: Overload:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>.OutAll
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink).OutAll
-  nameWithType: IUniLinksIOWithExtensions<TLink>.OutAll
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink).OutAll
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutAll
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutAll
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutAll
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutAll
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount(`0[])
-  name: OutCount(TLink[])
+  name: OutCount(TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutCount__0___
   commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount(`0[])
-  name.vb: OutCount(TLink())
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>.OutCount(TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink).OutCount(TLink())
-  nameWithType: IUniLinksIOWithExtensions<TLink>.OutCount(TLink[])
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink).OutCount(TLink())
+  name.vb: OutCount(TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutCount(TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutCount(TLinkAddress())
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutCount(TLinkAddress[])
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutCount(TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount*
   name: OutCount
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutCount_
   commentId: Overload:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>.OutCount
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink).OutCount
-  nameWithType: IUniLinksIOWithExtensions<TLink>.OutCount
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink).OutCount
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutCount
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutCount
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutCount
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutCount
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne(System.UInt64,`0[])
-  name: OutOne(UInt64, TLink[])
+  name: OutOne(UInt64, TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutOne_System_UInt64__0___
   commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne(System.UInt64,`0[])
-  name.vb: OutOne(UInt64, TLink())
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>.OutOne(System.UInt64, TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink).OutOne(System.UInt64, TLink())
-  nameWithType: IUniLinksIOWithExtensions<TLink>.OutOne(UInt64, TLink[])
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink).OutOne(UInt64, TLink())
+  name.vb: OutOne(UInt64, TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutOne(System.UInt64, TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutOne(System.UInt64, TLinkAddress())
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutOne(UInt64, TLinkAddress[])
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutOne(UInt64, TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne*
   name: OutOne
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutOne_
   commentId: Overload:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLink>.OutOne
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLink).OutOne
-  nameWithType: IUniLinksIOWithExtensions<TLink>.OutOne
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLink).OutOne
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutOne
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutOne
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutOne
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutOne
 - uid: Platform.Data.Universal.IUniLinksRW`1
-  name: IUniLinksRW<TLink>
+  name: IUniLinksRW<TLinkAddress>
   href: api/Platform.Data.Universal.IUniLinksRW-1.html
   commentId: T:Platform.Data.Universal.IUniLinksRW`1
-  name.vb: IUniLinksRW(Of TLink)
-  fullName: Platform.Data.Universal.IUniLinksRW<TLink>
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLink)
-  nameWithType: IUniLinksRW<TLink>
-  nameWithType.vb: IUniLinksRW(Of TLink)
+  name.vb: IUniLinksRW(Of TLinkAddress)
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress)
+  nameWithType: IUniLinksRW<TLinkAddress>
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksRW`1.Read(System.Func{`0,System.Boolean},`0[])
-  name: Read(Func<TLink, Boolean>, TLink[])
+  name: Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_System_Func__0_System_Boolean___0___
   commentId: M:Platform.Data.Universal.IUniLinksRW`1.Read(System.Func{`0,System.Boolean},`0[])
-  name.vb: Read(Func(Of TLink, Boolean), TLink())
-  fullName: Platform.Data.Universal.IUniLinksRW<TLink>.Read(System.Func<TLink, System.Boolean>, TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLink).Read(System.Func(Of TLink, System.Boolean), TLink())
-  nameWithType: IUniLinksRW<TLink>.Read(Func<TLink, Boolean>, TLink[])
-  nameWithType.vb: IUniLinksRW(Of TLink).Read(Func(Of TLink, Boolean), TLink())
+  name.vb: Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read(System.Func<TLinkAddress, System.Boolean>, TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read(System.Func(Of TLinkAddress, System.Boolean), TLinkAddress())
+  nameWithType: IUniLinksRW<TLinkAddress>.Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksRW`1.Read(System.UInt64,`0)
-  name: Read(UInt64, TLink)
+  name: Read(UInt64, TLinkAddress)
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_System_UInt64__0_
   commentId: M:Platform.Data.Universal.IUniLinksRW`1.Read(System.UInt64,`0)
-  fullName: Platform.Data.Universal.IUniLinksRW<TLink>.Read(System.UInt64, TLink)
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLink).Read(System.UInt64, TLink)
-  nameWithType: IUniLinksRW<TLink>.Read(UInt64, TLink)
-  nameWithType.vb: IUniLinksRW(Of TLink).Read(UInt64, TLink)
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read(System.UInt64, TLinkAddress)
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read(System.UInt64, TLinkAddress)
+  nameWithType: IUniLinksRW<TLinkAddress>.Read(UInt64, TLinkAddress)
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read(UInt64, TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksRW`1.Read*
   name: Read
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_
   commentId: Overload:Platform.Data.Universal.IUniLinksRW`1.Read
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksRW<TLink>.Read
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLink).Read
-  nameWithType: IUniLinksRW<TLink>.Read
-  nameWithType.vb: IUniLinksRW(Of TLink).Read
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read
+  nameWithType: IUniLinksRW<TLinkAddress>.Read
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read
 - uid: Platform.Data.Universal.IUniLinksRW`1.Write(`0[],`0[])
-  name: Write(TLink[], TLink[])
+  name: Write(TLinkAddress[], TLinkAddress[])
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Write__0____0___
   commentId: M:Platform.Data.Universal.IUniLinksRW`1.Write(`0[],`0[])
-  name.vb: Write(TLink(), TLink())
-  fullName: Platform.Data.Universal.IUniLinksRW<TLink>.Write(TLink[], TLink[])
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLink).Write(TLink(), TLink())
-  nameWithType: IUniLinksRW<TLink>.Write(TLink[], TLink[])
-  nameWithType.vb: IUniLinksRW(Of TLink).Write(TLink(), TLink())
+  name.vb: Write(TLinkAddress(), TLinkAddress())
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Write(TLinkAddress[], TLinkAddress[])
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Write(TLinkAddress(), TLinkAddress())
+  nameWithType: IUniLinksRW<TLinkAddress>.Write(TLinkAddress[], TLinkAddress[])
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Write(TLinkAddress(), TLinkAddress())
 - uid: Platform.Data.Universal.IUniLinksRW`1.Write*
   name: Write
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Write_
   commentId: Overload:Platform.Data.Universal.IUniLinksRW`1.Write
   isSpec: "True"
-  fullName: Platform.Data.Universal.IUniLinksRW<TLink>.Write
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLink).Write
-  nameWithType: IUniLinksRW<TLink>.Write
-  nameWithType.vb: IUniLinksRW(Of TLink).Write
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Write
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Write
+  nameWithType: IUniLinksRW<TLinkAddress>.Write
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Write

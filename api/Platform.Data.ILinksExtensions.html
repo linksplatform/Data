@@ -127,16 +127,16 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_Count__2_Platform_Data_ILinks___0___1____0___.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.Count%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L13">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L13">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_Count_" data-uid="Platform.Data.ILinksExtensions.Count*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_Count__2_Platform_Data_ILinks___0___1____0___" data-uid="Platform.Data.ILinksExtensions.Count``2(Platform.Data.ILinks{``0,``1},``0[])">Count&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink[])</h4>
+  <h4 id="Platform_Data_ILinksExtensions_Count__2_Platform_Data_ILinks___0___1____0___" data-uid="Platform.Data.ILinksExtensions.Count``2(Platform.Data.ILinks{``0,``1},``0[])">Count&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TLink Count&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, params TLink[] restrictions)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static TLinkAddress Count&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, params TLinkAddress[] restrictions)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,12 +149,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td></td>
       </tr>
       <tr>
-        <td>TLink[]</td>
+        <td>TLinkAddress[]</td>
         <td><span class="parametername">restrictions</span></td>
         <td></td>
       </tr>
@@ -170,7 +170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -185,7 +185,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -199,17 +199,17 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_Each__2_Platform_Data_ILinks___0___1__System_Func_System_Collections_Generic_IList___0____0____0___.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.Each%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2CSystem.Func%7BSystem.Collections.Generic.IList%7B%60%600%7D%2C%60%600%7D%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L64">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L64">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_Each_" data-uid="Platform.Data.ILinksExtensions.Each*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_Each__2_Platform_Data_ILinks___0___1__System_Func_System_Collections_Generic_IList___0____0____0___" data-uid="Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},System.Func{System.Collections.Generic.IList{``0},``0},``0[])">Each&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, Func&lt;IList&lt;TLink&gt;, TLink&gt;, TLink[])</h4>
+  <h4 id="Platform_Data_ILinksExtensions_Each__2_Platform_Data_ILinks___0___1__System_Func_System_Collections_Generic_IList___0____0____0___" data-uid="Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},System.Func{System.Collections.Generic.IList{``0},``0},``0[])">Each&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, Func&lt;IList&lt;TLinkAddress&gt;, TLinkAddress&gt;, TLinkAddress[])</h4>
   <div class="markdown level1 summary"><p>Выполняет проход по всем связям, соответствующим шаблону, вызывая обработчик (handler) для каждой подходящей связи.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TLink Each&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, Func&lt;IList&lt;TLink&gt;, TLink&gt; handler, params TLink[] restrictions)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static TLinkAddress Each&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, Func&lt;IList&lt;TLinkAddress&gt;, TLinkAddress&gt; handler, params TLinkAddress[] restrictions)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -222,19 +222,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TLink&gt;, TLink&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TLinkAddress&gt;, TLinkAddress&gt;</td>
         <td><span class="parametername">handler</span></td>
         <td><p>Обработчик каждой подходящей связи.</p>
 </td>
       </tr>
       <tr>
-        <td>TLink[]</td>
+        <td>TLinkAddress[]</td>
         <td><span class="parametername">restrictions</span></td>
         <td><p>Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</p>
 </td>
@@ -251,7 +251,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><p>True, в случае если проход по связям не был прерван и False в обратном случае.</p>
 </td>
       </tr>
@@ -267,7 +267,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -281,16 +281,16 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.EnsureLinkExists%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L34">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L34">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_EnsureLinkExists_" data-uid="Platform.Data.ILinksExtensions.EnsureLinkExists*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0)">EnsureLinkExists&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink)</h4>
+  <h4 id="Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0)">EnsureLinkExists&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void EnsureLinkExists&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, TLink link)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static void EnsureLinkExists&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, TLinkAddress link)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -303,13 +303,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><span class="parametername">link</span></td>
         <td><p>Индекс проверяемой на существование связи.</p>
 </td>
@@ -326,7 +326,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -343,16 +343,16 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.EnsureLinkExists%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L47">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L47">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_EnsureLinkExists_" data-uid="Platform.Data.ILinksExtensions.EnsureLinkExists*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_System_String_" data-uid="Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0,System.String)">EnsureLinkExists&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink, String)</h4>
+  <h4 id="Platform_Data_ILinksExtensions_EnsureLinkExists__2_Platform_Data_ILinks___0___1____0_System_String_" data-uid="Platform.Data.ILinksExtensions.EnsureLinkExists``2(Platform.Data.ILinks{``0,``1},``0,System.String)">EnsureLinkExists&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void EnsureLinkExists&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, TLink link, string argumentName)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static void EnsureLinkExists&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, TLinkAddress link, string argumentName)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,13 +365,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><span class="parametername">link</span></td>
         <td><p>Индекс проверяемой на существование связи.</p>
 </td>
@@ -394,7 +394,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -408,17 +408,17 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_Exists__2_Platform_Data_ILinks___0___1____0_.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.Exists%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L24">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L24">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_Exists_" data-uid="Platform.Data.ILinksExtensions.Exists*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_Exists__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.Exists``2(Platform.Data.ILinks{``0,``1},``0)">Exists&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink)</h4>
+  <h4 id="Platform_Data_ILinksExtensions_Exists__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.Exists``2(Platform.Data.ILinks{``0,``1},``0)">Exists&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress)</h4>
   <div class="markdown level1 summary"><p>Возвращает значение, определяющее существует ли связь с указанным индексом в хранилище связей.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Exists&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, TLink link)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Exists&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, TLinkAddress link)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -431,13 +431,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><span class="parametername">link</span></td>
         <td><p>Индекс проверяемой на существование связи.</p>
 </td>
@@ -470,7 +470,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -484,17 +484,17 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_GetLink__2_Platform_Data_ILinks___0___1____0_.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.GetLink%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L75">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L75">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_GetLink_" data-uid="Platform.Data.ILinksExtensions.GetLink*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_GetLink__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.GetLink``2(Platform.Data.ILinks{``0,``1},``0)">GetLink&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink)</h4>
+  <h4 id="Platform_Data_ILinksExtensions_GetLink__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.GetLink``2(Platform.Data.ILinks{``0,``1},``0)">GetLink&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress)</h4>
   <div class="markdown level1 summary"><p>Возвращает части-значения для связи с указанным индексом.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IList&lt;TLink&gt; GetLink&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, TLink link)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static IList&lt;TLinkAddress&gt; GetLink&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, TLinkAddress link)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -507,13 +507,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><span class="parametername">link</span></td>
         <td><p>Индекс связи.</p>
 </td>
@@ -530,7 +530,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TLink&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TLinkAddress&gt;</td>
         <td><p>Уникальную связь.</p>
 </td>
       </tr>
@@ -546,7 +546,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -560,17 +560,17 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_IsFullPoint__2_Platform_Data_ILinks___0___1____0_.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.IsFullPoint%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L109">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L109">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_IsFullPoint_" data-uid="Platform.Data.ILinksExtensions.IsFullPoint*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_IsFullPoint__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.IsFullPoint``2(Platform.Data.ILinks{``0,``1},``0)">IsFullPoint&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink)</h4>
+  <h4 id="Platform_Data_ILinksExtensions_IsFullPoint__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.IsFullPoint``2(Platform.Data.ILinks{``0,``1},``0)">IsFullPoint&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress)</h4>
   <div class="markdown level1 summary"><p>Возвращает значение, определяющее является ли связь с указанным индексом точкой полностью (связью замкнутой на себе дважды).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsFullPoint&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, TLink link)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsFullPoint&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, TLinkAddress link)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -583,13 +583,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><span class="parametername">link</span></td>
         <td><p>Индекс проверяемой связи.</p>
 </td>
@@ -622,7 +622,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -652,17 +652,17 @@
     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions_IsPartialPoint__2_Platform_Data_ILinks___0___1____0_.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions.IsPartialPoint%60%602(Platform.Data.ILinks%7B%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L124">View Source</a>
+    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L124">View Source</a>
   </span>
   <a id="Platform_Data_ILinksExtensions_IsPartialPoint_" data-uid="Platform.Data.ILinksExtensions.IsPartialPoint*"></a>
-  <h4 id="Platform_Data_ILinksExtensions_IsPartialPoint__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.IsPartialPoint``2(Platform.Data.ILinks{``0,``1},``0)">IsPartialPoint&lt;TLink, TConstants&gt;(ILinks&lt;TLink, TConstants&gt;, TLink)</h4>
+  <h4 id="Platform_Data_ILinksExtensions_IsPartialPoint__2_Platform_Data_ILinks___0___1____0_" data-uid="Platform.Data.ILinksExtensions.IsPartialPoint``2(Platform.Data.ILinks{``0,``1},``0)">IsPartialPoint&lt;TLinkAddress, TConstants&gt;(ILinks&lt;TLinkAddress, TConstants&gt;, TLinkAddress)</h4>
   <div class="markdown level1 summary"><p>Возвращает значение, определяющее является ли связь с указанным индексом точкой частично (связью замкнутой на себе как минимум один раз).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsPartialPoint&lt;TLink, TConstants&gt;(this ILinks&lt;TLink, TConstants&gt; links, TLink link)
-    where TConstants : LinksConstants&lt;TLink&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsPartialPoint&lt;TLinkAddress, TConstants&gt;(this ILinks&lt;TLinkAddress, TConstants&gt; links, TLinkAddress link)
+    where TConstants : LinksConstants&lt;TLinkAddress&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -675,13 +675,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLink, TConstants&gt;</td>
+        <td><a class="xref" href="Platform.Data.ILinks-2.html">ILinks</a>&lt;TLinkAddress, TConstants&gt;</td>
         <td><span class="parametername">links</span></td>
         <td><p>Хранилище связей.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TLink</span></td>
+        <td><span class="xref">TLinkAddress</span></td>
         <td><span class="parametername">link</span></td>
         <td><p>Индекс проверяемой связи.</p>
 </td>
@@ -714,7 +714,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TLink</span></td>
+        <td><span class="parametername">TLinkAddress</span></td>
         <td></td>
       </tr>
       <tr>
@@ -738,7 +738,7 @@
                     <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ILinksExtensions.md&amp;value=---%0Auid%3A%20Platform.Data.ILinksExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/linksplatform/Data/blob/5db05cdf77c94517150a7ad33fb50b836ac44d11/ILinksExtensions.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/linksplatform/Data/blob/494a5624d82f971cf2d13ccc0d5a2b87f87b9c23/ILinksExtensions.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
