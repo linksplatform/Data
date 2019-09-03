@@ -1392,15 +1392,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress)
   nameWithType: IUniLinksCRUD<TLinkAddress>
   nameWithType.vb: IUniLinksCRUD(Of TLinkAddress)
-- uid: Platform.Data.Universal.IUniLinksCRUD`1.Create(`0[])
-  name: Create(TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Create__0___
-  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Create(`0[])
-  name.vb: Create(TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Create(TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Create(TLinkAddress())
-  nameWithType: IUniLinksCRUD<TLinkAddress>.Create(TLinkAddress[])
-  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Create(TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksCRUD`1.Create(System.Collections.Generic.IList{`0})
+  name: Create(IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Create_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Create(System.Collections.Generic.IList{`0})
+  name.vb: Create(IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Create(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Create(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Create(IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Create(IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Create*
   name: Create
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Create_
@@ -1410,15 +1410,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Create
   nameWithType: IUniLinksCRUD<TLinkAddress>.Create
   nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Create
-- uid: Platform.Data.Universal.IUniLinksCRUD`1.Delete(`0[])
-  name: Delete(TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Delete__0___
-  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Delete(`0[])
-  name.vb: Delete(TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Delete(TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Delete(TLinkAddress())
-  nameWithType: IUniLinksCRUD<TLinkAddress>.Delete(TLinkAddress[])
-  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Delete(TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksCRUD`1.Delete(System.Collections.Generic.IList{`0})
+  name: Delete(IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Delete_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Delete(System.Collections.Generic.IList{`0})
+  name.vb: Delete(IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Delete(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Delete(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Delete(IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Delete(IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Delete*
   name: Delete
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Delete_
@@ -1428,23 +1428,23 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Delete
   nameWithType: IUniLinksCRUD<TLinkAddress>.Delete
   nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Delete
-- uid: Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Func{`0,System.Boolean},`0[])
-  name: Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_System_Func__0_System_Boolean___0___
-  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Func{`0,System.Boolean},`0[])
-  name.vb: Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read(System.Func<TLinkAddress, System.Boolean>, TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read(System.Func(Of TLinkAddress, System.Boolean), TLinkAddress())
-  nameWithType: IUniLinksCRUD<TLinkAddress>.Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
-  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
-- uid: Platform.Data.Universal.IUniLinksCRUD`1.Read(System.UInt64,`0)
-  name: Read(UInt64, TLinkAddress)
-  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_System_UInt64__0_
-  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Read(System.UInt64,`0)
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read(System.UInt64, TLinkAddress)
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read(System.UInt64, TLinkAddress)
-  nameWithType: IUniLinksCRUD<TLinkAddress>.Read(UInt64, TLinkAddress)
-  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read(UInt64, TLinkAddress)
+- uid: Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
+  name: Read(Func<TLinkAddress, Boolean>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_System_Func__0_System_Boolean__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
+  name.vb: Read(Func(Of TLinkAddress, Boolean), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read(System.Func<TLinkAddress, System.Boolean>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read(System.Func(Of TLinkAddress, System.Boolean), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Read(Func<TLinkAddress, Boolean>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read(Func(Of TLinkAddress, Boolean), IList(Of TLinkAddress))
+- uid: Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Int32,`0)
+  name: Read(Int32, TLinkAddress)
+  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_System_Int32__0_
+  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Read(System.Int32,`0)
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Read(System.Int32, TLinkAddress)
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read(System.Int32, TLinkAddress)
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Read(Int32, TLinkAddress)
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read(Int32, TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Read*
   name: Read
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Read_
@@ -1454,15 +1454,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Read
   nameWithType: IUniLinksCRUD<TLinkAddress>.Read
   nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Read
-- uid: Platform.Data.Universal.IUniLinksCRUD`1.Update(`0[],`0[])
-  name: Update(TLinkAddress[], TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Update__0____0___
-  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Update(`0[],`0[])
-  name.vb: Update(TLinkAddress(), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Update(TLinkAddress[], TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Update(TLinkAddress(), TLinkAddress())
-  nameWithType: IUniLinksCRUD<TLinkAddress>.Update(TLinkAddress[], TLinkAddress[])
-  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Update(TLinkAddress(), TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksCRUD`1.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name: Update(IList<TLinkAddress>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Update_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksCRUD`1.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name.vb: Update(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksCRUD<TLinkAddress>.Update(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksCRUD(Of TLinkAddress).Update(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksCRUD<TLinkAddress>.Update(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksCRUD(Of TLinkAddress).Update(IList(Of TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksCRUD`1.Update*
   name: Update
   href: api/Platform.Data.Universal.IUniLinksCRUD-1.html#Platform_Data_Universal_IUniLinksCRUD_1_Update_
@@ -1481,23 +1481,23 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress)
   nameWithType: IUniLinksGS<TLinkAddress>
   nameWithType.vb: IUniLinksGS(Of TLinkAddress)
-- uid: Platform.Data.Universal.IUniLinksGS`1.Get(System.Func{`0,System.Boolean},`0[])
-  name: Get(Func<TLinkAddress, Boolean>, TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_System_Func__0_System_Boolean___0___
-  commentId: M:Platform.Data.Universal.IUniLinksGS`1.Get(System.Func{`0,System.Boolean},`0[])
-  name.vb: Get(Func(Of TLinkAddress, Boolean), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get(System.Func<TLinkAddress, System.Boolean>, TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get(System.Func(Of TLinkAddress, System.Boolean), TLinkAddress())
-  nameWithType: IUniLinksGS<TLinkAddress>.Get(Func<TLinkAddress, Boolean>, TLinkAddress[])
-  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get(Func(Of TLinkAddress, Boolean), TLinkAddress())
-- uid: Platform.Data.Universal.IUniLinksGS`1.Get(System.UInt64,`0)
-  name: Get(UInt64, TLinkAddress)
-  href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_System_UInt64__0_
-  commentId: M:Platform.Data.Universal.IUniLinksGS`1.Get(System.UInt64,`0)
-  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get(System.UInt64, TLinkAddress)
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get(System.UInt64, TLinkAddress)
-  nameWithType: IUniLinksGS<TLinkAddress>.Get(UInt64, TLinkAddress)
-  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get(UInt64, TLinkAddress)
+- uid: Platform.Data.Universal.IUniLinksGS`1.Get(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
+  name: Get(Func<TLinkAddress, Boolean>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_System_Func__0_System_Boolean__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksGS`1.Get(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
+  name.vb: Get(Func(Of TLinkAddress, Boolean), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get(System.Func<TLinkAddress, System.Boolean>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get(System.Func(Of TLinkAddress, System.Boolean), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksGS<TLinkAddress>.Get(Func<TLinkAddress, Boolean>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get(Func(Of TLinkAddress, Boolean), IList(Of TLinkAddress))
+- uid: Platform.Data.Universal.IUniLinksGS`1.Get(System.Int32,`0)
+  name: Get(Int32, TLinkAddress)
+  href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_System_Int32__0_
+  commentId: M:Platform.Data.Universal.IUniLinksGS`1.Get(System.Int32,`0)
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Get(System.Int32, TLinkAddress)
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get(System.Int32, TLinkAddress)
+  nameWithType: IUniLinksGS<TLinkAddress>.Get(Int32, TLinkAddress)
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get(Int32, TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksGS`1.Get*
   name: Get
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Get_
@@ -1507,15 +1507,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Get
   nameWithType: IUniLinksGS<TLinkAddress>.Get
   nameWithType.vb: IUniLinksGS(Of TLinkAddress).Get
-- uid: Platform.Data.Universal.IUniLinksGS`1.Set(`0[],`0[])
-  name: Set(TLinkAddress[], TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Set__0____0___
-  commentId: M:Platform.Data.Universal.IUniLinksGS`1.Set(`0[],`0[])
-  name.vb: Set(TLinkAddress(), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Set(TLinkAddress[], TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Set(TLinkAddress(), TLinkAddress())
-  nameWithType: IUniLinksGS<TLinkAddress>.Set(TLinkAddress[], TLinkAddress[])
-  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Set(TLinkAddress(), TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksGS`1.Set(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name: Set(IList<TLinkAddress>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Set_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksGS`1.Set(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name.vb: Set(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksGS<TLinkAddress>.Set(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksGS(Of TLinkAddress).Set(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksGS<TLinkAddress>.Set(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksGS(Of TLinkAddress).Set(IList(Of TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksGS`1.Set*
   name: Set
   href: api/Platform.Data.Universal.IUniLinksGS-1.html#Platform_Data_Universal_IUniLinksGS_1_Set_
@@ -1534,15 +1534,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress)
   nameWithType: IUniLinksIO<TLinkAddress>
   nameWithType.vb: IUniLinksIO(Of TLinkAddress)
-- uid: Platform.Data.Universal.IUniLinksIO`1.In(`0[],`0[])
-  name: In(TLinkAddress[], TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_In__0____0___
-  commentId: M:Platform.Data.Universal.IUniLinksIO`1.In(`0[],`0[])
-  name.vb: In(TLinkAddress(), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.In(TLinkAddress[], TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).In(TLinkAddress(), TLinkAddress())
-  nameWithType: IUniLinksIO<TLinkAddress>.In(TLinkAddress[], TLinkAddress[])
-  nameWithType.vb: IUniLinksIO(Of TLinkAddress).In(TLinkAddress(), TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksIO`1.In(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name: In(IList<TLinkAddress>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_In_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksIO`1.In(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name.vb: In(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.In(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).In(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksIO<TLinkAddress>.In(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress).In(IList(Of TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksIO`1.In*
   name: In
   href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_In_
@@ -1552,15 +1552,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).In
   nameWithType: IUniLinksIO<TLinkAddress>.In
   nameWithType.vb: IUniLinksIO(Of TLinkAddress).In
-- uid: Platform.Data.Universal.IUniLinksIO`1.Out(System.Func{`0[],System.Boolean},`0[])
-  name: Out(Func<TLinkAddress[], Boolean>, TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_Out_System_Func__0___System_Boolean___0___
-  commentId: M:Platform.Data.Universal.IUniLinksIO`1.Out(System.Func{`0[],System.Boolean},`0[])
-  name.vb: Out(Func(Of TLinkAddress(), Boolean), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.Out(System.Func<TLinkAddress[], System.Boolean>, TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).Out(System.Func(Of TLinkAddress(), System.Boolean), TLinkAddress())
-  nameWithType: IUniLinksIO<TLinkAddress>.Out(Func<TLinkAddress[], Boolean>, TLinkAddress[])
-  nameWithType.vb: IUniLinksIO(Of TLinkAddress).Out(Func(Of TLinkAddress(), Boolean), TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksIO`1.Out(System.Func{System.Collections.Generic.IList{`0},System.Boolean},System.Collections.Generic.IList{`0})
+  name: Out(Func<IList<TLinkAddress>, Boolean>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_Out_System_Func_System_Collections_Generic_IList__0__System_Boolean__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksIO`1.Out(System.Func{System.Collections.Generic.IList{`0},System.Boolean},System.Collections.Generic.IList{`0})
+  name.vb: Out(Func(Of IList(Of TLinkAddress), Boolean), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksIO<TLinkAddress>.Out(System.Func<System.Collections.Generic.IList<TLinkAddress>, System.Boolean>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksIO(Of TLinkAddress).Out(System.Func(Of System.Collections.Generic.IList(Of TLinkAddress), System.Boolean), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksIO<TLinkAddress>.Out(Func<IList<TLinkAddress>, Boolean>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksIO(Of TLinkAddress).Out(Func(Of IList(Of TLinkAddress), Boolean), IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksIO`1.Out*
   name: Out
   href: api/Platform.Data.Universal.IUniLinksIO-1.html#Platform_Data_Universal_IUniLinksIO_1_Out_
@@ -1579,15 +1579,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress)
   nameWithType: IUniLinksIOWithExtensions<TLinkAddress>
   nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress)
-- uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll(`0[])
-  name: OutAll(TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutAll__0___
-  commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll(`0[])
-  name.vb: OutAll(TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutAll(TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutAll(TLinkAddress())
-  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutAll(TLinkAddress[])
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutAll(TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll(System.Collections.Generic.IList{`0})
+  name: OutAll(IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutAll_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll(System.Collections.Generic.IList{`0})
+  name.vb: OutAll(IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutAll(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutAll(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutAll(IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutAll(IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutAll*
   name: OutAll
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutAll_
@@ -1597,15 +1597,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutAll
   nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutAll
   nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutAll
-- uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount(`0[])
-  name: OutCount(TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutCount__0___
-  commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount(`0[])
-  name.vb: OutCount(TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutCount(TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutCount(TLinkAddress())
-  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutCount(TLinkAddress[])
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutCount(TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount(System.Collections.Generic.IList{`0})
+  name: OutCount(IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutCount_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount(System.Collections.Generic.IList{`0})
+  name.vb: OutCount(IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutCount(System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutCount(System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutCount(IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutCount(IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutCount*
   name: OutCount
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutCount_
@@ -1615,15 +1615,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutCount
   nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutCount
   nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutCount
-- uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne(System.UInt64,`0[])
-  name: OutOne(UInt64, TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutOne_System_UInt64__0___
-  commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne(System.UInt64,`0[])
-  name.vb: OutOne(UInt64, TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutOne(System.UInt64, TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutOne(System.UInt64, TLinkAddress())
-  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutOne(UInt64, TLinkAddress[])
-  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutOne(UInt64, TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne(System.Int32,System.Collections.Generic.IList{`0})
+  name: OutOne(Int32, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutOne_System_Int32_System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne(System.Int32,System.Collections.Generic.IList{`0})
+  name.vb: OutOne(Int32, IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksIOWithExtensions<TLinkAddress>.OutOne(System.Int32, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksIOWithExtensions(Of TLinkAddress).OutOne(System.Int32, System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksIOWithExtensions<TLinkAddress>.OutOne(Int32, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksIOWithExtensions(Of TLinkAddress).OutOne(Int32, IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksIOWithExtensions`1.OutOne*
   name: OutOne
   href: api/Platform.Data.Universal.IUniLinksIOWithExtensions-1.html#Platform_Data_Universal_IUniLinksIOWithExtensions_1_OutOne_
@@ -1642,23 +1642,23 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress)
   nameWithType: IUniLinksRW<TLinkAddress>
   nameWithType.vb: IUniLinksRW(Of TLinkAddress)
-- uid: Platform.Data.Universal.IUniLinksRW`1.Read(System.Func{`0,System.Boolean},`0[])
-  name: Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_System_Func__0_System_Boolean___0___
-  commentId: M:Platform.Data.Universal.IUniLinksRW`1.Read(System.Func{`0,System.Boolean},`0[])
-  name.vb: Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read(System.Func<TLinkAddress, System.Boolean>, TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read(System.Func(Of TLinkAddress, System.Boolean), TLinkAddress())
-  nameWithType: IUniLinksRW<TLinkAddress>.Read(Func<TLinkAddress, Boolean>, TLinkAddress[])
-  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read(Func(Of TLinkAddress, Boolean), TLinkAddress())
-- uid: Platform.Data.Universal.IUniLinksRW`1.Read(System.UInt64,`0)
-  name: Read(UInt64, TLinkAddress)
-  href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_System_UInt64__0_
-  commentId: M:Platform.Data.Universal.IUniLinksRW`1.Read(System.UInt64,`0)
-  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read(System.UInt64, TLinkAddress)
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read(System.UInt64, TLinkAddress)
-  nameWithType: IUniLinksRW<TLinkAddress>.Read(UInt64, TLinkAddress)
-  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read(UInt64, TLinkAddress)
+- uid: Platform.Data.Universal.IUniLinksRW`1.Read(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
+  name: Read(Func<TLinkAddress, Boolean>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_System_Func__0_System_Boolean__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksRW`1.Read(System.Func{`0,System.Boolean},System.Collections.Generic.IList{`0})
+  name.vb: Read(Func(Of TLinkAddress, Boolean), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read(System.Func<TLinkAddress, System.Boolean>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read(System.Func(Of TLinkAddress, System.Boolean), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksRW<TLinkAddress>.Read(Func<TLinkAddress, Boolean>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read(Func(Of TLinkAddress, Boolean), IList(Of TLinkAddress))
+- uid: Platform.Data.Universal.IUniLinksRW`1.Read(System.Int32,`0)
+  name: Read(Int32, TLinkAddress)
+  href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_System_Int32__0_
+  commentId: M:Platform.Data.Universal.IUniLinksRW`1.Read(System.Int32,`0)
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Read(System.Int32, TLinkAddress)
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read(System.Int32, TLinkAddress)
+  nameWithType: IUniLinksRW<TLinkAddress>.Read(Int32, TLinkAddress)
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read(Int32, TLinkAddress)
 - uid: Platform.Data.Universal.IUniLinksRW`1.Read*
   name: Read
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Read_
@@ -1668,15 +1668,15 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Read
   nameWithType: IUniLinksRW<TLinkAddress>.Read
   nameWithType.vb: IUniLinksRW(Of TLinkAddress).Read
-- uid: Platform.Data.Universal.IUniLinksRW`1.Write(`0[],`0[])
-  name: Write(TLinkAddress[], TLinkAddress[])
-  href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Write__0____0___
-  commentId: M:Platform.Data.Universal.IUniLinksRW`1.Write(`0[],`0[])
-  name.vb: Write(TLinkAddress(), TLinkAddress())
-  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Write(TLinkAddress[], TLinkAddress[])
-  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Write(TLinkAddress(), TLinkAddress())
-  nameWithType: IUniLinksRW<TLinkAddress>.Write(TLinkAddress[], TLinkAddress[])
-  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Write(TLinkAddress(), TLinkAddress())
+- uid: Platform.Data.Universal.IUniLinksRW`1.Write(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name: Write(IList<TLinkAddress>, IList<TLinkAddress>)
+  href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Write_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.Universal.IUniLinksRW`1.Write(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name.vb: Write(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.Universal.IUniLinksRW<TLinkAddress>.Write(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Write(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: IUniLinksRW<TLinkAddress>.Write(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: IUniLinksRW(Of TLinkAddress).Write(IList(Of TLinkAddress), IList(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinksRW`1.Write*
   name: Write
   href: api/Platform.Data.Universal.IUniLinksRW-1.html#Platform_Data_Universal_IUniLinksRW_1_Write_
