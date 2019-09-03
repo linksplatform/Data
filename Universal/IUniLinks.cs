@@ -7,16 +7,16 @@ using System.Collections.Generic;
 namespace Platform.Data.Universal
 {
     /// <remarks>Minimal sufficient universal Links API (for bulk operations).</remarks>
-    public partial interface IUniLinks<TLink>
+    public partial interface IUniLinks<TLinkAddress>
     {
-        IList<IList<IList<TLink>>> Trigger(IList<TLink> condition, IList<TLink> substitution);
+        IList<IList<IList<TLinkAddress>>> Trigger(IList<TLinkAddress> condition, IList<TLinkAddress> substitution);
     }
 
     /// <remarks>Minimal sufficient universal Links API (for step by step operations).</remarks>
-    public partial interface IUniLinks<TLink>
+    public partial interface IUniLinks<TLinkAddress>
     {
         /// <returns>
-        /// TLink that represents True (was finished fully) or TLink that represents False (was stopped).
+        /// TLinkAddress that represents True (was finished fully) or TLinkAddress that represents False (was stopped).
         /// This is done to assure ability to push up stop signal through recursion stack.
         /// </returns>
         /// <remarks>
@@ -24,19 +24,19 @@ namespace Platform.Data.Universal
         /// { 1, any, any } => { itself, any, 3 } // update
         /// { 3, any, any } => { 0, 0, 0 } // delete
         /// </remarks>
-        TLink Trigger(IList<TLink> patternOrCondition, Func<IList<TLink>, TLink> matchHandler,
-                      IList<TLink> substitution, Func<IList<TLink>, IList<TLink>, TLink> substitutionHandler);
+        TLinkAddress Trigger(IList<TLinkAddress> patternOrCondition, Func<IList<TLinkAddress>, TLinkAddress> matchHandler,
+                      IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> substitutionHandler);
 
-        TLink Trigger(IList<TLink> restriction, Func<IList<TLink>, IList<TLink>, TLink> matchedHandler,
-              IList<TLink> substitution, Func<IList<TLink>, IList<TLink>, TLink> substitutedHandler);
+        TLinkAddress Trigger(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> matchedHandler,
+              IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> substitutedHandler);
     }
 
     /// <remarks>Extended with small optimization.</remarks>
-    public partial interface IUniLinks<TLink>
+    public partial interface IUniLinks<TLinkAddress>
     {
         /// <remarks>
         /// Something simple should be simple and optimized.
         /// </remarks>
-        TLink Count(IList<TLink> restrictions);
+        TLinkAddress Count(IList<TLinkAddress> restrictions);
     }
 }

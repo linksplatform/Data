@@ -8,10 +8,10 @@ namespace Platform.Data.Universal
     /// <remarks>
     /// Read/Write aliases for IUniLinks.
     /// </remarks>
-    public interface IUniLinksRW<TLink>
+    public interface IUniLinksRW<TLinkAddress>
     {
-        TLink Read(ulong partType, TLink link);
-        bool Read(Func<TLink, bool> handler, params TLink[] pattern);
-        TLink Write(TLink[] before, TLink[] after);
+        TLinkAddress Read(ulong partType, TLinkAddress link);
+        bool Read(Func<TLinkAddress, bool> handler, params TLinkAddress[] pattern);
+        TLinkAddress Write(TLinkAddress[] before, TLinkAddress[] after);
     }
 }

@@ -19,15 +19,13 @@ namespace Platform.Data.Sequences
     /// А так же качественное распознавание прохода по циклическому графу.
     /// Ограничение на уровень глубины рекурсии может позволить использовать уменьшенный размер стека.
     /// Можно использовать глобальный стек (или несколько глобальных стеков на каждый поток).
-    /// 
-    /// TODO: Попробовать реализовать алгоритм используя Sigil (MSIL) и низкоуровневый стек и сравнить производительность.
     /// </remarks>
     public static class SequenceWalker
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void WalkRight<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Action<TLink> visit)
+        public static void WalkRight<TLinkAddress>(TLinkAddress sequence, Func<TLinkAddress, TLinkAddress> getSource, Func<TLinkAddress, TLinkAddress> getTarget, Func<TLinkAddress, bool> isElement, Action<TLinkAddress> visit)
         {
-            var stack = new Stack<TLink>();
+            var stack = new Stack<TLinkAddress>();
             var element = sequence;
             if (isElement(element))
             {
@@ -66,9 +64,9 @@ namespace Platform.Data.Sequences
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void WalkLeft<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Action<TLink> visit)
+        public static void WalkLeft<TLinkAddress>(TLinkAddress sequence, Func<TLinkAddress, TLinkAddress> getSource, Func<TLinkAddress, TLinkAddress> getTarget, Func<TLinkAddress, bool> isElement, Action<TLinkAddress> visit)
         {
-            var stack = new Stack<TLink>();
+            var stack = new Stack<TLinkAddress>();
             var element = sequence;
             if (isElement(element))
             {

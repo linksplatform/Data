@@ -2,8 +2,8 @@
 
 namespace Platform.Data.Sequences
 {
-    public interface ISequenceAppender<TLink>
+    public interface ISequenceAppender<TLinkAddress>
     {
-        TLink Append(TLink sequence, TLink appendant);
+        TLinkAddress Append(TLinkAddress sequence, TLinkAddress appendant);
     }
 }

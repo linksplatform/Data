@@ -7,12 +7,12 @@ namespace Platform.Data
     public static class LinksConstantsExtensions
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsReference<TAddress>(this LinksConstants<TAddress> linksConstants, TAddress address) => linksConstants.IsInnerReference(address) || linksConstants.IsExternalReference(address);
+        public static bool IsReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.IsInnerReference(address) || linksConstants.IsExternalReference(address);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsInnerReference<TAddress>(this LinksConstants<TAddress> linksConstants, TAddress address) => linksConstants.PossibleInnerReferencesRange.ContainsValue(address);
+        public static bool IsInnerReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.PossibleInnerReferencesRange.ContainsValue(address);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsExternalReference<TAddress>(this LinksConstants<TAddress> linksConstants, TAddress address) => linksConstants.PossibleExternalReferencesRange?.ContainsValue(address) ?? false;
+        public static bool IsExternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.PossibleExternalReferencesRange?.ContainsValue(address) ?? false;
     }
 }

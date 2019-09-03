@@ -4,9 +4,9 @@
 
 namespace Platform.Data
 {
-    public interface ISynchronizedLinks<TLink, TLinks, TConstants> : ISynchronized<TLinks>, ILinks<TLink, TConstants>
-        where TConstants : LinksConstants<TLink>
-        where TLinks : ILinks<TLink, TConstants>
+    public interface ISynchronizedLinks<TLinkAddress, TLinks, TConstants> : ISynchronized<TLinks>, ILinks<TLinkAddress, TConstants>
+        where TLinks : ILinks<TLinkAddress, TConstants>
+        where TConstants : LinksConstants<TLinkAddress>
     {
     }
 }

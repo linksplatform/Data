@@ -4,8 +4,8 @@
 
 namespace Platform.Data.Sequences
 {
-    public interface ISequenceWalker<TLink>
+    public interface ISequenceWalker<TLinkAddress>
     {
-        IEnumerable<IList<TLink>> Walk(TLink sequence);
+        IEnumerable<IList<TLinkAddress>> Walk(TLinkAddress sequence);
     }
 }

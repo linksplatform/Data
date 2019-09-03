@@ -7,12 +7,12 @@ namespace Platform.Data.Universal
 {
     /// <remarks>
     /// In/Out aliases for IUniLinks.
-    /// TLink can be any number type of any size.
+    /// TLinkAddress can be any number type of any size.
     /// </remarks>
-    public interface IUniLinksIO<TLink>
+    public interface IUniLinksIO<TLinkAddress>
     {
         /// <remarks>
-        /// default(TLink) means any link.
+        /// default(TLinkAddress) means any link.
         /// Single element pattern means just element (link).
         /// Handler gets array of link contents.
         /// * link[0] is index or identifier.
@@ -28,15 +28,15 @@ namespace Platform.Data.Universal
         /// 
         /// Handles all links in store if pattern/restrictions is not defined.
         /// </remarks>
-        bool Out(Func<TLink[], bool> handler, params TLink[] pattern);
+        bool Out(Func<TLinkAddress[], bool> handler, params TLinkAddress[] pattern);
 
         /// <remarks>
-        /// default(TLink) means itself.
+        /// default(TLinkAddress) means itself.
         /// Equivalent to:
         /// * creation if before == null
         /// * deletion if after == null
         /// * update if before != null &amp;&amp; after != null
-        /// * default(TLink) if before == null &amp;&amp; after == null
+        /// * default(TLinkAddress) if before == null &amp;&amp; after == null
         /// 
         /// Possible interpretation
         /// * In(null, new[] { }) creates point (link that points to itself using minimum number of parts).
@@ -45,6 +45,6 @@ namespace Platform.Data.Universal
         /// * In(new[] { 4 }, new [] { 0, 2, 3 }) replaces 4th link with new doublet link (with 2 as source and 3 as target), 0 means it can be placed in any address.
         /// ...
         /// </remarks>
-        TLink In(TLink[] before, TLink[] after);
+        TLinkAddress In(TLinkAddress[] before, TLinkAddress[] after);
     }
 }

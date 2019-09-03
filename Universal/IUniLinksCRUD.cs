@@ -8,12 +8,12 @@ namespace Platform.Data.Universal
     /// <remarks>
     /// CRUD aliases for IUniLinks.
     /// </remarks>
-    public interface IUniLinksCRUD<TLink>
+    public interface IUniLinksCRUD<TLinkAddress>
     {
-        TLink Read(ulong partType, TLink link);
-        bool Read(Func<TLink, bool> handler, params TLink[] pattern);
-        TLink Create(TLink[] parts);
-        TLink Update(TLink[] before, TLink[] after);
-        void Delete(TLink[] parts);
+        TLinkAddress Read(ulong partType, TLinkAddress link);
+        bool Read(Func<TLinkAddress, bool> handler, params TLinkAddress[] pattern);
+        TLinkAddress Create(TLinkAddress[] parts);
+        TLinkAddress Update(TLinkAddress[] before, TLinkAddress[] after);
+        void Delete(TLinkAddress[] parts);
     }
 }

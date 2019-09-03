@@ -23,10 +23,10 @@ namespace Platform.Data.Sequences
     public static class StopableSequenceWalker
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WalkRight<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Action<TLink> enter, Action<TLink> exit, Func<TLink, bool> canEnter, Func<TLink, bool> visit)
+        public static bool WalkRight<TLinkAddress>(TLinkAddress sequence, Func<TLinkAddress, TLinkAddress> getSource, Func<TLinkAddress, TLinkAddress> getTarget, Func<TLinkAddress, bool> isElement, Action<TLinkAddress> enter, Action<TLinkAddress> exit, Func<TLinkAddress, bool> canEnter, Func<TLinkAddress, bool> visit)
         {
             var exited = 0;
-            var stack = new Stack<TLink>();
+            var stack = new Stack<TLinkAddress>();
             var element = sequence;
             if (isElement(element))
             {
@@ -90,9 +90,9 @@ namespace Platform.Data.Sequences
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WalkRight<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Func<TLink, bool> visit)
+        public static bool WalkRight<TLinkAddress>(TLinkAddress sequence, Func<TLinkAddress, TLinkAddress> getSource, Func<TLinkAddress, TLinkAddress> getTarget, Func<TLinkAddress, bool> isElement, Func<TLinkAddress, bool> visit)
         {
-            var stack = new Stack<TLink>();
+            var stack = new Stack<TLinkAddress>();
             var element = sequence;
             if (isElement(element))
             {
@@ -128,9 +128,9 @@ namespace Platform.Data.Sequences
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WalkLeft<TLink>(TLink sequence, Func<TLink, TLink> getSource, Func<TLink, TLink> getTarget, Func<TLink, bool> isElement, Func<TLink, bool> visit)
+        public static bool WalkLeft<TLinkAddress>(TLinkAddress sequence, Func<TLinkAddress, TLinkAddress> getSource, Func<TLinkAddress, TLinkAddress> getTarget, Func<TLinkAddress, bool> isElement, Func<TLinkAddress, bool> visit)
         {
-            var stack = new Stack<TLink>();
+            var stack = new Stack<TLinkAddress>();
             var element = sequence;
             if (isElement(element))
             {

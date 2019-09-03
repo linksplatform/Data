@@ -8,10 +8,10 @@ namespace Platform.Data.Universal
     /// <remarks>
     /// Get/Set aliases for IUniLinks.
     /// </remarks>
-    public interface IUniLinksGS<TLink>
+    public interface IUniLinksGS<TLinkAddress>
     {
-        TLink Get(ulong partType, TLink link);
-        bool Get(Func<TLink, bool> handler, params TLink[] pattern);
-        TLink Set(TLink[] before, TLink[] after);
+        TLinkAddress Get(ulong partType, TLinkAddress link);
+        bool Get(Func<TLinkAddress, bool> handler, params TLinkAddress[] pattern);
+        TLinkAddress Set(TLinkAddress[] before, TLinkAddress[] after);
     }
 }

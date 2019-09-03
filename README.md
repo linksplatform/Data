@@ -13,7 +13,7 @@ Forked from: [Konard/LinksPlatform/Platform/Platform.Data](https://github.com/Ko
 NuGet package: [Platform.Data](https://www.nuget.org/packages/Platform.Data)
 
 ## [Documentation](https://linksplatform.github.io/Data)
-Interface [ILinks\<TLink, TConstants\>](https://linksplatform.github.io/Data/api/Platform.Data.ILinks-2.html).
+Interface [ILinks\<TLinkAddress, TConstants\>](https://linksplatform.github.io/Data/api/Platform.Data.ILinks-2.html).
 
 [PDF file](https://linksplatform.github.io/Data/Platform.Data.pdf) with code for e-readers.
 

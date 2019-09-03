@@ -11,8 +11,8 @@ namespace Platform.Data
     public static class ILinksExtensions
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLink Count<TLink, TConstants>(this ILinks<TLink, TConstants> links, params TLink[] restrictions)
-            where TConstants : LinksConstants<TLink>
+        public static TLinkAddress Count<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, params TLinkAddress[] restrictions)
+            where TConstants : LinksConstants<TLinkAddress>
             => links.Count(restrictions);
 
         /// <summary>
@@ -22,9 +22,9 @@ namespace Platform.Data
         /// <param name="link">Индекс проверяемой на существование связи.</param>
         /// <returns>Значение, определяющее существует ли связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool Exists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : LinksConstants<TLink>
-            => Comparer<TLink>.Default.Compare(links.Count(link), default) > 0;
+        public static bool Exists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+            where TConstants : LinksConstants<TLinkAddress>
+            => Comparer<TLinkAddress>.Default.Compare(links.Count(link), default) > 0;
 
         /// <param name="links">Хранилище связей.</param>
         /// <param name="link">Индекс проверяемой на существование связи.</param>
@@ -32,12 +32,12 @@ namespace Platform.Data
         /// TODO: May be move to EnsureExtensions or make it both there and here
         /// </remarks>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void EnsureLinkExists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : LinksConstants<TLink>
+        public static void EnsureLinkExists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+            where TConstants : LinksConstants<TLinkAddress>
         {
             if (!links.Exists(link))
             {
-                throw new ArgumentLinkDoesNotExistsException<TLink>(link);
+                throw new ArgumentLinkDoesNotExistsException<TLinkAddress>(link);
             }
         }
 
@@ -45,12 +45,12 @@ namespace Platform.Data
         /// <param name="link">Индекс проверяемой на существование связи.</param>
         /// <param name="argumentName">Имя аргумента, в который передаётся индекс связи.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void EnsureLinkExists<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link, string argumentName)
-            where TConstants : LinksConstants<TLink>
+        public static void EnsureLinkExists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link, string argumentName)
+            where TConstants : LinksConstants<TLinkAddress>
         {
             if (!links.Exists(link))
             {
-                throw new ArgumentLinkDoesNotExistsException<TLink>(link, argumentName);
+                throw new ArgumentLinkDoesNotExistsException<TLinkAddress>(link, argumentName);
             }
         }
 
@@ -62,8 +62,8 @@ namespace Platform.Data
         /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLink Each<TLink, TConstants>(this ILinks<TLink, TConstants> links, Func<IList<TLink>, TLink> handler, params TLink[] restrictions)
-            where TConstants : LinksConstants<TLink>
+        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, Func<IList<TLinkAddress>, TLinkAddress> handler, params TLinkAddress[] restrictions)
+            where TConstants : LinksConstants<TLinkAddress>
             => links.Each(handler, restrictions);
 
         /// <summary>
@@ -73,11 +73,11 @@ namespace Platform.Data
         /// <param name="link">Индекс связи.</param>
         /// <returns>Уникальную связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IList<TLink> GetLink<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : LinksConstants<TLink>
+        public static IList<TLinkAddress> GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+            where TConstants : LinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
-            var linkPartsSetter = new Setter<IList<TLink>, TLink>(constants.Continue, constants.Break);
+            var linkPartsSetter = new Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
             links.Each(linkPartsSetter.SetAndReturnTrue, link);
             return linkPartsSetter.Result;
         }
@@ -106,11 +106,11 @@ namespace Platform.Data
         /// например "DoubletOf" обозначить что является точно парой, а что точно точкой.
         /// И наоборот этот же метод поможет, если уже существует точка, но нам нужна пара.
         /// </remarks>
-        public static bool IsFullPoint<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : LinksConstants<TLink>
+        public static bool IsFullPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+            where TConstants : LinksConstants<TLinkAddress>
         {
             links.EnsureLinkExists(link);
-            return Point<TLink>.IsFullPoint(links.GetLink(link));
+            return Point<TLinkAddress>.IsFullPoint(links.GetLink(link));
         }
 
         /// <summary>Возвращает значение, определяющее является ли связь с указанным индексом точкой частично (связью замкнутой на себе как минимум один раз).</summary>
@@ -121,11 +121,11 @@ namespace Platform.Data
         /// Достаточно любой одной ссылки на себя.
         /// Также в будущем можно будет проверять и всех родителей, чтобы проверить есть ли ссылки на себя (на эту связь).
         /// </remarks>
-        public static bool IsPartialPoint<TLink, TConstants>(this ILinks<TLink, TConstants> links, TLink link)
-            where TConstants : LinksConstants<TLink>
+        public static bool IsPartialPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+            where TConstants : LinksConstants<TLinkAddress>
         {
             links.EnsureLinkExists(link);
-            return Point<TLink>.IsPartialPoint(links.GetLink(link));
+            return Point<TLinkAddress>.IsPartialPoint(links.GetLink(link));
         }
 
         #endregion
