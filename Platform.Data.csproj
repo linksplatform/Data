@@ -10,7 +10,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
-    <PackageTags>LinksPlatform;Data;ILinks;ISequences;ISynchronizedLinks;Point;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;ILinksCombinedConstants;LinksCombinedConstants</PackageTags>
+    <PackageTags>LinksPlatform;Data;ILinks;ILinksExtensions;ISynchronizedLinks;Point;LinkAddress;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;LinksConstants;LinksConstantsExtensions</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Data</PackageProjectUrl>
     <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
