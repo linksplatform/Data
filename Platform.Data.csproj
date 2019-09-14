@@ -41,7 +41,7 @@ This release is not backward compatible with the previous 0.0.3 release.</Packag
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Numbers" Version="0.2.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.2.1" />
     <PackageReference Include="Platform.Threading" Version="0.1.0" />
     <PackageReference Include="Platform.Setters" Version="0.0.2" />
   </ItemGroup>
