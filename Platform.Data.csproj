@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.1.1</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net471;netstandard2.0</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -22,22 +22,10 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>Latest</LangVersion>
-    <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
-Platform.Numbers dependency updated from 0.1.1 to 0.2.0.
-Platform.Threading dependency updated from 0.0.5 to 0.1.0.
-Platform.Setters dependency updated from 0.0.1 to 0.0.2.
-LinksConstants simplified, there is only one inheritable class now.
-Added LinksConstants.Skip constant.
-There are now two ranges in LinksConstants, describing references restrictions.
-Added LinksConstantsExtensions.
-ISequence interface deleted, ILinks interface updated to support both links and sequences.
-Added LinkAddress struct, that implement IList for better performance.
-Code comments updated.
-Tags updated.
-License update to support usage as an unmodified dynamic library in larger projects of any kind.
-Refactoring, issues fix.
-
-This release is not backward compatible with the previous 0.0.3 release.</PackageReleaseNotes>
+    <PackageReleaseNotes>The minimum supported version of .NET Framework is now 4.7.1.
+Platform.Numbers dependency updated from 0.2.0 to 0.2.1.
+Project file updated to support multiple build environments: dotnet, Travis CI, MonoDevelop, and Visual Studio.
+Travis CI configuration updated to support automatic NuGet package publishing.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
