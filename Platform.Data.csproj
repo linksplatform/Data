@@ -6,8 +6,7 @@
     <AssemblyTitle>Platform.Data</AssemblyTitle>
     <VersionPrefix>0.1.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
-    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
+    <TargetFrameworks>net471;netstandard2.0</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
     <PackageTags>LinksPlatform;Data;ILinks;ILinksExtensions;ISynchronizedLinks;Point;LinkAddress;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;LinksConstants;LinksConstantsExtensions</PackageTags>
@@ -22,6 +21,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>Latest</LangVersion>
     <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
 Platform.Numbers dependency updated from 0.1.1 to 0.2.0.
 Platform.Threading dependency updated from 0.0.5 to 0.1.0.
@@ -39,6 +39,10 @@ Refactoring, issues fix.
 
 This release is not backward compatible with the previous 0.0.3 release.</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0-preview.2" PrivateAssets="All" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Platform.Numbers" Version="0.2.1" />
