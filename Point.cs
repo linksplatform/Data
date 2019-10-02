@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Ranges;
@@ -8,13 +10,118 @@ using Platform.Collections;
 
 namespace Platform.Data
 {
-    public static class Point<TLinkAddress>
+    public class Point<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
     {
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
+
+        public TLinkAddress Index
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
+
+        public int Size
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
+
+        public TLinkAddress this[int index]
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                if (index < Size)
+                {
+                    return Index;
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+            }
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            set => throw new NotSupportedException();
+        }
+
+        public int Count => int.MaxValue;
+
+        public bool IsReadOnly => true;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public Point(TLinkAddress index, int size)
+        {
+            Index = index;
+            Size = size;
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void Add(TLinkAddress item) => throw new NotSupportedException();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void Clear() => throw new NotSupportedException();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public virtual bool Contains(TLinkAddress item) => _equalityComparer.Equals(item, Index) ? true : false;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void CopyTo(TLinkAddress[] array, int arrayIndex) => array[arrayIndex] = Index;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public IEnumerator<TLinkAddress> GetEnumerator()
+        {
+            for (int i = 0; i < Size; i++)
+            {
+                yield return Index;
+            }
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public virtual int IndexOf(TLinkAddress item) => _equalityComparer.Equals(item, Index) ? 0 : -1;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void Insert(int index, TLinkAddress item) => throw new NotSupportedException();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public bool Remove(TLinkAddress item) => throw new NotSupportedException();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void RemoveAt(int index) => throw new NotSupportedException();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            for (int i = 0; i < Size; i++)
+            {
+                yield return Index;
+            }
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public virtual bool Equals(LinkAddress<TLinkAddress> other) => _equalityComparer.Equals(Index, other.Index);
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static implicit operator TLinkAddress(Point<TLinkAddress> linkAddress) => linkAddress.Index;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public override bool Equals(object obj) => obj is Point<TLinkAddress> linkAddress ? Equals(linkAddress) : false;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public override int GetHashCode() => Index.GetHashCode();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public override string ToString() => Index.ToString();
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool operator ==(Point<TLinkAddress> left, Point<TLinkAddress> right) => left.Equals(right);
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool operator !=(Point<TLinkAddress> left, Point<TLinkAddress> right) => !(left == right);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsFullPoint(params TLinkAddress[] link) => IsFullPoint((IList<TLinkAddress>)link);
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsFullPoint(IList<TLinkAddress> link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
@@ -36,6 +143,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsPartialPoint(params TLinkAddress[] link) => IsPartialPoint((IList<TLinkAddress>)link);
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsPartialPoint(IList<TLinkAddress> link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));

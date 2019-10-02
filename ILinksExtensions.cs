@@ -24,7 +24,10 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool Exists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
-            => Comparer<TLinkAddress>.Default.Compare(links.Count(link), default) > 0;
+        {
+            var constants = links.Constants;
+            return constants.IsExternalReference(link) || (constants.IsInnerReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count(new LinkAddress<TLinkAddress>(link)), default) > 0);
+        }
 
         /// <param name="links">Хранилище связей.</param>
         /// <param name="link">Индекс проверяемой на существование связи.</param>
@@ -77,6 +80,10 @@ namespace Platform.Data
             where TConstants : LinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
+            if (constants.IsExternalReference(link))
+            {
+                return new Point<TLinkAddress>(link, constants.TargetPart + 1);
+            }
             var linkPartsSetter = new Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
             links.Each(linkPartsSetter.SetAndReturnTrue, link);
             return linkPartsSetter.Result;
@@ -109,6 +116,10 @@ namespace Platform.Data
         public static bool IsFullPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
         {
+            if (links.Constants.IsExternalReference(link))
+            {
+                return true;
+            }
             links.EnsureLinkExists(link);
             return Point<TLinkAddress>.IsFullPoint(links.GetLink(link));
         }
@@ -124,6 +135,10 @@ namespace Platform.Data
         public static bool IsPartialPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
         {
+            if (links.Constants.IsExternalReference(link))
+            {
+                return true;
+            }
             links.EnsureLinkExists(link);
             return Point<TLinkAddress>.IsPartialPoint(links.GetLink(link));
         }
