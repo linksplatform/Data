@@ -55,41 +55,71 @@ namespace Platform.Data
         #region References
 
         /// <summary>Возвращает диапазон возможных индексов для внутренних связей (внутренних ссылок).</summary>
-        public Range<TLinkAddress> PossibleInnerReferencesRange { get; }
+        public Range<TLinkAddress> InternalReferencesRange { get; }
 
         /// <summary>Возвращает диапазон возможных индексов для внешних связей (внешних ссылок).</summary>
-        public Range<TLinkAddress>? PossibleExternalReferencesRange { get; }
+        public Range<TLinkAddress>? ExternalReferencesRange { get; }
 
         #endregion
 
-        public LinksConstants(int targetPart, Range<TLinkAddress> possibleInnerReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange)
+        public LinksConstants(int targetPart, Range<TLinkAddress> possibleInternalReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange)
         {
             IndexPart = 0;
             SourcePart = 1;
             TargetPart = targetPart;
             Null = Integer<TLinkAddress>.Zero;
             Break = Integer<TLinkAddress>.Zero;
-            var currentInnerReferenceIndex = possibleInnerReferencesRange.Maximum;
-            Continue = currentInnerReferenceIndex;
-            Decrement(ref currentInnerReferenceIndex);
-            Skip = currentInnerReferenceIndex;
-            Decrement(ref currentInnerReferenceIndex);
-            Any = currentInnerReferenceIndex;
-            Decrement(ref currentInnerReferenceIndex);
-            Itself = currentInnerReferenceIndex;
-            Decrement(ref currentInnerReferenceIndex);
-            PossibleInnerReferencesRange = (possibleInnerReferencesRange.Minimum, currentInnerReferenceIndex);
-            PossibleExternalReferencesRange = possibleExternalReferencesRange;
+            var currentInternalReferenceIndex = possibleInternalReferencesRange.Maximum;
+            Continue = currentInternalReferenceIndex;
+            Decrement(ref currentInternalReferenceIndex);
+            Skip = currentInternalReferenceIndex;
+            Decrement(ref currentInternalReferenceIndex);
+            Any = currentInternalReferenceIndex;
+            Decrement(ref currentInternalReferenceIndex);
+            Itself = currentInternalReferenceIndex;
+            Decrement(ref currentInternalReferenceIndex);
+            InternalReferencesRange = (possibleInternalReferencesRange.Minimum, currentInternalReferenceIndex);
+            ExternalReferencesRange = possibleExternalReferencesRange;
         }
 
-        private static void Decrement(ref TLinkAddress currentInnerReferenceIndex) => currentInnerReferenceIndex = Arithmetic.Decrement(currentInnerReferenceIndex);
+        public LinksConstants(int targetPart, bool enableExternalReferencesSupport) : this(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) {}
 
-        public LinksConstants(Range<TLinkAddress> possibleInnerReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange) : this(DefaultTargetPart, possibleInnerReferencesRange, possibleExternalReferencesRange) { }
+        public LinksConstants(Range<TLinkAddress> possibleInternalReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange) : this(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
 
-        public LinksConstants(int targetPart, Range<TLinkAddress> possibleInnerReferencesRange) : this(targetPart, possibleInnerReferencesRange, null) { }
+        public LinksConstants(bool enableExternalReferencesSupport) : this(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
-        public LinksConstants(Range<TLinkAddress> possibleInnerReferencesRange) : this(DefaultTargetPart, possibleInnerReferencesRange, null) { }
+        public LinksConstants(int targetPart, Range<TLinkAddress> possibleInternalReferencesRange) : this(targetPart, possibleInternalReferencesRange, null) { }
 
-        public LinksConstants() : this(DefaultTargetPart, (Integer<TLinkAddress>.One, NumericType<TLinkAddress>.MaxValue), null) { }
+        public LinksConstants(Range<TLinkAddress> possibleInternalReferencesRange) : this(DefaultTargetPart, possibleInternalReferencesRange, null) { }
+
+        public LinksConstants() : this(DefaultTargetPart, enableExternalReferencesSupport: false) { }
+
+        public static Range<TLinkAddress> GetDefaultInternalReferencesRange(bool enableExternalReferencesSupport)
+        {
+            if (enableExternalReferencesSupport)
+            {
+                return (Integer<TLinkAddress>.One, (Integer<TLinkAddress>)GetHalfOfNumberValuesRange());
+            }
+            else
+            {
+                return (Integer<TLinkAddress>.One, NumericType<TLinkAddress>.MaxValue);
+            }
+        }
+
+        public static Range<TLinkAddress>? GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport)
+        {
+            if (enableExternalReferencesSupport)
+            {
+                return ((Integer<TLinkAddress>)(GetHalfOfNumberValuesRange() + 1UL), NumericType<TLinkAddress>.MaxValue);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        private static ulong GetHalfOfNumberValuesRange() => ((ulong)(Integer<TLinkAddress>)NumericType<TLinkAddress>.MaxValue) / 2;
+
+        private static void Decrement(ref TLinkAddress currentInternalReferenceIndex) => currentInternalReferenceIndex = Arithmetic.Decrement(currentInternalReferenceIndex);
     }
 }

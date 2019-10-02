@@ -26,7 +26,7 @@ namespace Platform.Data
             where TConstants : LinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
-            return constants.IsExternalReference(link) || (constants.IsInnerReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count(new LinkAddress<TLinkAddress>(link)), default) > 0);
+            return constants.IsExternalReference(link) || (constants.IsInternalReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count(new LinkAddress<TLinkAddress>(link)), default) > 0);
         }
 
         /// <param name="links">Хранилище связей.</param>
