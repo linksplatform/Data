@@ -162,6 +162,426 @@ references:
   commentId: F:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
   fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
   nameWithType: LinkWithSameValueAlreadyExistsException.DefaultMessage
+- uid: Platform.Data.Hybrid`1
+  name: Hybrid<TLinkAddress>
+  href: api/Platform.Data.Hybrid-1.html
+  commentId: T:Platform.Data.Hybrid`1
+  name.vb: Hybrid(Of TLinkAddress)
+  fullName: Platform.Data.Hybrid<TLinkAddress>
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress)
+  nameWithType: Hybrid<TLinkAddress>
+  nameWithType.vb: Hybrid(Of TLinkAddress)
+- uid: Platform.Data.Hybrid`1.#ctor(`0)
+  name: Hybrid(TLinkAddress)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1__ctor__0_
+  commentId: M:Platform.Data.Hybrid`1.#ctor(`0)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Hybrid(TLinkAddress)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Hybrid(TLinkAddress)
+  nameWithType: Hybrid<TLinkAddress>.Hybrid(TLinkAddress)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Hybrid(TLinkAddress)
+- uid: Platform.Data.Hybrid`1.#ctor(`0,System.Boolean)
+  name: Hybrid(TLinkAddress, Boolean)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1__ctor__0_System_Boolean_
+  commentId: M:Platform.Data.Hybrid`1.#ctor(`0,System.Boolean)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Hybrid(TLinkAddress, System.Boolean)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Hybrid(TLinkAddress, System.Boolean)
+  nameWithType: Hybrid<TLinkAddress>.Hybrid(TLinkAddress, Boolean)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Hybrid(TLinkAddress, Boolean)
+- uid: Platform.Data.Hybrid`1.#ctor(System.Object)
+  name: Hybrid(Object)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1__ctor_System_Object_
+  commentId: M:Platform.Data.Hybrid`1.#ctor(System.Object)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Hybrid(System.Object)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Hybrid(System.Object)
+  nameWithType: Hybrid<TLinkAddress>.Hybrid(Object)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Hybrid(Object)
+- uid: Platform.Data.Hybrid`1.#ctor(System.Object,System.Boolean)
+  name: Hybrid(Object, Boolean)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1__ctor_System_Object_System_Boolean_
+  commentId: M:Platform.Data.Hybrid`1.#ctor(System.Object,System.Boolean)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Hybrid(System.Object, System.Boolean)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Hybrid(System.Object, System.Boolean)
+  nameWithType: Hybrid<TLinkAddress>.Hybrid(Object, Boolean)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Hybrid(Object, Boolean)
+- uid: Platform.Data.Hybrid`1.#ctor*
+  name: Hybrid
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1__ctor_
+  commentId: Overload:Platform.Data.Hybrid`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Hybrid
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Hybrid
+  nameWithType: Hybrid<TLinkAddress>.Hybrid
+  nameWithType.vb: Hybrid(Of TLinkAddress).Hybrid
+- uid: Platform.Data.Hybrid`1.AbsoluteValue
+  name: AbsoluteValue
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_AbsoluteValue
+  commentId: P:Platform.Data.Hybrid`1.AbsoluteValue
+  fullName: Platform.Data.Hybrid<TLinkAddress>.AbsoluteValue
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).AbsoluteValue
+  nameWithType: Hybrid<TLinkAddress>.AbsoluteValue
+  nameWithType.vb: Hybrid(Of TLinkAddress).AbsoluteValue
+- uid: Platform.Data.Hybrid`1.AbsoluteValue*
+  name: AbsoluteValue
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_AbsoluteValue_
+  commentId: Overload:Platform.Data.Hybrid`1.AbsoluteValue
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.AbsoluteValue
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).AbsoluteValue
+  nameWithType: Hybrid<TLinkAddress>.AbsoluteValue
+  nameWithType.vb: Hybrid(Of TLinkAddress).AbsoluteValue
+- uid: Platform.Data.Hybrid`1.Equals(Platform.Data.Hybrid{`0})
+  name: Equals(Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_Equals_Platform_Data_Hybrid__0__
+  commentId: M:Platform.Data.Hybrid`1.Equals(Platform.Data.Hybrid{`0})
+  name.vb: Equals(Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Equals(Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Equals(Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Equals(Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Equals(Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_Equals_System_Object_
+  commentId: M:Platform.Data.Hybrid`1.Equals(System.Object)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Equals(System.Object)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Equals(System.Object)
+  nameWithType: Hybrid<TLinkAddress>.Equals(Object)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Equals(Object)
+- uid: Platform.Data.Hybrid`1.Equals*
+  name: Equals
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_Equals_
+  commentId: Overload:Platform.Data.Hybrid`1.Equals
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Equals
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Equals
+  nameWithType: Hybrid<TLinkAddress>.Equals
+  nameWithType.vb: Hybrid(Of TLinkAddress).Equals
+- uid: Platform.Data.Hybrid`1.ExternalZero
+  name: ExternalZero
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_ExternalZero
+  commentId: F:Platform.Data.Hybrid`1.ExternalZero
+  fullName: Platform.Data.Hybrid<TLinkAddress>.ExternalZero
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).ExternalZero
+  nameWithType: Hybrid<TLinkAddress>.ExternalZero
+  nameWithType.vb: Hybrid(Of TLinkAddress).ExternalZero
+- uid: Platform.Data.Hybrid`1.GetHashCode
+  name: GetHashCode()
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_GetHashCode
+  commentId: M:Platform.Data.Hybrid`1.GetHashCode
+  fullName: Platform.Data.Hybrid<TLinkAddress>.GetHashCode()
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).GetHashCode()
+  nameWithType: Hybrid<TLinkAddress>.GetHashCode()
+  nameWithType.vb: Hybrid(Of TLinkAddress).GetHashCode()
+- uid: Platform.Data.Hybrid`1.GetHashCode*
+  name: GetHashCode
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_GetHashCode_
+  commentId: Overload:Platform.Data.Hybrid`1.GetHashCode
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.GetHashCode
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).GetHashCode
+  nameWithType: Hybrid<TLinkAddress>.GetHashCode
+  nameWithType.vb: Hybrid(Of TLinkAddress).GetHashCode
+- uid: Platform.Data.Hybrid`1.HalfOfNumberValuesRange
+  name: HalfOfNumberValuesRange
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_HalfOfNumberValuesRange
+  commentId: F:Platform.Data.Hybrid`1.HalfOfNumberValuesRange
+  fullName: Platform.Data.Hybrid<TLinkAddress>.HalfOfNumberValuesRange
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).HalfOfNumberValuesRange
+  nameWithType: Hybrid<TLinkAddress>.HalfOfNumberValuesRange
+  nameWithType.vb: Hybrid(Of TLinkAddress).HalfOfNumberValuesRange
+- uid: Platform.Data.Hybrid`1.IsExternal
+  name: IsExternal
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_IsExternal
+  commentId: P:Platform.Data.Hybrid`1.IsExternal
+  fullName: Platform.Data.Hybrid<TLinkAddress>.IsExternal
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).IsExternal
+  nameWithType: Hybrid<TLinkAddress>.IsExternal
+  nameWithType.vb: Hybrid(Of TLinkAddress).IsExternal
+- uid: Platform.Data.Hybrid`1.IsExternal*
+  name: IsExternal
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_IsExternal_
+  commentId: Overload:Platform.Data.Hybrid`1.IsExternal
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.IsExternal
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).IsExternal
+  nameWithType: Hybrid<TLinkAddress>.IsExternal
+  nameWithType.vb: Hybrid(Of TLinkAddress).IsExternal
+- uid: Platform.Data.Hybrid`1.IsInternal
+  name: IsInternal
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_IsInternal
+  commentId: P:Platform.Data.Hybrid`1.IsInternal
+  fullName: Platform.Data.Hybrid<TLinkAddress>.IsInternal
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).IsInternal
+  nameWithType: Hybrid<TLinkAddress>.IsInternal
+  nameWithType.vb: Hybrid(Of TLinkAddress).IsInternal
+- uid: Platform.Data.Hybrid`1.IsInternal*
+  name: IsInternal
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_IsInternal_
+  commentId: Overload:Platform.Data.Hybrid`1.IsInternal
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.IsInternal
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).IsInternal
+  nameWithType: Hybrid<TLinkAddress>.IsInternal
+  nameWithType.vb: Hybrid(Of TLinkAddress).IsInternal
+- uid: Platform.Data.Hybrid`1.IsNothing
+  name: IsNothing
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_IsNothing
+  commentId: P:Platform.Data.Hybrid`1.IsNothing
+  fullName: Platform.Data.Hybrid<TLinkAddress>.IsNothing
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).IsNothing
+  nameWithType: Hybrid<TLinkAddress>.IsNothing
+  nameWithType.vb: Hybrid(Of TLinkAddress).IsNothing
+- uid: Platform.Data.Hybrid`1.IsNothing*
+  name: IsNothing
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_IsNothing_
+  commentId: Overload:Platform.Data.Hybrid`1.IsNothing
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.IsNothing
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).IsNothing
+  nameWithType: Hybrid<TLinkAddress>.IsNothing
+  nameWithType.vb: Hybrid(Of TLinkAddress).IsNothing
+- uid: Platform.Data.Hybrid`1.op_Equality(Platform.Data.Hybrid{`0},Platform.Data.Hybrid{`0})
+  name: Equality(Hybrid<TLinkAddress>, Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Equality_Platform_Data_Hybrid__0__Platform_Data_Hybrid__0__
+  commentId: M:Platform.Data.Hybrid`1.op_Equality(Platform.Data.Hybrid{`0},Platform.Data.Hybrid{`0})
+  name.vb: Equality(Hybrid(Of TLinkAddress), Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Equality(Platform.Data.Hybrid<TLinkAddress>, Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Equality(Platform.Data.Hybrid(Of TLinkAddress), Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Equality(Hybrid<TLinkAddress>, Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Equality(Hybrid(Of TLinkAddress), Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Equality*
+  name: Equality
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Equality_
+  commentId: Overload:Platform.Data.Hybrid`1.op_Equality
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Equality
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Equality
+  nameWithType: Hybrid<TLinkAddress>.Equality
+  nameWithType.vb: Hybrid(Of TLinkAddress).Equality
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Byte
+  name: Explicit(Hybrid<TLinkAddress> to Byte)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_Byte
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Byte
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to Byte)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.Byte)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.Byte)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to Byte)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to Byte)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Int16
+  name: Explicit(Hybrid<TLinkAddress> to Int16)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_Int16
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Int16
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to Int16)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.Int16)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.Int16)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to Int16)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to Int16)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Int32
+  name: Explicit(Hybrid<TLinkAddress> to Int32)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_Int32
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Int32
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to Int32)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.Int32)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.Int32)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to Int32)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to Int32)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Int64
+  name: Explicit(Hybrid<TLinkAddress> to Int64)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_Int64
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.Int64
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to Int64)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.Int64)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.Int64)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to Int64)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to Int64)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.SByte
+  name: Explicit(Hybrid<TLinkAddress> to SByte)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_SByte
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.SByte
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to SByte)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.SByte)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.SByte)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to SByte)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to SByte)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.UInt16
+  name: Explicit(Hybrid<TLinkAddress> to UInt16)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_UInt16
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.UInt16
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to UInt16)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.UInt16)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.UInt16)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to UInt16)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to UInt16)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.UInt32
+  name: Explicit(Hybrid<TLinkAddress> to UInt32)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_UInt32
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.UInt32
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to UInt32)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.UInt32)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.UInt32)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to UInt32)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to UInt32)
+- uid: Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.UInt64
+  name: Explicit(Hybrid<TLinkAddress> to UInt64)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_Platform_Data_Hybrid__0___System_UInt64
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(Platform.Data.Hybrid{`0})~System.UInt64
+  name.vb: Narrowing(Hybrid(Of TLinkAddress) to UInt64)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(Platform.Data.Hybrid<TLinkAddress> to System.UInt64)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(Platform.Data.Hybrid(Of TLinkAddress) to System.UInt64)
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Hybrid<TLinkAddress> to UInt64)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Hybrid(Of TLinkAddress) to UInt64)
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.Byte)~Platform.Data.Hybrid{`0}
+  name: Explicit(Byte to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_Byte__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.Byte)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(Byte to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.Byte to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.Byte to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Byte to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Byte to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.Int16)~Platform.Data.Hybrid{`0}
+  name: Explicit(Int16 to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_Int16__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.Int16)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(Int16 to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.Int16 to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.Int16 to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Int16 to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Int16 to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.Int32)~Platform.Data.Hybrid{`0}
+  name: Explicit(Int32 to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_Int32__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.Int32)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(Int32 to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.Int32 to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.Int32 to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Int32 to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Int32 to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.Int64)~Platform.Data.Hybrid{`0}
+  name: Explicit(Int64 to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_Int64__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.Int64)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(Int64 to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.Int64 to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.Int64 to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(Int64 to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(Int64 to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.SByte)~Platform.Data.Hybrid{`0}
+  name: Explicit(SByte to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_SByte__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.SByte)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(SByte to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.SByte to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.SByte to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(SByte to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(SByte to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.UInt16)~Platform.Data.Hybrid{`0}
+  name: Explicit(UInt16 to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_UInt16__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.UInt16)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(UInt16 to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.UInt16 to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.UInt16 to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(UInt16 to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(UInt16 to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.UInt32)~Platform.Data.Hybrid{`0}
+  name: Explicit(UInt32 to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_UInt32__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.UInt32)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(UInt32 to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.UInt32 to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.UInt32 to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(UInt32 to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(UInt32 to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit(System.UInt64)~Platform.Data.Hybrid{`0}
+  name: Explicit(UInt64 to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_System_UInt64__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Explicit(System.UInt64)~Platform.Data.Hybrid{`0}
+  name.vb: Narrowing(UInt64 to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit(System.UInt64 to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing(System.UInt64 to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Explicit(UInt64 to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing(UInt64 to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Explicit*
+  name: Explicit
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Explicit_
+  commentId: Overload:Platform.Data.Hybrid`1.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Explicit
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Narrowing
+  nameWithType: Hybrid<TLinkAddress>.Explicit
+  nameWithType.vb: Hybrid(Of TLinkAddress).Narrowing
+- uid: Platform.Data.Hybrid`1.op_Implicit(`0)~Platform.Data.Hybrid{`0}
+  name: Implicit(TLinkAddress to Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Implicit__0__Platform_Data_Hybrid__0_
+  commentId: M:Platform.Data.Hybrid`1.op_Implicit(`0)~Platform.Data.Hybrid{`0}
+  name.vb: Widening(TLinkAddress to Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Implicit(TLinkAddress to Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Widening(TLinkAddress to Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Implicit(TLinkAddress to Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Widening(TLinkAddress to Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Implicit(Platform.Data.Hybrid{`0})~`0
+  name: Implicit(Hybrid<TLinkAddress> to TLinkAddress)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Implicit_Platform_Data_Hybrid__0____0
+  commentId: M:Platform.Data.Hybrid`1.op_Implicit(Platform.Data.Hybrid{`0})~`0
+  name.vb: Widening(Hybrid(Of TLinkAddress) to TLinkAddress)
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Implicit(Platform.Data.Hybrid<TLinkAddress> to TLinkAddress)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Widening(Platform.Data.Hybrid(Of TLinkAddress) to TLinkAddress)
+  nameWithType: Hybrid<TLinkAddress>.Implicit(Hybrid<TLinkAddress> to TLinkAddress)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Widening(Hybrid(Of TLinkAddress) to TLinkAddress)
+- uid: Platform.Data.Hybrid`1.op_Implicit*
+  name: Implicit
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Implicit_
+  commentId: Overload:Platform.Data.Hybrid`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Implicit
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Widening
+  nameWithType: Hybrid<TLinkAddress>.Implicit
+  nameWithType.vb: Hybrid(Of TLinkAddress).Widening
+- uid: Platform.Data.Hybrid`1.op_Inequality(Platform.Data.Hybrid{`0},Platform.Data.Hybrid{`0})
+  name: Inequality(Hybrid<TLinkAddress>, Hybrid<TLinkAddress>)
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Inequality_Platform_Data_Hybrid__0__Platform_Data_Hybrid__0__
+  commentId: M:Platform.Data.Hybrid`1.op_Inequality(Platform.Data.Hybrid{`0},Platform.Data.Hybrid{`0})
+  name.vb: Inequality(Hybrid(Of TLinkAddress), Hybrid(Of TLinkAddress))
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Inequality(Platform.Data.Hybrid<TLinkAddress>, Platform.Data.Hybrid<TLinkAddress>)
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Inequality(Platform.Data.Hybrid(Of TLinkAddress), Platform.Data.Hybrid(Of TLinkAddress))
+  nameWithType: Hybrid<TLinkAddress>.Inequality(Hybrid<TLinkAddress>, Hybrid<TLinkAddress>)
+  nameWithType.vb: Hybrid(Of TLinkAddress).Inequality(Hybrid(Of TLinkAddress), Hybrid(Of TLinkAddress))
+- uid: Platform.Data.Hybrid`1.op_Inequality*
+  name: Inequality
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_op_Inequality_
+  commentId: Overload:Platform.Data.Hybrid`1.op_Inequality
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Inequality
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Inequality
+  nameWithType: Hybrid<TLinkAddress>.Inequality
+  nameWithType.vb: Hybrid(Of TLinkAddress).Inequality
+- uid: Platform.Data.Hybrid`1.ToString
+  name: ToString()
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_ToString
+  commentId: M:Platform.Data.Hybrid`1.ToString
+  fullName: Platform.Data.Hybrid<TLinkAddress>.ToString()
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).ToString()
+  nameWithType: Hybrid<TLinkAddress>.ToString()
+  nameWithType.vb: Hybrid(Of TLinkAddress).ToString()
+- uid: Platform.Data.Hybrid`1.ToString*
+  name: ToString
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_ToString_
+  commentId: Overload:Platform.Data.Hybrid`1.ToString
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.ToString
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).ToString
+  nameWithType: Hybrid<TLinkAddress>.ToString
+  nameWithType.vb: Hybrid(Of TLinkAddress).ToString
+- uid: Platform.Data.Hybrid`1.Value
+  name: Value
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_Value
+  commentId: F:Platform.Data.Hybrid`1.Value
+  fullName: Platform.Data.Hybrid<TLinkAddress>.Value
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Value
+  nameWithType: Hybrid<TLinkAddress>.Value
+  nameWithType.vb: Hybrid(Of TLinkAddress).Value
 - uid: Platform.Data.ILinks`2
   name: ILinks<TLinkAddress, TConstants>
   href: api/Platform.Data.ILinks-2.html
@@ -1167,6 +1587,64 @@ references:
   fullName.vb: Platform.Data.LinksConstantsExtensions.IsReference(Of TLinkAddress)(Platform.Data.LinksConstants(Of TLinkAddress), TLinkAddress)
   nameWithType: LinksConstantsExtensions.IsReference<TLinkAddress>(LinksConstants<TLinkAddress>, TLinkAddress)
   nameWithType.vb: LinksConstantsExtensions.IsReference(Of TLinkAddress)(LinksConstants(Of TLinkAddress), TLinkAddress)
+- uid: Platform.Data.Numbers.Raw
+  name: Platform.Data.Numbers.Raw
+  href: api/Platform.Data.Numbers.Raw.html
+  commentId: N:Platform.Data.Numbers.Raw
+  fullName: Platform.Data.Numbers.Raw
+  nameWithType: Platform.Data.Numbers.Raw
+- uid: Platform.Data.Numbers.Raw.AddressToRawNumberConverter`1
+  name: AddressToRawNumberConverter<TLink>
+  href: api/Platform.Data.Numbers.Raw.AddressToRawNumberConverter-1.html
+  commentId: T:Platform.Data.Numbers.Raw.AddressToRawNumberConverter`1
+  name.vb: AddressToRawNumberConverter(Of TLink)
+  fullName: Platform.Data.Numbers.Raw.AddressToRawNumberConverter<TLink>
+  fullName.vb: Platform.Data.Numbers.Raw.AddressToRawNumberConverter(Of TLink)
+  nameWithType: AddressToRawNumberConverter<TLink>
+  nameWithType.vb: AddressToRawNumberConverter(Of TLink)
+- uid: Platform.Data.Numbers.Raw.AddressToRawNumberConverter`1.Convert(`0)
+  name: Convert(TLink)
+  href: api/Platform.Data.Numbers.Raw.AddressToRawNumberConverter-1.html#Platform_Data_Numbers_Raw_AddressToRawNumberConverter_1_Convert__0_
+  commentId: M:Platform.Data.Numbers.Raw.AddressToRawNumberConverter`1.Convert(`0)
+  fullName: Platform.Data.Numbers.Raw.AddressToRawNumberConverter<TLink>.Convert(TLink)
+  fullName.vb: Platform.Data.Numbers.Raw.AddressToRawNumberConverter(Of TLink).Convert(TLink)
+  nameWithType: AddressToRawNumberConverter<TLink>.Convert(TLink)
+  nameWithType.vb: AddressToRawNumberConverter(Of TLink).Convert(TLink)
+- uid: Platform.Data.Numbers.Raw.AddressToRawNumberConverter`1.Convert*
+  name: Convert
+  href: api/Platform.Data.Numbers.Raw.AddressToRawNumberConverter-1.html#Platform_Data_Numbers_Raw_AddressToRawNumberConverter_1_Convert_
+  commentId: Overload:Platform.Data.Numbers.Raw.AddressToRawNumberConverter`1.Convert
+  isSpec: "True"
+  fullName: Platform.Data.Numbers.Raw.AddressToRawNumberConverter<TLink>.Convert
+  fullName.vb: Platform.Data.Numbers.Raw.AddressToRawNumberConverter(Of TLink).Convert
+  nameWithType: AddressToRawNumberConverter<TLink>.Convert
+  nameWithType.vb: AddressToRawNumberConverter(Of TLink).Convert
+- uid: Platform.Data.Numbers.Raw.RawNumberToAddressConverter`1
+  name: RawNumberToAddressConverter<TLink>
+  href: api/Platform.Data.Numbers.Raw.RawNumberToAddressConverter-1.html
+  commentId: T:Platform.Data.Numbers.Raw.RawNumberToAddressConverter`1
+  name.vb: RawNumberToAddressConverter(Of TLink)
+  fullName: Platform.Data.Numbers.Raw.RawNumberToAddressConverter<TLink>
+  fullName.vb: Platform.Data.Numbers.Raw.RawNumberToAddressConverter(Of TLink)
+  nameWithType: RawNumberToAddressConverter<TLink>
+  nameWithType.vb: RawNumberToAddressConverter(Of TLink)
+- uid: Platform.Data.Numbers.Raw.RawNumberToAddressConverter`1.Convert(`0)
+  name: Convert(TLink)
+  href: api/Platform.Data.Numbers.Raw.RawNumberToAddressConverter-1.html#Platform_Data_Numbers_Raw_RawNumberToAddressConverter_1_Convert__0_
+  commentId: M:Platform.Data.Numbers.Raw.RawNumberToAddressConverter`1.Convert(`0)
+  fullName: Platform.Data.Numbers.Raw.RawNumberToAddressConverter<TLink>.Convert(TLink)
+  fullName.vb: Platform.Data.Numbers.Raw.RawNumberToAddressConverter(Of TLink).Convert(TLink)
+  nameWithType: RawNumberToAddressConverter<TLink>.Convert(TLink)
+  nameWithType.vb: RawNumberToAddressConverter(Of TLink).Convert(TLink)
+- uid: Platform.Data.Numbers.Raw.RawNumberToAddressConverter`1.Convert*
+  name: Convert
+  href: api/Platform.Data.Numbers.Raw.RawNumberToAddressConverter-1.html#Platform_Data_Numbers_Raw_RawNumberToAddressConverter_1_Convert_
+  commentId: Overload:Platform.Data.Numbers.Raw.RawNumberToAddressConverter`1.Convert
+  isSpec: "True"
+  fullName: Platform.Data.Numbers.Raw.RawNumberToAddressConverter<TLink>.Convert
+  fullName.vb: Platform.Data.Numbers.Raw.RawNumberToAddressConverter(Of TLink).Convert
+  nameWithType: RawNumberToAddressConverter<TLink>.Convert
+  nameWithType.vb: RawNumberToAddressConverter(Of TLink).Convert
 - uid: Platform.Data.Point`1
   name: Point<TLinkAddress>
   href: api/Platform.Data.Point-1.html
@@ -1800,6 +2278,31 @@ references:
   fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Func(Of TLinkAddress, System.Boolean))
   nameWithType: StopableSequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
   nameWithType.vb: StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
+- uid: Platform.Data.Tests
+  name: Platform.Data.Tests
+  href: api/Platform.Data.Tests.html
+  commentId: N:Platform.Data.Tests
+  fullName: Platform.Data.Tests
+  nameWithType: Platform.Data.Tests
+- uid: Platform.Data.Tests.LinksConstantsTests
+  name: LinksConstantsTests
+  href: api/Platform.Data.Tests.LinksConstantsTests.html
+  commentId: T:Platform.Data.Tests.LinksConstantsTests
+  fullName: Platform.Data.Tests.LinksConstantsTests
+  nameWithType: LinksConstantsTests
+- uid: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
+  name: ExternalReferencesTest()
+  href: api/Platform.Data.Tests.LinksConstantsTests.html#Platform_Data_Tests_LinksConstantsTests_ExternalReferencesTest
+  commentId: M:Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
+  fullName: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest()
+  nameWithType: LinksConstantsTests.ExternalReferencesTest()
+- uid: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest*
+  name: ExternalReferencesTest
+  href: api/Platform.Data.Tests.LinksConstantsTests.html#Platform_Data_Tests_LinksConstantsTests_ExternalReferencesTest_
+  commentId: Overload:Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
+  isSpec: "True"
+  fullName: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
+  nameWithType: LinksConstantsTests.ExternalReferencesTest
 - uid: Platform.Data.Universal
   name: Platform.Data.Universal
   href: api/Platform.Data.Universal.html
