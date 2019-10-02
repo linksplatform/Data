@@ -98,7 +98,7 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return (Integer<TLinkAddress>.One, (Integer<TLinkAddress>)GetHalfOfNumberValuesRange());
+                return (Integer<TLinkAddress>.One, (Integer<TLinkAddress>)Hybrid<TLinkAddress>.HalfOfNumberValuesRange);
             }
             else
             {
@@ -110,15 +110,13 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return ((Integer<TLinkAddress>)(GetHalfOfNumberValuesRange() + 1UL), NumericType<TLinkAddress>.MaxValue);
+                return ((Integer<TLinkAddress>)(Hybrid<TLinkAddress>.HalfOfNumberValuesRange + 1UL), NumericType<TLinkAddress>.MaxValue);
             }
             else
             {
                 return null;
             }
         }
-
-        private static ulong GetHalfOfNumberValuesRange() => ((ulong)(Integer<TLinkAddress>)NumericType<TLinkAddress>.MaxValue) / 2;
 
         private static void Decrement(ref TLinkAddress currentInternalReferenceIndex) => currentInternalReferenceIndex = Arithmetic.Decrement(currentInternalReferenceIndex);
     }
