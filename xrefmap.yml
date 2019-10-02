@@ -589,7 +589,16 @@ references:
 - uid: Platform.Data.LinkAddress`1.Index
   name: Index
   href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Index
-  commentId: F:Platform.Data.LinkAddress`1.Index
+  commentId: P:Platform.Data.LinkAddress`1.Index
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Index
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Index
+  nameWithType: LinkAddress<TLinkAddress>.Index
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Index
+- uid: Platform.Data.LinkAddress`1.Index*
+  name: Index
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Index_
+  commentId: Overload:Platform.Data.LinkAddress`1.Index
+  isSpec: "True"
   fullName: Platform.Data.LinkAddress<TLinkAddress>.Index
   fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Index
   nameWithType: LinkAddress<TLinkAddress>.Index
@@ -663,6 +672,24 @@ references:
   fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Item
   nameWithType: LinkAddress<TLinkAddress>.Item
   nameWithType.vb: LinkAddress(Of TLinkAddress).Item
+- uid: Platform.Data.LinkAddress`1.op_Equality(Platform.Data.LinkAddress{`0},Platform.Data.LinkAddress{`0})
+  name: Equality(LinkAddress<TLinkAddress>, LinkAddress<TLinkAddress>)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Equality_Platform_Data_LinkAddress__0__Platform_Data_LinkAddress__0__
+  commentId: M:Platform.Data.LinkAddress`1.op_Equality(Platform.Data.LinkAddress{`0},Platform.Data.LinkAddress{`0})
+  name.vb: Equality(LinkAddress(Of TLinkAddress), LinkAddress(Of TLinkAddress))
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Equality(Platform.Data.LinkAddress<TLinkAddress>, Platform.Data.LinkAddress<TLinkAddress>)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Equality(Platform.Data.LinkAddress(Of TLinkAddress), Platform.Data.LinkAddress(Of TLinkAddress))
+  nameWithType: LinkAddress<TLinkAddress>.Equality(LinkAddress<TLinkAddress>, LinkAddress<TLinkAddress>)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Equality(LinkAddress(Of TLinkAddress), LinkAddress(Of TLinkAddress))
+- uid: Platform.Data.LinkAddress`1.op_Equality*
+  name: Equality
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Equality_
+  commentId: Overload:Platform.Data.LinkAddress`1.op_Equality
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Equality
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Equality
+  nameWithType: LinkAddress<TLinkAddress>.Equality
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Equality
 - uid: Platform.Data.LinkAddress`1.op_Implicit(`0)~Platform.Data.LinkAddress{`0}
   name: Implicit(TLinkAddress to LinkAddress<TLinkAddress>)
   href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Implicit__0__Platform_Data_LinkAddress__0_
@@ -691,6 +718,24 @@ references:
   fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Widening
   nameWithType: LinkAddress<TLinkAddress>.Implicit
   nameWithType.vb: LinkAddress(Of TLinkAddress).Widening
+- uid: Platform.Data.LinkAddress`1.op_Inequality(Platform.Data.LinkAddress{`0},Platform.Data.LinkAddress{`0})
+  name: Inequality(LinkAddress<TLinkAddress>, LinkAddress<TLinkAddress>)
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Inequality_Platform_Data_LinkAddress__0__Platform_Data_LinkAddress__0__
+  commentId: M:Platform.Data.LinkAddress`1.op_Inequality(Platform.Data.LinkAddress{`0},Platform.Data.LinkAddress{`0})
+  name.vb: Inequality(LinkAddress(Of TLinkAddress), LinkAddress(Of TLinkAddress))
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Inequality(Platform.Data.LinkAddress<TLinkAddress>, Platform.Data.LinkAddress<TLinkAddress>)
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Inequality(Platform.Data.LinkAddress(Of TLinkAddress), Platform.Data.LinkAddress(Of TLinkAddress))
+  nameWithType: LinkAddress<TLinkAddress>.Inequality(LinkAddress<TLinkAddress>, LinkAddress<TLinkAddress>)
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Inequality(LinkAddress(Of TLinkAddress), LinkAddress(Of TLinkAddress))
+- uid: Platform.Data.LinkAddress`1.op_Inequality*
+  name: Inequality
+  href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_op_Inequality_
+  commentId: Overload:Platform.Data.LinkAddress`1.op_Inequality
+  isSpec: "True"
+  fullName: Platform.Data.LinkAddress<TLinkAddress>.Inequality
+  fullName.vb: Platform.Data.LinkAddress(Of TLinkAddress).Inequality
+  nameWithType: LinkAddress<TLinkAddress>.Inequality
+  nameWithType.vb: LinkAddress(Of TLinkAddress).Inequality
 - uid: Platform.Data.LinkAddress`1.Remove(`0)
   name: Remove(TLinkAddress)
   href: api/Platform.Data.LinkAddress-1.html#Platform_Data_LinkAddress_1_Remove__0_
@@ -1081,6 +1126,220 @@ references:
   fullName.vb: Platform.Data.Point(Of TLinkAddress)
   nameWithType: Point<TLinkAddress>
   nameWithType.vb: Point(Of TLinkAddress)
+- uid: Platform.Data.Point`1.#ctor(`0,System.Int32)
+  name: Point(TLinkAddress, Int32)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1__ctor__0_System_Int32_
+  commentId: M:Platform.Data.Point`1.#ctor(`0,System.Int32)
+  fullName: Platform.Data.Point<TLinkAddress>.Point(TLinkAddress, System.Int32)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Point(TLinkAddress, System.Int32)
+  nameWithType: Point<TLinkAddress>.Point(TLinkAddress, Int32)
+  nameWithType.vb: Point(Of TLinkAddress).Point(TLinkAddress, Int32)
+- uid: Platform.Data.Point`1.#ctor*
+  name: Point
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1__ctor_
+  commentId: Overload:Platform.Data.Point`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Point
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Point
+  nameWithType: Point<TLinkAddress>.Point
+  nameWithType.vb: Point(Of TLinkAddress).Point
+- uid: Platform.Data.Point`1.Add(`0)
+  name: Add(TLinkAddress)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Add__0_
+  commentId: M:Platform.Data.Point`1.Add(`0)
+  fullName: Platform.Data.Point<TLinkAddress>.Add(TLinkAddress)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Add(TLinkAddress)
+  nameWithType: Point<TLinkAddress>.Add(TLinkAddress)
+  nameWithType.vb: Point(Of TLinkAddress).Add(TLinkAddress)
+- uid: Platform.Data.Point`1.Add*
+  name: Add
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Add_
+  commentId: Overload:Platform.Data.Point`1.Add
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Add
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Add
+  nameWithType: Point<TLinkAddress>.Add
+  nameWithType.vb: Point(Of TLinkAddress).Add
+- uid: Platform.Data.Point`1.Clear
+  name: Clear()
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Clear
+  commentId: M:Platform.Data.Point`1.Clear
+  fullName: Platform.Data.Point<TLinkAddress>.Clear()
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Clear()
+  nameWithType: Point<TLinkAddress>.Clear()
+  nameWithType.vb: Point(Of TLinkAddress).Clear()
+- uid: Platform.Data.Point`1.Clear*
+  name: Clear
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Clear_
+  commentId: Overload:Platform.Data.Point`1.Clear
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Clear
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Clear
+  nameWithType: Point<TLinkAddress>.Clear
+  nameWithType.vb: Point(Of TLinkAddress).Clear
+- uid: Platform.Data.Point`1.Contains(`0)
+  name: Contains(TLinkAddress)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Contains__0_
+  commentId: M:Platform.Data.Point`1.Contains(`0)
+  fullName: Platform.Data.Point<TLinkAddress>.Contains(TLinkAddress)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Contains(TLinkAddress)
+  nameWithType: Point<TLinkAddress>.Contains(TLinkAddress)
+  nameWithType.vb: Point(Of TLinkAddress).Contains(TLinkAddress)
+- uid: Platform.Data.Point`1.Contains*
+  name: Contains
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Contains_
+  commentId: Overload:Platform.Data.Point`1.Contains
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Contains
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Contains
+  nameWithType: Point<TLinkAddress>.Contains
+  nameWithType.vb: Point(Of TLinkAddress).Contains
+- uid: Platform.Data.Point`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(TLinkAddress[], Int32)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_CopyTo__0___System_Int32_
+  commentId: M:Platform.Data.Point`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(TLinkAddress(), Int32)
+  fullName: Platform.Data.Point<TLinkAddress>.CopyTo(TLinkAddress[], System.Int32)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).CopyTo(TLinkAddress(), System.Int32)
+  nameWithType: Point<TLinkAddress>.CopyTo(TLinkAddress[], Int32)
+  nameWithType.vb: Point(Of TLinkAddress).CopyTo(TLinkAddress(), Int32)
+- uid: Platform.Data.Point`1.CopyTo*
+  name: CopyTo
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_CopyTo_
+  commentId: Overload:Platform.Data.Point`1.CopyTo
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.CopyTo
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).CopyTo
+  nameWithType: Point<TLinkAddress>.CopyTo
+  nameWithType.vb: Point(Of TLinkAddress).CopyTo
+- uid: Platform.Data.Point`1.Count
+  name: Count
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Count
+  commentId: P:Platform.Data.Point`1.Count
+  fullName: Platform.Data.Point<TLinkAddress>.Count
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Count
+  nameWithType: Point<TLinkAddress>.Count
+  nameWithType.vb: Point(Of TLinkAddress).Count
+- uid: Platform.Data.Point`1.Count*
+  name: Count
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Count_
+  commentId: Overload:Platform.Data.Point`1.Count
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Count
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Count
+  nameWithType: Point<TLinkAddress>.Count
+  nameWithType.vb: Point(Of TLinkAddress).Count
+- uid: Platform.Data.Point`1.Equals(Platform.Data.LinkAddress{`0})
+  name: Equals(LinkAddress<TLinkAddress>)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Equals_Platform_Data_LinkAddress__0__
+  commentId: M:Platform.Data.Point`1.Equals(Platform.Data.LinkAddress{`0})
+  name.vb: Equals(LinkAddress(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.Equals(Platform.Data.LinkAddress<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Equals(Platform.Data.LinkAddress(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.Equals(LinkAddress<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).Equals(LinkAddress(Of TLinkAddress))
+- uid: Platform.Data.Point`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Equals_System_Object_
+  commentId: M:Platform.Data.Point`1.Equals(System.Object)
+  fullName: Platform.Data.Point<TLinkAddress>.Equals(System.Object)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Equals(System.Object)
+  nameWithType: Point<TLinkAddress>.Equals(Object)
+  nameWithType.vb: Point(Of TLinkAddress).Equals(Object)
+- uid: Platform.Data.Point`1.Equals*
+  name: Equals
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Equals_
+  commentId: Overload:Platform.Data.Point`1.Equals
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Equals
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Equals
+  nameWithType: Point<TLinkAddress>.Equals
+  nameWithType.vb: Point(Of TLinkAddress).Equals
+- uid: Platform.Data.Point`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_GetEnumerator
+  commentId: M:Platform.Data.Point`1.GetEnumerator
+  fullName: Platform.Data.Point<TLinkAddress>.GetEnumerator()
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).GetEnumerator()
+  nameWithType: Point<TLinkAddress>.GetEnumerator()
+  nameWithType.vb: Point(Of TLinkAddress).GetEnumerator()
+- uid: Platform.Data.Point`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_GetEnumerator_
+  commentId: Overload:Platform.Data.Point`1.GetEnumerator
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.GetEnumerator
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).GetEnumerator
+  nameWithType: Point<TLinkAddress>.GetEnumerator
+  nameWithType.vb: Point(Of TLinkAddress).GetEnumerator
+- uid: Platform.Data.Point`1.GetHashCode
+  name: GetHashCode()
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_GetHashCode
+  commentId: M:Platform.Data.Point`1.GetHashCode
+  fullName: Platform.Data.Point<TLinkAddress>.GetHashCode()
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).GetHashCode()
+  nameWithType: Point<TLinkAddress>.GetHashCode()
+  nameWithType.vb: Point(Of TLinkAddress).GetHashCode()
+- uid: Platform.Data.Point`1.GetHashCode*
+  name: GetHashCode
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_GetHashCode_
+  commentId: Overload:Platform.Data.Point`1.GetHashCode
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.GetHashCode
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).GetHashCode
+  nameWithType: Point<TLinkAddress>.GetHashCode
+  nameWithType.vb: Point(Of TLinkAddress).GetHashCode
+- uid: Platform.Data.Point`1.Index
+  name: Index
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Index
+  commentId: P:Platform.Data.Point`1.Index
+  fullName: Platform.Data.Point<TLinkAddress>.Index
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Index
+  nameWithType: Point<TLinkAddress>.Index
+  nameWithType.vb: Point(Of TLinkAddress).Index
+- uid: Platform.Data.Point`1.Index*
+  name: Index
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Index_
+  commentId: Overload:Platform.Data.Point`1.Index
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Index
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Index
+  nameWithType: Point<TLinkAddress>.Index
+  nameWithType.vb: Point(Of TLinkAddress).Index
+- uid: Platform.Data.Point`1.IndexOf(`0)
+  name: IndexOf(TLinkAddress)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IndexOf__0_
+  commentId: M:Platform.Data.Point`1.IndexOf(`0)
+  fullName: Platform.Data.Point<TLinkAddress>.IndexOf(TLinkAddress)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IndexOf(TLinkAddress)
+  nameWithType: Point<TLinkAddress>.IndexOf(TLinkAddress)
+  nameWithType.vb: Point(Of TLinkAddress).IndexOf(TLinkAddress)
+- uid: Platform.Data.Point`1.IndexOf*
+  name: IndexOf
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IndexOf_
+  commentId: Overload:Platform.Data.Point`1.IndexOf
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.IndexOf
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IndexOf
+  nameWithType: Point<TLinkAddress>.IndexOf
+  nameWithType.vb: Point(Of TLinkAddress).IndexOf
+- uid: Platform.Data.Point`1.Insert(System.Int32,`0)
+  name: Insert(Int32, TLinkAddress)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Insert_System_Int32__0_
+  commentId: M:Platform.Data.Point`1.Insert(System.Int32,`0)
+  fullName: Platform.Data.Point<TLinkAddress>.Insert(System.Int32, TLinkAddress)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Insert(System.Int32, TLinkAddress)
+  nameWithType: Point<TLinkAddress>.Insert(Int32, TLinkAddress)
+  nameWithType.vb: Point(Of TLinkAddress).Insert(Int32, TLinkAddress)
+- uid: Platform.Data.Point`1.Insert*
+  name: Insert
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Insert_
+  commentId: Overload:Platform.Data.Point`1.Insert
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Insert
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Insert
+  nameWithType: Point<TLinkAddress>.Insert
+  nameWithType.vb: Point(Of TLinkAddress).Insert
 - uid: Platform.Data.Point`1.IsFullPoint(`0[])
   name: IsFullPoint(TLinkAddress[])
   href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsFullPoint__0___
@@ -1171,6 +1430,183 @@ references:
   fullName.vb: Platform.Data.Point(Of TLinkAddress).IsPartialPointUnchecked
   nameWithType: Point<TLinkAddress>.IsPartialPointUnchecked
   nameWithType.vb: Point(Of TLinkAddress).IsPartialPointUnchecked
+- uid: Platform.Data.Point`1.IsReadOnly
+  name: IsReadOnly
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsReadOnly
+  commentId: P:Platform.Data.Point`1.IsReadOnly
+  fullName: Platform.Data.Point<TLinkAddress>.IsReadOnly
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsReadOnly
+  nameWithType: Point<TLinkAddress>.IsReadOnly
+  nameWithType.vb: Point(Of TLinkAddress).IsReadOnly
+- uid: Platform.Data.Point`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_IsReadOnly_
+  commentId: Overload:Platform.Data.Point`1.IsReadOnly
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.IsReadOnly
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).IsReadOnly
+  nameWithType: Point<TLinkAddress>.IsReadOnly
+  nameWithType.vb: Point(Of TLinkAddress).IsReadOnly
+- uid: Platform.Data.Point`1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Item_System_Int32_
+  commentId: P:Platform.Data.Point`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: Platform.Data.Point<TLinkAddress>.Item[System.Int32]
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Item(System.Int32)
+  nameWithType: Point<TLinkAddress>.Item[Int32]
+  nameWithType.vb: Point(Of TLinkAddress).Item(Int32)
+- uid: Platform.Data.Point`1.Item*
+  name: Item
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Item_
+  commentId: Overload:Platform.Data.Point`1.Item
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Item
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Item
+  nameWithType: Point<TLinkAddress>.Item
+  nameWithType.vb: Point(Of TLinkAddress).Item
+- uid: Platform.Data.Point`1.op_Equality(Platform.Data.Point{`0},Platform.Data.Point{`0})
+  name: Equality(Point<TLinkAddress>, Point<TLinkAddress>)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_op_Equality_Platform_Data_Point__0__Platform_Data_Point__0__
+  commentId: M:Platform.Data.Point`1.op_Equality(Platform.Data.Point{`0},Platform.Data.Point{`0})
+  name.vb: Equality(Point(Of TLinkAddress), Point(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.Equality(Platform.Data.Point<TLinkAddress>, Platform.Data.Point<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Equality(Platform.Data.Point(Of TLinkAddress), Platform.Data.Point(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.Equality(Point<TLinkAddress>, Point<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).Equality(Point(Of TLinkAddress), Point(Of TLinkAddress))
+- uid: Platform.Data.Point`1.op_Equality*
+  name: Equality
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_op_Equality_
+  commentId: Overload:Platform.Data.Point`1.op_Equality
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Equality
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Equality
+  nameWithType: Point<TLinkAddress>.Equality
+  nameWithType.vb: Point(Of TLinkAddress).Equality
+- uid: Platform.Data.Point`1.op_Implicit(Platform.Data.Point{`0})~`0
+  name: Implicit(Point<TLinkAddress> to TLinkAddress)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_op_Implicit_Platform_Data_Point__0____0
+  commentId: M:Platform.Data.Point`1.op_Implicit(Platform.Data.Point{`0})~`0
+  name.vb: Widening(Point(Of TLinkAddress) to TLinkAddress)
+  fullName: Platform.Data.Point<TLinkAddress>.Implicit(Platform.Data.Point<TLinkAddress> to TLinkAddress)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Widening(Platform.Data.Point(Of TLinkAddress) to TLinkAddress)
+  nameWithType: Point<TLinkAddress>.Implicit(Point<TLinkAddress> to TLinkAddress)
+  nameWithType.vb: Point(Of TLinkAddress).Widening(Point(Of TLinkAddress) to TLinkAddress)
+- uid: Platform.Data.Point`1.op_Implicit*
+  name: Implicit
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_op_Implicit_
+  commentId: Overload:Platform.Data.Point`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Platform.Data.Point<TLinkAddress>.Implicit
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Widening
+  nameWithType: Point<TLinkAddress>.Implicit
+  nameWithType.vb: Point(Of TLinkAddress).Widening
+- uid: Platform.Data.Point`1.op_Inequality(Platform.Data.Point{`0},Platform.Data.Point{`0})
+  name: Inequality(Point<TLinkAddress>, Point<TLinkAddress>)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_op_Inequality_Platform_Data_Point__0__Platform_Data_Point__0__
+  commentId: M:Platform.Data.Point`1.op_Inequality(Platform.Data.Point{`0},Platform.Data.Point{`0})
+  name.vb: Inequality(Point(Of TLinkAddress), Point(Of TLinkAddress))
+  fullName: Platform.Data.Point<TLinkAddress>.Inequality(Platform.Data.Point<TLinkAddress>, Platform.Data.Point<TLinkAddress>)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Inequality(Platform.Data.Point(Of TLinkAddress), Platform.Data.Point(Of TLinkAddress))
+  nameWithType: Point<TLinkAddress>.Inequality(Point<TLinkAddress>, Point<TLinkAddress>)
+  nameWithType.vb: Point(Of TLinkAddress).Inequality(Point(Of TLinkAddress), Point(Of TLinkAddress))
+- uid: Platform.Data.Point`1.op_Inequality*
+  name: Inequality
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_op_Inequality_
+  commentId: Overload:Platform.Data.Point`1.op_Inequality
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Inequality
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Inequality
+  nameWithType: Point<TLinkAddress>.Inequality
+  nameWithType.vb: Point(Of TLinkAddress).Inequality
+- uid: Platform.Data.Point`1.Remove(`0)
+  name: Remove(TLinkAddress)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Remove__0_
+  commentId: M:Platform.Data.Point`1.Remove(`0)
+  fullName: Platform.Data.Point<TLinkAddress>.Remove(TLinkAddress)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Remove(TLinkAddress)
+  nameWithType: Point<TLinkAddress>.Remove(TLinkAddress)
+  nameWithType.vb: Point(Of TLinkAddress).Remove(TLinkAddress)
+- uid: Platform.Data.Point`1.Remove*
+  name: Remove
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Remove_
+  commentId: Overload:Platform.Data.Point`1.Remove
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Remove
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Remove
+  nameWithType: Point<TLinkAddress>.Remove
+  nameWithType.vb: Point(Of TLinkAddress).Remove
+- uid: Platform.Data.Point`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_RemoveAt_System_Int32_
+  commentId: M:Platform.Data.Point`1.RemoveAt(System.Int32)
+  fullName: Platform.Data.Point<TLinkAddress>.RemoveAt(System.Int32)
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).RemoveAt(System.Int32)
+  nameWithType: Point<TLinkAddress>.RemoveAt(Int32)
+  nameWithType.vb: Point(Of TLinkAddress).RemoveAt(Int32)
+- uid: Platform.Data.Point`1.RemoveAt*
+  name: RemoveAt
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_RemoveAt_
+  commentId: Overload:Platform.Data.Point`1.RemoveAt
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.RemoveAt
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).RemoveAt
+  nameWithType: Point<TLinkAddress>.RemoveAt
+  nameWithType.vb: Point(Of TLinkAddress).RemoveAt
+- uid: Platform.Data.Point`1.Size
+  name: Size
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Size
+  commentId: P:Platform.Data.Point`1.Size
+  fullName: Platform.Data.Point<TLinkAddress>.Size
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Size
+  nameWithType: Point<TLinkAddress>.Size
+  nameWithType.vb: Point(Of TLinkAddress).Size
+- uid: Platform.Data.Point`1.Size*
+  name: Size
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_Size_
+  commentId: Overload:Platform.Data.Point`1.Size
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.Size
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).Size
+  nameWithType: Point<TLinkAddress>.Size
+  nameWithType.vb: Point(Of TLinkAddress).Size
+- uid: Platform.Data.Point`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Platform.Data.Point`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Platform.Data.Point<TLinkAddress>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Point<TLinkAddress>.IEnumerable.GetEnumerator()
+  nameWithType.vb: Point(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator()
+- uid: Platform.Data.Point`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Platform.Data.Point`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Platform.Data.Point<TLinkAddress>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Point<TLinkAddress>.IEnumerable.GetEnumerator
+  nameWithType.vb: Point(Of TLinkAddress).System.Collections.IEnumerable.GetEnumerator
+- uid: Platform.Data.Point`1.ToString
+  name: ToString()
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_ToString
+  commentId: M:Platform.Data.Point`1.ToString
+  fullName: Platform.Data.Point<TLinkAddress>.ToString()
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).ToString()
+  nameWithType: Point<TLinkAddress>.ToString()
+  nameWithType.vb: Point(Of TLinkAddress).ToString()
+- uid: Platform.Data.Point`1.ToString*
+  name: ToString
+  href: api/Platform.Data.Point-1.html#Platform_Data_Point_1_ToString_
+  commentId: Overload:Platform.Data.Point`1.ToString
+  isSpec: "True"
+  fullName: Platform.Data.Point<TLinkAddress>.ToString
+  fullName.vb: Platform.Data.Point(Of TLinkAddress).ToString
+  nameWithType: Point<TLinkAddress>.ToString
+  nameWithType.vb: Point(Of TLinkAddress).ToString
 - uid: Platform.Data.Sequences
   name: Platform.Data.Sequences
   href: api/Platform.Data.Sequences.html
