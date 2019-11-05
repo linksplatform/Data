@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Data</AssemblyTitle>
     <VersionPrefix>0.1.1</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks>net471;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net471;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
     <PackageTags>LinksPlatform;Data;ILinks;ILinksExtensions;ISynchronizedLinks;Point;LinkAddress;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;LinksConstants;LinksConstantsExtensions</PackageTags>
