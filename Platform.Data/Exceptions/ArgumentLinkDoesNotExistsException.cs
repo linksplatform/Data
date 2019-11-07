@@ -6,9 +6,18 @@ namespace Platform.Data.Exceptions
 {
     public class ArgumentLinkDoesNotExistsException<TLinkAddress> : ArgumentException
     {
-        public ArgumentLinkDoesNotExistsException(TLinkAddress link, string paramName) : base(FormatMessage(link, paramName), paramName) { }
+        public ArgumentLinkDoesNotExistsException(TLinkAddress link, string argumentName) : base(FormatMessage(link, argumentName), argumentName) { }
+
         public ArgumentLinkDoesNotExistsException(TLinkAddress link) : base(FormatMessage(link)) { }
-        private static string FormatMessage(TLinkAddress link, string paramName) => $"Связь [{link}] переданная в аргумент [{paramName}] не существует.";
+
+        public ArgumentLinkDoesNotExistsException(string message, Exception innerException) : base(message, innerException) { }
+
+        public ArgumentLinkDoesNotExistsException(string message) : base(message) { }
+
+        public ArgumentLinkDoesNotExistsException() { }
+
+        private static string FormatMessage(TLinkAddress link, string argumentName) => $"Связь [{link}] переданная в аргумент [{argumentName}] не существует.";
+        
         private static string FormatMessage(TLinkAddress link) => $"Связь [{link}] переданная в качестве аргумента не существует.";
     }
 }
