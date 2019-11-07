@@ -178,6 +178,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator !=(Hybrid<TLinkAddress> left, Hybrid<TLinkAddress> right) => !(left == right);
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static bool IsDefault(object value)
         {
             if (value == null)
@@ -188,6 +189,7 @@ namespace Platform.Data
             return type.IsValueType ? value.Equals(Activator.CreateInstance(type)) : false;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static Func<object, TLinkAddress> CompileUnboxAbsNegateAndConvertDelegate()
         {
             return DelegateHelpers.Compile<Func<object, TLinkAddress>>(emiter =>
@@ -210,6 +212,7 @@ namespace Platform.Data
             });
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static Func<object, TLinkAddress> CompileUnboxAbsAndConvertDelegate()
         {
             return DelegateHelpers.Compile<Func<object, TLinkAddress>>(emiter =>

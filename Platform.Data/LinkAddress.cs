@@ -35,9 +35,17 @@ namespace Platform.Data
             set => throw new NotSupportedException();
         }
 
-        public int Count => 1;
+        public int Count
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => 1;
+        }
 
-        public bool IsReadOnly => true;
+        public bool IsReadOnly
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => true;
+        }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinkAddress(TLinkAddress index) => Index = index;

@@ -44,9 +44,17 @@ namespace Platform.Data
             set => throw new NotSupportedException();
         }
 
-        public int Count => int.MaxValue;
+        public int Count
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => int.MaxValue;
+        }
 
-        public bool IsReadOnly => true;
+        public bool IsReadOnly
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => true;
+        }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Point(TLinkAddress index, int size)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -21,7 +22,11 @@ namespace Platform.Data
         /// Возвращает набор констант, который необходим для эффективной коммуникации с методами этого интерфейса.
         /// Эти константы не меняются с момента создания точки доступа к хранилищу.
         /// </summary>
-        TConstants Constants { get; }
+        TConstants Constants
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         #endregion
 
@@ -32,6 +37,7 @@ namespace Platform.Data
         /// </summary>
         /// <param name="restriction">Ограничения на содержимое связей.</param>
         /// <returns>Общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Count(IList<TLinkAddress> restriction);
 
         /// <summary>
@@ -40,6 +46,7 @@ namespace Platform.Data
         /// <param name="handler">Обработчик каждой подходящей связи.</param>
         /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Each(Func<IList<TLinkAddress>, TLinkAddress> handler, IList<TLinkAddress> restrictions);
 
         #endregion
@@ -50,6 +57,7 @@ namespace Platform.Data
         /// Создаёт связь.
         /// </summary>
         /// <returns>Индекс созданной связи.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Create(IList<TLinkAddress> restrictions); // TODO: Возможно всегда нужно принимать restrictions, возможно и возвращать связь нужно целиком.
 
         /// <summary>
@@ -64,9 +72,11 @@ namespace Platform.Data
         /// </param>
         /// <param name="substitution"></param>
         /// <returns>Индекс обновлённой связи.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Update(IList<TLinkAddress> restrictions, IList<TLinkAddress> substitution); // TODO: Возможно и возвращать связь нужно целиком.
 
         /// <summary>Удаляет связь с указанным индексом.</summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         void Delete(IList<TLinkAddress> restrictions); // TODO: Возможно всегда нужно принимать restrictions, a так же возвращать удалённую связь, если удаление было реально выполнено, и Null, если нет.
 
         #endregion

@@ -113,6 +113,7 @@ namespace Platform.Data
         /// например "DoubletOf" обозначить что является точно парой, а что точно точкой.
         /// И наоборот этот же метод поможет, если уже существует точка, но нам нужна пара.
         /// </remarks>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsFullPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
         {
@@ -132,6 +133,7 @@ namespace Platform.Data
         /// Достаточно любой одной ссылки на себя.
         /// Также в будущем можно будет проверять и всех родителей, чтобы проверить есть ли ссылки на себя (на эту связь).
         /// </remarks>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsPartialPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
         {

@@ -1,4 +1,5 @@
-﻿using Platform.Ranges;
+﻿using System.Runtime.CompilerServices;
+using Platform.Ranges;
 using Platform.Reflection;
 using Platform.Converters;
 using Platform.Numbers;
@@ -17,13 +18,25 @@ namespace Platform.Data
         #region Link parts
 
         /// <summary>Возвращает индекс части, которая отвечает за индекс (адрес, идентификатор) самой связи.</summary>
-        public int IndexPart { get; }
+        public int IndexPart
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает индекс части, которая отвечает за ссылку на связь-начало (первая часть-значение).</summary>
-        public int SourcePart { get; }
+        public int SourcePart
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает индекс части, которая отвечает за ссылку на связь-конец (последняя часть-значение).</summary>
-        public int TargetPart { get; }
+        public int TargetPart
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         #endregion
 
@@ -31,41 +44,74 @@ namespace Platform.Data
 
         /// <summary>Возвращает значение, обозначающее продолжение прохода по связям.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
-        public TLinkAddress Continue { get; }
+        public TLinkAddress Continue
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает значение, обозначающее пропуск в проходе по связям.</summary>
-        public TLinkAddress Skip { get; }
+        public TLinkAddress Skip
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает значение, обозначающее остановку прохода по связям.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
-        public TLinkAddress Break { get; }
+        public TLinkAddress Break
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         #endregion
 
         #region Special symbols
 
         /// <summary>Возвращает значение, обозначающее отсутствие связи.</summary>
-        public TLinkAddress Null { get; }
+        public TLinkAddress Null
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает значение, обозначающее любую связь.</summary>
         /// <remarks>Возможно нужно зарезервировать отдельное значение, тогда можно будет создавать все варианты последовательностей в функции Create.</remarks>
-        public TLinkAddress Any { get; }
+        public TLinkAddress Any
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает значение, обозначающее связь-ссылку на саму связь.</summary>
-        public TLinkAddress Itself { get; }
+        public TLinkAddress Itself
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         #endregion
 
         #region References
 
         /// <summary>Возвращает диапазон возможных индексов для внутренних связей (внутренних ссылок).</summary>
-        public Range<TLinkAddress> InternalReferencesRange { get; }
+        public Range<TLinkAddress> InternalReferencesRange
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>Возвращает диапазон возможных индексов для внешних связей (внешних ссылок).</summary>
-        public Range<TLinkAddress>? ExternalReferencesRange { get; }
+        public Range<TLinkAddress>? ExternalReferencesRange
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         #endregion
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(int targetPart, Range<TLinkAddress> possibleInternalReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange)
         {
             IndexPart = 0;
@@ -86,18 +132,25 @@ namespace Platform.Data
             ExternalReferencesRange = possibleExternalReferencesRange;
         }
 
-        public LinksConstants(int targetPart, bool enableExternalReferencesSupport) : this(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) {}
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public LinksConstants(int targetPart, bool enableExternalReferencesSupport) : this(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(Range<TLinkAddress> possibleInternalReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange) : this(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(bool enableExternalReferencesSupport) : this(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(int targetPart, Range<TLinkAddress> possibleInternalReferencesRange) : this(targetPart, possibleInternalReferencesRange, null) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(Range<TLinkAddress> possibleInternalReferencesRange) : this(DefaultTargetPart, possibleInternalReferencesRange, null) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants() : this(DefaultTargetPart, enableExternalReferencesSupport: false) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Range<TLinkAddress> GetDefaultInternalReferencesRange(bool enableExternalReferencesSupport)
         {
             if (enableExternalReferencesSupport)
@@ -110,6 +163,7 @@ namespace Platform.Data
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Range<TLinkAddress>? GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport)
         {
             if (enableExternalReferencesSupport)
@@ -122,6 +176,7 @@ namespace Platform.Data
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void Decrement(ref TLinkAddress currentInternalReferenceIndex) => currentInternalReferenceIndex = Arithmetic.Decrement(currentInternalReferenceIndex);
     }
 }
