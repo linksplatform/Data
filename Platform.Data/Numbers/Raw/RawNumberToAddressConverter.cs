@@ -1,5 +1,4 @@
-﻿using Platform.Interfaces;
-using Platform.Numbers;
+﻿using Platform.Converters;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -7,6 +6,8 @@ namespace Platform.Data.Numbers.Raw
 {
     public class RawNumberToAddressConverter<TLink> : IConverter<TLink>
     {
-        public TLink Convert(TLink source) => (Integer<TLink>)new Hybrid<TLink>(source).AbsoluteValue;
+        static private readonly UncheckedConverter<long, TLink> _converter = UncheckedConverter<long, TLink>.Default;
+
+        public TLink Convert(TLink source) => _converter.Convert(new Hybrid<TLink>(source).AbsoluteValue);
     }
 }

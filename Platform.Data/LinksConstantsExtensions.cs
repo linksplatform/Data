@@ -10,9 +10,9 @@ namespace Platform.Data
         public static bool IsReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.IsInternalReference(address) || linksConstants.IsExternalReference(address);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsInternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.InternalReferencesRange.ContainsValue(address);
+        public static bool IsInternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.InternalReferencesRange.Contains(address);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsExternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.ExternalReferencesRange?.ContainsValue(address) ?? false;
+        public static bool IsExternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.ExternalReferencesRange?.Contains(address) ?? false;
     }
 }

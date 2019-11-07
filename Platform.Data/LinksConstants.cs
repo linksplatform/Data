@@ -1,6 +1,7 @@
-﻿using Platform.Numbers;
-using Platform.Ranges;
+﻿using Platform.Ranges;
 using Platform.Reflection;
+using Platform.Converters;
+using Platform.Numbers;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -9,6 +10,9 @@ namespace Platform.Data
     public class LinksConstants<TLinkAddress>
     {
         public static readonly int DefaultTargetPart = 2;
+
+        private static readonly TLinkAddress _one = Arithmetic<TLinkAddress>.Increment(default);
+        private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
 
         #region Link parts
 
@@ -67,8 +71,8 @@ namespace Platform.Data
             IndexPart = 0;
             SourcePart = 1;
             TargetPart = targetPart;
-            Null = Integer<TLinkAddress>.Zero;
-            Break = Integer<TLinkAddress>.Zero;
+            Null = default;
+            Break = default;
             var currentInternalReferenceIndex = possibleInternalReferencesRange.Maximum;
             Continue = currentInternalReferenceIndex;
             Decrement(ref currentInternalReferenceIndex);
@@ -98,11 +102,11 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return (Integer<TLinkAddress>.One, (Integer<TLinkAddress>)Hybrid<TLinkAddress>.HalfOfNumberValuesRange);
+                return (_one, _uInt64ToAddressConverter.Convert(Hybrid<TLinkAddress>.HalfOfNumberValuesRange));
             }
             else
             {
-                return (Integer<TLinkAddress>.One, NumericType<TLinkAddress>.MaxValue);
+                return (_one, NumericType<TLinkAddress>.MaxValue);
             }
         }
 
@@ -110,7 +114,7 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return ((Integer<TLinkAddress>)(Hybrid<TLinkAddress>.HalfOfNumberValuesRange + 1UL), NumericType<TLinkAddress>.MaxValue);
+                return (_uInt64ToAddressConverter.Convert(Hybrid<TLinkAddress>.HalfOfNumberValuesRange + 1UL), NumericType<TLinkAddress>.MaxValue);
             }
             else
             {

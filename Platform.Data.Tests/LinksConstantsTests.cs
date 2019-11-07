@@ -1,4 +1,7 @@
 ﻿using Xunit;
+using Platform.Reflection;
+using Platform.Converters;
+using Platform.Numbers;
 
 namespace Platform.Data.Tests
 {
@@ -7,13 +10,28 @@ namespace Platform.Data.Tests
         [Fact]
         public static void ExternalReferencesTest()
         {
-            LinksConstants<ulong> constants = new LinksConstants<ulong>((1, long.MaxValue), (long.MaxValue + 1UL, ulong.MaxValue));
+            TestExternalReferences<ulong, long>();
+            TestExternalReferences<uint, int>();
+            TestExternalReferences<ushort, short>();
+            TestExternalReferences<byte, sbyte>();
+        }
 
-            var minimum = new Hybrid<ulong>(0, isExternal: true);
-            var maximum = new Hybrid<ulong>(long.MaxValue, isExternal: true);
+        private static void TestExternalReferences<TUnsigned, TSigned>()
+        {
+            var unsingedOne = Arithmetic.Increment(default(TUnsigned));
+            var converter = UncheckedConverter<TSigned, TUnsigned>.Default;
+            var half = converter.Convert(NumericType<TSigned>.MaxValue);
+            LinksConstants<TUnsigned> constants = new LinksConstants<TUnsigned>((unsingedOne, half), (Arithmetic.Add(half, unsingedOne), NumericType<TUnsigned>.MaxValue));
+
+            var minimum = new Hybrid<TUnsigned>(default, isExternal: true);
+            var maximum = new Hybrid<TUnsigned>(half, isExternal: true);
 
             Assert.True(constants.IsExternalReference(minimum));
+            Assert.True(minimum.IsExternal);
+            Assert.False(minimum.IsInternal);
             Assert.True(constants.IsExternalReference(maximum));
+            Assert.True(maximum.IsExternal);
+            Assert.False(maximum.IsInternal);
         }
     }
 }

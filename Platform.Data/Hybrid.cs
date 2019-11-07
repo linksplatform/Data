@@ -14,38 +14,46 @@ namespace Platform.Data
 {
     public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>>
     {
-        public static readonly ulong HalfOfNumberValuesRange = ((ulong)(Integer<TLinkAddress>)NumericType<TLinkAddress>.MaxValue) / 2;
-        public static readonly TLinkAddress ExternalZero = (Integer<TLinkAddress>)(HalfOfNumberValuesRange + 1UL);
-
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
-        private static readonly Func<object, TLinkAddress> _negateAndConvert = CompileNegateAndConvertDelegate();
+        private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
+        private static readonly UncheckedConverter<TLinkAddress, ulong> _addressToUInt64Converter = UncheckedConverter<TLinkAddress, ulong>.Default;
+        private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
         private static readonly Func<object, TLinkAddress> _unboxAbsAndConvert = CompileUnboxAbsAndConvertDelegate();
         private static readonly Func<object, TLinkAddress> _unboxAbsNegateAndConvert = CompileUnboxAbsNegateAndConvertDelegate();
+
+        public static readonly ulong HalfOfNumberValuesRange = _addressToUInt64Converter.Convert(NumericType<TLinkAddress>.MaxValue) / 2;
+        public static readonly TLinkAddress ExternalZero = _uInt64ToAddressConverter.Convert(HalfOfNumberValuesRange + 1UL);
 
         public readonly TLinkAddress Value;
 
         public bool IsNothing
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) || Convert.ToInt64(Value) == 0;
+            get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue == 0;
         }
 
         public bool IsInternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => Convert.ToInt64(To.Signed(Value)) > 0;
+            get => SignedValue > 0;
         }
 
         public bool IsExternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) || Convert.ToInt64(To.Signed(Value)) < 0;
+            get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue < 0;
+        }
+
+        public long SignedValue
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => _addressToInt64Converter.Convert(Value);
         }
 
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : Platform.Numbers.Math.Abs(Convert.ToInt64(To.Signed(Value)));
+            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : Platform.Numbers.Math.Abs(SignedValue);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -66,7 +74,7 @@ namespace Platform.Data
             {
                 if (isExternal)
                 {
-                    Value = _negateAndConvert(value);
+                    Value = Math<TLinkAddress>.Negate(value);
                 }
                 else
                 {
@@ -129,25 +137,25 @@ namespace Platform.Data
         public static implicit operator TLinkAddress(Hybrid<TLinkAddress> hybrid) => hybrid.Value;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static explicit operator ulong(Hybrid<TLinkAddress> hybrid) => Convert.ToUInt64(hybrid.Value);
+        public static explicit operator ulong(Hybrid<TLinkAddress> hybrid) => CheckedConverter<TLinkAddress, ulong>.Default.Convert(hybrid.Value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static explicit operator long(Hybrid<TLinkAddress> hybrid) => hybrid.AbsoluteValue;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static explicit operator uint(Hybrid<TLinkAddress> hybrid) => Convert.ToUInt32(hybrid.Value);
+        public static explicit operator uint(Hybrid<TLinkAddress> hybrid) => CheckedConverter<TLinkAddress, uint>.Default.Convert(hybrid.Value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static explicit operator int(Hybrid<TLinkAddress> hybrid) => (int)hybrid.AbsoluteValue;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static explicit operator ushort(Hybrid<TLinkAddress> hybrid) => Convert.ToUInt16(hybrid.Value);
+        public static explicit operator ushort(Hybrid<TLinkAddress> hybrid) => CheckedConverter<TLinkAddress, ushort>.Default.Convert(hybrid.Value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static explicit operator short(Hybrid<TLinkAddress> hybrid) => (short)hybrid.AbsoluteValue;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static explicit operator byte(Hybrid<TLinkAddress> hybrid) => Convert.ToByte(hybrid.Value);
+        public static explicit operator byte(Hybrid<TLinkAddress> hybrid) => CheckedConverter<TLinkAddress, byte>.Default.Convert(hybrid.Value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static explicit operator sbyte(Hybrid<TLinkAddress> hybrid) => (sbyte)hybrid.AbsoluteValue;
@@ -218,24 +226,6 @@ namespace Platform.Data
                 emiter.UnboxValue(signedVersion);
                 var absMethod = typeof(System.Math).GetTypeInfo().GetMethod("Abs", new[] { signedVersion });
                 emiter.Call(absMethod);
-                var unsignedMethod = typeof(To).GetTypeInfo().GetMethod("Unsigned", new[] { signedVersion });
-                emiter.Call(unsignedMethod);
-                emiter.Return();
-            });
-        }
-
-        // TODO: Use directed negation instead provided by the next version of Platform.Numbers.Math.Negate with no conversions required
-        private static Func<object, TLinkAddress> CompileNegateAndConvertDelegate()
-        {
-            return DelegateHelpers.Compile<Func<object, TLinkAddress>>(emiter =>
-            {
-                Ensure.Always.IsUnsignedInteger<TLinkAddress>();
-                emiter.LoadArgument(0);
-                var signedVersion = NumericType<TLinkAddress>.SignedVersion;
-                var signedMethod = typeof(To).GetTypeInfo().GetMethod("Signed", new[] { typeof(TLinkAddress) });
-                emiter.Call(signedMethod);
-                var negateMethod = typeof(Platform.Numbers.Math).GetTypeInfo().GetMethod("Negate").MakeGenericMethod(signedVersion);
-                emiter.Call(negateMethod);
                 var unsignedMethod = typeof(To).GetTypeInfo().GetMethod("Unsigned", new[] { signedVersion });
                 emiter.Call(unsignedMethod);
                 emiter.Return();
