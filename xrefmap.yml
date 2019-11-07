@@ -1457,14 +1457,6 @@ references:
   fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Continue
   nameWithType: LinksConstants<TLinkAddress>.Continue
   nameWithType.vb: LinksConstants(Of TLinkAddress).Continue
-- uid: Platform.Data.LinksConstants`1.DefaultTargetPart
-  name: DefaultTargetPart
-  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_DefaultTargetPart
-  commentId: F:Platform.Data.LinksConstants`1.DefaultTargetPart
-  fullName: Platform.Data.LinksConstants<TLinkAddress>.DefaultTargetPart
-  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).DefaultTargetPart
-  nameWithType: LinksConstants<TLinkAddress>.DefaultTargetPart
-  nameWithType.vb: LinksConstants(Of TLinkAddress).DefaultTargetPart
 - uid: Platform.Data.LinksConstants`1.ExternalReferencesRange
   name: ExternalReferencesRange
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_ExternalReferencesRange
@@ -1635,6 +1627,18 @@ references:
   fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).TargetPart
   nameWithType: LinksConstants<TLinkAddress>.TargetPart
   nameWithType.vb: LinksConstants(Of TLinkAddress).TargetPart
+- uid: Platform.Data.LinksConstantsBase
+  name: LinksConstantsBase
+  href: api/Platform.Data.LinksConstantsBase.html
+  commentId: T:Platform.Data.LinksConstantsBase
+  fullName: Platform.Data.LinksConstantsBase
+  nameWithType: LinksConstantsBase
+- uid: Platform.Data.LinksConstantsBase.DefaultTargetPart
+  name: DefaultTargetPart
+  href: api/Platform.Data.LinksConstantsBase.html#Platform_Data_LinksConstantsBase_DefaultTargetPart
+  commentId: F:Platform.Data.LinksConstantsBase.DefaultTargetPart
+  fullName: Platform.Data.LinksConstantsBase.DefaultTargetPart
+  nameWithType: LinksConstantsBase.DefaultTargetPart
 - uid: Platform.Data.LinksConstantsExtensions
   name: LinksConstantsExtensions
   href: api/Platform.Data.LinksConstantsExtensions.html
