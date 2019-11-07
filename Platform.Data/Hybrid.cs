@@ -161,7 +161,7 @@ namespace Platform.Data
         public static explicit operator sbyte(Hybrid<TLinkAddress> hybrid) => (sbyte)hybrid.AbsoluteValue;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public override string ToString() => IsNothing ? default(TLinkAddress) == null ? "Nothing" : default(TLinkAddress).ToString() : IsExternal ? $"<{AbsoluteValue}>" : Value.ToString();
+        public override string ToString() => IsExternal ? $"<{AbsoluteValue}>" : Value.ToString();
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Hybrid<TLinkAddress> other) => _equalityComparer.Equals(Value, other.Value);
@@ -196,7 +196,6 @@ namespace Platform.Data
                 emiter.LoadArgument(0);
                 var signedVersion = NumericType<TLinkAddress>.SignedVersion;
                 var signedVersionField = typeof(NumericType<TLinkAddress>).GetTypeInfo().GetField("SignedVersion", BindingFlags.Static | BindingFlags.Public);
-                //emiter.LoadField(signedVersionField);
                 emiter.Emit(OpCodes.Ldsfld, signedVersionField);
                 var changeTypeMethod = typeof(Convert).GetTypeInfo().GetMethod("ChangeType", Types<object, Type>.Array);
                 emiter.Call(changeTypeMethod);
@@ -219,7 +218,6 @@ namespace Platform.Data
                 emiter.LoadArgument(0);
                 var signedVersion = NumericType<TLinkAddress>.SignedVersion;
                 var signedVersionField = typeof(NumericType<TLinkAddress>).GetTypeInfo().GetField("SignedVersion", BindingFlags.Static | BindingFlags.Public);
-                //emiter.LoadField(signedVersionField);
                 emiter.Emit(OpCodes.Ldsfld, signedVersionField);
                 var changeTypeMethod = typeof(Convert).GetTypeInfo().GetMethod("ChangeType", Types<object, Type>.Array);
                 emiter.Call(changeTypeMethod);

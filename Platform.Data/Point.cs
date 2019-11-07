@@ -116,9 +116,13 @@ namespace Platform.Data
         public static bool operator ==(Point<TLinkAddress> left, Point<TLinkAddress> right)
         {
             if (left == null && right == null)
+            {
                 return true;
+            }
             if (left == null)
+            {
                 return false;
+            }
             return left.Equals(right);
         }
 

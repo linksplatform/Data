@@ -9,7 +9,7 @@ namespace Platform.Data
 {
     public class LinksConstants<TLinkAddress>
     {
-        public static readonly int DefaultTargetPart = 2;
+        public const int DefaultTargetPart = 2;
 
         private static readonly TLinkAddress _one = Arithmetic<TLinkAddress>.Increment(default);
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
