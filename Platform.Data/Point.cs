@@ -144,7 +144,7 @@ namespace Platform.Data
         public static bool IsFullPoint(IList<TLinkAddress> link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
-            Ensure.Always.ArgumentInRange(link.Count, new Range<int>(2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
+            Ensure.Always.ArgumentInRange(link.Count, (2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
             return IsFullPointUnchecked(link);
         }
 
@@ -166,7 +166,7 @@ namespace Platform.Data
         public static bool IsPartialPoint(IList<TLinkAddress> link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
-            Ensure.Always.ArgumentInRange(link.Count, new Range<int>(2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
+            Ensure.Always.ArgumentInRange(link.Count, (2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
             return IsPartialPointUnchecked(link);
         }
 
