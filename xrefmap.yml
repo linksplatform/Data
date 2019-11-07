@@ -557,6 +557,23 @@ references:
   fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).Inequality
   nameWithType: Hybrid<TLinkAddress>.Inequality
   nameWithType.vb: Hybrid(Of TLinkAddress).Inequality
+- uid: Platform.Data.Hybrid`1.SignedValue
+  name: SignedValue
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_SignedValue
+  commentId: P:Platform.Data.Hybrid`1.SignedValue
+  fullName: Platform.Data.Hybrid<TLinkAddress>.SignedValue
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).SignedValue
+  nameWithType: Hybrid<TLinkAddress>.SignedValue
+  nameWithType.vb: Hybrid(Of TLinkAddress).SignedValue
+- uid: Platform.Data.Hybrid`1.SignedValue*
+  name: SignedValue
+  href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_SignedValue_
+  commentId: Overload:Platform.Data.Hybrid`1.SignedValue
+  isSpec: "True"
+  fullName: Platform.Data.Hybrid<TLinkAddress>.SignedValue
+  fullName.vb: Platform.Data.Hybrid(Of TLinkAddress).SignedValue
+  nameWithType: Hybrid<TLinkAddress>.SignedValue
+  nameWithType.vb: Hybrid(Of TLinkAddress).SignedValue
 - uid: Platform.Data.Hybrid`1.ToString
   name: ToString()
   href: api/Platform.Data.Hybrid-1.html#Platform_Data_Hybrid_1_ToString
@@ -1243,22 +1260,22 @@ references:
   fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants()
   nameWithType: LinksConstants<TLinkAddress>.LinksConstants()
   nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants()
-- uid: Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
+- uid: Platform.Data.LinksConstants`1.#ctor(Range{`0})
   name: LinksConstants(Range<TLinkAddress>)
-  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Platform_Ranges_Range__0__
-  commentId: M:Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0})
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Range__0__
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(Range{`0})
   name.vb: LinksConstants(Range(Of TLinkAddress))
-  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(Platform.Ranges.Range<TLinkAddress>)
-  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(Platform.Ranges.Range(Of TLinkAddress))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(Range<TLinkAddress>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(Range(Of TLinkAddress))
   nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Range<TLinkAddress>)
   nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Range(Of TLinkAddress))
-- uid: Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+- uid: Platform.Data.LinksConstants`1.#ctor(Range{`0},System.Nullable{Range{`0}})
   name: LinksConstants(Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
-  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
-  commentId: M:Platform.Data.LinksConstants`1.#ctor(Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_Range__0__System_Nullable_Range__0___
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(Range{`0},System.Nullable{Range{`0}})
   name.vb: LinksConstants(Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
-  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(Platform.Ranges.Range<TLinkAddress>, System.Nullable<Platform.Ranges.Range<TLinkAddress>>)
-  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(Platform.Ranges.Range(Of TLinkAddress), System.Nullable(Of Platform.Ranges.Range(Of TLinkAddress)))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(Range<TLinkAddress>, System.Nullable<Range<TLinkAddress>>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(Range(Of TLinkAddress), System.Nullable(Of Range(Of TLinkAddress)))
   nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
   nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
 - uid: Platform.Data.LinksConstants`1.#ctor(System.Boolean)
@@ -1269,22 +1286,22 @@ references:
   fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Boolean)
   nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Boolean)
   nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Boolean)
-- uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
+- uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Range{`0})
   name: LinksConstants(Int32, Range<TLinkAddress>)
-  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__
-  commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0})
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Range__0__
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Range{`0})
   name.vb: LinksConstants(Int32, Range(Of TLinkAddress))
-  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TLinkAddress>)
-  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TLinkAddress))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(System.Int32, Range<TLinkAddress>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Int32, Range(Of TLinkAddress))
   nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Int32, Range<TLinkAddress>)
   nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Int32, Range(Of TLinkAddress))
-- uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+- uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,Range{`0},System.Nullable{Range{`0}})
   name: LinksConstants(Int32, Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
-  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Platform_Ranges_Range__0__System_Nullable_Platform_Ranges_Range__0___
-  commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Platform.Ranges.Range{`0},System.Nullable{Platform.Ranges.Range{`0}})
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1__ctor_System_Int32_Range__0__System_Nullable_Range__0___
+  commentId: M:Platform.Data.LinksConstants`1.#ctor(System.Int32,Range{`0},System.Nullable{Range{`0}})
   name.vb: LinksConstants(Int32, Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
-  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(System.Int32, Platform.Ranges.Range<TLinkAddress>, System.Nullable<Platform.Ranges.Range<TLinkAddress>>)
-  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Int32, Platform.Ranges.Range(Of TLinkAddress), System.Nullable(Of Platform.Ranges.Range(Of TLinkAddress)))
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.LinksConstants(System.Int32, Range<TLinkAddress>, System.Nullable<Range<TLinkAddress>>)
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).LinksConstants(System.Int32, Range(Of TLinkAddress), System.Nullable(Of Range(Of TLinkAddress)))
   nameWithType: LinksConstants<TLinkAddress>.LinksConstants(Int32, Range<TLinkAddress>, Nullable<Range<TLinkAddress>>)
   nameWithType.vb: LinksConstants(Of TLinkAddress).LinksConstants(Int32, Range(Of TLinkAddress), Nullable(Of Range(Of TLinkAddress)))
 - uid: Platform.Data.LinksConstants`1.#ctor(System.Int32,System.Boolean)
@@ -2278,31 +2295,6 @@ references:
   fullName.vb: Platform.Data.Sequences.StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, TLinkAddress), System.Func(Of TLinkAddress, System.Boolean), System.Func(Of TLinkAddress, System.Boolean))
   nameWithType: StopableSequenceWalker.WalkRight<TLinkAddress>(TLinkAddress, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, TLinkAddress>, Func<TLinkAddress, Boolean>, Func<TLinkAddress, Boolean>)
   nameWithType.vb: StopableSequenceWalker.WalkRight(Of TLinkAddress)(TLinkAddress, Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, TLinkAddress), Func(Of TLinkAddress, Boolean), Func(Of TLinkAddress, Boolean))
-- uid: Platform.Data.Tests
-  name: Platform.Data.Tests
-  href: api/Platform.Data.Tests.html
-  commentId: N:Platform.Data.Tests
-  fullName: Platform.Data.Tests
-  nameWithType: Platform.Data.Tests
-- uid: Platform.Data.Tests.LinksConstantsTests
-  name: LinksConstantsTests
-  href: api/Platform.Data.Tests.LinksConstantsTests.html
-  commentId: T:Platform.Data.Tests.LinksConstantsTests
-  fullName: Platform.Data.Tests.LinksConstantsTests
-  nameWithType: LinksConstantsTests
-- uid: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
-  name: ExternalReferencesTest()
-  href: api/Platform.Data.Tests.LinksConstantsTests.html#Platform_Data_Tests_LinksConstantsTests_ExternalReferencesTest
-  commentId: M:Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
-  fullName: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest()
-  nameWithType: LinksConstantsTests.ExternalReferencesTest()
-- uid: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest*
-  name: ExternalReferencesTest
-  href: api/Platform.Data.Tests.LinksConstantsTests.html#Platform_Data_Tests_LinksConstantsTests_ExternalReferencesTest_
-  commentId: Overload:Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
-  isSpec: "True"
-  fullName: Platform.Data.Tests.LinksConstantsTests.ExternalReferencesTest
-  nameWithType: LinksConstantsTests.ExternalReferencesTest
 - uid: Platform.Data.Universal
   name: Platform.Data.Universal
   href: api/Platform.Data.Universal.html
