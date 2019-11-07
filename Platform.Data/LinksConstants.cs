@@ -8,10 +8,8 @@ using Platform.Numbers;
 
 namespace Platform.Data
 {
-    public class LinksConstants<TLinkAddress>
+    public class LinksConstants<TLinkAddress> : LinksConstantsBase
     {
-        public const int DefaultTargetPart = 2;
-
         private static readonly TLinkAddress _one = Arithmetic<TLinkAddress>.Increment(default);
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
 
