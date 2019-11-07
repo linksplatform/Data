@@ -6,7 +6,7 @@ namespace Platform.Data.Exceptions
 {
     public class LinksLimitReachedException<TLinkAddress> : Exception
     {
-        public static readonly string DefaultMessage = "Достигнут лимит количества связей в хранилище.";
+        public const string DefaultMessage = "Достигнут лимит количества связей в хранилище.";
         public LinksLimitReachedException(string message) : base(message) { }
         public LinksLimitReachedException(TLinkAddress limit) : this(FormatMessage(limit)) { }
         public LinksLimitReachedException() : base(DefaultMessage) { }
