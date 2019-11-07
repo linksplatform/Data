@@ -180,12 +180,12 @@ namespace Platform.Data
 
         private static bool IsDefault(object value)
         {
-            var type = value.GetType();
-            if (type.IsValueType)
+            if (value == null)
             {
-                return value.Equals(Activator.CreateInstance(type));
+                return true;
             }
-            return value == null;
+            var type = value.GetType();
+            return type.IsValueType ? value.Equals(Activator.CreateInstance(type)) : false;
         }
 
         private static Func<object, TLinkAddress> CompileUnboxAbsNegateAndConvertDelegate()

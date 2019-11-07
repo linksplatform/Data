@@ -79,7 +79,7 @@ namespace Platform.Data
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual bool Equals(LinkAddress<TLinkAddress> other) => _equalityComparer.Equals(Index, other.Index);
+        public virtual bool Equals(LinkAddress<TLinkAddress> other) => other == null ? false : _equalityComparer.Equals(Index, other.Index);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator TLinkAddress(LinkAddress<TLinkAddress> linkAddress) => linkAddress.Index;
@@ -97,7 +97,14 @@ namespace Platform.Data
         public override string ToString() => Index.ToString();
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool operator ==(LinkAddress<TLinkAddress> left, LinkAddress<TLinkAddress> right) => left.Equals(right);
+        public static bool operator ==(LinkAddress<TLinkAddress> left, LinkAddress<TLinkAddress> right)
+        {
+            if (left == null && right == null)
+                return true;
+            if (left == null)
+                return false;
+            return left.Equals(right);
+        }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator !=(LinkAddress<TLinkAddress> left, LinkAddress<TLinkAddress> right) => !(left == right);
