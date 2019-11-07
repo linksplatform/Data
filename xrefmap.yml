@@ -241,43 +241,12 @@ references:
   isSpec: "True"
   fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException
   nameWithType: LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase
-  name: LinkWithSameValueAlreadyExistsExceptionBase
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html
-  commentId: T:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase
-  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor
-  name: LinkWithSameValueAlreadyExistsExceptionBase()
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor
-  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase()
-  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase()
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String)
-  name: LinkWithSameValueAlreadyExistsExceptionBase(String)
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor_System_String_
-  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String)
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(System.String)
-  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(String)
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String,System.Exception)
-  name: LinkWithSameValueAlreadyExistsExceptionBase(String, Exception)
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor_System_String_System_Exception_
-  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String,System.Exception)
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(System.String, System.Exception)
-  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(String, Exception)
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor*
-  name: LinkWithSameValueAlreadyExistsExceptionBase
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor_
-  commentId: Overload:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor
-  isSpec: "True"
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase
-  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
   name: DefaultMessage
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase_DefaultMessage
-  commentId: F:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
-  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsException_DefaultMessage
+  commentId: F:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
+  nameWithType: LinkWithSameValueAlreadyExistsException.DefaultMessage
 - uid: Platform.Data.Hybrid`1
   name: Hybrid<TLinkAddress>
   href: api/Platform.Data.Hybrid-1.html
