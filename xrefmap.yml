@@ -22,6 +22,14 @@ references:
   fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress)
   nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>
   nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress)
+- uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor
+  name: ArgumentLinkDoesNotExistsException()
+  href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor
+  commentId: M:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException()
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException()
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException()
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException()
 - uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(`0)
   name: ArgumentLinkDoesNotExistsException(TLinkAddress)
   href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor__0_
@@ -38,6 +46,22 @@ references:
   fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(TLinkAddress, System.String)
   nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(TLinkAddress, String)
   nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(TLinkAddress, String)
+- uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(System.String)
+  name: ArgumentLinkDoesNotExistsException(String)
+  href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor_System_String_
+  commentId: M:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(System.String)
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(System.String)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(System.String)
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(String)
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(String)
+- uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(System.String,System.Exception)
+  name: ArgumentLinkDoesNotExistsException(String, Exception)
+  href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor_System_String_System_Exception_
+  commentId: M:Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor(System.String,System.Exception)
+  fullName: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(System.String, System.Exception)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(System.String, System.Exception)
+  nameWithType: ArgumentLinkDoesNotExistsException<TLinkAddress>.ArgumentLinkDoesNotExistsException(String, Exception)
+  nameWithType.vb: ArgumentLinkDoesNotExistsException(Of TLinkAddress).ArgumentLinkDoesNotExistsException(String, Exception)
 - uid: Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException`1.#ctor*
   name: ArgumentLinkDoesNotExistsException
   href: api/Platform.Data.Exceptions.ArgumentLinkDoesNotExistsException-1.html#Platform_Data_Exceptions_ArgumentLinkDoesNotExistsException_1__ctor_
@@ -56,6 +80,14 @@ references:
   fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress)
   nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>
   nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress)
+- uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor
+  name: ArgumentLinkHasDependenciesException()
+  href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor
+  commentId: M:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException()
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException()
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException()
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException()
 - uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(`0)
   name: ArgumentLinkHasDependenciesException(TLinkAddress)
   href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor__0_
@@ -72,6 +104,22 @@ references:
   fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(TLinkAddress, System.String)
   nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(TLinkAddress, String)
   nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(TLinkAddress, String)
+- uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(System.String)
+  name: ArgumentLinkHasDependenciesException(String)
+  href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor_System_String_
+  commentId: M:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(System.String)
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(System.String)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(System.String)
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(String)
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(String)
+- uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(System.String,System.Exception)
+  name: ArgumentLinkHasDependenciesException(String, Exception)
+  href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor_System_String_System_Exception_
+  commentId: M:Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor(System.String,System.Exception)
+  fullName: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(System.String, System.Exception)
+  fullName.vb: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(System.String, System.Exception)
+  nameWithType: ArgumentLinkHasDependenciesException<TLinkAddress>.ArgumentLinkHasDependenciesException(String, Exception)
+  nameWithType.vb: ArgumentLinkHasDependenciesException(Of TLinkAddress).ArgumentLinkHasDependenciesException(String, Exception)
 - uid: Platform.Data.Exceptions.ArgumentLinkHasDependenciesException`1.#ctor*
   name: ArgumentLinkHasDependenciesException
   href: api/Platform.Data.Exceptions.ArgumentLinkHasDependenciesException-1.html#Platform_Data_Exceptions_ArgumentLinkHasDependenciesException_1__ctor_
@@ -114,6 +162,14 @@ references:
   fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(System.String)
   nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(String)
   nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(String)
+- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor(System.String,System.Exception)
+  name: LinksLimitReachedException(String, Exception)
+  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1__ctor_System_String_System_Exception_
+  commentId: M:Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor(System.String,System.Exception)
+  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(System.String, System.Exception)
+  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(System.String, System.Exception)
+  nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException(String, Exception)
+  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException(String, Exception)
 - uid: Platform.Data.Exceptions.LinksLimitReachedException`1.#ctor*
   name: LinksLimitReachedException
   href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1__ctor_
@@ -149,6 +205,12 @@ references:
   commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.#ctor(System.String)
   fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException(System.String)
   nameWithType: LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException(String)
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.#ctor(System.String,System.Exception)
+  name: LinkWithSameValueAlreadyExistsException(String, Exception)
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsException__ctor_System_String_System_Exception_
+  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.#ctor(System.String,System.Exception)
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException(System.String, System.Exception)
+  nameWithType: LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException(String, Exception)
 - uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.#ctor*
   name: LinkWithSameValueAlreadyExistsException
   href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsException__ctor_
