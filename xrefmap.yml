@@ -179,14 +179,37 @@ references:
   fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException
   nameWithType: LinksLimitReachedException<TLinkAddress>.LinksLimitReachedException
   nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).LinksLimitReachedException
-- uid: Platform.Data.Exceptions.LinksLimitReachedException`1.DefaultMessage
+- uid: Platform.Data.Exceptions.LinksLimitReachedExceptionBase
+  name: LinksLimitReachedExceptionBase
+  href: api/Platform.Data.Exceptions.LinksLimitReachedExceptionBase.html
+  commentId: T:Platform.Data.Exceptions.LinksLimitReachedExceptionBase
+  fullName: Platform.Data.Exceptions.LinksLimitReachedExceptionBase
+  nameWithType: LinksLimitReachedExceptionBase
+- uid: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.#ctor(System.String)
+  name: LinksLimitReachedExceptionBase(String)
+  href: api/Platform.Data.Exceptions.LinksLimitReachedExceptionBase.html#Platform_Data_Exceptions_LinksLimitReachedExceptionBase__ctor_System_String_
+  commentId: M:Platform.Data.Exceptions.LinksLimitReachedExceptionBase.#ctor(System.String)
+  fullName: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.LinksLimitReachedExceptionBase(System.String)
+  nameWithType: LinksLimitReachedExceptionBase.LinksLimitReachedExceptionBase(String)
+- uid: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.#ctor(System.String,System.Exception)
+  name: LinksLimitReachedExceptionBase(String, Exception)
+  href: api/Platform.Data.Exceptions.LinksLimitReachedExceptionBase.html#Platform_Data_Exceptions_LinksLimitReachedExceptionBase__ctor_System_String_System_Exception_
+  commentId: M:Platform.Data.Exceptions.LinksLimitReachedExceptionBase.#ctor(System.String,System.Exception)
+  fullName: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.LinksLimitReachedExceptionBase(System.String, System.Exception)
+  nameWithType: LinksLimitReachedExceptionBase.LinksLimitReachedExceptionBase(String, Exception)
+- uid: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.#ctor*
+  name: LinksLimitReachedExceptionBase
+  href: api/Platform.Data.Exceptions.LinksLimitReachedExceptionBase.html#Platform_Data_Exceptions_LinksLimitReachedExceptionBase__ctor_
+  commentId: Overload:Platform.Data.Exceptions.LinksLimitReachedExceptionBase.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.LinksLimitReachedExceptionBase
+  nameWithType: LinksLimitReachedExceptionBase.LinksLimitReachedExceptionBase
+- uid: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.DefaultMessage
   name: DefaultMessage
-  href: api/Platform.Data.Exceptions.LinksLimitReachedException-1.html#Platform_Data_Exceptions_LinksLimitReachedException_1_DefaultMessage
-  commentId: F:Platform.Data.Exceptions.LinksLimitReachedException`1.DefaultMessage
-  fullName: Platform.Data.Exceptions.LinksLimitReachedException<TLinkAddress>.DefaultMessage
-  fullName.vb: Platform.Data.Exceptions.LinksLimitReachedException(Of TLinkAddress).DefaultMessage
-  nameWithType: LinksLimitReachedException<TLinkAddress>.DefaultMessage
-  nameWithType.vb: LinksLimitReachedException(Of TLinkAddress).DefaultMessage
+  href: api/Platform.Data.Exceptions.LinksLimitReachedExceptionBase.html#Platform_Data_Exceptions_LinksLimitReachedExceptionBase_DefaultMessage
+  commentId: F:Platform.Data.Exceptions.LinksLimitReachedExceptionBase.DefaultMessage
+  fullName: Platform.Data.Exceptions.LinksLimitReachedExceptionBase.DefaultMessage
+  nameWithType: LinksLimitReachedExceptionBase.DefaultMessage
 - uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException
   name: LinkWithSameValueAlreadyExistsException
   href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html
@@ -218,12 +241,43 @@ references:
   isSpec: "True"
   fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException
   nameWithType: LinkWithSameValueAlreadyExistsException.LinkWithSameValueAlreadyExistsException
-- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase
+  name: LinkWithSameValueAlreadyExistsExceptionBase
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html
+  commentId: T:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase
+  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor
+  name: LinkWithSameValueAlreadyExistsExceptionBase()
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor
+  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase()
+  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase()
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String)
+  name: LinkWithSameValueAlreadyExistsExceptionBase(String)
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor_System_String_
+  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String)
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(System.String)
+  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(String)
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String,System.Exception)
+  name: LinkWithSameValueAlreadyExistsExceptionBase(String, Exception)
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor_System_String_System_Exception_
+  commentId: M:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor(System.String,System.Exception)
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(System.String, System.Exception)
+  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase(String, Exception)
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor*
+  name: LinkWithSameValueAlreadyExistsExceptionBase
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase__ctor_
+  commentId: Overload:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase
+  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.LinkWithSameValueAlreadyExistsExceptionBase
+- uid: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
   name: DefaultMessage
-  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsException_DefaultMessage
-  commentId: F:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
-  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsException.DefaultMessage
-  nameWithType: LinkWithSameValueAlreadyExistsException.DefaultMessage
+  href: api/Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.html#Platform_Data_Exceptions_LinkWithSameValueAlreadyExistsExceptionBase_DefaultMessage
+  commentId: F:Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
+  fullName: Platform.Data.Exceptions.LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
+  nameWithType: LinkWithSameValueAlreadyExistsExceptionBase.DefaultMessage
 - uid: Platform.Data.Hybrid`1
   name: Hybrid<TLinkAddress>
   href: api/Platform.Data.Hybrid-1.html
