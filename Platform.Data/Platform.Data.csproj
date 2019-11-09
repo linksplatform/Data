@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.2.0</VersionPrefix>
+    <VersionPrefix>0.2.1</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net471;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -24,33 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Added support for .NET Standard 2.1 (.NET Core 3.0).
-Platform.Numbers dependency updated from 0.2.1 to 0.2.3.
-Platform.Threading dependency updated from 0.1.0 to 0.1.1.
-Platform.Setters dependency updated from 0.0.2 to 0.0.3.
-LinkAddress and Point are now classes.
-Point class now implements IList, to represent the full point.
-Added support for external references to ILinksExtensions.
-Added support for easy initialization of external references ranges in LinksConstants.
-LinksConstants.IsInnerReference method renamed to IsInternalReference.
-LinksConstants.PossibleInnerReferencesRange property renamed to InternalReferencesRange.
-LinksConstants.PossibleExternalReferencesRange property renamed to ExternalReferencesRange.
-LinksConstantsExtensions.IsInnerReference method renamed to IsInternalReference.
-Classses moved from Platform.Data.Doublets:
-* Hybrid
-* AddressToRawNumberConverter
-* RawNumberToAddressConverter
-Added Hybrid.SignedValue property.
-Added LinksLimitReachedExceptionBase abstract class.
-Added LinksConstantsBase abstract class.
-Added missing constructors for exceptions.
-Source link enabled.
-Travis CI disabled.
-GitHub Actions enabled.
-Tests added.
-Refactoring, performance optimizations, issues fix.
-
-This release is not backward compatible with the previous 0.1.1 release.</PackageReleaseNotes>
+    <PackageReleaseNotes>No more usages of obsolete classes inside Hybrid logic.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
@@ -58,7 +32,7 @@ This release is not backward compatible with the previous 0.1.1 release.</Packag
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19554-01" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19554-01" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
