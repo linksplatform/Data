@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Reflection;
@@ -16,10 +14,10 @@ namespace Platform.Data
     {
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
         private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
+        private static readonly UncheckedConverter<long, TLinkAddress> _int64ToAddressConverter = UncheckedConverter<long, TLinkAddress>.Default;
         private static readonly UncheckedConverter<TLinkAddress, ulong> _addressToUInt64Converter = UncheckedConverter<TLinkAddress, ulong>.Default;
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
-        private static readonly Func<object, TLinkAddress> _unboxAbsAndConvert = CompileUnboxAbsAndConvertDelegate();
-        private static readonly Func<object, TLinkAddress> _unboxAbsNegateAndConvert = CompileUnboxAbsNegateAndConvertDelegate();
+        private static readonly UncheckedConverter<object, long> _objectToInt64Converter = UncheckedConverter<object, long>.Default;
 
         public static readonly ulong HalfOfNumberValuesRange = _addressToUInt64Converter.Convert(NumericType<TLinkAddress>.MaxValue) / 2;
         public static readonly TLinkAddress ExternalZero = _uInt64ToAddressConverter.Convert(HalfOfNumberValuesRange + 1UL);
@@ -84,25 +82,20 @@ namespace Platform.Data
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Hybrid(object value) => Value = To.UnsignedAs<TLinkAddress>(Convert.ChangeType(value, NumericType<TLinkAddress>.SignedVersion));
+        public Hybrid(object value) => Value = _int64ToAddressConverter.Convert(_objectToInt64Converter.Convert(value));
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(object value, bool isExternal)
         {
-            if (IsDefault(value) && isExternal)
+            var signedValue = value == null ? 0 : _objectToInt64Converter.Convert(value);
+            if (signedValue == 0 && isExternal)
             {
                 Value = ExternalZero;
             }
             else
             {
-                if (isExternal)
-                {
-                    Value = _unboxAbsNegateAndConvert(value);
-                }
-                else
-                {
-                    Value = _unboxAbsAndConvert(value);
-                }
+                var absoluteValue = System.Math.Abs(signedValue);
+                Value = isExternal ? _int64ToAddressConverter.Convert(-absoluteValue) : _int64ToAddressConverter.Convert(absoluteValue);
             }
         }
 
@@ -177,60 +170,5 @@ namespace Platform.Data
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator !=(Hybrid<TLinkAddress> left, Hybrid<TLinkAddress> right) => !(left == right);
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static bool IsDefault(object value)
-        {
-            if (value == null)
-            {
-                return true;
-            }
-            var type = value.GetType();
-            return type.IsValueType ? value.Equals(Activator.CreateInstance(type)) : false;
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static Func<object, TLinkAddress> CompileUnboxAbsNegateAndConvertDelegate()
-        {
-            return DelegateHelpers.Compile<Func<object, TLinkAddress>>(emiter =>
-            {
-                Ensure.Always.IsUnsignedInteger<TLinkAddress>();
-                emiter.LoadArgument(0);
-                var signedVersion = NumericType<TLinkAddress>.SignedVersion;
-                var signedVersionField = typeof(NumericType<TLinkAddress>).GetTypeInfo().GetField("SignedVersion", BindingFlags.Static | BindingFlags.Public);
-                emiter.Emit(OpCodes.Ldsfld, signedVersionField);
-                var changeTypeMethod = typeof(Convert).GetTypeInfo().GetMethod("ChangeType", Types<object, Type>.Array);
-                emiter.Call(changeTypeMethod);
-                emiter.UnboxValue(signedVersion);
-                var absMethod = typeof(System.Math).GetTypeInfo().GetMethod("Abs", new[] { signedVersion });
-                emiter.Call(absMethod);
-                var negateMethod = typeof(Platform.Numbers.Math).GetTypeInfo().GetMethod("Negate").MakeGenericMethod(signedVersion);
-                emiter.Call(negateMethod);
-                var unsignedMethod = typeof(To).GetTypeInfo().GetMethod("Unsigned", new[] { signedVersion });
-                emiter.Call(unsignedMethod);
-                emiter.Return();
-            });
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static Func<object, TLinkAddress> CompileUnboxAbsAndConvertDelegate()
-        {
-            return DelegateHelpers.Compile<Func<object, TLinkAddress>>(emiter =>
-            {
-                Ensure.Always.IsUnsignedInteger<TLinkAddress>();
-                emiter.LoadArgument(0);
-                var signedVersion = NumericType<TLinkAddress>.SignedVersion;
-                var signedVersionField = typeof(NumericType<TLinkAddress>).GetTypeInfo().GetField("SignedVersion", BindingFlags.Static | BindingFlags.Public);
-                emiter.Emit(OpCodes.Ldsfld, signedVersionField);
-                var changeTypeMethod = typeof(Convert).GetTypeInfo().GetMethod("ChangeType", Types<object, Type>.Array);
-                emiter.Call(changeTypeMethod);
-                emiter.UnboxValue(signedVersion);
-                var absMethod = typeof(System.Math).GetTypeInfo().GetMethod("Abs", new[] { signedVersion });
-                emiter.Call(absMethod);
-                var unsignedMethod = typeof(To).GetTypeInfo().GetMethod("Unsigned", new[] { signedVersion });
-                emiter.Call(unsignedMethod);
-                emiter.Return();
-            });
-        }
     }
 }
