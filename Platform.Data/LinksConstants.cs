@@ -119,13 +119,10 @@ namespace Platform.Data
             Break = default;
             var currentInternalReferenceIndex = possibleInternalReferencesRange.Maximum;
             Continue = currentInternalReferenceIndex;
-            Decrement(ref currentInternalReferenceIndex);
-            Skip = currentInternalReferenceIndex;
-            Decrement(ref currentInternalReferenceIndex);
-            Any = currentInternalReferenceIndex;
-            Decrement(ref currentInternalReferenceIndex);
-            Itself = currentInternalReferenceIndex;
-            Decrement(ref currentInternalReferenceIndex);
+            Skip = Arithmetic.Decrement(ref currentInternalReferenceIndex);
+            Any = Arithmetic.Decrement(ref currentInternalReferenceIndex);
+            Itself = Arithmetic.Decrement(ref currentInternalReferenceIndex);
+            Arithmetic.Decrement(ref currentInternalReferenceIndex);
             InternalReferencesRange = (possibleInternalReferencesRange.Minimum, currentInternalReferenceIndex);
             ExternalReferencesRange = possibleExternalReferencesRange;
         }
@@ -173,8 +170,5 @@ namespace Platform.Data
                 return null;
             }
         }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static void Decrement(ref TLinkAddress currentInternalReferenceIndex) => currentInternalReferenceIndex = Arithmetic.Decrement(currentInternalReferenceIndex);
     }
 }
