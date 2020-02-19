@@ -7,12 +7,12 @@ using System.Runtime.CompilerServices;
 namespace Platform.Data
 {
     /// <summary>
-    /// <para>Представляет интерфейс для манипуляции с данными в формате Links (хранилища связей).</para>
     /// <para>Represents an interface for manipulating data in the Links (links storage) format.</para>
+    /// <para>Представляет интерфейс для манипуляции с данными в формате Links (хранилища связей).</para>
     /// </summary>
     /// <remarks>
-    /// Этот интерфейс в данный момент не зависит от размера содержимого связи, а значит подходит как для дуплетов, так и для триплетов и т.п.
-    /// Возможно этот интерфейс подходит даже для Sequences.
+    /// <para>This interface is independent of the size of the content of the link, meaning it is suitable for both doublets, triplets, and link sequences of any size.</para>
+    /// <para>Этот интерфейс не зависит от размера содержимого связи, а значит подходит как для дуплетов, триплетов и последовательностей связей любого размера.</para>
     /// </remarks>
     public interface ILinks<TLinkAddress, TConstants>
         where TConstants : LinksConstants<TLinkAddress>
@@ -20,9 +20,13 @@ namespace Platform.Data
         #region Constants
 
         /// <summary>
-        /// Возвращает набор констант, который необходим для эффективной коммуникации с методами этого интерфейса.
-        /// Эти константы не меняются с момента создания точки доступа к хранилищу.
+        /// <para>Returns the set of constants that is necessary for effective communication with the methods of this interface.</para>
+        /// <para>Возвращает набор констант, который необходим для эффективной коммуникации с методами этого интерфейса.</para>
         /// </summary>
+        /// <remarks>
+        /// <para>These constants are not changed since the creation of the links storage access point.</para>
+        /// <para>Эти константы не меняются с момента создания точки доступа к хранилищу связей.</para>
+        /// </remarks>
         TConstants Constants
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
