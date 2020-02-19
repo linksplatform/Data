@@ -7,7 +7,8 @@ using System.Runtime.CompilerServices;
 namespace Platform.Data
 {
     /// <summary>
-    /// Представляет интерфейс для работы с данными в формате Links (хранилища взаимосвязей).
+    /// <para>Представляет интерфейс для манипуляции с данными в формате Links (хранилища связей).</para>
+    /// <para>Represents an interface for manipulating data in the Links (links storage) format.</para>
     /// </summary>
     /// <remarks>
     /// Этот интерфейс в данный момент не зависит от размера содержимого связи, а значит подходит как для дуплетов, так и для триплетов и т.п.
