@@ -38,19 +38,24 @@ namespace Platform.Data
         #region Read
 
         /// <summary>
-        /// Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанным ограничениям.
+        /// <para>Counts and returns the total number of links in the storage that meet the specified restrictions.</para>
+        /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</para>
         /// </summary>
-        /// <param name="restriction">Ограничения на содержимое связей.</param>
-        /// <returns>Общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</returns>
+        /// <param name="restriction"><para>Restrictions on the contents of links.</para><para>Ограничения на содержимое связей.</para></param>
+        /// <returns><para>The total number of links in the storage that meet the specified restrictions.</para><para>Общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Count(IList<TLinkAddress> restriction);
 
         /// <summary>
-        /// Выполняет проход по всем связям, соответствующим шаблону, вызывая обработчик (handler) для каждой подходящей связи.
+        /// <para>Passes through all the links matching the pattern, invoking a handler for each matching link.</para>
+        /// <para>Выполняет проход по всем связям, соответствующим шаблону, вызывая обработчик (handler) для каждой подходящей связи.</para>
         /// </summary>
-        /// <param name="handler">Обработчик каждой подходящей связи.</param>
-        /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
-        /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
+        /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
+        /// <param name="restrictions">
+        /// <para>Restrictions on the contents of links. Each constraint can have values: Constants.Null - the 0th link denoting a reference to the void, Any - the absence of a constraint, 1..∞ a specific link index.</para>
+        /// <para>Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
+        /// </param>
+        /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Each(Func<IList<TLinkAddress>, TLinkAddress> handler, IList<TLinkAddress> restrictions);
 
