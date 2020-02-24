@@ -163,7 +163,7 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return (_uInt64ToAddressConverter.Convert(Hybrid<TLinkAddress>.HalfOfNumberValuesRange + 1UL), NumericType<TLinkAddress>.MaxValue);
+                return (Hybrid<TLinkAddress>.ExternalZero, NumericType<TLinkAddress>.MaxValue);
             }
             else
             {

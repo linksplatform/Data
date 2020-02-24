@@ -8,6 +8,14 @@ namespace Platform.Data.Tests
     public static class LinksConstantsTests
     {
         [Fact]
+        public static void ConstructorTest()
+        {
+            var constants = new LinksConstants<ulong>(enableExternalReferencesSupport: true);
+            Assert.Equal(Hybrid<ulong>.ExternalZero, constants.ExternalReferencesRange.Value.Minimum);
+            Assert.Equal(ulong.MaxValue, constants.ExternalReferencesRange.Value.Maximum);
+        }
+
+        [Fact]
         public static void ExternalReferencesTest()
         {
             TestExternalReferences<ulong, long>();
