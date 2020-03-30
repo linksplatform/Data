@@ -64,11 +64,16 @@ namespace Platform.Data
         #region Write
 
         /// <summary>
-        /// Создаёт связь.
+        /// <para>Creates a link.</para>
+        /// <para>Создаёт связь.</para>
+        /// <param name="restrictions">
+        /// <para>Restrictions on the content of a link. This argument is optional, if the null passed as value that means no restrictions on the content of a link are set.</para>
+        /// <para>Ограничения на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
+        /// </param>
         /// </summary>
-        /// <returns>Индекс созданной связи.</returns>
+        /// <returns><para>Index of the created link.</para><para>Индекс созданной связи.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Create(IList<TLinkAddress> restrictions); // TODO: Возможно всегда нужно принимать restrictions, возможно и возвращать связь нужно целиком.
+        TLinkAddress Create(IList<TLinkAddress> restrictions); // TODO: Возвращать связь возвращать нужно целиком.
 
         /// <summary>
         /// Обновляет связь с указанными restrictions[Constants.IndexPart] в адресом связи
