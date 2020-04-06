@@ -90,7 +90,14 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Update(IList<TLinkAddress> restrictions, IList<TLinkAddress> substitution); // TODO: Возможно и возвращать связь нужно целиком.
 
-        /// <summary>Удаляет связь с указанным индексом.</summary>
+        /// <summary>
+        /// <para>Deletes links that match the specified restrictions.</para>
+        /// <para>Удаляет связи соответствующие указанным ограничениям.</para>
+        /// <param name="restrictions">
+        /// <para>Restrictions on the content of a link. This argument is optional, if the null passed as value that means no restrictions on the content of a link are set.</para>
+        /// <para>Ограничения на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
+        /// </param>
+        /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         void Delete(IList<TLinkAddress> restrictions); // TODO: Возможно всегда нужно принимать restrictions, a так же возвращать удалённую связь, если удаление было реально выполнено, и Null, если нет.
 
