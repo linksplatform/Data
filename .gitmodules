@@ -1,0 +1,6 @@
+[submodule "RegularExpressions.Transformer.CSharpToCpp"]
+	path = RegularExpressions.Transformer.CSharpToCpp
+	url = https://github.com/linksplatform/RegularExpressions.Transformer.CSharpToCpp
+[submodule "CSharpToCppTranslator"]
+	path = CSharpToCppTranslator
+	url = https://github.com/linksplatform/CSharpToCppTranslator
