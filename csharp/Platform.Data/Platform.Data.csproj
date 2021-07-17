@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.3.0</VersionPrefix>
+    <VersionPrefix>0.3.1</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -24,13 +24,11 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.2.
-Platform.Numbers dependency updated from 0.3.0 to 0.4.0.
-Platform.Threading dependency updated from 0.1.1 to 0.2.0.
-Platform.Setters dependency updated from 0.0.3 to 0.1.0.
-Refactoring.
-Comments updated.
-Issues fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>ILinks interface is covered with comments draft.
+Point class now retuns Size property value from Count property.
+Platform.Numbers dependency updated from 0.4.0 to 0.4.1.
+Platform.Threading dependency updated from 0.2.0 to 0.2.1.
+Platform.Setters dependency updated from 0.1.0 to 0.2.0.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
