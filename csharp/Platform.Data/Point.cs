@@ -47,7 +47,7 @@ namespace Platform.Data
         public int Count
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => int.MaxValue;
+            get => Size;
         }
 
         public bool IsReadOnly
