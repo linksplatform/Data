@@ -45,13 +45,13 @@ namespace Platform.Data
         public long SignedValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => /*_addressToInt64Converter.Convert(*/255/*)*/;
+            get => _addressToInt64Converter.Convert(Value);
         }
 
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : /*Platform.Numbers.Math.Abs(*/SignedValue/*)*/;
+            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : Platform.Numbers.Math.Abs(SignedValue);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
