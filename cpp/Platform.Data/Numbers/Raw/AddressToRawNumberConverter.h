@@ -1,8 +1,7 @@
 ﻿namespace Platform::Data::Numbers::Raw
 {
-    template <typename ...> class AddressToRawNumberConverter;
-    template <typename TLink> class AddressToRawNumberConverter<TLink> : public IConverter<TLink>
+    template<std::integral TLink> class AddressToRawNumberConverter
     {
-        public: TLink Convert(TLink source) { return Hybrid<TLink>(source, isExternal: true); }
+        public: TLink Convert(TLink source) const noexcept { return static_cast<TLink>(Hybrid<TLink>(source, true)); }
     };
 }

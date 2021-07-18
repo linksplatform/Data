@@ -1,135 +1,113 @@
 ﻿namespace Platform::Data
 {
-    template <typename ...> class Point;
-    template <typename TLinkAddress> class Point<TLinkAddress> : public IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
+    namespace Internal
     {
+        auto gen_always_index(auto index)
+        {
+            return [index](auto) { return index; };
+        }
+
+        template<typename TLinkAddress>
+        using PointBase = decltype(std::views::iota(std::size_t{}, std::size_t{}) | std::views::transform(Internal::gen_always_index(TLinkAddress{})));
+    }
+
+    template <std::integral TLinkAddress>
+    class Point : public Internal::PointBase<TLinkAddress>
+    {
+        using base = Internal::PointBase<TLinkAddress>;
+
+        // TODO: maybe remove or convert to property
         public: const TLinkAddress Index;
 
-        public: const std::int32_t Size;
+        // TODO: maybe remove or convert to property
+        public: const std::size_t Size;
 
-        public: TLinkAddress this[std::int32_t index]
+        public: auto operator[](std::unsigned_integral auto index) const -> TLinkAddress
         {
-            get
+            if (index < Size)
             {
-                if (index < Size)
-                {
-                    return Index;
-                }
-                else
-                {
-                    throw IndexOutOfRangeException();
-                }
+                return Index;
             }
-            set => throw std::logic_error("Not supported exception.");
-        }
-
-        public: std::int32_t Count()
-        {
-            return std::numeric_limits<std::int32_t>::max();
-        }
-
-        public: bool IsReadOnly()
-        {
-            return true;
-        }
-
-        public: Point(TLinkAddress index, std::int32_t size)
-        {
-            Index = index;
-            Size = size;
-        }
-
-        public: void Add(TLinkAddress item) { throw std::logic_error("Not supported exception."); }
-
-        public: void Clear() { throw std::logic_error("Not supported exception."); }
-
-        public: virtual bool Contains(TLinkAddress item) { return item == Index ? true : false; }
-
-        public: void CopyTo(TLinkAddress array[], std::int32_t arrayIndex) { array[arrayIndex] = Index; }
-
-        public: IEnumerator<TLinkAddress> GetEnumerator()
-        {
-            for (std::int32_t i = 0; i < Size; i++)
+            else
             {
-                yield return Index;
+                throw std::out_of_range{""};
             }
         }
 
-        public: virtual std::int32_t IndexOf(TLinkAddress item) { return item == Index ? 0 : -1; }
-
-        public: void Insert(std::int32_t index, TLinkAddress item) { throw std::logic_error("Not supported exception."); }
-
-        public: bool Remove(TLinkAddress item) { throw std::logic_error("Not supported exception."); }
-
-        public: void RemoveAt(std::int32_t index) { throw std::logic_error("Not supported exception."); }
-
-        IEnumerator IEnumerable.GetEnumerator()
+        public: Point(TLinkAddress index, std::size_t size) :
+            Index(index), Size(size), base(std::views::iota(std::size_t(0), size), Internal::gen_always_index(index))
         {
-            for (std::int32_t i = 0; i < Size; i++)
-            {
-                yield return Index;
-            }
         }
 
-        public: virtual bool operator ==(const LinkAddress<TLinkAddress> &other) const { return other == nullptr ? false : Index == other.Index; }
-
-        public: operator TLinkAddress() const { return this->Index; }
-
-        public: operator std::string() const { return Platform::Converters::To<std::string>(Index).data(); }
-
-        public: friend std::ostream & operator <<(std::ostream &out, const Point<TLinkAddress> &obj) { return out << (std::string)obj; }
-
-        public: static bool operator ==(Point<TLinkAddress> left, Point<TLinkAddress> right)
+        public: auto operator==(const LinkAddress<TLinkAddress> &other) const noexcept
         {
-            if (left == nullptr && right == nullptr)
-            {
-                return true;
-            }
-            if (left == nullptr)
-            {
-                return false;
-            }
-            return left.Equals(right);
+            return Index == other.Index;
         }
 
-        public: static bool IsFullPoint(params TLinkAddress link[]) { return IsFullPoint((IList<TLinkAddress>)link); }
+        public: explicit operator TLinkAddress() const noexcept { return Index; }
 
-        public: static bool IsFullPoint(IList<TLinkAddress> &link)
-        {
-            Ensure.Always.ArgumentNotEmpty(link, "link");
-            Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, link.Count(), (2, std::numeric_limits<std::int32_t>::max()), "link", "Cannot determine link's pointness using only its identifier.");
-            return IsFullPointUnchecked(link);
-        }
+        public: explicit operator std::string() const { return Converters::To<std::string>(Index).data(); }
 
-        public: static bool IsFullPointUnchecked(IList<TLinkAddress> &link)
-        {
-            auto result = true;
-            for (auto i = 1; result && i < link.Count(); i++)
-            {
-                result = link[0] == link[i];
-            }
-            return result;
-        }
-
-        public: static bool IsPartialPoint(params TLinkAddress link[]) { return IsPartialPoint((IList<TLinkAddress>)link); }
-
-        public: static bool IsPartialPoint(IList<TLinkAddress> &link)
-        {
-            Ensure.Always.ArgumentNotEmpty(link, "link");
-            Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, link.Count(), (2, std::numeric_limits<std::int32_t>::max()), "link", "Cannot determine link's pointness using only its identifier.");
-            return IsPartialPointUnchecked(link);
-        }
-
-        public: static bool IsPartialPointUnchecked(IList<TLinkAddress> &link)
-        {
-            auto result = false;
-            for (auto i = 1; !result && i < link.Count(); i++)
-            {
-                result = link[0] == link[i];
-            }
-            return result;
-        }
+        public: friend std::ostream& operator<<(std::ostream &out, const Point<TLinkAddress>& obj) { return out << (std::string)obj; }
     };
+
+    template<std::integral TLinkAddress, typename... Args>
+    Point(TLinkAddress, Args...) -> Point<TLinkAddress>;
+
+
+    static bool IsFullPoint(std::integral auto... params)
+    {
+        std::common_type_t<decltype(params)...> link[] = { params... };
+        return IsFullPoint(link);
+    }
+
+    static bool IsFullPoint(Interfaces::IEnumerable auto&& link)
+        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+    {
+        // Emm... TODO: if(std::ranges::size(link) >= 2) ?
+        constexpr auto link_range = Ranges::Range(2, std::numeric_limits<std::int32_t>::max());
+
+        Platform::Ranges::Always::ArgumentInRange(std::ranges::size(link), link_range, "link", "Cannot determine link's pointness using only its identifier.");
+        return IsFullPointUnchecked(link);
+    }
+
+    static bool IsFullPointUnchecked(Interfaces::IEnumerable auto&& link)
+        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+    {
+        // Nice optimize, but there is something better
+        auto&& first = link[0];
+        auto pred = [&first](auto&& address) { return address == first; };
+
+        auto size = std::ranges::size(link | std::views::drop_while(pred));
+        return size == 0;
+    }
+
+    // TODO: we don't have args... to array-like converter
+    static bool IsPartialPoint(std::integral auto... params)
+    {
+        std::common_type_t<decltype(params)...> link[] = { params... };
+        return IsPartialPoint(link);
+    }
+
+    static bool IsPartialPoint(Interfaces::IEnumerable auto&& link)
+        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+    {
+        using namespace Platform::Ranges;
+
+        // TODO: after my PR
+        /*Ensure::*/Always::ArgumentInRange(std::ranges::size(link) , Range{2, std::numeric_limits<std::int32_t>::max()}, "link", "Cannot determine link's pointness using only its identifier.");
+        return IsPartialPointUnchecked(link);
+    }
+
+    static bool IsPartialPointUnchecked(Interfaces::IEnumerable auto&& link)
+        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+    {
+        auto&& first = *std::ranges::begin(link);
+        auto pred = [&first](auto&& address) { return address != first; };
+
+        auto size = std::ranges::size(link | std::views::drop_while(pred));
+        return size == 0;
+    }
 }
 
 namespace std
@@ -137,9 +115,9 @@ namespace std
     template <typename TLinkAddress>
     struct hash<Platform::Data::Point<TLinkAddress>>
     {
-        std::size_t operator()(const Platform::Data::Point<TLinkAddress> &obj) const
+        std::size_t operator()(const Platform::Data::Point<TLinkAddress>& self) const noexcept
         {
-            return Index.GetHashCode();
+            return self.Index;
         }
     };
 }
