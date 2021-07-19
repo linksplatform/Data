@@ -1,20 +1,27 @@
 ﻿namespace Platform::Data
 {
-    template <typename ...> class ILinks;
-    template <typename TLinkAddress, typename TConstants> class ILinks<TLinkAddress, TConstants>
-        where TConstants : LinksConstants<TLinkAddress>
+    template<typename Self, std::integral TLinkAddress, std::derived_from<LinksConstants<TLinkAddress>> TConstants>
+    class ILinks
     {
+        auto&& self() & noexcept { return static_cast<Self&>(*this); }
+        auto&& self() && noexcept { return static_cast<Self&&>(*this); }
+        auto&& self() const & noexcept { return static_cast<const Self&>(*this); }
+        auto&& self() const && noexcept { return static_cast<const Self&&>(*this); }
+
     public:
-        const TConstants Constants;
+        const TConstants Constants{};
 
-        virtual TLinkAddress Count(IList<TLinkAddress> &restriction) = 0;
+        // TODO: maybe mark methods as const
+        TLinkAddress Count(Interfaces::IArray<TLinkAddress> auto&& restriction) { return self().Count(restriction); }
 
-        virtual TLinkAddress Each(Func<IList<TLinkAddress>, TLinkAddress> handler, IList<TLinkAddress> &restrictions) = 0;
+        TLinkAddress Each(auto&& handler, Interfaces::IArray<TLinkAddress> auto&& restrictions)
+            requires requires { { handler(restrictions) } -> std::same_as<TLinkAddress>; }
+        { return self().Each(handler, restrictions); }
 
-        virtual TLinkAddress Create(IList<TLinkAddress> &restrictions) = 0;
+        TLinkAddress Create(Interfaces::IArray<TLinkAddress> auto&& restriction) { return self().Create(restriction); }
 
-        virtual TLinkAddress Update(IList<TLinkAddress> &restrictions, IList<TLinkAddress> &substitution) = 0;
+        TLinkAddress Update(Interfaces::IArray<TLinkAddress> auto&& restriction, Interfaces::IArray<TLinkAddress> auto&& substitution) { return self().Update(restriction, substitution); }
 
-        virtual void Delete(IList<TLinkAddress> &restrictions) = 0;
-    }
+        void Delete(Interfaces::IArray<TLinkAddress> auto&& restriction) { self().Delete(restriction); }
+    };
 }

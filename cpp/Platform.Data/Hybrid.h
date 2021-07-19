@@ -1,127 +1,75 @@
 ﻿namespace Platform::Data
 {
-    template <typename ...> struct Hybrid;
-    template <typename TLinkAddress> struct Hybrid<TLinkAddress>
+    namespace Internal
     {
-        private: static readonly UncheckedSignExtendingConverter<TLinkAddress, std::int64_t> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, std::int64_t>.Default;
-        private: static readonly UncheckedConverter<std::int64_t, TLinkAddress> _int64ToAddressConverter = UncheckedConverter<std::int64_t, TLinkAddress>.Default;
-        private: static readonly UncheckedConverter<TLinkAddress, std::uint64_t> _addressToUInt64Converter = UncheckedConverter<TLinkAddress, std::uint64_t>.Default;
-        private: static readonly UncheckedConverter<std::uint64_t, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<std::uint64_t, TLinkAddress>.Default;
-        private: static readonly UncheckedConverter<void*, std::int64_t> _objectToInt64Converter = UncheckedConverter<void*, std::int64_t>.Default;
-
-        public: inline static const std::uint64_t HalfOfNumberValuesRange = _addressToUInt64Converter.Convert(NumericType<TLinkAddress>.MaxValue) / 2;
-        public: inline static const TLinkAddress ExternalZero = _uInt64ToAddressConverter.Convert(HalfOfNumberValuesRange + 1UL);
-
-        public: TLinkAddress Value = 0;
-
-        public: bool IsNothing()
+        constexpr auto smart_to_signed(std::integral auto value) noexcept
         {
-            return Value == ExternalZero || SignedValue == 0;
+            using raw_type = decltype(value);
+            return static_cast<std::make_signed_t<raw_type>>(value);
+        }
+    }
+
+    template<std::integral TLinkAddress>
+    class Hybrid
+    {
+        public: static constexpr TLinkAddress HalfOfNumberValuesRange = std::numeric_limits<TLinkAddress>::max() / 2;
+        public: static constexpr TLinkAddress ExternalZero = static_cast<TLinkAddress>(HalfOfNumberValuesRange + 1);
+
+        public: const TLinkAddress Value = 0;
+
+        public: [[nodiscard]] bool IsNothing() const noexcept
+        {
+            return (Value == ExternalZero) || (SignedValue() == 0);
         }
 
-        public: bool IsInternal()
+        public: [[nodiscard]] bool IsInternal() const noexcept
         {
-            return SignedValue > 0;
+            return SignedValue() > 0;
         }
 
-        public: bool IsExternal()
+        public: [[nodiscard]] bool IsExternal() const noexcept
         {
-            return Value == ExternalZero || SignedValue < 0;
+            return (Value == ExternalZero) || (SignedValue() < 0);
         }
 
-        public: std::int64_t SignedValue()
+        public: [[nodiscard]] auto SignedValue() const noexcept -> decltype(Internal::smart_to_signed(Value))
         {
-            return _addressToInt64Converter.Convert(Value);
+            return Internal::smart_to_signed(Value);
         }
 
-        public: std::int64_t AbsoluteValue()
+        public: [[nodiscard]] TLinkAddress AbsoluteValue() const noexcept
         {
-            return Value == ExternalZero ? 0 : Platform.Numbers.Math.Abs(SignedValue);
+            return (Value == ExternalZero) ? 0 : std::abs(SignedValue());
         }
 
-        public: Hybrid(TLinkAddress value)
-        {
-            Ensure.OnDebug.IsUnsignedInteger<TLinkAddress>();
-            Value = value;
-        }
+        public: explicit Hybrid(TLinkAddress value) noexcept : Value(value) { }
 
-        public: Hybrid(TLinkAddress value, bool isExternal)
+        public: Hybrid(TLinkAddress value, bool isExternal) noexcept : Value(external_constructor(value, isExternal)) { }
+
+        public: template<std::integral TOutAddress> explicit operator TOutAddress() const noexcept { return static_cast<TOutAddress>(Value); }
+
+        public: explicit operator std::string() const { return IsExternal() ? std::string("<").append(Converters::To<std::string>(AbsoluteValue())).append(1, '>') : Converters::To<std::string>(Value); }
+
+        public: friend std::ostream& operator<<(std::ostream& stream, const Hybrid<TLinkAddress>& self) { return stream << static_cast<std::string>(self); }
+
+        public: constexpr auto operator==(const Hybrid<TLinkAddress>& other) const noexcept { return Value == other.Value; }
+
+        private: static TLinkAddress external_constructor(TLinkAddress value, bool isExternal) noexcept
         {
             if (value == 0 && isExternal)
             {
-                Value = ExternalZero;
+                return ExternalZero;
             }
             else
             {
-                if (isExternal)
-                {
-                    Value = Math<TLinkAddress>.Negate(value);
-                }
-                else
-                {
-                    Value = value;
-                }
+                auto absolute = std::abs(Internal::smart_to_signed(value)); // std::abs is not overloaded for unsigned types
+                return (isExternal) ? -absolute : absolute;
             }
         }
-
-        public: Hybrid(void *value) { Value = _int64ToAddressConverter.Convert(_objectToInt64Converter.Convert(value)); }
-
-        public: Hybrid(void *value, bool isExternal)
-        {
-            auto signedValue = value == nullptr ? 0 : _objectToInt64Converter.Convert(value);
-            if (signedValue == 0 && isExternal)
-            {
-                Value = ExternalZero;
-            }
-            else
-            {
-                auto absoluteValue = System::Math::Abs(signedValue);
-                Value = isExternal ? _int64ToAddressConverter.Convert(-absoluteValue) : _int64ToAddressConverter.Convert(absoluteValue);
-            }
-        }
-
-        public: Hybrid(TLinkAddress integer) : Hybrid(integer) { }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::uint64_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::int64_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::uint32_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::int32_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::uint16_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::int16_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::uint8_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: static explicit operator Hybrid<TLinkAddress>(std::int8_t integer) { return Hybrid<TLinkAddress>(integer); }
-
-        public: operator TLinkAddress() const { return this->Value; }
-
-        public: static explicit operator ulong(Hybrid<TLinkAddress> hybrid) { return CheckedConverter<TLinkAddress, std::uint64_t>.Default.Convert(hybrid.Value); }
-
-        public: static explicit operator long(Hybrid<TLinkAddress> hybrid) { return hybrid.AbsoluteValue; }
-
-        public: static explicit operator uint(Hybrid<TLinkAddress> hybrid) { return CheckedConverter<TLinkAddress, std::uint32_t>.Default.Convert(hybrid.Value); }
-
-        public: static explicit operator int(Hybrid<TLinkAddress> hybrid) { return (std::int32_t)hybrid.AbsoluteValue; }
-
-        public: static explicit operator ushort(Hybrid<TLinkAddress> hybrid) { return CheckedConverter<TLinkAddress, std::uint16_t>.Default.Convert(hybrid.Value); }
-
-        public: static explicit operator short(Hybrid<TLinkAddress> hybrid) { return (std::int16_t)hybrid.AbsoluteValue; }
-
-        public: static explicit operator byte(Hybrid<TLinkAddress> hybrid) { return CheckedConverter<TLinkAddress, std::uint8_t>.Default.Convert(hybrid.Value); }
-
-        public: static explicit operator sbyte(Hybrid<TLinkAddress> hybrid) { return (std::int8_t)hybrid.AbsoluteValue; }
-
-        public: operator std::string() const { return IsExternal ? std::string("<").append(Platform::Converters::To<std::string>(AbsoluteValue)).append(1, '>') : Platform::Converters::To<std::string>(Value).data(); }
-
-        public: friend std::ostream & operator <<(std::ostream &out, const Hybrid<TLinkAddress> &obj) { return out << (std::string)obj; }
-
-        public: bool operator ==(const Hybrid<TLinkAddress> &other) const { return Value == other.Value; }
     };
+
+    template<std::integral TLinkAddress, typename... Args>
+    Hybrid(TLinkAddress, Args...) -> Hybrid<TLinkAddress>;
 }
 
 namespace std
@@ -129,9 +77,9 @@ namespace std
     template <typename TLinkAddress>
     struct hash<Platform::Data::Hybrid<TLinkAddress>>
     {
-        std::size_t operator()(const Platform::Data::Hybrid<TLinkAddress> &obj) const
+        std::size_t operator()(auto&& self) const
         {
-            return Value.GetHashCode();
+            return self.Value;
         }
     };
 }

@@ -1,73 +1,87 @@
 ﻿namespace Platform::Data
 {
-    class ILinksExtensions
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static TLinkAddress Count(const ILinks<Self, TLinkAddress, TConstants>& links, std::convertible_to<TLinkAddress> auto... restrictions)
+    // TODO: later create noexcept(expr)
     {
-        public: static TLinkAddress Count<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, params TLinkAddress restrictions[])
-            where TConstants : LinksConstants<TLinkAddress>
-            => links.Count()(restrictions);
+        TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
+        return links.Count(array);
+    }
 
-        public: static bool Exists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, TLinkAddress link)
-            where TConstants : LinksConstants<TLinkAddress>
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static bool Exists(const ILinks<Self, TLinkAddress, TConstants>&& links, TLinkAddress link) noexcept
+    {
+        auto&& constants = links.Constants;
+        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && links.Count(LinkAddress(link)) == 0);
+    }
+
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static void EnsureLinkExists(const ILinks<Self, TLinkAddress, TConstants>& links, TLinkAddress link)
+    {
+        if (not Exists(links, link))
         {
-            auto constants = links.Constants;
-            return constants.IsExternalReference(link) || (constants.IsInternalReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count()(LinkAddress<TLinkAddress>(link)), 0) > 0);
+            throw ArgumentLinkDoesNotExistsException<TLinkAddress>(link);
+        }
+    }
+
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static void EnsureLinkExists(ILinks<Self, TLinkAddress, TConstants> &links, TLinkAddress link, const std::string& argumentName)
+    {
+        if (!links.Exists(link))
+        {
+            throw ArgumentLinkDoesNotExistsException<TLinkAddress>(link, argumentName);
+        }
+    }
+
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static TLinkAddress Each(ILinks<Self, TLinkAddress, TConstants>& links, auto&& handler, std::convertible_to<TLinkAddress> auto... restrictions)
+    // TODO: later create noexcept(expr)
+    {
+        TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
+        return links.Each(handler, array);
+    }
+
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static Interfaces::IArray<TLinkAddress> auto&& GetLink(ILinks<Self, TLinkAddress, TConstants>& links, TLinkAddress link)
+    {
+        auto&& constants = links.Constants;
+        if (IsExternalReference(constants, link))
+        {
+            return Point(link, constants.TargetPart + 1);
         }
 
-        public: static void EnsureLinkExists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, TLinkAddress link)
-            where TConstants : LinksConstants<TLinkAddress>
-        {
-            if (!links.Exists(link))
-            {
-                throw ArgumentLinkDoesNotExistsException<TLinkAddress>(link);
-            }
-        }
+        //auto linkPartsSetter = Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
+        //links.Each(linkPartsSetter.SetAndReturnTrue, link);
+        //return linkPartsSetter.Result;
 
-        public: static void EnsureLinkExists<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, TLinkAddress link, std::string argumentName)
-            where TConstants : LinksConstants<TLinkAddress>
+        std::vector<TLinkAddress> wrapper;
+        links.Each([&wrapper, &constants](Interfaces::IArray<TLinkAddress> auto&& link)
         {
-            if (!links.Exists(link))
-            {
-                throw ArgumentLinkDoesNotExistsException<TLinkAddress>(link, argumentName);
-            }
-        }
+            wrapper = std::vector(std::ranges::begin(link), std::ranges::end(link));
+            return constants.Continue;
+        }, link);
+        return wrapper;
+    }
 
-        public: static TLinkAddress Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, Func<IList<TLinkAddress>, TLinkAddress> handler, params TLinkAddress restrictions[])
-            where TConstants : LinksConstants<TLinkAddress>
-            => links.Each(handler, restrictions);
-
-        public: static IList<TLinkAddress> GetLink<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, TLinkAddress link)
-            where TConstants : LinksConstants<TLinkAddress>
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static bool IsFullPoint(ILinks<Self, TLinkAddress, TConstants>& links, TLinkAddress link)
+    {
+        if (IsExternalReference(links.Constants, link))
         {
-            auto constants = links.Constants;
-            if (constants.IsExternalReference(link))
-            {
-                return Point<TLinkAddress>(link, constants.TargetPart + 1);
-            }
-            auto linkPartsSetter = Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
-            links.Each(linkPartsSetter.SetAndReturnTrue, link);
-            return linkPartsSetter.Result;
+            return true;
         }
+        EnsureLinkExists(links, link);
+        return Point<TLinkAddress>::IsFullPoint(GetLink(links, link));
+    }
 
-        public: static bool IsFullPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, TLinkAddress link)
-            where TConstants : LinksConstants<TLinkAddress>
+    template<typename Self, typename TLinkAddress, typename TConstants>
+    static bool IsPartialPoint(const ILinks<Self, TLinkAddress, TConstants> &links, TLinkAddress link)
+    {
+        if (IsExternalReference(links.Constants, link))
         {
-            if (links.Constants.IsExternalReference(link))
-            {
-                return true;
-            }
-            links.EnsureLinkExists(link);
-            return Point<TLinkAddress>.IsFullPoint(links.GetLink(link));
+            return true;
         }
-
-        public: static bool IsPartialPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants> &links, TLinkAddress link)
-            where TConstants : LinksConstants<TLinkAddress>
-        {
-            if (links.Constants.IsExternalReference(link))
-            {
-                return true;
-            }
-            links.EnsureLinkExists(link);
-            return Point<TLinkAddress>.IsPartialPoint(links.GetLink(link));
-        }
-    };
+        EnsureLinkExists(links, link);
+        return Point<TLinkAddress>::IsPartialPoint(GetLink(links, link));
+    }
 }
