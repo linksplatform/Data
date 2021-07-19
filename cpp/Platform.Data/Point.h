@@ -48,12 +48,11 @@
 
         public: explicit operator std::string() const { return Converters::To<std::string>(Index).data(); }
 
-        public: friend std::ostream& operator<<(std::ostream &out, const Point<TLinkAddress>& obj) { return out << (std::string)obj; }
+        public: friend std::ostream& operator<<(std::ostream& stream, const Point<TLinkAddress>& self) { return stream << static_cast<std::string>(self); }
     };
 
     template<std::integral TLinkAddress, typename... Args>
     Point(TLinkAddress, Args...) -> Point<TLinkAddress>;
-
 
     static bool IsFullPoint(std::integral auto... params)
     {
@@ -110,14 +109,13 @@
     }
 }
 
-namespace std
+
+template <typename TLinkAddress>
+struct std::hash<Platform::Data::Point<TLinkAddress>>
 {
-    template <typename TLinkAddress>
-    struct hash<Platform::Data::Point<TLinkAddress>>
+    std::size_t operator()(const Platform::Data::Point<TLinkAddress>& self) const noexcept
     {
-        std::size_t operator()(const Platform::Data::Point<TLinkAddress>& self) const noexcept
-        {
-            return self.Index;
-        }
-    };
-}
+        return self.Index;
+    }
+};
+

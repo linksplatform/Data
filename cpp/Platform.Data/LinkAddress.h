@@ -28,7 +28,7 @@
         }
 
         public: template<typename OtherTLinkAddress> explicit LinkAddress(const LinkAddress<OtherTLinkAddress>& linkAddress)
-            : Index((TLinkAddress)linkAddress.Index)
+            : Index(linkAddress.Index)
         {
         }
 
@@ -39,6 +39,7 @@
 
         public: [[nodiscard]] auto end() const noexcept -> const TLinkAddress*
         {
+            // TODO: maybe explicit write "+ 1" instead
             return std::addressof(Index) + size();
         }
 
@@ -54,25 +55,21 @@
 
         public: explicit operator std::string() const { return Converters::To<std::string>(Index); }
 
-        public: friend std::ostream& operator<<(std::ostream& out, LinkAddress<TLinkAddress> obj)
+        public: friend std::ostream& operator<<(std::ostream& stream, LinkAddress<TLinkAddress> self)
         {
-            return out << (std::string)obj;
+            return stream << static_cast<std::string>(self);
         }
     };
 
-    template<std::integral TLinkAddress>
+    template<typename TLinkAddress>
     LinkAddress(TLinkAddress) -> LinkAddress<TLinkAddress>;
 }
 
-
-namespace std
+template<typename TLinkAddress>
+struct std::hash<Platform::Data::LinkAddress<TLinkAddress>>
 {
-    template <typename TLinkAddress>
-    struct hash<Platform::Data::LinkAddress<TLinkAddress>>
+    std::size_t operator()(auto&& self) const
     {
-        std::size_t operator()(auto&& self) const
-        {
-            return self.Index;
-        }
-    };
-}
+        return self.Index;
+    }
+};

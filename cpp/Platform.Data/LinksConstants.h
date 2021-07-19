@@ -1,54 +1,54 @@
 ﻿namespace Platform::Data
 {
     template<std::integral TLinkAddress>
-    class LinksConstants: LinksConstantsBase
+    class LinksConstants : LinksConstantsBase
     {
         private: static constexpr TLinkAddress _one = /* Arithmetic<TLinkAddress>.Increment(default); */ 1; // o_o
 
-        public: const int IndexPart{};
+        public: const TLinkAddress IndexPart{};
 
-        public: const int SourcePart{};
+        public: const TLinkAddress SourcePart{};
 
-        public: const int TargetPart{};
+        public: const TLinkAddress TargetPart{};
 
-        public: const TLinkAddress Continue;
+        public: const TLinkAddress Break{};
 
-        public: const TLinkAddress Skip;
+        public: const TLinkAddress Null{};
 
-        public: const TLinkAddress Break;
+        public: const TLinkAddress Continue{};
 
-        public: const TLinkAddress Null;
+        public: const TLinkAddress Skip{};
 
-        public: const TLinkAddress Any;
+        public: const TLinkAddress Any{};
 
-        public: const TLinkAddress Itself;
+        public: const TLinkAddress Itself{};
 
-        public: const Ranges::Range<TLinkAddress> InternalReferencesRange;
+        public: const Ranges::Range<TLinkAddress> InternalReferencesRange{};
 
-        public: const std::optional<Ranges::Range<TLinkAddress>> ExternalReferencesRange;
+        public: const std::optional<Ranges::Range<TLinkAddress>> ExternalReferencesRange = std::nullopt;
 
-        public: constexpr LinksConstants(int targetPart, const Ranges::Range<TLinkAddress>& possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) noexcept
+        public: constexpr LinksConstants(TLinkAddress targetPart, const Ranges::Range<TLinkAddress>& possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) noexcept
             : IndexPart(0),
               SourcePart(1),
               TargetPart(targetPart),
-              Null(TLinkAddress{}),
               Break(TLinkAddress{}),
+              Null(TLinkAddress{}),
               Continue(possibleInternalReferencesRange.Maximum),
               Skip(possibleInternalReferencesRange.Maximum - 1),
               Any(possibleInternalReferencesRange.Maximum - 2),
               Itself(possibleInternalReferencesRange.Maximum - 3),
-              InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, possibleInternalReferencesRange.Maximum - 4}),
+              InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, static_cast<TLinkAddress>(possibleInternalReferencesRange.Maximum - 4)}),
               ExternalReferencesRange(std::move(possibleExternalReferencesRange))
         {
         }
 
-        public: constexpr LinksConstants(int targetPart, bool enableExternalReferencesSupport) : LinksConstants(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
+        public: constexpr LinksConstants(TLinkAddress targetPart, bool enableExternalReferencesSupport) : LinksConstants(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
         public: constexpr LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
 
         public: constexpr explicit LinksConstants(bool enableExternalReferencesSupport) : LinksConstants(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
-        public: constexpr LinksConstants(int targetPart, Ranges::Range<TLinkAddress> possibleInternalReferencesRange) : LinksConstants(targetPart, possibleInternalReferencesRange, std::nullopt) { }
+        public: constexpr LinksConstants(TLinkAddress targetPart, Ranges::Range<TLinkAddress> possibleInternalReferencesRange) : LinksConstants(targetPart, possibleInternalReferencesRange, std::nullopt) { }
 
         public: constexpr explicit LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange) : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, std::nullopt) { }
 

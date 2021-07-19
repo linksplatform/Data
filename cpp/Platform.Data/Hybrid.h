@@ -50,7 +50,7 @@
 
         public: explicit operator std::string() const { return IsExternal() ? std::string("<").append(Converters::To<std::string>(AbsoluteValue())).append(1, '>') : Converters::To<std::string>(Value); }
 
-        public: friend std::ostream& operator<<(std::ostream& out, const Hybrid<TLinkAddress> &obj) { return out << (std::string)obj; }
+        public: friend std::ostream& operator<<(std::ostream& stream, const Hybrid<TLinkAddress>& self) { return stream << static_cast<std::string>(self); }
 
         public: constexpr auto operator==(const Hybrid<TLinkAddress>& other) const noexcept { return Value == other.Value; }
 
