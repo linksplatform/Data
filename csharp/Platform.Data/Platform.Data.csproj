@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.4.1</VersionPrefix>
+    <VersionPrefix>0.5.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -24,7 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Numbers dependency updated from 0.5.0 to 0.5.1.</PackageReleaseNotes>
+    <PackageReleaseNotes>Sequences are moved to https://github.com/linksplatform/Data.Sequences/tree/9ed8ff3d061ea09345401877f8a2c194bdca3b1a/csharp/Platform.Data.Sequences</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
