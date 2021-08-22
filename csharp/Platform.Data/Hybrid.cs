@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
@@ -10,50 +10,150 @@ using Platform.Numbers;
 
 namespace Platform.Data
 {
+    /// <summary>
+    /// <para>
+    /// The hybrid.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>>
     {
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedConverter<long, TLinkAddress> _int64ToAddressConverter = UncheckedConverter<long, TLinkAddress>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedConverter<TLinkAddress, ulong> _addressToUInt64Converter = UncheckedConverter<TLinkAddress, ulong>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedConverter<object, long> _objectToInt64Converter = UncheckedConverter<object, long>.Default;
 
+        /// <summary>
+        /// <para>
+        /// The max value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static readonly ulong HalfOfNumberValuesRange = _addressToUInt64Converter.Convert(NumericType<TLinkAddress>.MaxValue) / 2;
+        /// <summary>
+        /// <para>
+        /// The half of number values range.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static readonly TLinkAddress ExternalZero = _uInt64ToAddressConverter.Convert(HalfOfNumberValuesRange + 1UL);
 
+        /// <summary>
+        /// <para>
+        /// The value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public readonly TLinkAddress Value;
 
+        /// <summary>
+        /// <para>
+        /// Gets the is nothing value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public bool IsNothing
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue == 0;
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the is internal value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public bool IsInternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get => SignedValue > 0;
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the is external value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public bool IsExternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue < 0;
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the signed value value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public long SignedValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get => _addressToInt64Converter.Convert(Value);
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the absolute value value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : Platform.Numbers.Math.Abs(SignedValue);
         }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="value">
+        /// <para>A value.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(TLinkAddress value)
         {
@@ -61,6 +161,20 @@ namespace Platform.Data
             Value = value;
         }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="value">
+        /// <para>A value.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="isExternal">
+        /// <para>A is external.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(TLinkAddress value, bool isExternal)
         {
@@ -81,9 +195,33 @@ namespace Platform.Data
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="value">
+        /// <para>A value.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(object value) => Value = _int64ToAddressConverter.Convert(_objectToInt64Converter.Convert(value));
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="value">
+        /// <para>A value.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="isExternal">
+        /// <para>A is external.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(object value, bool isExternal)
         {
@@ -153,15 +291,63 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static explicit operator sbyte(Hybrid<TLinkAddress> hybrid) => (sbyte)hybrid.AbsoluteValue;
 
+        /// <summary>
+        /// <para>
+        /// Returns the string.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <returns>
+        /// <para>The string</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override string ToString() => IsExternal ? $"<{AbsoluteValue}>" : Value.ToString();
 
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance equals.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="other">
+        /// <para>The other.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Hybrid<TLinkAddress> other) => _equalityComparer.Equals(Value, other.Value);
 
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance equals.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="obj">
+        /// <para>The obj.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override bool Equals(object obj) => obj is Hybrid<TLinkAddress> hybrid ? Equals(hybrid) : false;
 
+        /// <summary>
+        /// <para>
+        /// Gets the hash code.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <returns>
+        /// <para>The int</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override int GetHashCode() => Value.GetHashCode();
 

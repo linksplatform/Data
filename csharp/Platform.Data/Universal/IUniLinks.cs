@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 // ReSharper disable TypeParameterCanBeVariant
@@ -9,6 +9,24 @@ namespace Platform.Data.Universal
     /// <remarks>Minimal sufficient universal Links API (for bulk operations).</remarks>
     public partial interface IUniLinks<TLinkAddress>
     {
+        /// <summary>
+        /// <para>
+        /// Triggers the condition.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="condition">
+        /// <para>The condition.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitution">
+        /// <para>The substitution.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>A list of i list i list t link address</para>
+        /// <para></para>
+        /// </returns>
         IList<IList<IList<TLinkAddress>>> Trigger(IList<TLinkAddress> condition, IList<TLinkAddress> substitution);
     }
 
@@ -27,6 +45,32 @@ namespace Platform.Data.Universal
         TLinkAddress Trigger(IList<TLinkAddress> patternOrCondition, Func<IList<TLinkAddress>, TLinkAddress> matchHandler,
                       IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> substitutionHandler);
 
+        /// <summary>
+        /// <para>
+        /// Triggers the restriction.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="restriction">
+        /// <para>The restriction.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="matchedHandler">
+        /// <para>The matched handler.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitution">
+        /// <para>The substitution.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitutedHandler">
+        /// <para>The substituted handler.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link address</para>
+        /// <para></para>
+        /// </returns>
         TLinkAddress Trigger(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> matchedHandler,
               IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> substitutedHandler);
     }

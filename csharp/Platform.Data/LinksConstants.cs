@@ -1,4 +1,4 @@
-﻿using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;
 using Platform.Ranges;
 using Platform.Reflection;
 using Platform.Converters;
@@ -8,9 +8,28 @@ using Platform.Numbers;
 
 namespace Platform.Data
 {
+    /// <summary>
+    /// <para>
+    /// Represents the links constants.
+    /// </para>
+    /// <para></para>
+    /// </summary>
+    /// <seealso cref="LinksConstantsBase"/>
     public class LinksConstants<TLinkAddress> : LinksConstantsBase
     {
+        /// <summary>
+        /// <para>
+        /// The increment.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly TLinkAddress _one = Arithmetic<TLinkAddress>.Increment(default);
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
 
         #region Link parts
@@ -109,6 +128,24 @@ namespace Platform.Data
 
         #endregion
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="targetPart">
+        /// <para>A target part.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="possibleInternalReferencesRange">
+        /// <para>A possible internal references range.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="possibleExternalReferencesRange">
+        /// <para>A possible external references range.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(int targetPart, Range<TLinkAddress> possibleInternalReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange)
         {
@@ -127,24 +164,106 @@ namespace Platform.Data
             ExternalReferencesRange = possibleExternalReferencesRange;
         }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="targetPart">
+        /// <para>A target part.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="enableExternalReferencesSupport">
+        /// <para>A enable external references support.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(int targetPart, bool enableExternalReferencesSupport) : this(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="possibleInternalReferencesRange">
+        /// <para>A possible internal references range.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="possibleExternalReferencesRange">
+        /// <para>A possible external references range.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(Range<TLinkAddress> possibleInternalReferencesRange, Range<TLinkAddress>? possibleExternalReferencesRange) : this(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="enableExternalReferencesSupport">
+        /// <para>A enable external references support.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(bool enableExternalReferencesSupport) : this(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="targetPart">
+        /// <para>A target part.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="possibleInternalReferencesRange">
+        /// <para>A possible internal references range.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(int targetPart, Range<TLinkAddress> possibleInternalReferencesRange) : this(targetPart, possibleInternalReferencesRange, null) { }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="possibleInternalReferencesRange">
+        /// <para>A possible internal references range.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants(Range<TLinkAddress> possibleInternalReferencesRange) : this(DefaultTargetPart, possibleInternalReferencesRange, null) { }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksConstants() : this(DefaultTargetPart, enableExternalReferencesSupport: false) { }
 
+        /// <summary>
+        /// <para>
+        /// Gets the default internal references range using the specified enable external references support.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="enableExternalReferencesSupport">
+        /// <para>The enable external references support.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>A range of t link address</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Range<TLinkAddress> GetDefaultInternalReferencesRange(bool enableExternalReferencesSupport)
         {
@@ -158,6 +277,20 @@ namespace Platform.Data
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the default external references range using the specified enable external references support.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="enableExternalReferencesSupport">
+        /// <para>The enable external references support.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>A range of t link address</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Range<TLinkAddress>? GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport)
         {

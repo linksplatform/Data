@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Platform.Setters;
@@ -8,8 +8,40 @@ using Platform.Data.Exceptions;
 
 namespace Platform.Data
 {
+    /// <summary>
+    /// <para>
+    /// Represents the links extensions.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class ILinksExtensions
     {
+        /// <summary>
+        /// <para>
+        /// Counts the links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The link address.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <typeparam name="TConstants">
+        /// <para>The constants.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="restrictions">
+        /// <para>The restrictions.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link address</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLinkAddress Count<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, params TLinkAddress[] restrictions)
             where TConstants : LinksConstants<TLinkAddress>

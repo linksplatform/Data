@@ -1,12 +1,24 @@
-﻿using Xunit;
+using Xunit;
 using Platform.Reflection;
 using Platform.Converters;
 using Platform.Numbers;
 
 namespace Platform.Data.Tests
 {
+    /// <summary>
+    /// <para>
+    /// Represents the links constants tests.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class LinksConstantsTests
     {
+        /// <summary>
+        /// <para>
+        /// Tests that constructor test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void ConstructorTest()
         {
@@ -15,6 +27,12 @@ namespace Platform.Data.Tests
             Assert.Equal(ulong.MaxValue, constants.ExternalReferencesRange.Value.Maximum);
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests that external references test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void ExternalReferencesTest()
         {
@@ -24,6 +42,20 @@ namespace Platform.Data.Tests
             TestExternalReferences<byte, sbyte>();
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests the external references.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TUnsigned">
+        /// <para>The unsigned.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <typeparam name="TSigned">
+        /// <para>The signed.</para>
+        /// <para></para>
+        /// </typeparam>
         private static void TestExternalReferences<TUnsigned, TSigned>()
         {
             var unsingedOne = Arithmetic.Increment(default(TUnsigned));
