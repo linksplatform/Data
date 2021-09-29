@@ -94,5 +94,16 @@
             links.EnsureLinkExists(link);
             return Point<TLinkAddress>::IsFullPoint(links.GetLink(link));
         }
+
+        auto IsPartialPoint(TLinkAddress link) const -> bool
+        {
+            auto&& links = *this;
+            if (IsExternalReference(links.Constants, link))
+            {
+                return true;
+            }
+            links.EnsureLinkExists(link);
+            return Point<TLinkAddress>::IsPartialPoint(links.GetLink(link));
+        }
     };
 }
