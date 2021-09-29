@@ -42,31 +42,33 @@
         {
         }
 
-        public: constexpr LinksConstants(TLinkAddress targetPart, bool enableExternalReferencesSupport) : LinksConstants(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
+        public: constexpr explicit LinksConstants(TLinkAddress targetPart, bool enableExternalReferencesSupport) noexcept : LinksConstants(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
-        public: constexpr LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
+        public: constexpr explicit LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) noexcept : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
 
-        public: constexpr explicit LinksConstants(bool enableExternalReferencesSupport) : LinksConstants(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
+        public: constexpr explicit LinksConstants(bool enableExternalReferencesSupport) noexcept : LinksConstants(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport))  { }
 
-        public: constexpr LinksConstants(TLinkAddress targetPart, Ranges::Range<TLinkAddress> possibleInternalReferencesRange) : LinksConstants(targetPart, possibleInternalReferencesRange, std::nullopt) { }
+        public: constexpr explicit LinksConstants(TLinkAddress targetPart, Ranges::Range<TLinkAddress> possibleInternalReferencesRange) noexcept : LinksConstants(targetPart, possibleInternalReferencesRange, std::nullopt) { }
 
-        public: constexpr explicit LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange) : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, std::nullopt) { }
+        public: constexpr explicit LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange) noexcept : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, std::nullopt) { }
 
-        public: constexpr LinksConstants() : LinksConstants(DefaultTargetPart, false) { }
+        public: constexpr explicit LinksConstants() noexcept : LinksConstants(DefaultTargetPart, false)  { }
 
-        public: static constexpr Ranges::Range<TLinkAddress> GetDefaultInternalReferencesRange(bool enableExternalReferencesSupport)
+        public: static constexpr Ranges::Range<TLinkAddress> GetDefaultInternalReferencesRange(bool enableExternalReferencesSupport) noexcept
         {
+            using namespace Ranges;
+
             if (enableExternalReferencesSupport)
             {
-                return Ranges::Range{ _one, static_cast<TLinkAddress>(Hybrid<TLinkAddress>::HalfOfNumberValuesRange) };
+                return Range{ _one, static_cast<TLinkAddress>(Hybrid<TLinkAddress>::HalfOfNumberValuesRange) };
             }
             else
             {
-                return Ranges::Range{ _one, std::numeric_limits<TLinkAddress>::max() };
+                return Range{ _one, std::numeric_limits<TLinkAddress>::max() };
             }
         }
 
-        public: static constexpr auto GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport) -> std::optional<Ranges::Range<TLinkAddress>>
+        public: static constexpr auto GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport) noexcept -> std::optional<Ranges::Range<TLinkAddress>>
         {
             if (enableExternalReferencesSupport)
             {

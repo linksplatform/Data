@@ -22,7 +22,7 @@
         // TODO: maybe remove or convert to property
         public: const std::size_t Size;
 
-        public: auto operator[](std::unsigned_integral auto index) const -> TLinkAddress
+        public: auto operator[](std::size_t index) const -> TLinkAddress
         {
             if (index < Size)
             {
@@ -63,8 +63,8 @@
     static bool IsFullPoint(Interfaces::IEnumerable auto&& link)
         requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
-        // Emm... TODO: if(std::ranges::size(link) >= 2) ?
-        constexpr auto link_range = Ranges::Range(2, std::numeric_limits<std::int32_t>::max());
+        using namespace Ranges;
+        constexpr auto link_range = Range{2, std::numeric_limits<std::int32_t>::max()};
 
         Platform::Ranges::Always::ArgumentInRange(std::ranges::size(link), link_range, "link", "Cannot determine link's pointness using only its identifier.");
         return IsFullPointUnchecked(link);
