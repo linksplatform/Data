@@ -42,6 +42,20 @@ namespace Platform.Data.Tests
             TestExternalReferences<byte, sbyte>();
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests the external references.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TUnsigned">
+        /// <para>The unsigned.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <typeparam name="TSigned">
+        /// <para>The signed.</para>
+        /// <para></para>
+        /// </typeparam>
         private static void TestExternalReferences<TUnsigned, TSigned>()
         {
             var unsingedOne = Arithmetic.Increment(default(TUnsigned));
