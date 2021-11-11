@@ -65,7 +65,22 @@ namespace Platform.Data.Exceptions
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksLimitReachedException() : base(DefaultMessage) { }
-[MethodImpl(MethodImplOptions.AggressiveInlining)]
+
+        /// <summary>
+        /// <para>
+        /// Formats the message using the specified limit.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="limit">
+        /// <para>The limit.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The string</para>
+        /// <para></para>
+        /// </returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static string FormatMessage(TLinkAddress limit) => $"Достигнут лимит количества связей в хранилище ({limit}).";
     }
 }

@@ -17,7 +17,19 @@ namespace Platform.Data
     /// <seealso cref="LinksConstantsBase"/>
     public class LinksConstants<TLinkAddress> : LinksConstantsBase
     {
+        /// <summary>
+        /// <para>
+        /// The increment.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly TLinkAddress _one = Arithmetic<TLinkAddress>.Increment(default);
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
 
         #region Link parts
