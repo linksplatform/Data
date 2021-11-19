@@ -1,4 +1,6 @@
-﻿namespace Platform::Data
+﻿#include <algorithm>
+
+namespace Platform::Data
 {
     namespace Internal
     {
@@ -66,19 +68,16 @@
         using namespace Ranges;
         constexpr auto link_range = Range{2, std::numeric_limits<std::int32_t>::max()};
 
-        Platform::Ranges::Always::ArgumentInRange(std::ranges::size(link), link_range, "link", "Cannot determine link's pointness using only its identifier.");
+        Platform::Ranges::Ensure::Always::ArgumentInRange(std::ranges::size(link), link_range, "link", "Cannot determine link's pointness using only its identifier.");
         return IsFullPointUnchecked(link);
     }
 
     static bool IsFullPointUnchecked(Interfaces::IEnumerable auto&& link)
         requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
-        // Nice optimize, but there is something better
-        auto&& first = link[0];
-        auto pred = [&first](auto&& address) { return address == first; };
-
-        auto size = std::ranges::size(link | std::views::drop_while(pred));
-        return size == 0;
+        auto iter = std::ranges::begin(link);
+        auto end = std::ranges::end(link);
+        return std::ranges::all_of(iter + 1, end, [&iter](auto&& item) {return item == *iter; });
     }
 
     // TODO: we don't have args... to array-like converter
@@ -94,19 +93,18 @@
         using namespace Platform::Ranges;
 
         // TODO: after my PR
-        /*Ensure::*/Always::ArgumentInRange(std::ranges::size(link) , Range{2, std::numeric_limits<std::int32_t>::max()}, "link", "Cannot determine link's pointness using only its identifier.");
+        Ensure::Always::ArgumentInRange(std::ranges::size(link) , Range{2, std::numeric_limits<std::int32_t>::max()}, "link", "Cannot determine link's pointness using only its identifier.");
         return IsPartialPointUnchecked(link);
     }
 
-    static bool IsPartialPointUnchecked(Interfaces::IEnumerable auto&& link)
-        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
-    {
-        auto&& first = *std::ranges::begin(link);
-        auto pred = [&first](auto&& address) { return address != first; };
+        static bool IsPartialPointUnchecked(Interfaces::IEnumerable auto&& link)
+            requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+        {
+            auto iter = std::ranges::begin(link);
+            auto end = std::ranges::end(link);
 
-        auto size = std::ranges::size(link | std::views::drop_while(pred));
-        return size == 0;
-    }
+            return std::ranges::any_of(iter + 1, end, [&iter](auto&& item) { return item == *iter; });
+        }
 }
 
 
