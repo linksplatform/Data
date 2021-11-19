@@ -12,21 +12,21 @@
         const TConstants Constants{};
 
         // TODO: maybe mark methods as const
-        TLinkAddress Count(Interfaces::IArray<TLinkAddress> auto&& restriction) const { return self().Count(restriction); }
+        TLinkAddress Count(Interfaces::IArray auto&& restriction) const { return self().Count(restriction); }
 
-        TLinkAddress Each(auto&& handler, Interfaces::IArray<TLinkAddress> auto& restrictions)
+        TLinkAddress Each(auto&& handler, Interfaces::IArray auto& restrictions)
             requires requires { { handler(restrictions) } -> std::same_as<TLinkAddress>; }
         { return self().Each(handler, restrictions); }
 
-        TLinkAddress Each(auto&& handler, const Interfaces::IArray<TLinkAddress> auto& restrictions) const
+        TLinkAddress Each(auto&& handler, const Interfaces::IArray auto& restrictions) const
             requires requires { { handler(restrictions) } -> std::same_as<TLinkAddress>; }
         { return self().Each(handler, restrictions); }
 
-        TLinkAddress Create(Interfaces::IArray<TLinkAddress> auto&& restriction) { return self().Create(restriction); }
+        TLinkAddress Create(Interfaces::IArray auto&& restriction) { return self().Create(restriction); }
 
-        TLinkAddress Update(Interfaces::IArray<TLinkAddress> auto&& restriction, Interfaces::IArray<TLinkAddress> auto&& substitution) { return self().Update(restriction, substitution); }
+        TLinkAddress Update(Interfaces::IArray auto&& substitution) { return self().Update(restriction, substitution); }
 
-        void Delete(Interfaces::IArray<TLinkAddress> auto&& restriction) { self().Delete(restriction); }
+        void Delete(Interfaces::IArray auto&& restriction) { self().Delete(restriction); }
 
     // EXTENSIONS
         auto Count(std::convertible_to<TLinkAddress> auto... restrictions) const -> TLinkAddress
@@ -61,7 +61,7 @@
             return links.Each(handler, array);
         }
 
-        auto GetLink(TLinkAddress link) const -> Interfaces::IArray<TLinkAddress> auto
+        auto GetLink(TLinkAddress link) const -> Interfaces::IArray auto
         {
             auto&& links = *this;
             auto&& constants = links.Constants;
@@ -76,7 +76,7 @@
             //return linkPartsSetter.Result;
 
             std::vector<TLinkAddress> wrapper;
-            links.Each([&wrapper, &constants](Interfaces::IArray<TLinkAddress> auto&& link)
+            links.Each([&wrapper, &constants](Interfaces::IArray auto&& link)
             {
                 wrapper = std::vector(std::ranges::begin(link), std::ranges::end(link));
                 return constants.Continue;
