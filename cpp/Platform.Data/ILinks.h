@@ -41,7 +41,7 @@
         {
             auto&& links = *this;
             auto&& constants = links.Constants;
-            return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && links.Count(LinkAddress(link)) == 0);
+            return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && links.Count(LinkAddress(link)) != 0);
         }
 
         auto EnsureLinkExists(TLinkAddress link, const std::string& argument = {}) const -> void
