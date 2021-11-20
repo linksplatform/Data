@@ -3,3 +3,4 @@
 
 #include "HybridTests.cpp"
 #include "LinksConstantsTests.cpp"
+#include "PointTests.cpp"
