@@ -14,17 +14,13 @@
         // TODO: maybe mark methods as const
         TLinkAddress Count(Interfaces::IArray auto&& restriction) const { return self().Count(restriction); }
 
-        TLinkAddress Each(auto&& handler, Interfaces::IArray auto& restrictions)
-            requires requires { { handler(restrictions) } -> std::same_as<TLinkAddress>; }
-        { return self().Each(handler, restrictions); }
-
         TLinkAddress Each(auto&& handler, const Interfaces::IArray auto& restrictions) const
             requires requires { { handler(restrictions) } -> std::same_as<TLinkAddress>; }
         { return self().Each(handler, restrictions); }
 
         TLinkAddress Create(Interfaces::IArray auto&& restriction) { return self().Create(restriction); }
 
-        TLinkAddress Update(std::convertible_to<TLinkAddress> auto... restrictions, Interfaces::IArray auto&& substitution) { return self().Update(restrictions..., substitution); }
+        TLinkAddress Update(Interfaces::IArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions) { return self().Update(restrictions..., substitution); }
 
         void Delete(Interfaces::IArray auto&& restriction) { self().Delete(restriction); }
 
