@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Platform.Ranges.h>
+#include <Platform.Setters.h>
 #include <Platform.Interfaces.h>
 
 #include "Numbers/Raw/AddressToRawNumberConverter.h"
