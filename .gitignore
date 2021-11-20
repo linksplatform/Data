@@ -342,5 +342,8 @@ org.kde.konsole.desktop
 *.kate-swp
 .swp.*
 
+# Cmake build debug output
+cmake-build-debug/
+
 # GitHub refuses chages to .github folder at the moment
 .github/
