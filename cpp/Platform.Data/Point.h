@@ -56,14 +56,16 @@ namespace Platform::Data
     template<std::integral TLinkAddress, typename... Args>
     Point(TLinkAddress, Args...) -> Point<TLinkAddress>;
 
-    static bool IsFullPoint(std::integral auto... params)
+    static bool IsFullPointUnchecked(Interfaces::IEnumerable auto&& link)
+    requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
-        std::common_type_t<decltype(params)...> link[] = { params... };
-        return IsFullPoint(link);
+        auto iter = std::ranges::begin(link);
+        auto end = std::ranges::end(link);
+        return std::ranges::all_of(iter + 1, end, [&iter](auto&& item) {return item == *iter; });
     }
 
     static bool IsFullPoint(Interfaces::IEnumerable auto&& link)
-        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+    requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
         using namespace Ranges;
         constexpr auto link_range = Range{2, std::numeric_limits<std::int32_t>::max()};
@@ -72,23 +74,22 @@ namespace Platform::Data
         return IsFullPointUnchecked(link);
     }
 
-    static bool IsFullPointUnchecked(Interfaces::IEnumerable auto&& link)
-        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
+    static bool IsFullPoint(std::integral auto... params)
+    {
+        std::common_type_t<decltype(params)...> link[] = { params... };
+        return IsFullPoint(link);
+    }
+
+    static bool IsPartialPointUnchecked(Interfaces::IEnumerable auto&& link)
+    requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
         auto iter = std::ranges::begin(link);
         auto end = std::ranges::end(link);
-        return std::ranges::all_of(iter + 1, end, [&iter](auto&& item) {return item == *iter; });
-    }
 
-    // TODO: we don't have args... to array-like converter
-    static bool IsPartialPoint(std::integral auto... params)
-    {
-        std::common_type_t<decltype(params)...> link[] = { params... };
-        return IsPartialPoint(link);
+        return std::ranges::any_of(iter + 1, end, [&iter](auto&& item) { return item == *iter; });
     }
 
     static bool IsPartialPoint(Interfaces::IEnumerable auto&& link)
-        requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
         using namespace Platform::Ranges;
 
@@ -97,14 +98,13 @@ namespace Platform::Data
         return IsPartialPointUnchecked(link);
     }
 
-        static bool IsPartialPointUnchecked(Interfaces::IEnumerable auto&& link)
-            requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
-        {
-            auto iter = std::ranges::begin(link);
-            auto end = std::ranges::end(link);
-
-            return std::ranges::any_of(iter + 1, end, [&iter](auto&& item) { return item == *iter; });
-        }
+    // TODO: we don't have args... to array-like converter
+    static bool IsPartialPoint(std::integral auto... params)
+    {
+        std::common_type_t<decltype(params)...> link[] = { params... };
+        static_assert(Interfaces::IEnumerable<decltype(link)>);
+        return IsPartialPoint(link);
+    }
 }
 
 
