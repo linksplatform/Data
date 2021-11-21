@@ -15,7 +15,6 @@
         TLinkAddress Count(Interfaces::IArray auto&& restriction) const { return self().Count(restriction); }
 
         TLinkAddress Each(auto&& handler, const Interfaces::IArray auto& restrictions) const
-            requires requires { { handler(restrictions) } -> std::same_as<TLinkAddress>; }
         { return self().Each(handler, restrictions); }
 
         TLinkAddress Create(Interfaces::IArray auto&& restriction) { return self().Create(restriction); }
