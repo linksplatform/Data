@@ -4,9 +4,6 @@ namespace Platform::Data::Tests
     struct Links : public ILinks<Links<TLinkAddress>, TLinkAddress, LinksConstants<TLinkAddress>>
     {
         TLinkAddress Count(Interfaces::IArray auto&& restriction) const { return 0; }
-
-        TLinkAddress Each(auto&& handler, Interfaces::IArray auto& restrictions)
-        { return 0; }
     
         TLinkAddress Each(auto&& handler, const Interfaces::IArray auto& restrictions) const
         { return 0; }
