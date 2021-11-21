@@ -25,7 +25,7 @@ namespace Platform::Data::Tests
         links.Create(restriction);
         links.Update(restriction, 1);
         links.Count(restriction);
-        links.Each([](TLink restriction_a){ return static_cast<TLink>(1); }, restriction);
+        links.Each([](TLink restriction_a){ return 1; }, restriction);
         links.Delete(restriction);
     }
 }
