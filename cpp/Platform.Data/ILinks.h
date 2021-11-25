@@ -21,7 +21,7 @@
 
         TLinkAddress Create(Interfaces::IArray auto&& restriction) { return self().Create(restriction); }
 
-        TLinkAddress Update(Interfaces::IArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions) { return self().Update(substitution, restrictions...); }
+        TLinkAddress Update(auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions) { return self().Update(substitution, restrictions...); }
 
         void Delete(Interfaces::IArray auto&& restriction) { self().Delete(restriction); }
 
