@@ -14,6 +14,8 @@
         // TODO: maybe mark methods as const
         TLinkAddress Count(Interfaces::IArray auto&& restriction) const { return self().Count(restriction); }
 
+        TLinkAddress Count() const { return self().Count(); }
+
         TLinkAddress Each(auto&& handler, const Interfaces::IArray auto& restrictions) const
         { return self().Each(handler, restrictions); }
 
