@@ -23,6 +23,12 @@
 
         TLinkAddress Update(Interfaces::IArray auto&& substitution, Interfaces::IArray auto&& restrictions) { return self().Update(substitution, restrictions); }
 
+	TLinkAdress Update(Interfaces::IArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions)
+	{
+	    TLinkAdress array[] = { static_cast<TLinkAddress>(restrictions)... };
+	    return Update(substitution, array);
+	}
+
         void Delete(Interfaces::IArray auto&& restriction) { self().Delete(restriction); }
 
     // EXTENSIONS
