@@ -29,7 +29,7 @@
 
 	TLinkAddress Update(Interfaces::IArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions)
 	{
-	    TLinkAdress array[] = { static_cast<TLinkAddress>(restrictions)... };
+	    TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
 	    return Update(substitution, array);
 	}
 
