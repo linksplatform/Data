@@ -99,7 +99,7 @@ namespace Platform.Data
         /// </param>
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        void Delete(IList<TLinkAddress> restrictions); // TODO: Возможно всегда нужно принимать restrictions, a так же возвращать удалённую связь, если удаление было реально выполнено, и Null, если нет.
+        void Delete(IList<TLinkAddress> restrictions); // TODO: Возможно стоит возвращать удалённую связь, если удаление было реально выполнено, и Constants.Null, если нет.
 
         #endregion
     }
