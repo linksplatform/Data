@@ -66,14 +66,14 @@ namespace Platform.Data
         /// <summary>
         /// <para>Creates a link.</para>
         /// <para>Создаёт связь.</para>
-        /// <param name="restrictions">
-        /// <para>Restrictions on the content of a link. This argument is optional, if the null passed as value that means no restrictions on the content of a link are set.</para>
-        /// <para>Ограничения на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
+        /// <param name="substitution">
+        /// <para>The content of a new link. This argument is optional, if the null passed as value that means no content of a link is set.</para>
+        /// <para>Содержимое новой связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никакого содержимого для связи не установлено.</para>
         /// </param>
         /// </summary>
         /// <returns><para>Index of the created link.</para><para>Индекс созданной связи.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Create(IList<TLinkAddress> restrictions); // TODO: Возвращать связь возвращать нужно целиком.
+        TLinkAddress Create(IList<TLinkAddress> substitution); // TODO: Возвращать связь возвращать нужно целиком.
 
         /// <summary>
         /// Обновляет связь с указанными restrictions[Constants.IndexPart] в адресом связи
