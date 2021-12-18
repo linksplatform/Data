@@ -39,10 +39,10 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>Counts and returns the total number of links in the storage that meet the specified restriction.</para>
-        /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</para>
+        /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para>
         /// </summary>
-        /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничения на содержимое связей.</para></param>
-        /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</para></returns>
+        /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничение на содержимое связей.</para></param>
+        /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Count(IList<TLinkAddress> restriction);
 
@@ -53,7 +53,7 @@ namespace Platform.Data
         /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
         /// <param name="restriction">
         /// <para>Restriction on the contents of links. Each constraint can have values: Constants.Null - the 0th link denoting a reference to the void, Any - the absence of a constraint, 1..∞ a specific link index.</para>
-        /// <para>Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
+        /// <para>Ограничение на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
         /// </param>
         /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -80,7 +80,7 @@ namespace Platform.Data
         /// на связь с указанным новым содержимым.
         /// </summary>
         /// <param name="restriction">
-        /// Ограничения на содержимое связей.
+        /// Ограничение на содержимое связей.
         /// Предполагается, что будет указан индекс связи (в restriction[Constants.IndexPart]) и далее за ним будет следовать содержимое связи.
         /// Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту,
         /// Constants.Itself - требование установить ссылку на себя, 1..∞ конкретный индекс другой связи.
@@ -92,10 +92,10 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>Deletes links that match the specified restriction.</para>
-        /// <para>Удаляет связи соответствующие указанным ограничениям.</para>
+        /// <para>Удаляет связи соответствующие указанному ограничению.</para>
         /// <param name="restriction">
         /// <para>Restriction on the content of a link. This argument is optional, if the null passed as value that means no restriction on the content of a link are set.</para>
-        /// <para>Ограничения на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
+        /// <para>Ограничение на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
         /// </param>
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
