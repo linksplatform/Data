@@ -38,11 +38,11 @@ namespace Platform.Data
         #region Read
 
         /// <summary>
-        /// <para>Counts and returns the total number of links in the storage that meet the specified restrictions.</para>
-        /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</para>
+        /// <para>Counts and returns the total number of links in the storage that meet the specified restriction.</para>
+        /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para>
         /// </summary>
-        /// <param name="restriction"><para>Restrictions on the contents of links.</para><para>Ограничения на содержимое связей.</para></param>
-        /// <returns><para>The total number of links in the storage that meet the specified restrictions.</para><para>Общее число связей находящихся в хранилище, соответствующих указанным ограничениям.</para></returns>
+        /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничение на содержимое связей.</para></param>
+        /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Count(IList<TLinkAddress> restriction);
 
@@ -51,13 +51,13 @@ namespace Platform.Data
         /// <para>Выполняет проход по всем связям, соответствующим шаблону, вызывая обработчик (handler) для каждой подходящей связи.</para>
         /// </summary>
         /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
-        /// <param name="restrictions">
-        /// <para>Restrictions on the contents of links. Each constraint can have values: Constants.Null - the 0th link denoting a reference to the void, Any - the absence of a constraint, 1..∞ a specific link index.</para>
-        /// <para>Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
+        /// <param name="restriction">
+        /// <para>Restriction on the contents of links. Each constraint can have values: Constants.Null - the 0th link denoting a reference to the void, Any - the absence of a constraint, 1..∞ a specific link index.</para>
+        /// <para>Ограничение на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
         /// </param>
         /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Each(Func<IList<TLinkAddress>, TLinkAddress> handler, IList<TLinkAddress> restrictions);
+        TLinkAddress Each(Func<IList<TLinkAddress>, TLinkAddress> handler, IList<TLinkAddress> restriction);
 
         #endregion
 
@@ -76,30 +76,30 @@ namespace Platform.Data
         TLinkAddress Create(IList<TLinkAddress> substitution); // TODO: Возвращать связь возвращать нужно целиком.
 
         /// <summary>
-        /// Обновляет связь с указанными restrictions[Constants.IndexPart] в адресом связи
+        /// Обновляет связь с указанными restriction[Constants.IndexPart] в адресом связи
         /// на связь с указанным новым содержимым.
         /// </summary>
-        /// <param name="restrictions">
-        /// Ограничения на содержимое связей.
-        /// Предполагается, что будет указан индекс связи (в restrictions[Constants.IndexPart]) и далее за ним будет следовать содержимое связи.
+        /// <param name="restriction">
+        /// Ограничение на содержимое связей.
+        /// Предполагается, что будет указан индекс связи (в restriction[Constants.IndexPart]) и далее за ним будет следовать содержимое связи.
         /// Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту,
         /// Constants.Itself - требование установить ссылку на себя, 1..∞ конкретный индекс другой связи.
         /// </param>
         /// <param name="substitution"></param>
         /// <returns>Индекс обновлённой связи.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Update(IList<TLinkAddress> restrictions, IList<TLinkAddress> substitution); // TODO: Возможно и возвращать связь нужно целиком.
+        TLinkAddress Update(IList<TLinkAddress> restriction, IList<TLinkAddress> substitution); // TODO: Возможно и возвращать связь нужно целиком.
 
         /// <summary>
-        /// <para>Deletes links that match the specified restrictions.</para>
-        /// <para>Удаляет связи соответствующие указанным ограничениям.</para>
-        /// <param name="restrictions">
-        /// <para>Restrictions on the content of a link. This argument is optional, if the null passed as value that means no restrictions on the content of a link are set.</para>
-        /// <para>Ограничения на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
+        /// <para>Deletes links that match the specified restriction.</para>
+        /// <para>Удаляет связи соответствующие указанному ограничению.</para>
+        /// <param name="restriction">
+        /// <para>Restriction on the content of a link. This argument is optional, if the null passed as value that means no restriction on the content of a link are set.</para>
+        /// <para>Ограничение на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
         /// </param>
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        void Delete(IList<TLinkAddress> restrictions); // TODO: Возможно стоит возвращать удалённую связь, если удаление было реально выполнено, и Constants.Null, если нет.
+        TLinkAddress Delete(IList<TLinkAddress> restrictions);
 
         #endregion
     }
