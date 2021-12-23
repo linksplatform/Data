@@ -16,7 +16,7 @@ namespace Platform.Data.Exceptions
     {
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksLimitReachedException"/> instance.
+        /// Initializes a new <see cref="LinksLimitReachedException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -29,7 +29,7 @@ namespace Platform.Data.Exceptions
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksLimitReachedException"/> instance.
+        /// Initializes a new <see cref="LinksLimitReachedException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -46,7 +46,7 @@ namespace Platform.Data.Exceptions
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksLimitReachedException"/> instance.
+        /// Initializes a new <see cref="LinksLimitReachedException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -59,7 +59,7 @@ namespace Platform.Data.Exceptions
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksLimitReachedException"/> instance.
+        /// Initializes a new <see cref="LinksLimitReachedException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>

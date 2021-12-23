@@ -75,6 +75,7 @@ namespace Platform.Data
         /// <para>Функция для обработки каждого выполненного изменения. Эта функция может использовать Constants.Continue чтобы продолжить обрабатывать каждое изменение. Constants.Break может быть использована для остановки получения выполненных изменений.</para>
         /// </param>
         /// </summary>
+        /// <returns>
         /// <para>
         /// Constants.Continue if all executed changes are handled.
         /// Constants.Break if proccessing of handled changes is stoped.
@@ -127,6 +128,7 @@ namespace Platform.Data
         /// <para>A function to handle each executed change. This function can use Constants.Continue to continue proccess each change. Constants.Break can be used to stop receiving of executed changes.</para>
         /// <para>Функция для обработки каждого выполненного изменения. Эта функция может использовать Constants.Continue чтобы продолжить обрабатывать каждое изменение. Constants.Break может быть использована для остановки получения выполненных изменений.</para>
         /// </param>
+        /// <returns>
         /// <para>
         /// Constants.Continue if all executed changes are handled.
         /// Constants.Break if proccessing of handled changes is stoped.
@@ -137,7 +139,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Delete(IList<TLinkAddress> restrictions, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
+        TLinkAddress Delete(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
 
         #endregion
     }

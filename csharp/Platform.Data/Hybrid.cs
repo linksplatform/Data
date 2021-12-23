@@ -110,7 +110,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// Initializes a new <see cref="Hybrid{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -127,7 +127,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// Initializes a new <see cref="Hybrid{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -161,7 +161,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// Initializes a new <see cref="Hybrid{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -174,7 +174,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="Hybrid"/> instance.
+        /// Initializes a new <see cref="Hybrid{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>

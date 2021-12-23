@@ -16,24 +16,24 @@ namespace Platform.Data.Exceptions
     {
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
         /// <param name="link">
         /// <para>A link.</para>
-        /// <para></para>
+        /// <para>Связь.</para>
         /// </param>
         /// <param name="paramName">
         /// <para>A param name.</para>
-        /// <para></para>
+        /// <para>Имя параметра.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkHasDependenciesException(TLinkAddress link, string paramName) : base(FormatMessage(link, paramName), paramName) { }
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -46,7 +46,7 @@ namespace Platform.Data.Exceptions
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -63,7 +63,7 @@ namespace Platform.Data.Exceptions
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -76,7 +76,7 @@ namespace Platform.Data.Exceptions
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkHasDependenciesException{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
