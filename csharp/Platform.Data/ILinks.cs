@@ -41,13 +41,8 @@ namespace Platform.Data
         /// <para>Counts and returns the total number of links in the storage that meet the specified restriction.</para>
         /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para>
         /// </summary>
-        /// <param name="restriction"><para>Restriction on the contents of links.</para>
-        /// <para>Ограничение на содержимое связей.</para>
-        /// </param>
-        /// <returns>
-        /// <para>The total number of links in the storage that meet the specified restriction.</para>
-        /// <para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para>
-        /// </returns>
+        /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничение на содержимое связей.</para></param>
+        /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Count(IList<TLinkAddress> restriction);
 
@@ -60,10 +55,7 @@ namespace Platform.Data
         /// <para>Ограничение на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
         /// </param>
         /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
-        /// <returns>
-        /// <para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para>
-        /// <para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para>
-        /// </returns>
+        /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Each(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, TLinkAddress> handler);
 
@@ -91,9 +83,6 @@ namespace Platform.Data
         /// Constants.Continue если все выполненные изменения обработаны.
         /// Constants.Break если обработака выполненных изменений остановлена.
         /// </para>
-        /// <returns>
-        /// <para>An address of the first created link.</para>
-        /// <para>Адрес первой создавшейся связи.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Create(IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
@@ -122,9 +111,6 @@ namespace Platform.Data
         /// Constants.Continue если все выполненные изменения обработаны.
         /// Constants.Break если обработака выполненных изменений остановлена.
         /// </para>
-        /// <returns>
-        /// <para>An address of the first updated link.</para>
-        /// <para>Адрес первой обновившейся связи.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Update(IList<TLinkAddress> restriction, IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
@@ -149,12 +135,9 @@ namespace Platform.Data
         /// Constants.Continue если все выполненные изменения обработаны.
         /// Constants.Break если обработака выполненных изменений остановлена.
         /// </para>
-        /// <returns>
-        /// <para>An address of the first deleted link.</para>
-        /// <para>Адрес первой удалённой связи.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Delete(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
+        TLinkAddress Delete(IList<TLinkAddress> restrictions, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
 
         #endregion
     }
