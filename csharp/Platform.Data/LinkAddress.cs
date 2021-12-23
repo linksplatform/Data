@@ -81,7 +81,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinkAddress"/> instance.
+        /// Initializes a new <see cref="LinkAddress{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -129,7 +129,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual bool Contains(TLinkAddress item) => _equalityComparer.Equals(item, Index) ? true : false;
+        public virtual bool Contains(TLinkAddress item) => _equalityComparer.Equals(item, Index);
 
         /// <summary>
         /// <para>
@@ -259,7 +259,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual bool Equals(LinkAddress<TLinkAddress> other) => other == null ? false : _equalityComparer.Equals(Index, other.Index);
+        public virtual bool Equals(LinkAddress<TLinkAddress> other) => other != null && _equalityComparer.Equals(Index, other.Index);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator TLinkAddress(LinkAddress<TLinkAddress> linkAddress) => linkAddress.Index;
