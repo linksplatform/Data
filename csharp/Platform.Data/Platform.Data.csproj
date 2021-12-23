@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.6.0</VersionPrefix>
+    <VersionPrefix>0.7.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -24,10 +24,9 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>ILinks.Delete() return type is changed from void to TLinkAddress.
-IUniLinksCRUD.Delete() reture type is changed from void to TLinkAddress.
-Restrictions parameter name is renamed to restriction.
-ILinks.Create() parameter renamed from restrictions to substitution.</PackageReleaseNotes>
+    <PackageReleaseNotes>Dependencies are updated: Microsoft.NET.Test.Sdk from 16.11.0 to 17.0.0, Microsoft.SourceLink.GitHub from 1.0.0 to 1.1.1, Microsoft.NET.Test.Sdk from 16.11.0 to 17.0.0.
+Handler callback parameter is added for ILinks CRUD operation methods.
+ILinks Each method parameters switched places.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
