@@ -26,7 +26,7 @@
     <LangVersion>latest</LangVersion>
     <PackageReleaseNotes>Dependencies are updated: Microsoft.NET.Test.Sdk from 16.11.0 to 17.0.0, Microsoft.SourceLink.GitHub from 1.0.0 to 1.1.1, Microsoft.NET.Test.Sdk from 16.11.0 to 17.0.0.
 Handler callback parameter is added for ILinks CUD operation methods.
-ILinks Each method parameters switched places.</PackageReleaseNotes>
+ILinks Each method parameters order is changed to preserve single style across all ILinks methods.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
