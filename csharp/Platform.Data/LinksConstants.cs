@@ -118,7 +118,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -154,7 +154,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -171,7 +171,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -188,7 +188,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -218,7 +218,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -231,7 +231,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="LinksConstants"/> instance.
+        /// Initializes a new <see cref="LinksConstants{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>

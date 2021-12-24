@@ -16,69 +16,81 @@ namespace Platform.Data.Exceptions
     {
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/> instance.
+        /// </para>
+        /// <para>
+        /// Инициализирует новый экземпляр класса <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/>.
         /// </para>
         /// <para></para>
         /// </summary>
         /// <param name="link">
         /// <para>A link.</para>
-        /// <para></para>
+        /// <para>Связь.</para>
         /// </param>
         /// <param name="argumentName">
         /// <para>A argument name.</para>
-        /// <para></para>
+        /// <para>Имя аргумента.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkDoesNotExistsException(TLinkAddress link, string argumentName) : base(FormatMessage(link, argumentName), argumentName) { }
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/> instance.
+        /// </para>
+        /// <para>
+        /// Инициализирует новый экземпляр класса <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/>.
         /// </para>
         /// <para></para>
         /// </summary>
         /// <param name="link">
         /// <para>A link.</para>
-        /// <para></para>
+        /// <para>Связь.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkDoesNotExistsException(TLinkAddress link) : base(FormatMessage(link)) { }
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/> instance.
         /// </para>
-        /// <para></para>
+        /// <para>
+        /// Инициализирует новый экземпляр класса <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/>.
+        /// </para>
         /// </summary>
         /// <param name="message">
         /// <para>A message.</para>
-        /// <para></para>
+        /// <para>Сообщение.</para>
         /// </param>
         /// <param name="innerException">
         /// <para>A inner exception.</para>
-        /// <para></para>
+        /// <para>Внутренняя ошибка.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkDoesNotExistsException(string message, Exception innerException) : base(message, innerException) { }
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/> instance.
         /// </para>
-        /// <para></para>
+        /// <para>
+        /// Инициализирует новый экземпляр класса <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/>.
+        /// </para>
         /// </summary>
         /// <param name="message">
         /// <para>A message.</para>
-        /// <para></para>
+        /// <para>Сообщение.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkDoesNotExistsException(string message) : base(message) { }
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException"/> instance.
+        /// Initializes a new <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/> instance.
         /// </para>
-        /// <para></para>
+        /// <para>
+        /// Инициализирует новый экземпляр класса <see cref="ArgumentLinkDoesNotExistsException{TLinkAddress}"/>.
+        /// </para>
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkDoesNotExistsException() { }

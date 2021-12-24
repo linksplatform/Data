@@ -96,7 +96,7 @@ namespace Platform.Data
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="Point"/> instance.
+        /// Initializes a new <see cref="Point{TLinkAddress}"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
@@ -152,7 +152,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual bool Contains(TLinkAddress item) => _equalityComparer.Equals(item, Index) ? true : false;
+        public virtual bool Contains(TLinkAddress item) => _equalityComparer.Equals(item, Index);
 
         /// <summary>
         /// <para>
