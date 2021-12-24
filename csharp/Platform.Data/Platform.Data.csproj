@@ -25,7 +25,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
     <PackageReleaseNotes>Dependencies are updated: Microsoft.NET.Test.Sdk from 16.11.0 to 17.0.0, Microsoft.SourceLink.GitHub from 1.0.0 to 1.1.1, Microsoft.NET.Test.Sdk from 16.11.0 to 17.0.0.
-Handler callback parameter is added for ILinks CRUD operation methods.
+Handler callback parameter is added for ILinks CUD operation methods.
 ILinks Each method parameters switched places.</PackageReleaseNotes>
   </PropertyGroup>
 
