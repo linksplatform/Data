@@ -60,7 +60,7 @@ namespace Platform.Data.Exceptions
         /// </summary>
         /// <param name="message">
         /// <para>A message.</para>
-        /// <para></para>
+        /// <para>Сообщение.</para>
         /// </param>
         /// <param name="innerException">
         /// <para>A inner exception.</para>
