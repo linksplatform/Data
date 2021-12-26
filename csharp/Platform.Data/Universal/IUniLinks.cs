@@ -43,7 +43,7 @@ namespace Platform.Data.Universal
         /// { 3, any, any } => { 0, 0, 0 } // delete
         /// </remarks>
         TLinkAddress Trigger(IList<TLinkAddress> patternOrCondition, Func<IList<TLinkAddress>, TLinkAddress> matchHandler,
-                      IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> substitutionHandler);
+                      IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> substitutionHandler);
 
         /// <summary>
         /// <para>
@@ -71,8 +71,8 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Trigger(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> matchedHandler,
-              IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> substitutedHandler);
+        TLinkAddress Trigger(IList<TLinkAddress> restriction, WriteHandler<TLinkAddress> matchedHandler,
+              IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> substitutedHandler);
     }
 
     /// <remarks>Extended with small optimization.</remarks>

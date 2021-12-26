@@ -86,7 +86,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Create(IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
+        TLinkAddress Create(IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> handler);
 
         /// <summary>
         /// Обновляет связь с указанными restriction[Constants.IndexPart] в адресом связи
@@ -114,7 +114,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Update(IList<TLinkAddress> restriction, IList<TLinkAddress> substitution, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
+        TLinkAddress Update(IList<TLinkAddress> restriction, IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> handler);
 
         /// <summary>
         /// <para>Deletes links that match the specified restriction.</para>
@@ -139,7 +139,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Delete(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, IList<TLinkAddress>, TLinkAddress> handler);
+        TLinkAddress Delete(IList<TLinkAddress> restriction, WriteHandler<TLinkAddress> handler);
 
         #endregion
     }
