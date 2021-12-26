@@ -57,7 +57,7 @@ namespace Platform.Data
         /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
         /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Each(IList<TLinkAddress> restriction, Func<IList<TLinkAddress>, TLinkAddress> handler);
+        TLinkAddress Each(IList<TLinkAddress> restriction, ReadHandler<TLinkAddress> handler);
 
         #endregion
 

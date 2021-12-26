@@ -42,7 +42,7 @@ namespace Platform.Data.Universal
         /// { 1, any, any } => { itself, any, 3 } // update
         /// { 3, any, any } => { 0, 0, 0 } // delete
         /// </remarks>
-        TLinkAddress Trigger(IList<TLinkAddress> patternOrCondition, Func<IList<TLinkAddress>, TLinkAddress> matchHandler,
+        TLinkAddress Trigger(IList<TLinkAddress> patternOrCondition, ReadHandler<TLinkAddress> matchHandler,
                       IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> substitutionHandler);
 
         /// <summary>
