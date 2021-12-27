@@ -12,11 +12,6 @@ env:
   SCRIPTS_BASE_URL: https://raw.githubusercontent.com/linksplatform/Scripts/master/MultiProjectRepository
 
 jobs:
-  show_dotnet_version:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Show
-      run: dotnet --version
   testAndDeploy:
     runs-on: ubuntu-latest
     steps:
