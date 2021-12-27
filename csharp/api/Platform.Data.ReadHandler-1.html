@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class LinksConstantsBase
+    <title>Delegate ReadHandler&lt;TLink&gt;
    | LinksPlatform's Platform.Data Library </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class LinksConstantsBase
+    <meta name="title" content="Delegate ReadHandler&lt;TLink&gt;
    | LinksPlatform's Platform.Data Library ">
     <meta name="generator" content="docfx 2.51.0.0">
     
@@ -78,74 +78,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Platform.Data.LinksConstantsBase">
+            <article class="content wrap" id="_content" data-uid="Platform.Data.ReadHandler`1">
   
   
-  <h1 id="Platform_Data_LinksConstantsBase" data-uid="Platform.Data.LinksConstantsBase" class="text-break">Class LinksConstantsBase
+  <h1 id="Platform_Data_ReadHandler_1" data-uid="Platform.Data.ReadHandler`1" class="text-break">Delegate ReadHandler&lt;TLink&gt;
   </h1>
-  <div class="markdown level0 summary"><p>
-Represents the links constants base.
-</p>
-<p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">LinksConstantsBase</span></div>
-      <div class="level2"><a class="xref" href="Platform.Data.LinksConstants-1.html">LinksConstants&lt;TLinkAddress&gt;</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Platform.Data.html">Platform.Data</a></h6>
   <h6><strong>Assembly</strong>: Platform.Data.dll</h6>
-  <h5 id="Platform_Data_LinksConstantsBase_syntax">Syntax</h5>
+  <h5 id="Platform_Data_ReadHandler_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class LinksConstantsBase</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate TLink ReadHandler&lt;TLink&gt;(IList&lt;TLink&gt; link);</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_LinksConstantsBase_DefaultTargetPart.md&amp;value=---%0Auid%3A%20Platform.Data.LinksConstantsBase.DefaultTargetPart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Data/blob/2b2777fe05a8ba7666808fe7cbd12a664cd89336/csharp/Platform.Data/LinksConstantsBase.cs/#L19">View Source</a>
-  </span>
-  <h4 id="Platform_Data_LinksConstantsBase_DefaultTargetPart" data-uid="Platform.Data.LinksConstantsBase.DefaultTargetPart">DefaultTargetPart</h4>
-  <div class="markdown level1 summary"><p>
-The default target part.
-</p>
-<p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly int DefaultTargetPart</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TLink&gt;</td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -155,7 +118,22 @@ The default target part.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">TLink</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TLink</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -168,10 +146,10 @@ The default target part.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_LinksConstantsBase.md&amp;value=---%0Auid%3A%20Platform.Data.LinksConstantsBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/linksplatform/Data/new/master/apiSpec/new?filename=Platform_Data_ReadHandler_1.md&amp;value=---%0Auid%3A%20Platform.Data.ReadHandler%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/linksplatform/Data/blob/2b2777fe05a8ba7666808fe7cbd12a664cd89336/csharp/Platform.Data/LinksConstantsBase.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/linksplatform/Data/blob/2b2777fe05a8ba7666808fe7cbd12a664cd89336/csharp/Platform.Data/ReadHandler.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
