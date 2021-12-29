@@ -49,6 +49,18 @@ namespace Platform.Data
             return result;
         }
 
+        public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
+        {
+            TLink result = default;
+            links.Update(restriction, substitution, (_, after) =>
+            {
+                result = after[links.Constants.IndexPart];
+                return links.Constants.Continue;
+            });
+            return result;
+        }
+
+
         /// <summary>
         /// <para>
         /// Counts the links.
