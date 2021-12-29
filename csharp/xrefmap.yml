@@ -822,6 +822,47 @@ references:
   fullName.vb: Platform.Data.ILinksExtensions.Count(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress())
   nameWithType: ILinksExtensions.Count<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress[])
   nameWithType.vb: ILinksExtensions.Count(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress())
+- uid: Platform.Data.ILinksExtensions.Create*
+  name: Create
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Create_
+  commentId: Overload:Platform.Data.ILinksExtensions.Create
+  isSpec: "True"
+  fullName: Platform.Data.ILinksExtensions.Create
+  nameWithType: ILinksExtensions.Create
+- uid: Platform.Data.ILinksExtensions.Create``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}})
+  name: Create<TLink>(ILinks<TLink, LinksConstants<TLink>>)
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Create__1_Platform_Data_ILinks___0_Platform_Data_LinksConstants___0___
+  commentId: M:Platform.Data.ILinksExtensions.Create``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}})
+  name.vb: Create(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)))
+  fullName: Platform.Data.ILinksExtensions.Create<TLink>(Platform.Data.ILinks<TLink, Platform.Data.LinksConstants<TLink>>)
+  fullName.vb: Platform.Data.ILinksExtensions.Create(Of TLink)(Platform.Data.ILinks(Of TLink, Platform.Data.LinksConstants(Of TLink)))
+  nameWithType: ILinksExtensions.Create<TLink>(ILinks<TLink, LinksConstants<TLink>>)
+  nameWithType.vb: ILinksExtensions.Create(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)))
+- uid: Platform.Data.ILinksExtensions.Create``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0})
+  name: Create<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>)
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Create__1_Platform_Data_ILinks___0_Platform_Data_LinksConstants___0___System_Collections_Generic_IList___0__
+  commentId: M:Platform.Data.ILinksExtensions.Create``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0})
+  name.vb: Create(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), IList(Of TLink))
+  fullName: Platform.Data.ILinksExtensions.Create<TLink>(Platform.Data.ILinks<TLink, Platform.Data.LinksConstants<TLink>>, System.Collections.Generic.IList<TLink>)
+  fullName.vb: Platform.Data.ILinksExtensions.Create(Of TLink)(Platform.Data.ILinks(Of TLink, Platform.Data.LinksConstants(Of TLink)), System.Collections.Generic.IList(Of TLink))
+  nameWithType: ILinksExtensions.Create<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>)
+  nameWithType.vb: ILinksExtensions.Create(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), IList(Of TLink))
+- uid: Platform.Data.ILinksExtensions.Delete*
+  name: Delete
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Delete_
+  commentId: Overload:Platform.Data.ILinksExtensions.Delete
+  isSpec: "True"
+  fullName: Platform.Data.ILinksExtensions.Delete
+  nameWithType: ILinksExtensions.Delete
+- uid: Platform.Data.ILinksExtensions.Delete``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0})
+  name: Delete<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>)
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Delete__1_Platform_Data_ILinks___0_Platform_Data_LinksConstants___0___System_Collections_Generic_IList___0__
+  commentId: M:Platform.Data.ILinksExtensions.Delete``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0})
+  name.vb: Delete(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), IList(Of TLink))
+  fullName: Platform.Data.ILinksExtensions.Delete<TLink>(Platform.Data.ILinks<TLink, Platform.Data.LinksConstants<TLink>>, System.Collections.Generic.IList<TLink>)
+  fullName.vb: Platform.Data.ILinksExtensions.Delete(Of TLink)(Platform.Data.ILinks(Of TLink, Platform.Data.LinksConstants(Of TLink)), System.Collections.Generic.IList(Of TLink))
+  nameWithType: ILinksExtensions.Delete<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>)
+  nameWithType.vb: ILinksExtensions.Delete(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), IList(Of TLink))
 - uid: Platform.Data.ILinksExtensions.Each*
   name: Each
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Each_
@@ -927,6 +968,22 @@ references:
   fullName.vb: Platform.Data.ILinksExtensions.IsPartialPoint(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), TLinkAddress)
   nameWithType: ILinksExtensions.IsPartialPoint<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, TLinkAddress)
   nameWithType.vb: ILinksExtensions.IsPartialPoint(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), TLinkAddress)
+- uid: Platform.Data.ILinksExtensions.Update*
+  name: Update
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Update_
+  commentId: Overload:Platform.Data.ILinksExtensions.Update
+  isSpec: "True"
+  fullName: Platform.Data.ILinksExtensions.Update
+  nameWithType: ILinksExtensions.Update
+- uid: Platform.Data.ILinksExtensions.Update``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0},System.Collections.Generic.IList{``0})
+  name: Update<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>, IList<TLink>)
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Update__1_Platform_Data_ILinks___0_Platform_Data_LinksConstants___0___System_Collections_Generic_IList___0__System_Collections_Generic_IList___0__
+  commentId: M:Platform.Data.ILinksExtensions.Update``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0},System.Collections.Generic.IList{``0})
+  name.vb: Update(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), IList(Of TLink), IList(Of TLink))
+  fullName: Platform.Data.ILinksExtensions.Update<TLink>(Platform.Data.ILinks<TLink, Platform.Data.LinksConstants<TLink>>, System.Collections.Generic.IList<TLink>, System.Collections.Generic.IList<TLink>)
+  fullName.vb: Platform.Data.ILinksExtensions.Update(Of TLink)(Platform.Data.ILinks(Of TLink, Platform.Data.LinksConstants(Of TLink)), System.Collections.Generic.IList(Of TLink), System.Collections.Generic.IList(Of TLink))
+  nameWithType: ILinksExtensions.Update<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>, IList<TLink>)
+  nameWithType.vb: ILinksExtensions.Update(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), IList(Of TLink), IList(Of TLink))
 - uid: Platform.Data.ISynchronizedLinks`3
   name: ISynchronizedLinks<TLinkAddress, TLinks, TConstants>
   href: api/Platform.Data.ISynchronizedLinks-3.html
