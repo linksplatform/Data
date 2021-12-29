@@ -19,9 +19,9 @@ namespace Platform.Data
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links)
         {
             TLink result = default;
-            links.Create(null, (_, createdLink) =>
+            links.Create(null, (_, after) =>
             {
-                result = createdLink[links.Constants.IndexPart];
+                result = after[links.Constants.IndexPart];
                 return links.Constants.Continue;
             });
             return result;
@@ -30,9 +30,9 @@ namespace Platform.Data
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
         {
             TLink result = default;
-            links.Create(substitution, (_, createdLink) =>
+            links.Create(substitution, (_, after) =>
             {
-                result = createdLink[links.Constants.IndexPart];
+                result = after[links.Constants.IndexPart];
                 return links.Constants.Continue;
             });
             return result;
@@ -59,7 +59,6 @@ namespace Platform.Data
             });
             return result;
         }
-
 
         /// <summary>
         /// <para>
