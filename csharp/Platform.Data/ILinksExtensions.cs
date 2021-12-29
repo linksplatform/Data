@@ -18,7 +18,7 @@ namespace Platform.Data
     {
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links)
         {
-            TLink result = default;
+            TLink result = links.Constants.Null;
             links.Create(null, (_, after) =>
             {
                 result = after[links.Constants.IndexPart];
