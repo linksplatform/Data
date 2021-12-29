@@ -18,44 +18,48 @@ namespace Platform.Data
     {
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links)
         {
-            TLink result = links.Constants.Null;
+            var constants = links.Constants;
+            TLink result = constants.Null;
             links.Create(null, (_, after) =>
             {
-                result = after[links.Constants.IndexPart];
-                return links.Constants.Continue;
+                result = after[constants.IndexPart];
+                return constants.Continue;
             });
             return result;
         }
 
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
         {
-            TLink result = links.Constants.Null;
+            var constants = links.Constants;
+            TLink result = constants.Null;
             links.Create(substitution, (_, after) =>
             {
-                result = after[links.Constants.IndexPart];
-                return links.Constants.Continue;
+                result = after[constants.IndexPart];
+                return constants.Continue;
             });
             return result;
         }
 
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
         {
-            TLink result = links.Constants.Null;
+            var constants = links.Constants;
+            TLink result = constants.Null;
             links.Delete(restriction, (before, _) =>
             {
-                result = before[links.Constants.IndexPart];
-                return links.Constants.Continue;
+                result = before[constants.IndexPart];
+                return constants.Continue;
             });
             return result;
         }
 
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
         {
-            TLink result = links.Constants.Null;
+            var constants = links.Constants;
+            TLink result = constants.Null;
             links.Update(restriction, substitution, (_, after) =>
             {
-                result = after[links.Constants.IndexPart];
-                return links.Constants.Continue;
+                result = after[constants.IndexPart];
+                return constants.Continue;
             });
             return result;
         }
