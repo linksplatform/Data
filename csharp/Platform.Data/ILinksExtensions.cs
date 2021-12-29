@@ -29,7 +29,7 @@ namespace Platform.Data
 
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
         {
-            TLink result = default;
+            TLink result = links.Constants.Null;
             links.Create(substitution, (_, after) =>
             {
                 result = after[links.Constants.IndexPart];
@@ -40,7 +40,7 @@ namespace Platform.Data
 
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
         {
-            TLink result = default;
+            TLink result = links.Constants.Null;
             links.Delete(restriction, (before, _) =>
             {
                 result = before[links.Constants.IndexPart];
@@ -51,7 +51,7 @@ namespace Platform.Data
 
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
         {
-            TLink result = default;
+            TLink result = links.Constants.Null;
             links.Update(restriction, substitution, (_, after) =>
             {
                 result = after[links.Constants.IndexPart];
