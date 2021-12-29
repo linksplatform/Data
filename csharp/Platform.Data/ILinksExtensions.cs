@@ -16,6 +16,44 @@ namespace Platform.Data
     /// </summary>
     public static class ILinksExtensions
     {
+        public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links) => links.Create(null);
+
+        public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
+        {
+            var constants = links.Constants;
+            var result = constants.Null;
+            links.Create(substitution, (_, after) =>
+            {
+                result = after[constants.IndexPart];
+                return constants.Continue;
+            });
+            return result;
+        }
+
+        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
+        {
+            var constants = links.Constants;
+            var result = constants.Null;
+            links.Delete(restriction, (before, _) =>
+            {
+                result = before[constants.IndexPart];
+                return constants.Continue;
+            });
+            return result;
+        }
+
+        public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
+        {
+            var constants = links.Constants;
+            var result = constants.Null;
+            links.Update(restriction, substitution, (_, after) =>
+            {
+                result = after[constants.IndexPart];
+                return constants.Continue;
+            });
+            return result;
+        }
+
         /// <summary>
         /// <para>
         /// Counts the links.
