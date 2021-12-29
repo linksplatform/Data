@@ -38,10 +38,10 @@ namespace Platform.Data
             return result;
         }
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete)
+        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
         {
             TLink result = default;
-            links.Delete(new LinkAddress<TLink>(linkToDelete), (before, _) =>
+            links.Delete(restriction, (before, _) =>
             {
                 result = before[links.Constants.IndexPart];
                 return links.Constants.Continue;
