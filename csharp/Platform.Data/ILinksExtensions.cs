@@ -30,18 +30,6 @@ namespace Platform.Data
             return result;
         }
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
-        {
-            var constants = links.Constants;
-            var result = constants.Null;
-            links.Delete(restriction, (before, _) =>
-            {
-                result = before[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
-        }
-
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
         {
             var constants = links.Constants;
@@ -49,6 +37,18 @@ namespace Platform.Data
             links.Update(restriction, substitution, (_, after) =>
             {
                 result = after[constants.IndexPart];
+                return constants.Continue;
+            });
+            return result;
+        }
+
+        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
+        {
+            var constants = links.Constants;
+            var result = constants.Null;
+            links.Delete(restriction, (before, _) =>
+            {
+                result = before[constants.IndexPart];
                 return constants.Continue;
             });
             return result;
