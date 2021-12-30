@@ -42,7 +42,7 @@ namespace Platform.Data
             return result;
         }
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, new List<TLink>{linkToDelete});
+        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, (IList<TLink>)new LinkAddress<TLink>(linkToDelete));
 
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
         {
