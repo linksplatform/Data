@@ -854,6 +854,15 @@ references:
   isSpec: "True"
   fullName: Platform.Data.ILinksExtensions.Delete
   nameWithType: ILinksExtensions.Delete
+- uid: Platform.Data.ILinksExtensions.Delete``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},``0)
+  name: Delete<TLink>(ILinks<TLink, LinksConstants<TLink>>, TLink)
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Delete__1_Platform_Data_ILinks___0_Platform_Data_LinksConstants___0_____0_
+  commentId: M:Platform.Data.ILinksExtensions.Delete``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},``0)
+  name.vb: Delete(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), TLink)
+  fullName: Platform.Data.ILinksExtensions.Delete<TLink>(Platform.Data.ILinks<TLink, Platform.Data.LinksConstants<TLink>>, TLink)
+  fullName.vb: Platform.Data.ILinksExtensions.Delete(Of TLink)(Platform.Data.ILinks(Of TLink, Platform.Data.LinksConstants(Of TLink)), TLink)
+  nameWithType: ILinksExtensions.Delete<TLink>(ILinks<TLink, LinksConstants<TLink>>, TLink)
+  nameWithType.vb: ILinksExtensions.Delete(Of TLink)(ILinks(Of TLink, LinksConstants(Of TLink)), TLink)
 - uid: Platform.Data.ILinksExtensions.Delete``1(Platform.Data.ILinks{``0,Platform.Data.LinksConstants{``0}},System.Collections.Generic.IList{``0})
   name: Delete<TLink>(ILinks<TLink, LinksConstants<TLink>>, IList<TLink>)
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Delete__1_Platform_Data_ILinks___0_Platform_Data_LinksConstants___0___System_Collections_Generic_IList___0__
