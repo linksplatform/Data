@@ -29,5 +29,11 @@ namespace Platform.Data.Doublets.Benchmarks
         {
             return new TLink[] {1UL};
         }
+
+        [Benchmark]
+        public IList<TLink> List()
+        {
+            return new List<TLink>{1UL};
+        }
     }
 }
