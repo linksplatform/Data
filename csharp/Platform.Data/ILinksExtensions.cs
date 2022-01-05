@@ -22,7 +22,7 @@ namespace Platform.Data
         {
             var constants = links.Constants;
             var result = constants.Null;
-            links.Create(substitution, (_, after) =>
+            links.Create(new List<TLink>(), (_, after) =>
             {
                 result = after[constants.IndexPart];
                 return constants.Continue;
