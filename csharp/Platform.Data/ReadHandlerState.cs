@@ -20,6 +20,10 @@ namespace Platform.Data
 
         public void Apply(TLink result)
         {
+            if (_equalityComparer.Equals(Break, Result))
+            {
+                return;
+            }
             if (!_equalityComparer.Equals(Break, result))
             {
                 return;
