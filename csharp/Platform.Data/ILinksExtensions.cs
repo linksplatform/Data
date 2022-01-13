@@ -21,13 +21,9 @@ namespace Platform.Data
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
         {
             var constants = links.Constants;
-            var result = constants.Null;
-            links.Create(substitution, (_, after) =>
-            {
-                result = after[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
+            var setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            links.Create(substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            return setter.Result;
         }
 
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
