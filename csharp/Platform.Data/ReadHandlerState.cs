@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Platform.Delegates;
 
 namespace Platform.Data
 {
