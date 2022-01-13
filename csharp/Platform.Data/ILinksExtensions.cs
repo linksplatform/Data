@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Platform.Setters;
 using Platform.Data.Exceptions;
+using Platform.Delegates;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -21,25 +22,17 @@ namespace Platform.Data
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
         {
             var constants = links.Constants;
-            var result = constants.Null;
-            links.Create(substitution, (_, after) =>
-            {
-                result = after[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
+            Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            links.Create(substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            return setter.Result;
         }
 
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
         {
             var constants = links.Constants;
-            var result = constants.Null;
-            links.Update(restriction, substitution, (_, after) =>
-            {
-                result = after[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
+            Setter<TLink, TLink> setter = new(constants.Continue, constants.Break, constants.Null);
+            links.Update(restriction, substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            return setter.Result;
         }
 
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, (IList<TLink>)new LinkAddress<TLink>(linkToDelete));
@@ -47,13 +40,9 @@ namespace Platform.Data
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
         {
             var constants = links.Constants;
-            var result = constants.Null;
-            links.Delete(restriction, (before, _) =>
-            {
-                result = before[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
+            Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            links.Delete(restriction, setter.SetFirstFromFirstListAndReturnTrue);
+            return setter.Result;
         }
 
         /// <summary>
