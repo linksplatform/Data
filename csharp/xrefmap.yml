@@ -2307,6 +2307,82 @@ references:
   fullName.vb: Platform.Data.Point(Of TLinkAddress).ToString
   nameWithType: Point<TLinkAddress>.ToString
   nameWithType.vb: Point(Of TLinkAddress).ToString
+- uid: Platform.Data.ReadHandlerState`1
+  name: ReadHandlerState<TLink>
+  href: api/Platform.Data.ReadHandlerState-1.html
+  commentId: T:Platform.Data.ReadHandlerState`1
+  name.vb: ReadHandlerState(Of TLink)
+  fullName: Platform.Data.ReadHandlerState<TLink>
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink)
+  nameWithType: ReadHandlerState<TLink>
+  nameWithType.vb: ReadHandlerState(Of TLink)
+- uid: Platform.Data.ReadHandlerState`1.#ctor(`0,`0,ReadHandler{`0})
+  name: ReadHandlerState(TLink, TLink, ReadHandler<TLink>)
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1__ctor__0__0_ReadHandler__0__
+  commentId: M:Platform.Data.ReadHandlerState`1.#ctor(`0,`0,ReadHandler{`0})
+  name.vb: ReadHandlerState(TLink, TLink, ReadHandler(Of TLink))
+  fullName: Platform.Data.ReadHandlerState<TLink>.ReadHandlerState(TLink, TLink, ReadHandler<TLink>)
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).ReadHandlerState(TLink, TLink, ReadHandler(Of TLink))
+  nameWithType: ReadHandlerState<TLink>.ReadHandlerState(TLink, TLink, ReadHandler<TLink>)
+  nameWithType.vb: ReadHandlerState(Of TLink).ReadHandlerState(TLink, TLink, ReadHandler(Of TLink))
+- uid: Platform.Data.ReadHandlerState`1.#ctor*
+  name: ReadHandlerState
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1__ctor_
+  commentId: Overload:Platform.Data.ReadHandlerState`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.ReadHandlerState<TLink>.ReadHandlerState
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).ReadHandlerState
+  nameWithType: ReadHandlerState<TLink>.ReadHandlerState
+  nameWithType.vb: ReadHandlerState(Of TLink).ReadHandlerState
+- uid: Platform.Data.ReadHandlerState`1.Apply(`0)
+  name: Apply(TLink)
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1_Apply__0_
+  commentId: M:Platform.Data.ReadHandlerState`1.Apply(`0)
+  fullName: Platform.Data.ReadHandlerState<TLink>.Apply(TLink)
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).Apply(TLink)
+  nameWithType: ReadHandlerState<TLink>.Apply(TLink)
+  nameWithType.vb: ReadHandlerState(Of TLink).Apply(TLink)
+- uid: Platform.Data.ReadHandlerState`1.Apply*
+  name: Apply
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1_Apply_
+  commentId: Overload:Platform.Data.ReadHandlerState`1.Apply
+  isSpec: "True"
+  fullName: Platform.Data.ReadHandlerState<TLink>.Apply
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).Apply
+  nameWithType: ReadHandlerState<TLink>.Apply
+  nameWithType.vb: ReadHandlerState(Of TLink).Apply
+- uid: Platform.Data.ReadHandlerState`1.Break
+  name: Break
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1_Break
+  commentId: F:Platform.Data.ReadHandlerState`1.Break
+  fullName: Platform.Data.ReadHandlerState<TLink>.Break
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).Break
+  nameWithType: ReadHandlerState<TLink>.Break
+  nameWithType.vb: ReadHandlerState(Of TLink).Break
+- uid: Platform.Data.ReadHandlerState`1.Continue
+  name: Continue
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1_Continue
+  commentId: F:Platform.Data.ReadHandlerState`1.Continue
+  fullName: Platform.Data.ReadHandlerState<TLink>.Continue
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).Continue
+  nameWithType: ReadHandlerState<TLink>.Continue
+  nameWithType.vb: ReadHandlerState(Of TLink).Continue
+- uid: Platform.Data.ReadHandlerState`1.Handler
+  name: Handler
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1_Handler
+  commentId: F:Platform.Data.ReadHandlerState`1.Handler
+  fullName: Platform.Data.ReadHandlerState<TLink>.Handler
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).Handler
+  nameWithType: ReadHandlerState<TLink>.Handler
+  nameWithType.vb: ReadHandlerState(Of TLink).Handler
+- uid: Platform.Data.ReadHandlerState`1.Result
+  name: Result
+  href: api/Platform.Data.ReadHandlerState-1.html#Platform_Data_ReadHandlerState_1_Result
+  commentId: F:Platform.Data.ReadHandlerState`1.Result
+  fullName: Platform.Data.ReadHandlerState<TLink>.Result
+  fullName.vb: Platform.Data.ReadHandlerState(Of TLink).Result
+  nameWithType: ReadHandlerState<TLink>.Result
+  nameWithType.vb: ReadHandlerState(Of TLink).Result
 - uid: Platform.Data.Universal
   name: Platform.Data.Universal
   href: api/Platform.Data.Universal.html
@@ -2679,3 +2755,79 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinksRW(Of TLinkAddress).Write
   nameWithType: IUniLinksRW<TLinkAddress>.Write
   nameWithType.vb: IUniLinksRW(Of TLinkAddress).Write
+- uid: Platform.Data.WriteHandlerState`1
+  name: WriteHandlerState<TLink>
+  href: api/Platform.Data.WriteHandlerState-1.html
+  commentId: T:Platform.Data.WriteHandlerState`1
+  name.vb: WriteHandlerState(Of TLink)
+  fullName: Platform.Data.WriteHandlerState<TLink>
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink)
+  nameWithType: WriteHandlerState<TLink>
+  nameWithType.vb: WriteHandlerState(Of TLink)
+- uid: Platform.Data.WriteHandlerState`1.#ctor(`0,`0,WriteHandler{`0})
+  name: WriteHandlerState(TLink, TLink, WriteHandler<TLink>)
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1__ctor__0__0_WriteHandler__0__
+  commentId: M:Platform.Data.WriteHandlerState`1.#ctor(`0,`0,WriteHandler{`0})
+  name.vb: WriteHandlerState(TLink, TLink, WriteHandler(Of TLink))
+  fullName: Platform.Data.WriteHandlerState<TLink>.WriteHandlerState(TLink, TLink, WriteHandler<TLink>)
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).WriteHandlerState(TLink, TLink, WriteHandler(Of TLink))
+  nameWithType: WriteHandlerState<TLink>.WriteHandlerState(TLink, TLink, WriteHandler<TLink>)
+  nameWithType.vb: WriteHandlerState(Of TLink).WriteHandlerState(TLink, TLink, WriteHandler(Of TLink))
+- uid: Platform.Data.WriteHandlerState`1.#ctor*
+  name: WriteHandlerState
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1__ctor_
+  commentId: Overload:Platform.Data.WriteHandlerState`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.WriteHandlerState<TLink>.WriteHandlerState
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).WriteHandlerState
+  nameWithType: WriteHandlerState<TLink>.WriteHandlerState
+  nameWithType.vb: WriteHandlerState(Of TLink).WriteHandlerState
+- uid: Platform.Data.WriteHandlerState`1.Apply(`0)
+  name: Apply(TLink)
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Apply__0_
+  commentId: M:Platform.Data.WriteHandlerState`1.Apply(`0)
+  fullName: Platform.Data.WriteHandlerState<TLink>.Apply(TLink)
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).Apply(TLink)
+  nameWithType: WriteHandlerState<TLink>.Apply(TLink)
+  nameWithType.vb: WriteHandlerState(Of TLink).Apply(TLink)
+- uid: Platform.Data.WriteHandlerState`1.Apply*
+  name: Apply
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Apply_
+  commentId: Overload:Platform.Data.WriteHandlerState`1.Apply
+  isSpec: "True"
+  fullName: Platform.Data.WriteHandlerState<TLink>.Apply
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).Apply
+  nameWithType: WriteHandlerState<TLink>.Apply
+  nameWithType.vb: WriteHandlerState(Of TLink).Apply
+- uid: Platform.Data.WriteHandlerState`1.Break
+  name: Break
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Break
+  commentId: F:Platform.Data.WriteHandlerState`1.Break
+  fullName: Platform.Data.WriteHandlerState<TLink>.Break
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).Break
+  nameWithType: WriteHandlerState<TLink>.Break
+  nameWithType.vb: WriteHandlerState(Of TLink).Break
+- uid: Platform.Data.WriteHandlerState`1.Continue
+  name: Continue
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Continue
+  commentId: F:Platform.Data.WriteHandlerState`1.Continue
+  fullName: Platform.Data.WriteHandlerState<TLink>.Continue
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).Continue
+  nameWithType: WriteHandlerState<TLink>.Continue
+  nameWithType.vb: WriteHandlerState(Of TLink).Continue
+- uid: Platform.Data.WriteHandlerState`1.Handler
+  name: Handler
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Handler
+  commentId: F:Platform.Data.WriteHandlerState`1.Handler
+  fullName: Platform.Data.WriteHandlerState<TLink>.Handler
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).Handler
+  nameWithType: WriteHandlerState<TLink>.Handler
+  nameWithType.vb: WriteHandlerState(Of TLink).Handler
+- uid: Platform.Data.WriteHandlerState`1.Result
+  name: Result
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Result
+  commentId: F:Platform.Data.WriteHandlerState`1.Result
+  fullName: Platform.Data.WriteHandlerState<TLink>.Result
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLink).Result
+  nameWithType: WriteHandlerState<TLink>.Result
+  nameWithType.vb: WriteHandlerState(Of TLink).Result
