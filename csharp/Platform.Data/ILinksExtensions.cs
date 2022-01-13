@@ -128,7 +128,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress> handler, params TLinkAddress[] restrictions)
             where TConstants : LinksConstants<TLinkAddress>
-            => links.Each(handler, restrictions);
+            => links.Each(restrictions, handler);
 
         /// <summary>
         /// Возвращает части-значения для связи с указанным индексом.
