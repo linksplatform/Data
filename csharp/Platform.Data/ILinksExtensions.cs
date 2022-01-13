@@ -29,13 +29,9 @@ namespace Platform.Data
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
         {
             var constants = links.Constants;
-            var result = constants.Null;
-            links.Update(restriction, substitution, (_, after) =>
-            {
-                result = after[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
+            var setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            links.Update(restriction, substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            return setter.Result;
         }
 
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, (IList<TLink>)new LinkAddress<TLink>(linkToDelete));
