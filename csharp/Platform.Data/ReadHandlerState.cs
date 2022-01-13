@@ -5,7 +5,7 @@ namespace Platform.Data
 {
     public struct ReadHandlerState<TLink>
     {
-        private readonly EqualityComparer<TLink> _equalityComparer = EqualityComparer<TLink>.Default;
+        private readonly EqualityComparer<TLink> _equalityComparer;
         public TLink Result;
         public ReadHandler<TLink> Handler;
         public TLink Continue;
@@ -13,6 +13,7 @@ namespace Platform.Data
 
         public ReadHandlerState(TLink @continue, TLink @break, ReadHandler<TLink> handler)
         {
+            _equalityComparer = EqualityComparer<TLink>.Default;
             Continue = @continue;
             Break = @break;
             Result = @continue;
