@@ -21,7 +21,7 @@ namespace Platform.Data
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
         {
             var constants = links.Constants;
-            var setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
             links.Create(substitution, setter.SetFirstFromSecondListAndReturnTrue);
             return setter.Result;
         }
@@ -29,7 +29,7 @@ namespace Platform.Data
         public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
         {
             var constants = links.Constants;
-            var setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            Setter<TLink, TLink> setter = new(constants.Continue, constants.Break, constants.Null);
             links.Update(restriction, substitution, setter.SetFirstFromSecondListAndReturnTrue);
             return setter.Result;
         }
