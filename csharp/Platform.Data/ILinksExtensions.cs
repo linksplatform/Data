@@ -39,13 +39,9 @@ namespace Platform.Data
         public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
         {
             var constants = links.Constants;
-            var result = constants.Null;
-            links.Delete(restriction, (before, _) =>
-            {
-                result = before[constants.IndexPart];
-                return constants.Continue;
-            });
-            return result;
+            Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            links.Delete(restriction, setter.SetFirstFromFirstListAndReturnTrue);
+            return setter.Result;
         }
 
         /// <summary>
