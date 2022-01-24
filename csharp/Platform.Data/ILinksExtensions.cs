@@ -19,7 +19,7 @@ namespace Platform.Data
     {
         public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links) => links.Create(null);
 
-        public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> substitution)
+        public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink>? substitution)
         {
             var constants = links.Constants;
             Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);

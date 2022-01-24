@@ -7,7 +7,7 @@ namespace Platform.Data
     {
         private readonly EqualityComparer<TLink> _equalityComparer;
         public TLink Result;
-        public WriteHandler<TLink> Handler;
+        public WriteHandler<TLink>? Handler;
         public TLink Continue;
         public TLink Break;
 
