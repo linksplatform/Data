@@ -11,7 +11,7 @@ namespace Platform.Data
         public TLink Continue;
         public TLink Break;
 
-        public WriteHandlerState(TLink @continue, TLink @break, WriteHandler<TLink> handler)
+        public WriteHandlerState(TLink @continue, TLink @break, WriteHandler<TLink>? handler)
         {
             _equalityComparer = EqualityComparer<TLink>.Default;
             Continue = @continue;

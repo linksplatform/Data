@@ -27,7 +27,7 @@ namespace Platform.Data
             return setter.Result;
         }
 
-        public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction, IList<TLink> substitution)
+        public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink>? restriction, IList<TLink>? substitution)
         {
             var constants = links.Constants;
             Setter<TLink, TLink> setter = new(constants.Continue, constants.Break, constants.Null);
@@ -35,9 +35,9 @@ namespace Platform.Data
             return setter.Result;
         }
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, (IList<TLink>)new LinkAddress<TLink>(linkToDelete));
+        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, (IList<TLink>?)new LinkAddress<TLink>(linkToDelete));
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink> restriction)
+        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink>? restriction)
         {
             var constants = links.Constants;
             Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);

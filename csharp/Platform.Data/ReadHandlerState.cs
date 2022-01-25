@@ -7,11 +7,11 @@ namespace Platform.Data
     {
         private readonly EqualityComparer<TLink> _equalityComparer;
         public TLink Result;
-        public ReadHandler<TLink> Handler;
+        public ReadHandler<TLink>? Handler;
         public TLink Continue;
         public TLink Break;
 
-        public ReadHandlerState(TLink @continue, TLink @break, ReadHandler<TLink> handler)
+        public ReadHandlerState(TLink @continue, TLink @break, ReadHandler<TLink>? handler)
         {
             _equalityComparer = EqualityComparer<TLink>.Default;
             Continue = @continue;
