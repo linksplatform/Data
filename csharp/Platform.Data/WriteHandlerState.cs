@@ -24,10 +24,6 @@ namespace Platform.Data
             {
                 return;
             }
-            if (!_equalityComparer.Equals(Break, result))
-            {
-                return;
-            }
             Handler = null;
             Result = Break;
         }
