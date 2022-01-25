@@ -728,15 +728,15 @@ references:
   fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Count
   nameWithType: ILinks<TLinkAddress, TConstants>.Count
   nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Count
-- uid: Platform.Data.ILinks`2.Create(System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name: Create(IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Create_System_Collections_Generic_IList__0__WriteHandler__0__
-  commentId: M:Platform.Data.ILinks`2.Create(System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name.vb: Create(IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Create(System.Collections.Generic.IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Create(System.Collections.Generic.IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  nameWithType: ILinks<TLinkAddress, TConstants>.Create(IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Create(IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
+- uid: Platform.Data.ILinks`2.Create(System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name: Create(IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Create_System_Collections_Generic_IList__0__System_Nullable_WriteHandler__0___
+  commentId: M:Platform.Data.ILinks`2.Create(System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name.vb: Create(IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Create(System.Collections.Generic.IList<TLinkAddress>, System.Nullable<WriteHandler<TLinkAddress>>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Create(System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of WriteHandler(Of TLinkAddress)))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Create(IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Create(IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
 - uid: Platform.Data.ILinks`2.Create*
   name: Create
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Create_
@@ -746,15 +746,15 @@ references:
   fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Create
   nameWithType: ILinks<TLinkAddress, TConstants>.Create
   nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Create
-- uid: Platform.Data.ILinks`2.Delete(System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name: Delete(IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Delete_System_Collections_Generic_IList__0__WriteHandler__0__
-  commentId: M:Platform.Data.ILinks`2.Delete(System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name.vb: Delete(IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Delete(System.Collections.Generic.IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Delete(System.Collections.Generic.IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  nameWithType: ILinks<TLinkAddress, TConstants>.Delete(IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Delete(IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
+- uid: Platform.Data.ILinks`2.Delete(System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name: Delete(IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Delete_System_Collections_Generic_IList__0__System_Nullable_WriteHandler__0___
+  commentId: M:Platform.Data.ILinks`2.Delete(System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name.vb: Delete(IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Delete(System.Collections.Generic.IList<TLinkAddress>, System.Nullable<WriteHandler<TLinkAddress>>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Delete(System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of WriteHandler(Of TLinkAddress)))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Delete(IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Delete(IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
 - uid: Platform.Data.ILinks`2.Delete*
   name: Delete
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Delete_
@@ -764,15 +764,15 @@ references:
   fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Delete
   nameWithType: ILinks<TLinkAddress, TConstants>.Delete
   nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Delete
-- uid: Platform.Data.ILinks`2.Each(System.Collections.Generic.IList{`0},ReadHandler{`0})
-  name: Each(IList<TLinkAddress>, ReadHandler<TLinkAddress>)
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Each_System_Collections_Generic_IList__0__ReadHandler__0__
-  commentId: M:Platform.Data.ILinks`2.Each(System.Collections.Generic.IList{`0},ReadHandler{`0})
-  name.vb: Each(IList(Of TLinkAddress), ReadHandler(Of TLinkAddress))
-  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Each(System.Collections.Generic.IList<TLinkAddress>, ReadHandler<TLinkAddress>)
-  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Each(System.Collections.Generic.IList(Of TLinkAddress), ReadHandler(Of TLinkAddress))
-  nameWithType: ILinks<TLinkAddress, TConstants>.Each(IList<TLinkAddress>, ReadHandler<TLinkAddress>)
-  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Each(IList(Of TLinkAddress), ReadHandler(Of TLinkAddress))
+- uid: Platform.Data.ILinks`2.Each(System.Collections.Generic.IList{`0},System.Nullable{ReadHandler{`0}})
+  name: Each(IList<TLinkAddress>, Nullable<ReadHandler<TLinkAddress>>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Each_System_Collections_Generic_IList__0__System_Nullable_ReadHandler__0___
+  commentId: M:Platform.Data.ILinks`2.Each(System.Collections.Generic.IList{`0},System.Nullable{ReadHandler{`0}})
+  name.vb: Each(IList(Of TLinkAddress), Nullable(Of ReadHandler(Of TLinkAddress)))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Each(System.Collections.Generic.IList<TLinkAddress>, System.Nullable<ReadHandler<TLinkAddress>>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Each(System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of ReadHandler(Of TLinkAddress)))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Each(IList<TLinkAddress>, Nullable<ReadHandler<TLinkAddress>>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Each(IList(Of TLinkAddress), Nullable(Of ReadHandler(Of TLinkAddress)))
 - uid: Platform.Data.ILinks`2.Each*
   name: Each
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Each_
@@ -782,15 +782,15 @@ references:
   fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Each
   nameWithType: ILinks<TLinkAddress, TConstants>.Each
   nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Each
-- uid: Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name: Update(IList<TLinkAddress>, IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Update_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__WriteHandler__0__
-  commentId: M:Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name.vb: Update(IList(Of TLinkAddress), IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Update(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Update(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  nameWithType: ILinks<TLinkAddress, TConstants>.Update(IList<TLinkAddress>, IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Update(IList(Of TLinkAddress), IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
+- uid: Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name: Update(IList<TLinkAddress>, IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Update_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__System_Nullable_WriteHandler__0___
+  commentId: M:Platform.Data.ILinks`2.Update(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name.vb: Update(IList(Of TLinkAddress), IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
+  fullName: Platform.Data.ILinks<TLinkAddress, TConstants>.Update(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, System.Nullable<WriteHandler<TLinkAddress>>)
+  fullName.vb: Platform.Data.ILinks(Of TLinkAddress, TConstants).Update(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of WriteHandler(Of TLinkAddress)))
+  nameWithType: ILinks<TLinkAddress, TConstants>.Update(IList<TLinkAddress>, IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  nameWithType.vb: ILinks(Of TLinkAddress, TConstants).Update(IList(Of TLinkAddress), IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
 - uid: Platform.Data.ILinks`2.Update*
   name: Update
   href: api/Platform.Data.ILinks-2.html#Platform_Data_ILinks_2_Update_
@@ -879,15 +879,15 @@ references:
   isSpec: "True"
   fullName: Platform.Data.ILinksExtensions.Each
   nameWithType: ILinksExtensions.Each
-- uid: Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},ReadHandler{``0},``0[])
-  name: Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, ReadHandler<TLinkAddress>, TLinkAddress[])
-  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Each__2_Platform_Data_ILinks___0___1__ReadHandler___0____0___
-  commentId: M:Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},ReadHandler{``0},``0[])
-  name.vb: Each(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), ReadHandler(Of TLinkAddress), TLinkAddress())
-  fullName: Platform.Data.ILinksExtensions.Each<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, ReadHandler<TLinkAddress>, TLinkAddress[])
-  fullName.vb: Platform.Data.ILinksExtensions.Each(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), ReadHandler(Of TLinkAddress), TLinkAddress())
-  nameWithType: ILinksExtensions.Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, ReadHandler<TLinkAddress>, TLinkAddress[])
-  nameWithType.vb: ILinksExtensions.Each(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), ReadHandler(Of TLinkAddress), TLinkAddress())
+- uid: Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},System.Nullable{ReadHandler{``0}},``0[])
+  name: Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, Nullable<ReadHandler<TLinkAddress>>, TLinkAddress[])
+  href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_Each__2_Platform_Data_ILinks___0___1__System_Nullable_ReadHandler___0_____0___
+  commentId: M:Platform.Data.ILinksExtensions.Each``2(Platform.Data.ILinks{``0,``1},System.Nullable{ReadHandler{``0}},``0[])
+  name.vb: Each(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), Nullable(Of ReadHandler(Of TLinkAddress)), TLinkAddress())
+  fullName: Platform.Data.ILinksExtensions.Each<TLinkAddress, TConstants>(Platform.Data.ILinks<TLinkAddress, TConstants>, System.Nullable<ReadHandler<TLinkAddress>>, TLinkAddress[])
+  fullName.vb: Platform.Data.ILinksExtensions.Each(Of TLinkAddress, TConstants)(Platform.Data.ILinks(Of TLinkAddress, TConstants), System.Nullable(Of ReadHandler(Of TLinkAddress)), TLinkAddress())
+  nameWithType: ILinksExtensions.Each<TLinkAddress, TConstants>(ILinks<TLinkAddress, TConstants>, Nullable<ReadHandler<TLinkAddress>>, TLinkAddress[])
+  nameWithType.vb: ILinksExtensions.Each(Of TLinkAddress, TConstants)(ILinks(Of TLinkAddress, TConstants), Nullable(Of ReadHandler(Of TLinkAddress)), TLinkAddress())
 - uid: Platform.Data.ILinksExtensions.EnsureLinkExists*
   name: EnsureLinkExists
   href: api/Platform.Data.ILinksExtensions.html#Platform_Data_ILinksExtensions_EnsureLinkExists_
@@ -2416,15 +2416,6 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Count
   nameWithType: IUniLinks<TLinkAddress>.Count
   nameWithType.vb: IUniLinks(Of TLinkAddress).Count
-- uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},ReadHandler{`0},System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name: Trigger(IList<TLinkAddress>, ReadHandler<TLinkAddress>, IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__ReadHandler__0__System_Collections_Generic_IList__0__WriteHandler__0__
-  commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},ReadHandler{`0},System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name.vb: Trigger(IList(Of TLinkAddress), ReadHandler(Of TLinkAddress), IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, ReadHandler<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), ReadHandler(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, ReadHandler<TLinkAddress>, IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), ReadHandler(Of TLinkAddress), IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
 - uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
   name: Trigger(IList<TLinkAddress>, IList<TLinkAddress>)
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
@@ -2434,15 +2425,24 @@ references:
   fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
   nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, IList<TLinkAddress>)
   nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), IList(Of TLinkAddress))
-- uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},WriteHandler{`0},System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name: Trigger(IList<TLinkAddress>, WriteHandler<TLinkAddress>, IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__WriteHandler__0__System_Collections_Generic_IList__0__WriteHandler__0__
-  commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},WriteHandler{`0},System.Collections.Generic.IList{`0},WriteHandler{`0})
-  name.vb: Trigger(IList(Of TLinkAddress), WriteHandler(Of TLinkAddress), IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, WriteHandler<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), WriteHandler(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
-  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, WriteHandler<TLinkAddress>, IList<TLinkAddress>, WriteHandler<TLinkAddress>)
-  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), WriteHandler(Of TLinkAddress), IList(Of TLinkAddress), WriteHandler(Of TLinkAddress))
+- uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Nullable{ReadHandler{`0}},System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name: Trigger(IList<TLinkAddress>, Nullable<ReadHandler<TLinkAddress>>, IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__System_Nullable_ReadHandler__0___System_Collections_Generic_IList__0__System_Nullable_WriteHandler__0___
+  commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Nullable{ReadHandler{`0}},System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name.vb: Trigger(IList(Of TLinkAddress), Nullable(Of ReadHandler(Of TLinkAddress)), IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, System.Nullable<ReadHandler<TLinkAddress>>, System.Collections.Generic.IList<TLinkAddress>, System.Nullable<WriteHandler<TLinkAddress>>)
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of ReadHandler(Of TLinkAddress)), System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of WriteHandler(Of TLinkAddress)))
+  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, Nullable<ReadHandler<TLinkAddress>>, IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), Nullable(Of ReadHandler(Of TLinkAddress)), IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
+- uid: Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}},System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name: Trigger(IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>, IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_System_Collections_Generic_IList__0__System_Nullable_WriteHandler__0___System_Collections_Generic_IList__0__System_Nullable_WriteHandler__0___
+  commentId: M:Platform.Data.Universal.IUniLinks`1.Trigger(System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}},System.Collections.Generic.IList{`0},System.Nullable{WriteHandler{`0}})
+  name.vb: Trigger(IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)), IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
+  fullName: Platform.Data.Universal.IUniLinks<TLinkAddress>.Trigger(System.Collections.Generic.IList<TLinkAddress>, System.Nullable<WriteHandler<TLinkAddress>>, System.Collections.Generic.IList<TLinkAddress>, System.Nullable<WriteHandler<TLinkAddress>>)
+  fullName.vb: Platform.Data.Universal.IUniLinks(Of TLinkAddress).Trigger(System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of WriteHandler(Of TLinkAddress)), System.Collections.Generic.IList(Of TLinkAddress), System.Nullable(Of WriteHandler(Of TLinkAddress)))
+  nameWithType: IUniLinks<TLinkAddress>.Trigger(IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>, IList<TLinkAddress>, Nullable<WriteHandler<TLinkAddress>>)
+  nameWithType.vb: IUniLinks(Of TLinkAddress).Trigger(IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)), IList(Of TLinkAddress), Nullable(Of WriteHandler(Of TLinkAddress)))
 - uid: Platform.Data.Universal.IUniLinks`1.Trigger*
   name: Trigger
   href: api/Platform.Data.Universal.IUniLinks-1.html#Platform_Data_Universal_IUniLinks_1_Trigger_
