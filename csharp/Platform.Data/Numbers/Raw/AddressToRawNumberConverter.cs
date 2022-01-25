@@ -11,8 +11,8 @@ namespace Platform.Data.Numbers.Raw
     /// </para>
     /// <para></para>
     /// </summary>
-    /// <seealso cref="IConverter{TLink}"/>
-    public class AddressToRawNumberConverter<TLink> : IConverter<TLink>
+    /// <seealso cref="IConverter{TLinkAddress}"/>
+    public class AddressToRawNumberConverter<TLinkAddress> : IConverter<TLinkAddress>
     {
         /// <summary>
         /// <para>
@@ -29,6 +29,6 @@ namespace Platform.Data.Numbers.Raw
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public TLink Convert(TLink source) => new Hybrid<TLink>(source, isExternal: true);
+        public TLinkAddress Convert(TLinkAddress source) => new Hybrid<TLinkAddress>(source, isExternal: true);
     }
 }

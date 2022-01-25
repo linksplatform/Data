@@ -17,30 +17,30 @@ namespace Platform.Data
     /// </summary>
     public static class ILinksExtensions
     {
-        public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links) => links.Create(null);
+        public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links) => links.Create(null);
 
-        public static TLink Create<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink>? substitution)
+        public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? substitution)
         {
             var constants = links.Constants;
-            Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
             links.Create(substitution, setter.SetFirstFromSecondListAndReturnTrue);
             return setter.Result;
         }
 
-        public static TLink Update<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink>? restriction, IList<TLink>? substitution)
+        public static TLinkAddress Update<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? restriction, IList<TLinkAddress>? substitution)
         {
             var constants = links.Constants;
-            Setter<TLink, TLink> setter = new(constants.Continue, constants.Break, constants.Null);
+            Setter<TLinkAddress, TLinkAddress> setter = new(constants.Continue, constants.Break, constants.Null);
             links.Update(restriction, substitution, setter.SetFirstFromSecondListAndReturnTrue);
             return setter.Result;
         }
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, TLink linkToDelete) => Delete(links, (IList<TLink>?)new LinkAddress<TLink>(linkToDelete));
+        public static TLinkAddress Delete<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, TLinkAddress linkToDelete) => Delete(links, (IList<TLinkAddress>?)new LinkAddress<TLinkAddress>(linkToDelete));
 
-        public static TLink Delete<TLink>(this ILinks<TLink, LinksConstants<TLink>> links, IList<TLink>? restriction)
+        public static TLinkAddress Delete<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? restriction)
         {
             var constants = links.Constants;
-            Setter<TLink, TLink> setter = new Setter<TLink, TLink>(constants.Continue, constants.Break, constants.Null);
+            Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
             links.Delete(restriction, setter.SetFirstFromFirstListAndReturnTrue);
             return setter.Result;
         }

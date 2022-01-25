@@ -3,24 +3,24 @@ using Platform.Delegates;
 
 namespace Platform.Data
 {
-    public struct WriteHandlerState<TLink>
+    public struct WriteHandlerState<TLinkAddress>
     {
-        private readonly EqualityComparer<TLink> _equalityComparer;
-        public TLink Result;
-        public WriteHandler<TLink>? Handler;
-        public TLink Continue;
-        public TLink Break;
+        private readonly EqualityComparer<TLinkAddress> _equalityComparer;
+        public TLinkAddress Result;
+        public WriteHandler<TLinkAddress>? Handler;
+        public TLinkAddress Continue;
+        public TLinkAddress Break;
 
-        public WriteHandlerState(TLink @continue, TLink @break, WriteHandler<TLink>? handler)
+        public WriteHandlerState(TLinkAddress @continue, TLinkAddress @break, WriteHandler<TLinkAddress>? handler)
         {
-            _equalityComparer = EqualityComparer<TLink>.Default;
+            _equalityComparer = EqualityComparer<TLinkAddress>.Default;
             Continue = @continue;
             Break = @break;
             Result = @continue;
             Handler = handler;
         }
 
-        public void Apply(TLink result)
+        public void Apply(TLinkAddress result)
         {
             if (_equalityComparer.Equals(Break, Result))
             {

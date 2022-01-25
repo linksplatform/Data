@@ -11,8 +11,8 @@ namespace Platform.Data.Numbers.Raw
     /// </para>
     /// <para></para>
     /// </summary>
-    /// <seealso cref="IConverter{TLink}"/>
-    public class RawNumberToAddressConverter<TLink> : IConverter<TLink>
+    /// <seealso cref="IConverter{TLinkAddress}"/>
+    public class RawNumberToAddressConverter<TLinkAddress> : IConverter<TLinkAddress>
     {
         /// <summary>
         /// <para>
@@ -20,7 +20,7 @@ namespace Platform.Data.Numbers.Raw
         /// </para>
         /// <para></para>
         /// </summary>
-        static private readonly UncheckedConverter<long, TLink> _converter = UncheckedConverter<long, TLink>.Default;
+        static private readonly UncheckedConverter<long, TLinkAddress> _converter = UncheckedConverter<long, TLinkAddress>.Default;
 
         /// <summary>
         /// <para>
@@ -37,6 +37,6 @@ namespace Platform.Data.Numbers.Raw
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public TLink Convert(TLink source) => _converter.Convert(new Hybrid<TLink>(source).AbsoluteValue);
+        public TLinkAddress Convert(TLinkAddress source) => _converter.Convert(new Hybrid<TLinkAddress>(source).AbsoluteValue);
     }
 }
