@@ -15,7 +15,7 @@ namespace Platform.Data
     /// </summary>
     /// <seealso cref="IEquatable{LinkAddress{TLinkAddress}}"/>
     /// <seealso cref="IList{TLinkAddress}"/>
-    public class LinkAddress<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>?
+    public class LinkAddress<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
     {
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
 
