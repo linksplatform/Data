@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.8.1</VersionPrefix>
+    <VersionPrefix>0.9.0</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -24,7 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Each method infinite recursion bug is fixed.</PackageReleaseNotes>
+    <PackageReleaseNotes>All IList<![CDATA[<]]>TLinkAddress<![CDATA[>]]>, WriteHandler<![CDATA[<]]>TLinkAddress<![CDATA[>]]>, ReadHandlerWriteHandler<![CDATA[<]]>TLinkAddress<![CDATA[>]]> parameters are made nullable..</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
