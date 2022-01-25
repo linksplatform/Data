@@ -28,7 +28,7 @@ namespace Platform.Data.Universal
         /// <para>A list of i list i list t link address</para>
         /// <para></para>
         /// </returns>
-        IList<IList<IList<TLinkAddress>>> Trigger(IList<TLinkAddress> condition, IList<TLinkAddress> substitution);
+        IList<IList<IList<TLinkAddress>?>> Trigger(IList<TLinkAddress>? condition, IList<TLinkAddress>? substitution);
     }
 
     /// <remarks>Minimal sufficient universal Links API (for step by step operations).</remarks>
@@ -43,8 +43,8 @@ namespace Platform.Data.Universal
         /// { 1, any, any } => { itself, any, 3 } // update
         /// { 3, any, any } => { 0, 0, 0 } // delete
         /// </remarks>
-        TLinkAddress Trigger(IList<TLinkAddress> patternOrCondition, ReadHandler<TLinkAddress> matchHandler,
-                      IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> substitutionHandler);
+        TLinkAddress Trigger(IList<TLinkAddress>? patternOrCondition, ReadHandler<TLinkAddress>? matchHandler,
+                      IList<TLinkAddress>? substitution, WriteHandler<TLinkAddress>? substitutionHandler);
 
         /// <summary>
         /// <para>
@@ -72,8 +72,8 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Trigger(IList<TLinkAddress> restriction, WriteHandler<TLinkAddress> matchedHandler,
-              IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> substitutedHandler);
+        TLinkAddress Trigger(IList<TLinkAddress>? restriction, WriteHandler<TLinkAddress>? matchedHandler,
+              IList<TLinkAddress>? substitution, WriteHandler<TLinkAddress>? substitutedHandler);
     }
 
     /// <remarks>Extended with small optimization.</remarks>
@@ -82,6 +82,6 @@ namespace Platform.Data.Universal
         /// <remarks>
         /// Something simple should be simple and optimized.
         /// </remarks>
-        TLinkAddress Count(IList<TLinkAddress> restrictions);
+        TLinkAddress Count(IList<TLinkAddress>? restrictions);
     }
 }

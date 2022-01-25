@@ -48,7 +48,7 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Get(Func<TLinkAddress, bool> handler, IList<TLinkAddress> pattern);
+        TLinkAddress Get(Func<TLinkAddress, bool> handler, IList<TLinkAddress>? pattern);
         /// <summary>
         /// <para>
         /// Sets the before.
@@ -67,6 +67,6 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Set(IList<TLinkAddress> before, IList<TLinkAddress> after);
+        TLinkAddress Set(IList<TLinkAddress>? before, IList<TLinkAddress>? after);
     }
 }

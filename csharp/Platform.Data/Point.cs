@@ -18,7 +18,7 @@ namespace Platform.Data
     /// </summary>
     /// <seealso cref="IEquatable{LinkAddress{TLinkAddress}}"/>
     /// <seealso cref="IList{TLinkAddress}"/>
-    public class Point<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
+    public class Point<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>?
     {
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
 
@@ -368,7 +368,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsFullPoint(params TLinkAddress[] link) => IsFullPoint((IList<TLinkAddress>)link);
+        public static bool IsFullPoint(params TLinkAddress[] link) => IsFullPoint((IList<TLinkAddress>?)link);
 
         /// <summary>
         /// <para>
@@ -385,7 +385,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsFullPoint(IList<TLinkAddress> link)
+        public static bool IsFullPoint(IList<TLinkAddress>? link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
             Ensure.Always.ArgumentInRange(link.Count, (2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
@@ -407,7 +407,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsFullPointUnchecked(IList<TLinkAddress> link)
+        public static bool IsFullPointUnchecked(IList<TLinkAddress>? link)
         {
             var result = true;
             for (var i = 1; result && i < link.Count; i++)
@@ -432,7 +432,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsPartialPoint(params TLinkAddress[] link) => IsPartialPoint((IList<TLinkAddress>)link);
+        public static bool IsPartialPoint(params TLinkAddress[] link) => IsPartialPoint((IList<TLinkAddress>?)link);
 
         /// <summary>
         /// <para>
@@ -449,7 +449,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsPartialPoint(IList<TLinkAddress> link)
+        public static bool IsPartialPoint(IList<TLinkAddress>? link)
         {
             Ensure.Always.ArgumentNotEmpty(link, nameof(link));
             Ensure.Always.ArgumentInRange(link.Count, (2, int.MaxValue), nameof(link), "Cannot determine link's pointness using only its identifier.");
@@ -471,7 +471,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsPartialPointUnchecked(IList<TLinkAddress> link)
+        public static bool IsPartialPointUnchecked(IList<TLinkAddress>? link)
         {
             var result = false;
             for (var i = 1; !result && i < link.Count; i++)

@@ -48,7 +48,7 @@ namespace Platform.Data.Universal
         /// <para>The bool</para>
         /// <para></para>
         /// </returns>
-        bool Read(Func<TLinkAddress, bool> handler, IList<TLinkAddress> pattern);
+        bool Read(Func<TLinkAddress, bool> handler, IList<TLinkAddress>? pattern);
         /// <summary>
         /// <para>
         /// Writes the before.
@@ -67,6 +67,6 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Write(IList<TLinkAddress> before, IList<TLinkAddress> after);
+        TLinkAddress Write(IList<TLinkAddress>? before, IList<TLinkAddress>? after);
     }
 }

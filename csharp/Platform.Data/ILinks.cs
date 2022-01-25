@@ -45,7 +45,7 @@ namespace Platform.Data
         /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничение на содержимое связей.</para></param>
         /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Count(IList<TLinkAddress> restriction);
+        TLinkAddress Count(IList<TLinkAddress>? restriction);
 
         /// <summary>
         /// <para>Passes through all the links matching the pattern, invoking a handler for each matching link.</para>
@@ -58,7 +58,7 @@ namespace Platform.Data
         /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
         /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Each(IList<TLinkAddress> restriction, ReadHandler<TLinkAddress> handler);
+        TLinkAddress Each(IList<TLinkAddress>? restriction, ReadHandler<TLinkAddress>? handler);
 
         #endregion
 
@@ -87,7 +87,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Create(IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> handler);
+        TLinkAddress Create(IList<TLinkAddress>? substitution, WriteHandler<TLinkAddress>? handler);
 
         /// <summary>
         /// Обновляет связь с указанными restriction[Constants.IndexPart] в адресом связи
@@ -115,7 +115,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Update(IList<TLinkAddress> restriction, IList<TLinkAddress> substitution, WriteHandler<TLinkAddress> handler);
+        TLinkAddress Update(IList<TLinkAddress>? restriction, IList<TLinkAddress>? substitution, WriteHandler<TLinkAddress>? handler);
 
         /// <summary>
         /// <para>Deletes links that match the specified restriction.</para>
@@ -140,7 +140,7 @@ namespace Platform.Data
         /// </para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Delete(IList<TLinkAddress> restriction, WriteHandler<TLinkAddress> handler);
+        TLinkAddress Delete(IList<TLinkAddress>? restriction, WriteHandler<TLinkAddress>? handler);
 
         #endregion
     }

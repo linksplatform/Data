@@ -48,7 +48,7 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Read(Func<TLinkAddress, bool> handler, IList<TLinkAddress> pattern);
+        TLinkAddress Read(Func<TLinkAddress, bool> handler, IList<TLinkAddress>? pattern);
         /// <summary>
         /// <para>
         /// Creates the parts.
@@ -63,7 +63,7 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Create(IList<TLinkAddress> parts);
+        TLinkAddress Create(IList<TLinkAddress>? parts);
         /// <summary>
         /// <para>
         /// Updates the before.
@@ -82,7 +82,7 @@ namespace Platform.Data.Universal
         /// <para>The link address</para>
         /// <para></para>
         /// </returns>
-        TLinkAddress Update(IList<TLinkAddress> before, IList<TLinkAddress> after);
+        TLinkAddress Update(IList<TLinkAddress>? before, IList<TLinkAddress>? after);
         /// <summary>
         /// <para>
         /// Deletes the parts.
@@ -93,6 +93,6 @@ namespace Platform.Data.Universal
         /// <para>The parts.</para>
         /// <para></para>
         /// </param>
-        TLinkAddress Delete(IList<TLinkAddress> parts);
+        TLinkAddress Delete(IList<TLinkAddress>? parts);
     }
 }

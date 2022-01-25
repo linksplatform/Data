@@ -126,7 +126,7 @@ namespace Platform.Data
         /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress> handler, params TLinkAddress[] restrictions)
+        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions)
             where TConstants : LinksConstants<TLinkAddress>
             => links.Each(restrictions, handler);
 
@@ -137,7 +137,7 @@ namespace Platform.Data
         /// <param name="link">Индекс связи.</param>
         /// <returns>Уникальную связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IList<TLinkAddress> GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+        public static IList<TLinkAddress>? GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
@@ -145,7 +145,7 @@ namespace Platform.Data
             {
                 return new Point<TLinkAddress>(link, constants.TargetPart + 1);
             }
-            var linkPartsSetter = new Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
+            var linkPartsSetter = new Setter<IList<TLinkAddress>?, TLinkAddress>(constants.Continue, constants.Break);
             links.Each(linkPartsSetter.SetAndReturnTrue, link);
             return linkPartsSetter.Result;
         }
