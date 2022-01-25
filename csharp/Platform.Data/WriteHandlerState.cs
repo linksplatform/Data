@@ -8,13 +8,11 @@ namespace Platform.Data
         private readonly EqualityComparer<TLinkAddress> _equalityComparer;
         public TLinkAddress Result;
         public WriteHandler<TLinkAddress>? Handler;
-        public TLinkAddress Continue;
-        public TLinkAddress Break;
+        private TLinkAddress Break;
 
         public WriteHandlerState(TLinkAddress @continue, TLinkAddress @break, WriteHandler<TLinkAddress>? handler)
         {
             _equalityComparer = EqualityComparer<TLinkAddress>.Default;
-            Continue = @continue;
             Break = @break;
             Result = @continue;
             Handler = handler;
