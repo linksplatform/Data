@@ -20,17 +20,21 @@ namespace Platform.Data
 
         public void Apply(TLinkAddress result)
         {
-            if (_equalityComparer.Equals(Break, Result))
+            var isAlreadyBreak = _equalityComparer.Equals(Break, Result);
+            var isCurrentlyBreak = _equalityComparer.Equals(Break, result);
+            if (isAlreadyBreak || !isCurrentlyBreak)
             {
                 return;
             }
             Handler = null;
             Result = Break;
+
         }
 
         public TLinkAddress Handle(IList<TLinkAddress> before, IList<TLinkAddress> after)
         {
-            return Handler?.Invoke(before, after) ?? Result;
+            Apply(Handler?.Invoke(before, after) ?? Result);
+            return Result;
         }
     }
 }
