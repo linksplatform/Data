@@ -2723,6 +2723,24 @@ references:
   fullName.vb: Platform.Data.WriteHandlerState(Of TLinkAddress).Apply
   nameWithType: WriteHandlerState<TLinkAddress>.Apply
   nameWithType.vb: WriteHandlerState(Of TLinkAddress).Apply
+- uid: Platform.Data.WriteHandlerState`1.Handle(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name: Handle(IList<TLinkAddress>, IList<TLinkAddress>)
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Handle_System_Collections_Generic_IList__0__System_Collections_Generic_IList__0__
+  commentId: M:Platform.Data.WriteHandlerState`1.Handle(System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`0})
+  name.vb: Handle(IList(Of TLinkAddress), IList(Of TLinkAddress))
+  fullName: Platform.Data.WriteHandlerState<TLinkAddress>.Handle(System.Collections.Generic.IList<TLinkAddress>, System.Collections.Generic.IList<TLinkAddress>)
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLinkAddress).Handle(System.Collections.Generic.IList(Of TLinkAddress), System.Collections.Generic.IList(Of TLinkAddress))
+  nameWithType: WriteHandlerState<TLinkAddress>.Handle(IList<TLinkAddress>, IList<TLinkAddress>)
+  nameWithType.vb: WriteHandlerState(Of TLinkAddress).Handle(IList(Of TLinkAddress), IList(Of TLinkAddress))
+- uid: Platform.Data.WriteHandlerState`1.Handle*
+  name: Handle
+  href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Handle_
+  commentId: Overload:Platform.Data.WriteHandlerState`1.Handle
+  isSpec: "True"
+  fullName: Platform.Data.WriteHandlerState<TLinkAddress>.Handle
+  fullName.vb: Platform.Data.WriteHandlerState(Of TLinkAddress).Handle
+  nameWithType: WriteHandlerState<TLinkAddress>.Handle
+  nameWithType.vb: WriteHandlerState(Of TLinkAddress).Handle
 - uid: Platform.Data.WriteHandlerState`1.Handler
   name: Handler
   href: api/Platform.Data.WriteHandlerState-1.html#Platform_Data_WriteHandlerState_1_Handler
