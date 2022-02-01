@@ -3,7 +3,7 @@ using Platform.Delegates;
 
 namespace Platform.Data
 {
-    public struct WriteHandlerState<TLinkAddress> where TLinkAddress : struct
+    public struct WriteHandlerState<TLinkAddress>
     {
         private readonly EqualityComparer<TLinkAddress> _equalityComparer;
         public TLinkAddress Result;
@@ -33,7 +33,10 @@ namespace Platform.Data
 
         public TLinkAddress Handle(IList<TLinkAddress> before, IList<TLinkAddress> after)
         {
-            Apply(Handler?.Invoke(before, after) ?? Result);
+            if (Handler != null)
+            {
+                Apply(Handler(before, after));
+            }
             return Result;
         }
     }
