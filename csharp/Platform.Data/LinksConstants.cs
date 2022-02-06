@@ -145,7 +145,7 @@ namespace Platform.Data
             var currentInternalReferenceIndex = possibleInternalReferencesRange.Maximum;
             Null = default;
             Continue = currentInternalReferenceIndex;
-            Break = Arithmetic.Decrement(ref currentInternalReferenceIndex);;
+            Break = Arithmetic.Decrement(ref currentInternalReferenceIndex);
             Skip = Arithmetic.Decrement(ref currentInternalReferenceIndex);
             Any = Arithmetic.Decrement(ref currentInternalReferenceIndex);
             Itself = Arithmetic.Decrement(ref currentInternalReferenceIndex);
