@@ -72,7 +72,7 @@ namespace Platform.Data
 
         #endregion
 
-            #region Special symbols
+        #region Special symbols
 
         /// <summary>Возвращает значение, обозначающее отсутствие связи.</summary>
         public TLinkAddress Null
