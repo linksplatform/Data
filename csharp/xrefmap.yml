@@ -1523,6 +1523,23 @@ references:
   fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Continue
   nameWithType: LinksConstants<TLinkAddress>.Continue
   nameWithType.vb: LinksConstants(Of TLinkAddress).Continue
+- uid: Platform.Data.LinksConstants`1.Error
+  name: Error
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Error
+  commentId: P:Platform.Data.LinksConstants`1.Error
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Error
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Error
+  nameWithType: LinksConstants<TLinkAddress>.Error
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Error
+- uid: Platform.Data.LinksConstants`1.Error*
+  name: Error
+  href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_Error_
+  commentId: Overload:Platform.Data.LinksConstants`1.Error
+  isSpec: "True"
+  fullName: Platform.Data.LinksConstants<TLinkAddress>.Error
+  fullName.vb: Platform.Data.LinksConstants(Of TLinkAddress).Error
+  nameWithType: LinksConstants<TLinkAddress>.Error
+  nameWithType.vb: LinksConstants(Of TLinkAddress).Error
 - uid: Platform.Data.LinksConstants`1.ExternalReferencesRange
   name: ExternalReferencesRange
   href: api/Platform.Data.LinksConstants-1.html#Platform_Data_LinksConstants_1_ExternalReferencesRange
