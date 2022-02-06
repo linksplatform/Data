@@ -55,13 +55,6 @@ namespace Platform.Data
             get;
         }
 
-        /// <summary>Возвращает значение, обозначающее пропуск в проходе по связям.</summary>
-        public TLinkAddress Skip
-        {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get;
-        }
-
         /// <summary>Возвращает значение, обозначающее остановку прохода по связям.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
         public TLinkAddress Break
@@ -70,9 +63,16 @@ namespace Platform.Data
             get;
         }
 
+        /// <summary>Возвращает значение, обозначающее пропуск в проходе по связям.</summary>
+        public TLinkAddress Skip
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
+
         #endregion
 
-        #region Special symbols
+            #region Special symbols
 
         /// <summary>Возвращает значение, обозначающее отсутствие связи.</summary>
         public TLinkAddress Null
@@ -95,6 +95,8 @@ namespace Platform.Data
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get;
         }
+
+        public TLinkAddress Error { get; }
 
         #endregion
 
@@ -140,13 +142,14 @@ namespace Platform.Data
             IndexPart = 0;
             SourcePart = 1;
             TargetPart = targetPart;
-            Null = default;
-            Break = default;
             var currentInternalReferenceIndex = possibleInternalReferencesRange.Maximum;
+            Null = default;
             Continue = currentInternalReferenceIndex;
+            Break = Arithmetic.Decrement(ref currentInternalReferenceIndex);;
             Skip = Arithmetic.Decrement(ref currentInternalReferenceIndex);
             Any = Arithmetic.Decrement(ref currentInternalReferenceIndex);
             Itself = Arithmetic.Decrement(ref currentInternalReferenceIndex);
+            Error = Arithmetic.Decrement(ref currentInternalReferenceIndex);
             Arithmetic.Decrement(ref currentInternalReferenceIndex);
             InternalReferencesRange = (possibleInternalReferencesRange.Minimum, currentInternalReferenceIndex);
             ExternalReferencesRange = possibleExternalReferencesRange;
