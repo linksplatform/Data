@@ -1,0 +1,19 @@
+/home/freephoenix888/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/freephoenix888/Documents/Programming/LinksPlatform/Data/cpp
+-- Conan: Adjusting output directories
+-- Conan: Using cmake targets configuration
+-- Library gtest_main found /home/freephoenix888/.conan/data/gtest/cci.20210126/_/_/package/e019a06362b932ca5d1b082b6c112aa150c88de4/lib/libgtest_main.a
+-- Library gmock_main found /home/freephoenix888/.conan/data/gtest/cci.20210126/_/_/package/e019a06362b932ca5d1b082b6c112aa150c88de4/lib/libgmock_main.a
+-- Library gmock found /home/freephoenix888/.conan/data/gtest/cci.20210126/_/_/package/e019a06362b932ca5d1b082b6c112aa150c88de4/lib/libgmock.a
+-- Library gtest found /home/freephoenix888/.conan/data/gtest/cci.20210126/_/_/package/e019a06362b932ca5d1b082b6c112aa150c88de4/lib/libgtest.a
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Current conanbuildinfo.cmake directory: /home/freephoenix888/Documents/Programming/LinksPlatform/Data/cpp/cmake-build-debug
+-- Conan: Compiler GCC>=5, checking major version 10
+-- Conan: Checking correct version: 10
+CMake Error at CMakeLists.txt:14 (target_link_libraries):
+  INTERFACE library can only be used with the INTERFACE keyword of
+  target_link_libraries
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/freephoenix888/Documents/Programming/LinksPlatform/Data/cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log".
