@@ -39,7 +39,7 @@ Platform.Setters dependency is updated from 0.3.0 to 0.3.3.</PackageReleaseNotes
 
   <ItemGroup>
     <PackageReference Include="Platform.Delegates" Version="0.0.1" />
-    <PackageReference Include="Platform.Numbers" Version="0.5.1" />
+    <PackageReference Include="Platform.Numbers" Version="0.5.2" />
     <PackageReference Include="Platform.Threading" Version="0.3.0" />
     <PackageReference Include="Platform.Setters" Version="0.3.3" />
   </ItemGroup>
