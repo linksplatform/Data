@@ -56,7 +56,7 @@ namespace Platform::Data
     template<std::integral TLinkAddress, typename... Args>
     Point(TLinkAddress, Args...) -> Point<TLinkAddress>;
 
-    static bool IsFullPointUnchecked(Interfaces::IEnumerable auto&& link)
+    static bool IsFullPointUnchecked(Interfaces::CEnumerable auto&& link)
     requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
         auto iter = std::ranges::begin(link);
@@ -64,7 +64,7 @@ namespace Platform::Data
         return std::ranges::all_of(iter + 1, end, [&iter](auto&& item) {return item == *iter; });
     }
 
-    static bool IsFullPoint(Interfaces::IEnumerable auto&& link)
+    static bool IsFullPoint(Interfaces::CEnumerable auto&& link)
     requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
         using namespace Ranges;
@@ -80,7 +80,7 @@ namespace Platform::Data
         return IsFullPoint(link);
     }
 
-    static bool IsPartialPointUnchecked(Interfaces::IEnumerable auto&& link)
+    static bool IsPartialPointUnchecked(Interfaces::CEnumerable auto&& link)
     requires std::integral<typename Interfaces::Enumerable<decltype(link)>::Item>
     {
         auto iter = std::ranges::begin(link);
@@ -89,7 +89,7 @@ namespace Platform::Data
         return std::ranges::any_of(iter + 1, end, [&iter](auto&& item) { return item == *iter; });
     }
 
-    static bool IsPartialPoint(Interfaces::IEnumerable auto&& link)
+    static bool IsPartialPoint(Interfaces::CEnumerable auto&& link)
     {
         using namespace Platform::Ranges;
 
@@ -102,7 +102,7 @@ namespace Platform::Data
     static bool IsPartialPoint(std::integral auto... params)
     {
         std::common_type_t<decltype(params)...> link[] = { params... };
-        static_assert(Interfaces::IEnumerable<decltype(link)>);
+        static_assert(Interfaces::CEnumerable<decltype(link)>);
         return IsPartialPoint(link);
     }
 }
