@@ -48,10 +48,11 @@
     }
 
     template<typename TLinkAddress, typename TStorage>
-    static Interfaces::CArray auto&& GetLink(const TStorage storage, TLinkAddress link)
+    static Interfaces::CArray auto GetLink(const TStorage storage, TLinkAddress link)
     {
         auto&& constants = storage.Constants;
         auto _continue = constants.Continue;
+        auto any = constants.Any;
         if (IsExternalReference(constants, link))
         {
             return Point{link, constants.TargetPart + 1};
@@ -63,11 +64,12 @@
         //return linkPartsSetter.Result;
 
         std::optional<std::vector<TLinkAddress>> resultLink {};
-        storage.Each(link, [&resultLink, _continue](Interfaces::CArray auto&& link)
-                   {
-                       resultLink = { std::vector(std::ranges::begin(link), std::ranges::end(link)) };
-                       return constants.Continue;
-                   });
+        std::function handler { [&resultLink, _continue](Interfaces::CArray auto&& link)
+                                {
+                                    resultLink = { std::vector(std::ranges::begin(link), std::ranges::end(link)) };
+                                    return _continue;
+                                } };
+        storage.Each(std::array{link, any, any}, handler);
         Expects(resultLink.has_value());
         return resultLink;
     }
