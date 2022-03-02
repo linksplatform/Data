@@ -1,7 +1,19 @@
 ﻿namespace Platform::Data
 {
-    template<typename TLinkAddress, typename TStorage>
-    static TLinkAddress Create(TStorage storage)
+    template<typename TLinkAddress>
+    static TLinkAddress Create(auto&& storage, Interfaces::CArray auto&& substitution)
+    {
+        auto _continue { storage.Constants.Continue };
+        TLinkAddress createdLinkAddress;
+        return storage.Create(substitution, [&createdLinkAddress, _continue] (Interfaces::CArray auto&& before, Interfaces::CArray auto&& after)
+        {
+            createdLinkAddress = after[0];
+            return _continue;
+        });
+    }
+
+    template<typename TLinkAddress>
+    static TLinkAddress Create(auto&& storage)
     {
         constexpr std::array<TLinkAddress, 0> empty{};
         return storage.Create(empty);
