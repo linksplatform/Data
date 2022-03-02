@@ -107,4 +107,31 @@
         storage.EnsureLinkExists(link);
         return Point<TLinkAddress>::IsPartialPoint(storage.GetLink(link));
     }
+
+    template<typename TLinkAddress>
+    static TLinkAddress Delete(auto&& storage, Interfaces::CArray auto&& restriction)
+    {
+        auto constants = storage.Constants;
+        auto _continue = constants.Continue;
+        TLinkAddress deletedLinkAddress;
+        storage.Delete(restriction, [&deletedLinkAddress, _continue](Interfaces::CArray auto before, Interfaces::CArray auto after)
+        {
+            deletedLinkAddress = before[0];
+            return _continue;
+        });
+        return deletedLinkAddress;
+    }
+
+    template<typename TLinkAddress>
+    static TLinkAddress Delete(auto&& storage, TLinkAddress linkAddress)
+    {
+        return Delete<TLinkAddress>(storage, std::array{linkAddress});
+    }
+
+    template<typename TLinkAddress>
+    static bool Exists(const auto&& storage, TLinkAddress linkAddress)
+    {
+        auto constants = storage.Constants;
+        return constants.IsExternalReference(linkAddress) || (constants.IsInternalReference(linkAddress) && (Count(storage, linkAddress) > 0));
+    }
 }
