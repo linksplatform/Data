@@ -19,8 +19,8 @@
         return Create<TLinkAddress>(storage, empty);
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static TLinkAddress Count(const TStorage storage)
+    template<typename TLinkAddress>
+    static TLinkAddress Count(const auto&& storage)
     // TODO: later add noexcept(expr)
     {
         constexpr std::array<TLinkAddress, 0> empty {};
