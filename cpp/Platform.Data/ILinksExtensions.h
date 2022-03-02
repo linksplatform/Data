@@ -28,10 +28,10 @@
     }
 
     template<typename TLinkAddress, typename TStorage>
-    static TLinkAddress Count(const TStorage storage, std::convertible_to<TLinkAddress> auto... restrictions)
+    static TLinkAddress Count(const TStorage storage, std::convertible_to<TLinkAddress> auto... restriction)
     // TODO: later add noexcept(expr)
     {
-        TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
+        std::array<TLinkAddress, sizeof...(restriction)> array { static_cast<TLinkAddress>(restriction)... };
         return storage.Count(array);
     }
 
