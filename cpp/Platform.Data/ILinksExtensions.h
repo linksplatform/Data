@@ -76,14 +76,13 @@
         //storage.Each(linkPartsSetter.SetAndReturnTrue, link);
         //return linkPartsSetter.Result;
 
-        std::optional<std::vector<TLinkAddress>> resultLink {};
-        std::function handler { [&resultLink, _continue](Interfaces::CArray auto&& link)
-                                {
-                                    resultLink = { std::vector(std::ranges::begin(link), std::ranges::end(link)) };
-                                    return _continue;
-                                } };
-        storage.Each(std::array{link, any, any}, handler);
-        Expects(resultLink.has_value());
+        std::vector<TLinkAddress> resultLink;
+        storage.Each(std::array{link, any, any}, [&resultLink, _continue](Interfaces::CArray auto&& link)
+        {
+            resultLink = { std::ranges::begin(link), std::ranges::end(link) };
+            return _continue;
+        });
+        Expects(!resultLink.empty());
         return resultLink;
     }
 
