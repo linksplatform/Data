@@ -60,14 +60,15 @@
     }
 
     template<typename TLinkAddress, typename TStorage>
-    static Interfaces::CArray auto GetLink(const TStorage storage, TLinkAddress link)
+    static Interfaces::CArray auto&& GetLink(const TStorage storage, TLinkAddress link)
     {
         auto&& constants = storage.Constants;
         auto _continue = constants.Continue;
         auto any = constants.Any;
         if (IsExternalReference(constants, link))
         {
-            return Point{link, constants.TargetPart + 1};
+            std::vector resultLink {link,link,link};
+            return resultLink;
         }
 
         // TODO: dynamic polymorphism (for @Konard)
