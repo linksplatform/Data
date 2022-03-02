@@ -16,7 +16,7 @@
     static TLinkAddress Create(auto&& storage)
     {
         constexpr std::array<TLinkAddress, 0> empty{};
-        return storage.Create(empty);
+        return Create<TLinkAddress>(storage, empty);
     }
 
     template<typename TLinkAddress, typename TStorage>
