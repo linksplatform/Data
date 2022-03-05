@@ -11,17 +11,19 @@
 
         public: const TLinkAddress TargetPart{};
 
+    public: const TLinkAddress Continue{};
+
         public: const TLinkAddress Break{};
 
+    public: const TLinkAddress Skip{};
+
         public: const TLinkAddress Null{};
-
-        public: const TLinkAddress Continue{};
-
-        public: const TLinkAddress Skip{};
 
         public: const TLinkAddress Any{};
 
         public: const TLinkAddress Itself{};
+
+        public: const TLinkAddress Error{};
 
         public: const Ranges::Range<TLinkAddress> InternalReferencesRange{};
 
@@ -29,16 +31,17 @@
 
         public: constexpr LinksConstants(TLinkAddress targetPart, const Ranges::Range<TLinkAddress>& possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) noexcept
             : IndexPart(0),
-              SourcePart(1),
-              TargetPart(targetPart),
-              Break(TLinkAddress{}),
-              Null(TLinkAddress{}),
-              Continue(possibleInternalReferencesRange.Maximum),
-              Skip(possibleInternalReferencesRange.Maximum - 1),
-              Any(possibleInternalReferencesRange.Maximum - 2),
-              Itself(possibleInternalReferencesRange.Maximum - 3),
-              InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, static_cast<TLinkAddress>(possibleInternalReferencesRange.Maximum - 4)}),
-              ExternalReferencesRange(std::move(possibleExternalReferencesRange))
+            SourcePart(1),
+            TargetPart(targetPart),
+            Continue(possibleInternalReferencesRange.Maximum),
+            Break(possibleInternalReferencesRange.Maximum - 1),
+            Skip(possibleInternalReferencesRange.Maximum - 2),
+            Null(TLinkAddress{}),
+            Any(possibleInternalReferencesRange.Maximum - 3),
+            Itself(possibleInternalReferencesRange.Maximum - 4),
+            Error(possibleInternalReferencesRange.Maximum - 5),
+            InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, static_cast<TLinkAddress>(possibleInternalReferencesRange.Maximum - 6)}),
+            ExternalReferencesRange(std::move(possibleExternalReferencesRange))
         {
         }
 
