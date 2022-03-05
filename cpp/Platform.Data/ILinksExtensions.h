@@ -60,7 +60,7 @@
     }
 
     template<typename TLinkAddress, typename TStorage>
-    static Interfaces::CArray auto&& GetLink(const TStorage storage, TLinkAddress link)
+    static Interfaces::CArray auto GetLink(const TStorage storage, TLinkAddress link)
     {
         auto&& constants = storage.Constants;
         auto _continue = constants.Continue;
