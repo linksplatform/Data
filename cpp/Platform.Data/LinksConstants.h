@@ -11,11 +11,11 @@
 
         public: const TLinkAddress TargetPart{};
 
-    public: const TLinkAddress Continue{};
+    	public: const TLinkAddress Continue{};
 
         public: const TLinkAddress Break{};
 
-    public: const TLinkAddress Skip{};
+    	public: const TLinkAddress Skip{};
 
         public: const TLinkAddress Null{};
 
