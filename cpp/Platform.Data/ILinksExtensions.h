@@ -5,12 +5,13 @@
     {
         auto _continue { storage.Constants.Continue };
         TLinkAddress createdLinkAddress;
-        return storage.Create(substitution, [&createdLinkAddress, _continue] (Interfaces::CArray auto&& before, Interfaces::CArray auto&& after)
+		storage.Create(substitution, [&createdLinkAddress, _continue] (Interfaces::CArray auto&& before, Interfaces::CArray auto&& after)
         {
             createdLinkAddress = after[0];
             return _continue;
         });
-    }
+		return createdLinkAddress;
+	}
 
     template<typename TLinkAddress>
     static TLinkAddress Create(auto&& storage)
@@ -39,7 +40,7 @@
     static bool Exists(const TStorage storage, TLinkAddress link) noexcept
     {
         auto&& constants = storage.Constants;
-        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && storage.Count(LinkAddress(link)) != 0);
+        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count<TLinkAddress>(storage, link) != 0);
     }
 
     template<typename TLinkAddress, typename TStorage>
@@ -59,10 +60,10 @@
         return storage.Each(handler, array);
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static Interfaces::CArray auto GetLink(const TStorage storage, TLinkAddress link)
+    template<typename TLinkAddress>
+    static Interfaces::CArray auto GetLink(auto&& storage, TLinkAddress link)
     {
-        auto&& constants = storage.Constants;
+        auto constants = storage.Constants;
         auto _continue = constants.Continue;
         auto any = constants.Any;
         if (IsExternalReference(constants, link))
@@ -79,6 +80,7 @@
         std::vector<TLinkAddress> resultLink;
         storage.Each(std::array{link, any, any}, [&resultLink, _continue](Interfaces::CArray auto&& link)
         {
+			std::cout << "Link: " << link[0] << std::endl;
             resultLink = { std::ranges::begin(link), std::ranges::end(link) };
             return _continue;
         });
