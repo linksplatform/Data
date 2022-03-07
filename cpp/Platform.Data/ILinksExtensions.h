@@ -21,30 +21,30 @@
     }
 
     template<typename TLinkAddress>
-    static TLinkAddress Count(const auto&& storage)
+    static TLinkAddress Count(auto&& storage)
     // TODO: later add noexcept(expr)
     {
         constexpr std::array<TLinkAddress, 0> empty {};
         return storage.Count(empty);
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static TLinkAddress Count(const TStorage storage, std::convertible_to<TLinkAddress> auto... restriction)
+    template<typename TLinkAddress>
+    static TLinkAddress Count(auto&& storage, std::convertible_to<TLinkAddress> auto... restriction)
     // TODO: later add noexcept(expr)
     {
         std::array<TLinkAddress, sizeof...(restriction)> array { static_cast<TLinkAddress>(restriction)... };
         return storage.Count(array);
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static bool Exists(const TStorage storage, TLinkAddress link) noexcept
+    template<typename TLinkAddress>
+    static bool Exists(auto&& storage, TLinkAddress link) noexcept
     {
         auto&& constants = storage.Constants;
         return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count<TLinkAddress>(storage, link) != 0);
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static void EnsureLinkExists(const TStorage storage, TLinkAddress link, const std::string& argument = {})
+    template<typename TLinkAddress>
+    static void EnsureLinkExists(auto&& storage, TLinkAddress link, const std::string& argument = {})
     {
         if (not storage.Exists(link))
         {
@@ -52,8 +52,8 @@
         }
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static TLinkAddress Each(const TStorage storage, auto&& handler, std::convertible_to<TLinkAddress> auto... restrictions)
+    template<typename TLinkAddress>
+    static TLinkAddress Each(auto&& storage, auto&& handler, std::convertible_to<TLinkAddress> auto... restrictions)
     // TODO: later create noexcept(expr)
     {
         TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
@@ -88,8 +88,8 @@
         return resultLink;
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static bool IsFullPoint(const TStorage storage, TLinkAddress link)
+    template<typename TLinkAddress>
+    static bool IsFullPoint(auto&& storage, TLinkAddress link)
     {
         if (IsExternalReference(storage.Constants, link))
         {
@@ -99,8 +99,8 @@
         return Point<TLinkAddress>::IsFullPoint(storage.GetLink(link));
     }
 
-    template<typename TLinkAddress, typename TStorage>
-    static bool IsPartialPoint(const TStorage storage, TLinkAddress link)
+    template<typename TLinkAddress>
+    static bool IsPartialPoint(auto&& storage, TLinkAddress link)
     {
         if (IsExternalReference(storage.Constants, link))
         {
@@ -111,23 +111,18 @@
     }
 
     template<typename TLinkAddress>
-    static TLinkAddress Delete(auto&& storage, Interfaces::CArray auto&& restriction)
+    static TLinkAddress Delete(auto&& storage, std::convertible_to<TLinkAddress> auto ...restriction)
     {
         auto constants = storage.Constants;
         auto _continue = constants.Continue;
+        std::array restrictionArray { static_cast<TLinkAddress>(restriction)... };
         TLinkAddress deletedLinkAddress;
-        storage.Delete(restriction, [&deletedLinkAddress, _continue](Interfaces::CArray auto before, Interfaces::CArray auto after)
+        storage.Delete(restrictionArray, [&deletedLinkAddress, _continue](Interfaces::CArray auto before, Interfaces::CArray auto after)
         {
             deletedLinkAddress = before[0];
             return _continue;
         });
         return deletedLinkAddress;
-    }
-
-    template<typename TLinkAddress>
-    static TLinkAddress Delete(auto&& storage, TLinkAddress linkAddress)
-    {
-        return Delete<TLinkAddress>(storage, std::array{linkAddress});
     }
 
     template<typename TLinkAddress>
