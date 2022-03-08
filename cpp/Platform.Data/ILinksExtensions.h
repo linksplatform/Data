@@ -72,15 +72,9 @@
             return resultLink;
         }
 
-        // TODO: dynamic polymorphism (for @Konard)
-        //auto linkPartsSetter = Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
-        //storage.Each(linkPartsSetter.SetAndReturnTrue, link);
-        //return linkPartsSetter.Result;
-
         std::vector<TLinkAddress> resultLink;
         storage.Each(std::array{link, any, any}, [&resultLink, _continue](Interfaces::CArray auto&& link)
         {
-			std::cout << "Link: " << link[0] << std::endl;
             resultLink = { std::ranges::begin(link), std::ranges::end(link) };
             return _continue;
         });
