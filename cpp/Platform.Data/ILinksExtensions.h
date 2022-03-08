@@ -46,7 +46,7 @@
     template<typename TLinkAddress>
     static void EnsureLinkExists(auto&& storage, TLinkAddress link, const std::string& argument = {})
     {
-        if (not storage.Exists(link))
+        if (!storage.Exists(link))
         {
             throw ArgumentLinkDoesNotExistsException<TLinkAddress>(link, argument);
         }
