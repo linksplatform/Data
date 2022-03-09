@@ -10,6 +10,6 @@
     static bool IsExternalReference(const LinksConstants<TLinkAddress>& linksConstants, TLinkAddress address) noexcept
     {
         auto&& range = linksConstants.ExternalReferencesRange;
-        return range.Contains(address);
+        return (range) && (range.value()).Contains(address);
     }
 }

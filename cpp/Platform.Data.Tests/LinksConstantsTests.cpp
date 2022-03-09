@@ -5,8 +5,8 @@
         using namespace Platform::Data;
 
         auto constants = LinksConstants<std::uint64_t>(true);
-        ASSERT_EQ(Hybrid<std::uint64_t>::ExternalZero, constants.ExternalReferencesRange.Minimum);
-        ASSERT_EQ(std::numeric_limits<std::uint64_t>::max(), constants.ExternalReferencesRange.Maximum);
+        ASSERT_EQ(Hybrid<std::uint64_t>::ExternalZero, constants.ExternalReferencesRange.value().Minimum);
+        ASSERT_EQ(std::numeric_limits<std::uint64_t>::max(), constants.ExternalReferencesRange.value().Maximum);
     }
 
     template<std::signed_integral TSigned, typename TUnsigned = std::make_unsigned_t<TSigned>>

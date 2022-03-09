@@ -3,16 +3,16 @@ namespace Platform::Data::Tests
     template<std::integral TLinkAddress>
     struct Links : public ILinks<Links<TLinkAddress>, TLinkAddress, LinksConstants<TLinkAddress>>
     {
-        TLinkAddress Count(Interfaces::CArray auto&& restriction) const { return 0; }
+        TLinkAddress Count(Interfaces::IArray auto&& restriction) const { return 0; }
     
-        TLinkAddress Each(auto&& handler, const Interfaces::CArray auto& restrictions) const
+        TLinkAddress Each(auto&& handler, const Interfaces::IArray auto& restrictions) const
         { return 0; }
     
-        TLinkAddress Create(Interfaces::CArray auto&& restriction) { return 0; }
+        TLinkAddress Create(Interfaces::IArray auto&& restriction) { return 0; }
     
-        TLinkAddress Update(Interfaces::CArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions) { return 0; }
+        TLinkAddress Update(Interfaces::IArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions) { return 0; }
     
-        void Delete(Interfaces::CArray auto&& restriction) {  }
+        void Delete(Interfaces::IArray auto&& restriction) {  }
     };
     TEST(ILinksDeriverTest, ConstructorAndMethodsTest)
     {
