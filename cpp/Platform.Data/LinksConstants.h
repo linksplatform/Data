@@ -1,50 +1,51 @@
 ﻿namespace Platform::Data
 {
     template<std::integral TLinkAddress>
-    class LinksConstants : LinksConstantsBase
+    struct LinksConstants : LinksConstantsBase
     {
-        private: static constexpr TLinkAddress _one = /* Arithmetic<TLinkAddress>.Increment(default); */ 1; // o_o
-
         public: const TLinkAddress IndexPart{};
 
         public: const TLinkAddress SourcePart{};
 
         public: const TLinkAddress TargetPart{};
 
+    	public: const TLinkAddress Continue{};
+
         public: const TLinkAddress Break{};
 
+    	public: const TLinkAddress Skip{};
+
         public: const TLinkAddress Null{};
-
-        public: const TLinkAddress Continue{};
-
-        public: const TLinkAddress Skip{};
 
         public: const TLinkAddress Any{};
 
         public: const TLinkAddress Itself{};
 
+        public: const TLinkAddress Error{};
+
         public: const Ranges::Range<TLinkAddress> InternalReferencesRange{};
 
-        public: const std::optional<Ranges::Range<TLinkAddress>> ExternalReferencesRange = std::nullopt;
+        public: const Ranges::Range<TLinkAddress> ExternalReferencesRange = std::nullopt;
 
-        public: constexpr LinksConstants(TLinkAddress targetPart, const Ranges::Range<TLinkAddress>& possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) noexcept
+        public: constexpr LinksConstants(TLinkAddress targetPart, const Ranges::Range<TLinkAddress>& possibleInternalReferencesRange, Ranges::Range<TLinkAddress> possibleExternalReferencesRange) noexcept
             : IndexPart(0),
-              SourcePart(1),
-              TargetPart(targetPart),
-              Break(TLinkAddress{}),
-              Null(TLinkAddress{}),
-              Continue(possibleInternalReferencesRange.Maximum),
-              Skip(possibleInternalReferencesRange.Maximum - 1),
-              Any(possibleInternalReferencesRange.Maximum - 2),
-              Itself(possibleInternalReferencesRange.Maximum - 3),
-              InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, static_cast<TLinkAddress>(possibleInternalReferencesRange.Maximum - 4)}),
-              ExternalReferencesRange(std::move(possibleExternalReferencesRange))
+            SourcePart(1),
+            TargetPart(targetPart),
+            Continue(possibleInternalReferencesRange.Maximum),
+            Break(possibleInternalReferencesRange.Maximum - 1),
+            Skip(possibleInternalReferencesRange.Maximum - 2),
+            Null(TLinkAddress{}),
+            Any(possibleInternalReferencesRange.Maximum - 3),
+            Itself(possibleInternalReferencesRange.Maximum - 4),
+            Error(possibleInternalReferencesRange.Maximum - 5),
+            InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, static_cast<TLinkAddress>(possibleInternalReferencesRange.Maximum - 6)}),
+            ExternalReferencesRange(possibleExternalReferencesRange)
         {
         }
 
         public: constexpr explicit LinksConstants(TLinkAddress targetPart, bool enableExternalReferencesSupport) noexcept : LinksConstants(targetPart, GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport)) { }
 
-        public: constexpr explicit LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange, std::optional<Ranges::Range<TLinkAddress>> possibleExternalReferencesRange) noexcept : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
+        public: constexpr explicit LinksConstants(Ranges::Range<TLinkAddress> possibleInternalReferencesRange, Ranges::Range<TLinkAddress> possibleExternalReferencesRange) noexcept : LinksConstants(DefaultTargetPart, possibleInternalReferencesRange, possibleExternalReferencesRange) { }
 
         public: constexpr explicit LinksConstants(bool enableExternalReferencesSupport) noexcept : LinksConstants(GetDefaultInternalReferencesRange(enableExternalReferencesSupport), GetDefaultExternalReferencesRange(enableExternalReferencesSupport))  { }
 
@@ -60,23 +61,23 @@
 
             if (enableExternalReferencesSupport)
             {
-                return Range{ _one, static_cast<TLinkAddress>(Hybrid<TLinkAddress>::HalfOfNumberValuesRange) };
+                return Range{ 1, static_cast<TLinkAddress>(Hybrid<TLinkAddress>::HalfOfNumberValuesRange) };
             }
             else
             {
-                return Range{ _one, std::numeric_limits<TLinkAddress>::max() };
+                return Range{ 1, std::numeric_limits<TLinkAddress>::max() };
             }
         }
 
-        public: static constexpr auto GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport) noexcept -> std::optional<Ranges::Range<TLinkAddress>>
+        public: static constexpr auto GetDefaultExternalReferencesRange(bool enableExternalReferencesSupport) noexcept -> Ranges::Range<TLinkAddress>
         {
             if (enableExternalReferencesSupport)
             {
-                return std::optional(Ranges::Range{Hybrid<TLinkAddress>::ExternalZero, std::numeric_limits<TLinkAddress>::max()});
+                return Ranges::Range{Hybrid<TLinkAddress>::ExternalZero, std::numeric_limits<TLinkAddress>::max()};
             }
             else
             {
-                return std::nullopt;
+                return Ranges::Range<TLinkAddress>{0};
             }
         }
     };
