@@ -1,4 +1,4 @@
-﻿// ReSharper disable TypeParameterCanBeVariant
+// ReSharper disable TypeParameterCanBeVariant
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 using System.Collections.Generic;
@@ -20,12 +20,12 @@ namespace Platform.Data.Universal
         /// 
         /// Outs(returns) inner contents of link, its part/parent/element/value.
         /// </remarks>
-        TLinkAddress OutOne(int partType, IList<TLinkAddress> pattern);
+        TLinkAddress OutOne(int partType, IList<TLinkAddress>? pattern);
 
         /// <remarks>OutCount() returns total links in store as array.</remarks>
-        IList<IList<TLinkAddress>> OutAll(IList<TLinkAddress> pattern);
+        IList<IList<TLinkAddress>?> OutAll(IList<TLinkAddress>? pattern);
 
         /// <remarks>OutCount() returns total amount of links in store.</remarks>
-        ulong OutCount(IList<TLinkAddress> pattern);
+        ulong OutCount(IList<TLinkAddress>? pattern);
     }
 }

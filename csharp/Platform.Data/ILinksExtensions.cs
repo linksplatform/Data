@@ -1,15 +1,76 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Platform.Setters;
 using Platform.Data.Exceptions;
+using Platform.Delegates;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 namespace Platform.Data
 {
+    /// <summary>
+    /// <para>
+    /// Represents the links extensions.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class ILinksExtensions
     {
+        public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links) => links.Create(null);
+
+        public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? substitution)
+        {
+            var constants = links.Constants;
+            Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
+            links.Create(substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            return setter.Result;
+        }
+
+        public static TLinkAddress Update<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? restriction, IList<TLinkAddress>? substitution)
+        {
+            var constants = links.Constants;
+            Setter<TLinkAddress, TLinkAddress> setter = new(constants.Continue, constants.Break, constants.Null);
+            links.Update(restriction, substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            return setter.Result;
+        }
+
+        public static TLinkAddress Delete<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, TLinkAddress linkToDelete) => Delete(links, (IList<TLinkAddress>?)new LinkAddress<TLinkAddress>(linkToDelete));
+
+        public static TLinkAddress Delete<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? restriction)
+        {
+            var constants = links.Constants;
+            Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
+            links.Delete(restriction, setter.SetFirstFromFirstListAndReturnTrue);
+            return setter.Result;
+        }
+
+        /// <summary>
+        /// <para>
+        /// Counts the links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The link address.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <typeparam name="TConstants">
+        /// <para>The constants.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="restrictions">
+        /// <para>The restrictions.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link address</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLinkAddress Count<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, params TLinkAddress[] restrictions)
             where TConstants : LinksConstants<TLinkAddress>
@@ -65,9 +126,9 @@ namespace Platform.Data
         /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, Func<IList<TLinkAddress>, TLinkAddress> handler, params TLinkAddress[] restrictions)
+        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions)
             where TConstants : LinksConstants<TLinkAddress>
-            => links.Each(handler, restrictions);
+            => links.Each(restrictions, handler);
 
         /// <summary>
         /// Возвращает части-значения для связи с указанным индексом.
@@ -76,7 +137,7 @@ namespace Platform.Data
         /// <param name="link">Индекс связи.</param>
         /// <returns>Уникальную связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IList<TLinkAddress> GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
+        public static IList<TLinkAddress>? GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link)
             where TConstants : LinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
@@ -84,7 +145,7 @@ namespace Platform.Data
             {
                 return new Point<TLinkAddress>(link, constants.TargetPart + 1);
             }
-            var linkPartsSetter = new Setter<IList<TLinkAddress>, TLinkAddress>(constants.Continue, constants.Break);
+            var linkPartsSetter = new Setter<IList<TLinkAddress>?, TLinkAddress>(constants.Continue, constants.Break);
             links.Each(linkPartsSetter.SetAndReturnTrue, link);
             return linkPartsSetter.Result;
         }

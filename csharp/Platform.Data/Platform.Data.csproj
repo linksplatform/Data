@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <Description>LinksPlatform's Platform.Data Class Library</Description>
-    <Copyright>Konstantin Diachenko</Copyright>
+    <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.3.0</VersionPrefix>
-    <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <VersionPrefix>0.11.3</VersionPrefix>
+    <Authors>konard, FreePhoenix888</Authors>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5;net6</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
     <PackageTags>LinksPlatform;Data;ArgumentLinkDoesNotExistsException;ArgumentLinkHasDependenciesException;LinksLimitReachedException;LinksLimitReachedExceptionBase;LinkWithSameValueAlreadyExistsException;AddressToRawNumberConverter;RawNumberToAddressConverter;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;Hybrid;ILinks;ILinksExtensions;ISynchronizedLinks;LinkAddress;LinksConstants;LinksConstantsBase;LinksConstantsExtensions;Point</PackageTags>
@@ -24,13 +24,9 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.2.
-Platform.Numbers dependency updated from 0.3.0 to 0.4.0.
-Platform.Threading dependency updated from 0.1.1 to 0.2.0.
-Platform.Setters dependency updated from 0.0.3 to 0.1.0.
-Refactoring.
-Comments updated.
-Issues fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Threading dependency is updated from 0.3.0 to 0.4.0.
+Platform.Numbers dependency is updated from 0.5.1 to 0.5.2.</PackageReleaseNotes>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
@@ -38,13 +34,14 @@ Issues fix.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Numbers" Version="0.4.1" />
-    <PackageReference Include="Platform.Threading" Version="0.2.1" />
-    <PackageReference Include="Platform.Setters" Version="0.2.0" />
+    <PackageReference Include="Platform.Delegates" Version="0.0.1" />
+    <PackageReference Include="Platform.Numbers" Version="0.5.2" />
+    <PackageReference Include="Platform.Threading" Version="0.4.0" />
+    <PackageReference Include="Platform.Setters" Version="0.3.3" />
   </ItemGroup>
 
 </Project>

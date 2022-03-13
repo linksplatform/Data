@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Data", "csharp\Pla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Data.Tests", "csharp\Platform.Data.Tests\Platform.Data.Tests.csproj", "{795DFCBA-54B4-4EC2-BC2D-C1A461864118}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Data.Benchmarks", "csharp\Platform.Data.Benchmarks\Platform.Data.Benchmarks.csproj", "{1D47E3F9-C610-48F6-86F9-4A21AA09F54A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{795DFCBA-54B4-4EC2-BC2D-C1A461864118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795DFCBA-54B4-4EC2-BC2D-C1A461864118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795DFCBA-54B4-4EC2-BC2D-C1A461864118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D47E3F9-C610-48F6-86F9-4A21AA09F54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D47E3F9-C610-48F6-86F9-4A21AA09F54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D47E3F9-C610-48F6-86F9-4A21AA09F54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D47E3F9-C610-48F6-86F9-4A21AA09F54A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
