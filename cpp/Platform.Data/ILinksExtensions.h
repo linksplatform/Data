@@ -56,8 +56,8 @@
     static TLinkAddress Each(auto&& storage, auto&& handler, std::convertible_to<TLinkAddress> auto... restrictions)
     // TODO: later create noexcept(expr)
     {
-        TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
-        return storage.Each(handler, array);
+        std::array<TLinkAddress, sizeof...(restrictions)> restrictionArray { static_cast<TLinkAddress>(restrictions)... };
+        return storage.Each(restrictionArray, handler);
     }
 
     template<typename TLinkAddress>
