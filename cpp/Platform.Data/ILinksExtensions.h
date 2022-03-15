@@ -36,12 +36,12 @@
         return storage.Count(array);
     }
 
-    template<typename TLinkAddress>
-    static bool Exists(auto&& storage, TLinkAddress link) noexcept
-    {
-        auto constants = storage.Constants;
-        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count<TLinkAddress>(storage, link) != 0);
-    }
+//    template<typename TLinkAddress>
+//    static bool Exists(auto&& storage, TLinkAddress link) noexcept
+//    {
+//        auto constants = storage.Constants;
+//        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count<TLinkAddress>(storage, link) != 0);
+//    }
 
     template<typename TLinkAddress>
     static void EnsureLinkExists(auto&& storage, TLinkAddress link, const std::string& argument = {})
