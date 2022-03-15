@@ -39,7 +39,7 @@
     template<typename TLinkAddress>
     static bool Exists(auto&& storage, TLinkAddress link) noexcept
     {
-        auto&& constants = storage.Constants;
+        auto constants = storage.Constants;
         return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count<TLinkAddress>(storage, link) != 0);
     }
 
@@ -117,12 +117,5 @@
             return _continue;
         });
         return deletedLinkAddress;
-    }
-
-    template<typename TLinkAddress>
-    static bool Exists(const auto&& storage, TLinkAddress linkAddress)
-    {
-        auto constants = storage.Constants;
-        return constants.IsExternalReference(linkAddress) || (constants.IsInternalReference(linkAddress) && (Count(storage, linkAddress) > 0));
     }
 }
