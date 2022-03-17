@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.11.3</VersionPrefix>
+    <VersionPrefix>0.11.4</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5;net6</TargetFrameworks>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -24,8 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Threading dependency is updated from 0.3.0 to 0.4.0.
-Platform.Numbers dependency is updated from 0.5.1 to 0.5.2.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Setters dependency is updated from 0.3.3 to 0.4.0.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -41,7 +40,7 @@ Platform.Numbers dependency is updated from 0.5.1 to 0.5.2.</PackageReleaseNotes
     <PackageReference Include="Platform.Delegates" Version="0.0.1" />
     <PackageReference Include="Platform.Numbers" Version="0.5.2" />
     <PackageReference Include="Platform.Threading" Version="0.4.0" />
-    <PackageReference Include="Platform.Setters" Version="0.3.3" />
+    <PackageReference Include="Platform.Setters" Version="0.4.0" />
   </ItemGroup>
 
 </Project>
