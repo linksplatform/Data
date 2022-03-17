@@ -23,7 +23,7 @@ namespace Platform.Data
         {
             var constants = links.Constants;
             Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
-            links.Create(substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            links.Create(substitution, setter.SetFirstFromNonNullSecondListAndReturnTrue);
             return setter.Result;
         }
 
@@ -31,7 +31,7 @@ namespace Platform.Data
         {
             var constants = links.Constants;
             Setter<TLinkAddress, TLinkAddress> setter = new(constants.Continue, constants.Break, constants.Null);
-            links.Update(restriction, substitution, setter.SetFirstFromSecondListAndReturnTrue);
+            links.Update(restriction, substitution, setter.SetFirstFromNonNullSecondListAndReturnTrue);
             return setter.Result;
         }
 
@@ -41,7 +41,7 @@ namespace Platform.Data
         {
             var constants = links.Constants;
             Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
-            links.Delete(restriction, setter.SetFirstFromFirstListAndReturnTrue);
+            links.Delete(restriction, setter.SetFirstFromNonNullFirstListAndReturnTrue);
             return setter.Result;
         }
 
