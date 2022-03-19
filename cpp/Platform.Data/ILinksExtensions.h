@@ -17,7 +17,7 @@
     static typename TStorage::LinkAddressType Create(TStorage& storage)
     {
         constexpr std::array<typename TStorage::LinkAddressType, 0> empty{};
-        return Create<typename TStorage::LinkAddressType>(storage, empty);
+        return Create(storage, empty);
     }
 
     template<typename TStorage>
@@ -40,7 +40,7 @@
 //    static bool Exists(auto&& storage, typename TStorage::LinkAddressType link) noexcept
 //    {
 //        auto constants = storage.Constants;
-//        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count<typename TStorage::LinkAddressType>(storage, link) != 0);
+//        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count(storage, link) != 0);
 //    }
 
     template<typename TStorage>
