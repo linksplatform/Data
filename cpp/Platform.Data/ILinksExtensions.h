@@ -1,5 +1,6 @@
 ﻿namespace Platform::Data
 {
+    using namespace Platform::Interfaces;
     template<typename TStorage>
     static typename TStorage::LinkAddressType Create(TStorage& storage, Interfaces::CArray auto&& substitution)
     {
