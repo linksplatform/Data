@@ -86,24 +86,23 @@
     }
 
     template<typename TStorage>
-    static Interfaces::CArray auto GetLink(TStorage& storage, typename TStorage::LinkAddressType link)
+    static Interfaces::CArray auto GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
         auto constants = storage.Constants;
-        auto _continue = constants.Continue;
+        auto $continue = constants.Continue;
         auto any = constants.Any;
-        if (IsExternalReference(constants, link))
+        if (IsExternalReference(constants, linkAddress))
         {
-            std::vector resultLink {link,link,link};
+            typename TStorage::HandlerParameterType resultLink {linkAddress, linkAddress, linkAddress};
             return resultLink;
         }
-
-        std::vector<typename TStorage::LinkAddressType> resultLink;
-        storage.Each(std::array{link, any, any}, [&resultLink, _continue](Interfaces::CArray auto&& link)
+        typename TStorage::HandlerParameterType resultLink;
+        storage.Each(LinkAddress{linkAddress}, [&resultLink, $continue](const typename TStorage::HandlerParameterType& link)
         {
-            resultLink = { std::ranges::begin(link), std::ranges::end(link) };
-            return _continue;
+            resultLink = link;
+            return $continue;
         });
-        Expects(!resultLink.empty());
+        Ensures(!resultLink.empty());
         return resultLink;
     }
 
