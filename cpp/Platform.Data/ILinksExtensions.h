@@ -54,11 +54,11 @@
     }
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Count(TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto... restriction)
+    static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restriction)
     // TODO: later add noexcept(expr)
     {
-        std::array<typename TStorage::LinkAddressType, sizeof...(restriction)> array { static_cast<typename TStorage::LinkAddressType>(restriction)... };
-        return storage.Count(array);
+        typename TStorage::HandlerParameterType restrictionContainer { static_cast<typename TStorage::HandlerParameterType>(restriction)... };
+        return storage.Count(restrictionContainer);
     }
 
 //    template<typename typename TStorage::LinkAddressType>
