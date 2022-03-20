@@ -2,14 +2,14 @@
 {
     using namespace Platform::Interfaces;
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Create(TStorage& storage, Interfaces::CArray auto&& substitution)
+    static typename TStorage::LinkAddressType Create(TStorage& storage, CArray<typename TStorage::LinkAddressType> auto&& substitution)
     {
-        auto _continue { storage.Constants.Continue };
+        auto $continue { storage.Constants.Continue };
         typename TStorage::LinkAddressType createdLinkAddress;
-		storage.Create(substitution, [&createdLinkAddress, _continue] (Interfaces::CArray auto&& before, Interfaces::CArray auto&& after)
+		storage.Create(substitution, [&createdLinkAddress, $continue] (const typename TStorage::HandlerParameterType& before, const typename TStorage::HandlerParameterType& after)
         {
             createdLinkAddress = after[0];
-            return _continue;
+            return $continue;
         });
 		return createdLinkAddress;
 	}
