@@ -43,8 +43,14 @@
     template<typename TStorage>
     static typename TStorage::LinkAddressType Delete(TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
-        constexpr std::array<typename TStorage::LinkAddressType, 0> empty {};
-        return storage.Count(empty);
+        auto $continue{storage.Constants.Continue};
+        typename TStorage::LinkAddressType deletedLinkAddress;
+        storage.Delete(LinkAddress{linkAddress}, [&deletedLinkAddress, $continue] (const typename TStorage::HandlerParameterType& before, const typename TStorage::HandlerParameterType& after)
+        {
+            deletedLinkAddress = after[0];
+            return $continue;
+        });
+        return deletedLinkAddress;
     }
 
     template<typename TStorage>
