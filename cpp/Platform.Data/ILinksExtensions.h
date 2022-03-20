@@ -54,11 +54,11 @@
     }
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restriction)
+    static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restrictionPack)
     // TODO: later add noexcept(expr)
     {
-        typename TStorage::HandlerParameterType restrictionContainer { static_cast<typename TStorage::HandlerParameterType>(restriction)... };
-        return storage.Count(restrictionContainer);
+        typename TStorage::HandlerParameterType restriction { static_cast<typename TStorage::HandlerParameterType>(restrictionPack)... };
+        return storage.Count(restriction);
     }
 
     template<typename TStorage>
@@ -66,15 +66,6 @@
     {
         auto constants = storage.Constants;
         return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count(storage, link) != 0);
-    }
-
-    template<typename TStorage>
-    static void EnsureLinkExists(TStorage& storage, typename TStorage::LinkAddressType link, const std::string& argument = {})
-    {
-        if (!storage.Exists(link))
-        {
-            throw ArgumentLinkDoesNotExistsException<typename TStorage::LinkAddressType>(link, argument);
-        }
     }
 
     template<typename TStorage>
@@ -113,7 +104,7 @@
         {
             return true;
         }
-        storage.EnsureLinkExists(link);
+        Ensures(Exists(storage, link));
         return Point<typename TStorage::LinkAddressType>::IsFullPoint(storage.GetLink(link));
     }
 
@@ -124,7 +115,7 @@
         {
             return true;
         }
-        storage.EnsureLinkExists(link);
+        Ensures(Exists(storage, link));
         return Point<typename TStorage::LinkAddressType>::IsPartialPoint(storage.GetLink(link));
     }
 }
