@@ -61,12 +61,12 @@
         return storage.Count(restrictionContainer);
     }
 
-//    template<typename typename TStorage::LinkAddressType>
-//    static bool Exists(auto&& storage, typename TStorage::LinkAddressType link) noexcept
-//    {
-//        auto constants = storage.Constants;
-//        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count(storage, link) != 0);
-//    }
+    template<typename TStorage>
+    static bool Exists(auto&& storage, typename TStorage::LinkAddressType linkAddress) noexcept
+    {
+        auto constants = storage.Constants;
+        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count(storage, link) != 0);
+    }
 
     template<typename TStorage>
     static void EnsureLinkExists(TStorage& storage, typename TStorage::LinkAddressType link, const std::string& argument = {})
