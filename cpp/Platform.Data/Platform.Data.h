@@ -4,6 +4,8 @@
 #include <Platform.Setters.h>
 #include <Platform.Interfaces.h>
 
+#include "WriteHandlerState.h"
+
 #include "Numbers/Raw/AddressToRawNumberConverter.h"
 #include "Numbers/Raw/RawNumberToAddressConverter.h"
 
