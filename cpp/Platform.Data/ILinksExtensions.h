@@ -28,8 +28,20 @@
     }
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Count(TStorage& storage)
-    // TODO: later add noexcept(expr)
+    static typename TStorage::LinkAddressType Delete(TStorage& storage, CArray<typename TStorage::LinkAddressType> auto&& restriction)
+    {
+        auto $continue{storage.Constants.Continue};
+        typename TStorage::LinkAddressType deletedLinkAddress;
+        storage.Delete(restriction, [&deletedLinkAddress, $continue] (const typename TStorage::HandlerParameterType& before, const typename TStorage::HandlerParameterType& after)
+        {
+            deletedLinkAddress = after[0];
+            return $continue;
+        });
+        return deletedLinkAddress;
+    }
+
+    template<typename TStorage>
+    static typename TStorage::LinkAddressType Delete(TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
         constexpr std::array<typename TStorage::LinkAddressType, 0> empty {};
         return storage.Count(empty);
