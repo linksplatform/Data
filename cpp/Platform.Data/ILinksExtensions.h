@@ -15,10 +15,16 @@
 	}
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Create(TStorage& storage)
+    static typename TStorage::LinkAddressType Update(TStorage& storage, CArray<typename TStorage::LinkAddressType> auto&& restriction, CArray<typename TStorage::LinkAddressType> auto&& substitution)
     {
-        constexpr std::array<typename TStorage::LinkAddressType, 0> empty{};
-        return Create(storage, empty);
+        auto $continue{storage.Constants.Continue};
+        typename TStorage::LinkAddressType updatedLinkAddress;
+        storage.Update(restriction, substitution, [&updatedLinkAddress, $continue] (const typename TStorage::HandlerParameterType& before, const typename TStorage::HandlerParameterType& after)
+        {
+            updatedLinkAddress = after[0];
+            return $continue;
+        });
+        return updatedLinkAddress;
     }
 
     template<typename TStorage>
