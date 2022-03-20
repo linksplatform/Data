@@ -127,19 +127,4 @@
         storage.EnsureLinkExists(link);
         return Point<typename TStorage::LinkAddressType>::IsPartialPoint(storage.GetLink(link));
     }
-
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Delete(TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restriction)
-    {
-        auto constants = storage.Constants;
-        auto _continue = constants.Continue;
-        std::array restrictionArray { static_cast<typename TStorage::LinkAddressType>(restriction)... };
-        typename TStorage::LinkAddressType deletedLinkAddress;
-        storage.Delete(restrictionArray, [&deletedLinkAddress, _continue](Interfaces::CArray auto before, Interfaces::CArray auto after)
-        {
-            deletedLinkAddress = before[0];
-            return _continue;
-        });
-        return deletedLinkAddress;
-    }
 }
