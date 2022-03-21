@@ -1,41 +1,51 @@
 ﻿namespace Platform::Data
 {
-    template<typename Self, std::integral TLinkAddress, std::derived_from<LinksConstants<TLinkAddress>> TConstants>
-    class ILinks
+    using namespace Platform::Interfaces;
+    template<typename LinkTypesOptions>
+    struct ILinks
     {
-        auto&& self() & noexcept { return static_cast<Self&>(*this); }
-        auto&& self() && noexcept { return static_cast<Self&&>(*this); }
-        auto&& self() const & noexcept { return static_cast<const Self&>(*this); }
-        auto&& self() const && noexcept { return static_cast<const Self&&>(*this); }
-
     public:
-        const TConstants Constants{};
+        using Options = LinkTypesOptions;
+        using LinkType = typename Options::LinkType;
+        using LinkAddressType = typename LinkType::value_type;
+        using WriteHandlerType = typename Options::TWriteHandler;
+        using ReadHandlerType = typename Options::TReadHandler;
+        static constexpr LinksConstants<LinkAddressType> Constants = Options::Constants;
 
-        // TODO: maybe mark methods as const
-        TLinkAddress Count(Interfaces::CArray auto&& restriction) const { return self().Count(restriction); }
+        virtual LinkAddressType Count(const LinkType& restriction) = 0;
 
-        TLinkAddress Count() const
-	{
-	    TLinkAddress array[0];
-	    return self().Count(array);
-	}
+        virtual LinkAddressType Count(LinkType&& restriction) = 0;
 
-        TLinkAddress Each(auto&& handler, const Interfaces::CArray auto& restrictions) const
-        { return self().Each(handler, restrictions); }
+        virtual LinkAddressType Each(const LinkType& restrictions, const ReadHandlerType& handler) = 0;
 
-        TLinkAddress Create(Interfaces::CArray auto&& restriction) { return self().Create(restriction); }
+        virtual LinkAddressType Each(const LinkType& restrictions, ReadHandlerType&& handler) = 0;
 
-        TLinkAddress Update(Interfaces::CArray auto&& substitution, Interfaces::CArray auto&& restrictions) { return self().Update(substitution, restrictions); }
+        virtual LinkAddressType Each(const LinkType&& restrictions, const ReadHandlerType& handler) = 0;
 
-	TLinkAddress Update(Interfaces::CArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions)
-	{
-	    TLinkAddress array[] = { static_cast<TLinkAddress>(restrictions)... };
-	    return Update(substitution, array);
-	}
+        virtual LinkAddressType Each(LinkType&& restrictions, ReadHandlerType&& handler) = 0;
 
-        void Delete(Interfaces::CArray auto&& restriction) { self().Delete(restriction); }
+        virtual LinkAddressType Create(const LinkType& restrictions, const WriteHandlerType& handler) = 0;
 
-    // EXTENSIONS
+        virtual LinkAddressType Create(const LinkType& restrictions, WriteHandlerType&& handler) = 0;
 
+        virtual LinkAddressType Create(LinkType&& restrictions, const WriteHandlerType& handler) = 0;
+
+        virtual LinkAddressType Create(LinkType&& restrictions, WriteHandlerType&& handler) = 0;
+
+        virtual LinkAddressType Update(const LinkType& restrictions, const LinkType& substitution, const WriteHandlerType& handler) = 0;
+
+        virtual LinkAddressType Update(const LinkType& restrictions, const LinkType& substitution, WriteHandlerType&& handler) = 0;
+
+        virtual LinkAddressType Update(LinkType&& restrictions, LinkType&& substitution, const WriteHandlerType& handler) = 0;
+
+        virtual LinkAddressType Update(LinkType&& restrictions, LinkType&& substitution, WriteHandlerType&& handler) = 0;
+
+        virtual void Delete(const LinkType& restrictions, const WriteHandlerType& handler) = 0;
+
+        virtual void Delete(LinkType&& restrictions, const WriteHandlerType& handler) = 0;
+
+        virtual void Delete(const LinkType& restrictions, const WriteHandlerType&& handler) = 0;
+
+        virtual void Delete(LinkType&& restrictions, const WriteHandlerType&& handler) = 0;
     };
 }
