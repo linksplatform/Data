@@ -14,6 +14,8 @@
 #include "LinksConstantsBase.h"
 #include "Hybrid.h"
 #include "LinksConstants.h"
+#include "LinksOptions.h"
 #include "LinksConstantsExtensions.h"
 #include "ILinks.h"
+
 #include "ILinksExtensions.h"
