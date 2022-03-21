@@ -14,35 +14,19 @@
 
         virtual LinkAddressType Count(const LinkType& restriction) = 0;
 
-        virtual LinkAddressType Count(LinkType&& restriction) = 0;
-
         virtual LinkAddressType Each(const LinkType& restrictions, const ReadHandlerType& handler) = 0;
-
-        virtual LinkAddressType Each(const LinkType& restrictions, ReadHandlerType&& handler) = 0;
 
         virtual LinkAddressType Each(const LinkType&& restrictions, const ReadHandlerType& handler) = 0;
 
-        virtual LinkAddressType Each(LinkType&& restrictions, ReadHandlerType&& handler) = 0;
-
         virtual LinkAddressType Create(const LinkType& restrictions, const WriteHandlerType& handler) = 0;
-
-        virtual LinkAddressType Create(const LinkType& restrictions, WriteHandlerType&& handler) = 0;
 
         virtual LinkAddressType Create(LinkType&& restrictions, const WriteHandlerType& handler) = 0;
 
-        virtual LinkAddressType Create(LinkType&& restrictions, WriteHandlerType&& handler) = 0;
-
         virtual LinkAddressType Update(const LinkType& restrictions, const LinkType& substitution, const WriteHandlerType& handler) = 0;
-
-        virtual LinkAddressType Update(const LinkType& restrictions, const LinkType& substitution, WriteHandlerType&& handler) = 0;
 
         virtual LinkAddressType Update(LinkType&& restrictions, LinkType&& substitution, const WriteHandlerType& handler) = 0;
 
-        virtual LinkAddressType Update(LinkType&& restrictions, LinkType&& substitution, WriteHandlerType&& handler) = 0;
-
         virtual void Delete(const LinkType& restrictions, const WriteHandlerType& handler) = 0;
-
-        virtual void Delete(LinkType&& restrictions, const WriteHandlerType& handler) = 0;
 
         virtual void Delete(const LinkType& restrictions, const WriteHandlerType&& handler) = 0;
 
