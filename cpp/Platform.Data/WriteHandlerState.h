@@ -1,4 +1,4 @@
-namespace Platform::Data::Doublets
+namespace Platform::Data
 {
     using namespace Platform::Interfaces;
     template<typename TStorage>
