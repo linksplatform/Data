@@ -24,15 +24,17 @@ namespace Platform::Data::Tests
     {
         using TLinkAddress = uint64_t;
         using TLink = std::vector<TLinkAddress>;
+        using TWriteHandler = std::function<TLinkAddress(TLink, TLink)>;
+        using TReadHandler = std::function<TLinkAddress(TLink)>;
         Links<TLink> storage{};
         const Links<TLink> const_links {storage};
-        int restriction[]{1,2,3};
-        storage.Create(restriction);
-        storage.Update(restriction, 1);
-        storage.Count(restriction);
-        const_links.Count(restriction);
-        storage.Each([](TLinkAddress restriction_a){ return 1; }, restriction);
-        const_links.Each([](TLinkAddress restriction_a){ return 1; }, restriction);
-        storage.Delete(restriction);
+        const TLinkAddress linkAddress {1};
+        Create(storage, linkAddress);
+        Update(storage, std::vector<TLinkAddress>{1}, std::vector<TLinkAddress>{1, 1});
+        storage.Count(std::vector<TLinkAddress>{1});
+        const_links.Count(std::vector<TLinkAddress>{1});
+        storage.Each(std::vector<TLinkAddress>{1}, [](const TLink& link){ return 1; });
+        const_links.Each(std::vector<TLinkAddress>{1}, [](const TLink& link){ return 1; });
+        Delete(storage, std::vector<TLinkAddress>{1});
     }
 }
