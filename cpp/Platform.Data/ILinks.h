@@ -8,8 +8,8 @@
         using LinksOptionsType = TLinksOptions;
         using LinkType = typename LinksOptionsType::LinkType;
         using LinkAddressType = typename LinkType::value_type;
-        using WriteHandlerType = typename LinksOptionsType::TWriteHandler;
-        using ReadHandlerType = typename LinksOptionsType::TReadHandler;
+        using WriteHandlerType = typename LinksOptionsType::WriteHandlerType;
+        using ReadHandlerType = typename LinksOptionsType::ReadHandlerType;
         static constexpr LinksConstants<LinkAddressType> Constants = LinksOptionsType::Constants;
 
         virtual LinkAddressType Count(const LinkType& restriction) = 0;
