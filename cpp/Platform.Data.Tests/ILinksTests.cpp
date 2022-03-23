@@ -10,9 +10,9 @@ namespace Platform::Data::Tests
         using typename base::ReadHandlerType;
         using base::Constants;
 
-        LinkAddressType Count(const LinkType& restriction) override { return 0; };
+        LinkAddressType Count(const LinkType& restriction) const override { return 0; };
 
-        LinkAddressType Each(const LinkType& restriction, const ReadHandlerType& handler) override { return 0; };
+        LinkAddressType Each(const LinkType& restriction, const ReadHandlerType& handler) const override { return 0; };
 
         LinkAddressType Create(const LinkType& restriction, const WriteHandlerType& handler) override { return 0; };
 
