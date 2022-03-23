@@ -20,6 +20,6 @@
 
         virtual LinkAddressType Update(const LinkType& restriction, const LinkType& substitution, const WriteHandlerType& handler) = 0;
 
-        virtual void Delete(const LinkType& restriction, const WriteHandlerType& handler) = 0;
+        virtual LinkAddressType Delete(const LinkType& restriction, const WriteHandlerType& handler) = 0;
     };
 }
