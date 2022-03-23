@@ -3,17 +3,22 @@ namespace Platform::Data::Tests
     template<typename TLink, typename TWriteHandler = std::function<typename TLink::value_type(TLink, TLink)>, typename TReadHandler = std::function<typename TLink::value_type(TLink)>, LinksConstants<typename TLink::value_type> VConstants = LinksConstants<typename TLink::value_type>{true}>
     struct Links : public ILinks<LinksOptions<TLink, TWriteHandler, TReadHandler, VConstants>>
     {
-        using TLinkAddress = typename TLink::value_type;
-        TLinkAddress Count(Interfaces::CArray auto&& restriction) const { return 0; }
-    
-        TLinkAddress Each(auto&& handler, const Interfaces::CArray auto& restriction) const
-        { return 0; }
-    
-        TLinkAddress Create(Interfaces::CArray auto&& restriction) { return 0; }
-    
-        TLinkAddress Update(Interfaces::CArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restriction) { return 0; }
-    
-        void Delete(Interfaces::CArray auto&& restriction) {  }
+        using base = ILinks<LinksOptions<TLink, TWriteHandler, TReadHandler, VConstants>>;
+        using typename base::LinkAddressType;
+        using typename base::LinkType;
+        using typename base::WriteHandlerType;
+        using typename base::ReadHandlerType;
+        using base::Constants;
+
+        LinkAddressType Count(const LinkType& restriction) override { return 0; };
+
+        LinkAddressType Each(const LinkType& restriction, const ReadHandlerType& handler) override { return 0; };
+
+        LinkAddressType Create(const LinkType& restriction, const WriteHandlerType& handler) override { return 0; };
+
+        LinkAddressType Update(const LinkType& restriction, const LinkType& substitution, const WriteHandlerType& handler) override { return 0; };
+
+        LinkAddressType Delete(const LinkType& restriction, const WriteHandlerType& handler) override { return 0; };
     };
     TEST(ILinksDeriverTest, ConstructorAndMethodsTest)
     {
