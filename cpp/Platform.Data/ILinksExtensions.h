@@ -15,6 +15,20 @@
 	}
 
     template<typename TStorage>
+    static typename TStorage::LinkAddressType Create(TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...substitutionPack)
+    {
+        typename TStorage::LinkType substitution { static_cast<typename TStorage::LinkAddressType>(substitutionPack)... };
+        auto $continue { storage.Constants.Continue };
+        typename TStorage::LinkAddressType createdLinkAddress;
+        storage.Create(substitution, [&createdLinkAddress, $continue] (const typename TStorage::HandlerParameterType& before, const typename TStorage::HandlerParameterType& after)
+                       {
+                           createdLinkAddress = after[0];
+                           return $continue;
+                       });
+        return createdLinkAddress;
+    }
+
+    template<typename TStorage>
     static typename TStorage::LinkAddressType Update(TStorage& storage, const typename TStorage::LinkType& restriction, const typename TStorage::LinkType& substitution)
     {
         auto $continue{storage.Constants.Continue};
