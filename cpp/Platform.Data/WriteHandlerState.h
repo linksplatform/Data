@@ -5,7 +5,7 @@ namespace Platform::Data
     struct WriteHandlerState
     {
         typename TStorage::LinkAddressType Break;
-        typename TStorage::LinkAddressType Result;
+        typename TStorage::LinkAddressType Result = 0;
         std::function<typename TStorage::LinkAddressType(typename TStorage::LinkType, typename TStorage::LinkType)> Handler;
 
         WriteHandlerState(typename TStorage::LinkAddressType $continue, typename TStorage::LinkAddressType $break, auto&& handler) :
