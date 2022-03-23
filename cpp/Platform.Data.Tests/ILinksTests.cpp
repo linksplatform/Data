@@ -6,12 +6,12 @@ namespace Platform::Data::Tests
         using TLinkAddress = typename TLink::value_type;
         TLinkAddress Count(Interfaces::CArray auto&& restriction) const { return 0; }
     
-        TLinkAddress Each(auto&& handler, const Interfaces::CArray auto& restrictions) const
+        TLinkAddress Each(auto&& handler, const Interfaces::CArray auto& restriction) const
         { return 0; }
     
         TLinkAddress Create(Interfaces::CArray auto&& restriction) { return 0; }
     
-        TLinkAddress Update(Interfaces::CArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restrictions) { return 0; }
+        TLinkAddress Update(Interfaces::CArray auto&& substitution, std::convertible_to<TLinkAddress> auto... restriction) { return 0; }
     
         void Delete(Interfaces::CArray auto&& restriction) {  }
     };
