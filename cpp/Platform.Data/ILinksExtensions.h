@@ -83,7 +83,7 @@
     }
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Each(const TStorage& storage, auto&& handler, std::convertible_to<typename TStorage::LinkAddressType> auto... restriction)
+    static typename TStorage::LinkAddressType Each(const TStorage& storage, const typename TStorage::ReadHandlerType& handler, std::convertible_to<typename TStorage::LinkAddressType> auto... restriction)
     // TODO: later create noexcept(expr)
     {
         typename TStorage::LinkType restrictionContainer { static_cast<typename TStorage::LinkAddressType>(restriction)... };
