@@ -14,12 +14,12 @@
 
         virtual LinkAddressType Count(const LinkType& restriction) = 0;
 
-        virtual LinkAddressType Each(const LinkType& restrictions, const ReadHandlerType& handler) = 0;
+        virtual LinkAddressType Each(const LinkType& restriction, const ReadHandlerType& handler) = 0;
 
-        virtual LinkAddressType Create(const LinkType& restrictions, const WriteHandlerType& handler) = 0;
+        virtual LinkAddressType Create(const LinkType& restriction, const WriteHandlerType& handler) = 0;
 
-        virtual LinkAddressType Update(const LinkType& restrictions, const LinkType& substitution, const WriteHandlerType& handler) = 0;
+        virtual LinkAddressType Update(const LinkType& restriction, const LinkType& substitution, const WriteHandlerType& handler) = 0;
 
-        virtual void Delete(const LinkType& restrictions, const WriteHandlerType& handler) = 0;
+        virtual void Delete(const LinkType& restriction, const WriteHandlerType& handler) = 0;
     };
 }

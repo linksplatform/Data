@@ -20,6 +20,6 @@ namespace Platform::Data::Universal
 
     public partial interface IUniLinks<TLinkAddress>
     {
-        virtual TLinkAddress Count(IList<TLinkAddress> &restrictions) = 0;
+        virtual TLinkAddress Count(IList<TLinkAddress> &restriction) = 0;
     }
 }
