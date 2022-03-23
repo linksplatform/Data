@@ -2,7 +2,7 @@
 {
     using namespace Platform::Interfaces;
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Create(TStorage& storage, CArray<typename TStorage::LinkAddressType> auto&& substitution)
+    static typename TStorage::LinkAddressType Create(TStorage& storage, const typename TStorage::LinkType& substitution)
     {
         auto $continue { storage.Constants.Continue };
         typename TStorage::LinkAddressType createdLinkAddress;
@@ -15,7 +15,7 @@
 	}
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Update(TStorage& storage, CArray<typename TStorage::LinkAddressType> auto&& restriction, CArray<typename TStorage::LinkAddressType> auto&& substitution)
+    static typename TStorage::LinkAddressType Update(TStorage& storage, const typename TStorage::LinkType& restriction, const typename TStorage::LinkType& substitution)
     {
         auto $continue{storage.Constants.Continue};
         typename TStorage::LinkAddressType updatedLinkAddress;
@@ -28,7 +28,7 @@
     }
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType Delete(TStorage& storage, CArray<typename TStorage::LinkAddressType> auto&& restriction)
+    static typename TStorage::LinkAddressType Delete(TStorage& storage, const typename TStorage::LinkType& restriction)
     {
         auto $continue{storage.Constants.Continue};
         typename TStorage::LinkAddressType deletedLinkAddress;
