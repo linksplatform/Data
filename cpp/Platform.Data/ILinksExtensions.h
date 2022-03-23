@@ -91,7 +91,7 @@
     }
 
     template<typename TStorage>
-    static typename TStorage::LinkAddressType GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
+    static typename TStorage::LinkType GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
         auto constants = storage.Constants;
         auto $continue = constants.Continue;
