@@ -79,7 +79,7 @@
     static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
     {
         auto constants = storage.Constants;
-        return IsExternalReference(constants, link) || (IsInternalReference(constants, link) && Count(storage, link) != 0);
+        return IsExternalReference(constants, linkAddress) || (IsInternalReference(constants, linkAddress) && Count(storage, linkAddress) != 0);
     }
 
     template<typename TStorage>
