@@ -88,7 +88,7 @@
         }
         else
         {
-            restriction = { static_cast<typename TStorage::LinkAddressType>(restrictionPack)... };
+            restriction = { static_cast<typename TStorage::HandlerParameterType>(restrictionPack)... };
         }
         return storage.Count(restriction);
     }
