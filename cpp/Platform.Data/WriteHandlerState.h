@@ -6,7 +6,7 @@ namespace Platform::Data
     {
         typename TStorage::LinkAddressType Break;
         typename TStorage::LinkAddressType Result = 0;
-        std::function<typename TStorage::LinkAddressType(typename TStorage::LinkType, typename TStorage::LinkType)> Handler;
+        std::function<typename TStorage::LinkAddressType(std::vector<typename TStorage::LinkAddressType>, std::vector<typename TStorage::LinkAddressType>)> Handler;
 
         WriteHandlerState(typename TStorage::LinkAddressType $continue, typename TStorage::LinkAddressType $break, auto&& handler) :
             Result{$continue}, Break{$break}, Handler{handler} {}
