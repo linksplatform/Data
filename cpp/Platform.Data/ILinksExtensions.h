@@ -59,7 +59,7 @@
     {
         auto $continue{storage.Constants.Continue};
         typename TStorage::LinkAddressType deletedLinkAddress;
-        storage.Delete(LinkAddress{linkAddress}, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+        storage.Delete(typename TStorage::LinkType{linkAddress}, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
         {
             deletedLinkAddress = after[0];
             return $continue;
@@ -102,7 +102,7 @@
             return resultLink;
         }
         typename TStorage::LinkType resultLink;
-        storage.Each(LinkAddress{linkAddress}, [&resultLink, $continue](const typename TStorage::LinkType& link)
+        storage.Each(typename TStorage::LinkType{linkAddress}, [&resultLink, $continue](const typename TStorage::LinkType& link)
         {
             resultLink = link;
             return $continue;
