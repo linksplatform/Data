@@ -5,7 +5,6 @@ namespace Platform::Data::Tests
     {
         using base = ILinks<LinksOptions<TLink, TWriteHandler, TReadHandler, VConstants>>;
         using typename base::LinkAddressType;
-        using typename base::LinkType;
         using typename base::WriteHandlerType;
         using typename base::ReadHandlerType;
         using base::Constants;
