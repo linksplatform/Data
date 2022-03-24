@@ -9,15 +9,15 @@ namespace Platform::Data::Tests
         using typename base::ReadHandlerType;
         using base::Constants;
 
-        LinkAddressType Count(const std::vector<typename TStorage::LinkAddressType>& restriction) const override { return 0; };
+        LinkAddressType Count(const std::vector<LinkAddressType>& restriction) const override { return 0; };
 
-        LinkAddressType Each(const std::vector<typename TStorage::LinkAddressType>& restriction, const ReadHandlerType& handler) const override { return 0; };
+        LinkAddressType Each(const std::vector<LinkAddressType>& restriction, const ReadHandlerType& handler) const override { return 0; };
 
-        LinkAddressType Create(const std::vector<typename TStorage::LinkAddressType>& restriction, const WriteHandlerType& handler) override { return 0; };
+        LinkAddressType Create(const std::vector<LinkAddressType>& restriction, const WriteHandlerType& handler) override { return 0; };
 
-        LinkAddressType Update(const std::vector<typename TStorage::LinkAddressType>& restriction, const std::vector<typename TStorage::LinkAddressType>& substitution, const WriteHandlerType& handler) override { return 0; };
+        LinkAddressType Update(const std::vector<LinkAddressType>& restriction, const std::vector<LinkAddressType>& substitution, const WriteHandlerType& handler) override { return 0; };
 
-        LinkAddressType Delete(const std::vector<typename TStorage::LinkAddressType>& restriction, const WriteHandlerType& handler) override { return 0; };
+        LinkAddressType Delete(const std::vector<LinkAddressType>& restriction, const WriteHandlerType& handler) override { return 0; };
     };
     TEST(ILinksDeriverTest, ConstructorAndMethodsTest)
     {
