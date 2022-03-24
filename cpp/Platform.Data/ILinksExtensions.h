@@ -80,7 +80,16 @@
     static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restrictionPack)
     // TODO: later add noexcept(expr)
     {
-        typename TStorage::LinkType restriction { static_cast<typename TStorage::LinkType>(restrictionPack)... };
+        constexpr auto length = sizeof...(restrictionPack);
+        typename TStorage::LinkType restriction;
+        if constexpr (0 == length)
+        {
+            restriction = { storage.Constants.Any, storage.Constants.Any, storage.Constants.Any };
+        }
+        else
+        {
+            restriction = { static_cast<typename TStorage::HandlerParameterType>(restrictionPack)... };
+        }
         return storage.Count(restriction);
     }
 
