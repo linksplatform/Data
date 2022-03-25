@@ -71,7 +71,7 @@
     static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restrictionPack)
     // TODO: later add noexcept(expr)
     {
-        std::vector<typename TStorage::LinkAddressType> restriction { static_cast<std::vector<typename TStorage::LinkAddressType>>(restrictionPack)... };
+        std::vector<typename TStorage::LinkAddressType> restriction { static_cast<typename TStorage::LinkAddressType>(restrictionPack)... };
         return storage.Count(restriction);
     }
 
@@ -79,7 +79,7 @@
     static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
     {
         auto constants = storage.Constants;
-        return IsExternalReference(constants, linkAddress) || (IsInternalReference(constants, linkAddress) && Count(storage, linkAddress) != 0);
+        return IsExternalReference(constants, linkAddress) || (IsInternalReference(constants, linkAddress) && Count(storage, linkAddress) > 0);
     }
 
     template<typename TStorage>

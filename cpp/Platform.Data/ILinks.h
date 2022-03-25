@@ -6,6 +6,7 @@
     {
     public:
         using LinksOptionsType = TLinksOptions;
+        using LinkAddressType = typename LinksOptionsType::LinkAddressType;
         using WriteHandlerType = typename LinksOptionsType::WriteHandlerType;
         using ReadHandlerType = typename LinksOptionsType::ReadHandlerType;
         static constexpr LinksConstants<LinkAddressType> Constants = LinksOptionsType::Constants;

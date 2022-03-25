@@ -53,6 +53,11 @@
             return Index;
         }
 
+    public: operator std::vector<TLinkAddress>() const
+        {
+            return std::vector<TLinkAddress>{Index};
+        }
+
         public: explicit operator std::string() const { return Converters::To<std::string>(Index); }
 
         public: friend std::ostream& operator<<(std::ostream& stream, LinkAddress<TLinkAddress> self)
