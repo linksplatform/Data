@@ -1,8 +1,9 @@
 ﻿namespace Platform::Data
 {
     template<std::integral TLinkAddress>
-    struct LinksConstants : LinksConstantsBase
+    struct LinksConstants
     {
+        static constexpr int DefaultTargetPart = 2;
     public:
         const TLinkAddress IndexPart{};
 
