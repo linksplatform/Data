@@ -78,8 +78,8 @@
     template<typename TStorage>
     static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
     {
-        auto constants = storage.Constants;
-        return IsExternalReference(constants, linkAddress) || (IsInternalReference(constants, linkAddress) && Count(storage, linkAddress) > 0);
+        constexpr auto constants = storage.Constants;
+        return IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) || (IsInternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) && Count(storage, linkAddress) > 0);
     }
 
     template<typename TStorage>
@@ -93,10 +93,10 @@
     template<typename TStorage>
     static std::vector<typename TStorage::LinkAddressType> GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
-        auto constants = storage.Constants;
+        constexpr auto constants = storage.Constants;
         auto $continue = constants.Continue;
         auto any = constants.Any;
-        if (IsExternalReference(constants, linkAddress))
+        if (IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress))
         {
             std::vector<typename TStorage::LinkAddressType> resultLink {linkAddress, linkAddress, linkAddress};
             return resultLink;
