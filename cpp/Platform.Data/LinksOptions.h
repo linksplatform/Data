@@ -1,13 +1,13 @@
 namespace Platform::Data
 {
 
-    template<typename TLinkAddress = std::uint64_t, LinksConstants<TLinkAddress> VConstants = LinksConstants<TLinkAddress>{true}, typename TLink = std::vector<TLinkAddress>, typename TWriteHandler = std::function<TLinkAddress(TLink, TLink)>, typename TReadHandler = std::function<TLinkAddress(TLink)>>
+    template<typename TLinkAddress = std::uint64_t, LinksConstants<TLinkAddress> VConstants = LinksConstants<TLinkAddress>{true}, typename TLink = std::vector<TLinkAddress>, typename TReadHandler = std::function<TLinkAddress(TLink)>, typename TWriteHandler = std::function<TLinkAddress(TLink, TLink)>>
     struct LinksOptions
     {
         using LinkAddressType = TLinkAddress;
         using LinkType = std::vector<LinkAddressType>;
-        using WriteHandlerType = TWriteHandler;
         using ReadHandlerType = TReadHandler;
+        using WriteHandlerType = TWriteHandler;
         static constexpr LinksConstants<LinkAddressType> Constants = VConstants;
     };
 
