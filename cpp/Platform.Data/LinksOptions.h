@@ -5,7 +5,7 @@ namespace Platform::Data
     struct LinksOptions
     {
         using LinkAddressType = TLinkAddress;
-        using LinkType = std::vector<LinkAddressType>;
+        using LinkType = TLink;
         using ReadHandlerType = TReadHandler;
         using WriteHandlerType = TWriteHandler;
         static constexpr LinksConstants<LinkAddressType> Constants = VConstants;
