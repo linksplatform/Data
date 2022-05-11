@@ -38,7 +38,8 @@
         const Ranges::Range<TLinkAddress> InternalReferencesRange{};
 
     public:
-        const Ranges::Range<TLinkAddress> ExternalReferencesRange = std::nullopt;
+         const Ranges::Range<TLinkAddress> ExternalReferencesRange = std::nullopt;
+         const bool IsExternalReferencesRangeEnabled;
 
     public:
         constexpr LinksConstants(TLinkAddress targetPart, const Ranges::Range<TLinkAddress>& possibleInternalReferencesRange, Ranges::Range<TLinkAddress> possibleExternalReferencesRange) noexcept
@@ -54,7 +55,8 @@
             Itself(possibleInternalReferencesRange.Maximum - 4),
             Error(possibleInternalReferencesRange.Maximum - 5),
             InternalReferencesRange(Ranges::Range{possibleInternalReferencesRange.Minimum, static_cast<TLinkAddress>(possibleInternalReferencesRange.Maximum - 6)}),
-            ExternalReferencesRange(possibleExternalReferencesRange)
+            ExternalReferencesRange(possibleExternalReferencesRange),
+            IsExternalReferencesRangeEnabled(possibleExternalReferencesRange.Minimum != possibleExternalReferencesRange.Maximum)
         {
         }
 
