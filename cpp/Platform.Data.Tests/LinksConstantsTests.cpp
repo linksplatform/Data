@@ -1,38 +1,40 @@
 ﻿namespace Platform::Data::Tests
 {
-    TEST_CLASS(LinksConstantsTests)
+    TEST(LinksConstantsTests, ConstructorTest)
     {
-        public: TEST_METHOD(ConstructorTest)
-        {
-            auto constants = LinksConstants<std::uint64_t>(enableExternalReferencesSupport: true);
-            Assert::AreEqual(Hybrid<std::uint64_t>.ExternalZero, constants.ExternalReferencesRange.Value.Minimum);
-            Assert::AreEqual(std::numeric_limits<std::uint64_t>::max(), constants.ExternalReferencesRange.Value.Maximum);
-        }
+        using namespace Platform::Data;
 
-        public: TEST_METHOD(ExternalReferencesTest)
-        {
-            TestExternalReferences<std::uint64_t, std::int64_t>();
-            TestExternalReferences<std::uint32_t, std::int32_t>();
-            TestExternalReferences<std::uint16_t, std::int16_t>();
-            TestExternalReferences<std::uint8_t, std::int8_t>();
-        }
+        auto constants = LinksConstants<std::uint64_t>(true);
+        ASSERT_EQ(Hybrid<std::uint64_t>::ExternalZero, constants.ExternalReferencesRange.Minimum);
+        ASSERT_EQ(std::numeric_limits<std::uint64_t>::max(), constants.ExternalReferencesRange.Maximum);
+    }
 
-        private: static void TestExternalReferences<TUnsigned, TSigned>()
-        {
-            auto unsingedOne = 0(TUnsigned) + 1;
-            auto converter = UncheckedConverter<TSigned, TUnsigned>.Default;
-            auto half = converter.Convert(NumericType<TSigned>.MaxValue);
-            LinksConstants<TUnsigned> constants = LinksConstants<TUnsigned>({unsingedOne, half}, {half + unsingedOne, NumericType<TUnsigned>.MaxValue});
+    template<std::signed_integral TSigned, typename TUnsigned = std::make_unsigned_t<TSigned>>
+    static void TestExternalReferences()
+    {
+        using namespace Platform::Data;
+        using namespace Platform::Ranges;
 
-            auto minimum = Hybrid<TUnsigned>(0, isExternal: true);
-            auto maximum = Hybrid<TUnsigned>(half, isExternal: true);
+        TUnsigned unsingedOne = 1;
+        TUnsigned half = std::numeric_limits<TSigned>::max();
+        auto constants = LinksConstants<TUnsigned>(Range{unsingedOne, half}, Range{TUnsigned(half + unsingedOne), std::numeric_limits<TUnsigned>::max()});
 
-            Assert::IsTrue(constants.IsExternalReference(minimum));
-            Assert::IsTrue(minimum.IsExternal);
-            Assert::IsFalse(minimum.IsInternal);
-            Assert::IsTrue(constants.IsExternalReference(maximum));
-            Assert::IsTrue(maximum.IsExternal);
-            Assert::IsFalse(maximum.IsInternal);
-        }
-    };
+        auto minimum = Hybrid<TUnsigned>(0, true);
+        auto maximum = Hybrid<TUnsigned>(half, true);
+
+        ASSERT_TRUE(IsExternalReference(constants, minimum.Value));
+        ASSERT_TRUE(minimum.IsExternal());
+        ASSERT_FALSE(minimum.IsInternal());
+        ASSERT_TRUE(IsExternalReference(constants, maximum.Value));
+        ASSERT_TRUE(maximum.IsExternal());
+        ASSERT_FALSE(maximum.IsInternal());
+    }
+
+    TEST(LinksConstantsTests, ExternalReferencesTest)
+    {
+        TestExternalReferences<std::int64_t>();
+        TestExternalReferences<std::int32_t>();
+        TestExternalReferences<std::int16_t>();
+        TestExternalReferences<std::int8_t>();
+    }
 }

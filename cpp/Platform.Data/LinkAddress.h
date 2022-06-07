@@ -1,97 +1,80 @@
 ﻿namespace Platform::Data
 {
-    template <typename ...> class LinkAddress;
-    template <typename TLinkAddress> class LinkAddress<TLinkAddress> : public IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
+    template <std::integral TLinkAddress>
+    class LinkAddress
     {
         public: const TLinkAddress Index;
 
-        public: TLinkAddress this[std::int32_t index]
+        public: auto operator[](std::integral auto index) const -> const TLinkAddress&
         {
-            get
+            if (index == 0)
             {
-                if (index == 0)
-                {
-                    return Index;
-                }
-                else
-                {
-                    throw IndexOutOfRangeException();
-                }
+                return Index;
             }
-            set => throw std::logic_error("Not supported exception.");
+            else
+            {
+                throw std::out_of_range{""};
+            }
         }
 
-        public: std::int32_t Count()
+        public: [[nodiscard]] constexpr auto size() const noexcept -> std::size_t
         {
             return 1;
         }
 
-        public: bool IsReadOnly()
+        public: explicit LinkAddress(TLinkAddress index)
+            : Index(index)
         {
-            return true;
         }
 
-        public: LinkAddress(TLinkAddress index) { Index = index; }
-
-        public: void Add(TLinkAddress item) { throw std::logic_error("Not supported exception."); }
-
-        public: void Clear() { throw std::logic_error("Not supported exception."); }
-
-        public: virtual bool Contains(TLinkAddress item) { return item == Index ? true : false; }
-
-        public: void CopyTo(TLinkAddress array[], std::int32_t arrayIndex) { array[arrayIndex] = Index; }
-
-        public: IEnumerator<TLinkAddress> GetEnumerator()
+        public: template<typename OtherTLinkAddress> explicit LinkAddress(const LinkAddress<OtherTLinkAddress>& linkAddress)
+            : Index(linkAddress.Index)
         {
-            yield return Index;
         }
 
-        public: virtual std::int32_t IndexOf(TLinkAddress item) { return item == Index ? 0 : -1; }
-
-        public: void Insert(std::int32_t index, TLinkAddress item) { throw std::logic_error("Not supported exception."); }
-
-        public: bool Remove(TLinkAddress item) { throw std::logic_error("Not supported exception."); }
-
-        public: void RemoveAt(std::int32_t index) { throw std::logic_error("Not supported exception."); }
-
-        IEnumerator IEnumerable.GetEnumerator()
+        public: [[nodiscard]] auto begin() const noexcept -> const TLinkAddress*
         {
-            yield return Index;
+            return std::addressof(Index);
         }
 
-        public: virtual bool operator ==(const LinkAddress<TLinkAddress> &other) const { return other == nullptr ? false : Index == other.Index; }
-
-        public: operator TLinkAddress() const { return this->Index; }
-
-        public: LinkAddress(TLinkAddress linkAddress) : LinkAddress(linkAddress) { }
-
-        public: operator std::string() const { return Platform::Converters::To<std::string>(Index).data(); }
-
-        public: friend std::ostream & operator <<(std::ostream &out, const LinkAddress<TLinkAddress> &obj) { return out << (std::string)obj; }
-
-        public: static bool operator ==(LinkAddress<TLinkAddress> left, LinkAddress<TLinkAddress> right)
+        public: [[nodiscard]] auto end() const noexcept -> const TLinkAddress*
         {
-            if (left == nullptr && right == nullptr)
-            {
-                return true;
-            }
-            if (left == nullptr)
-            {
-                return false;
-            }
-            return left.Equals(right);
+            // TODO: maybe explicit write "+ 1" instead
+            return std::addressof(Index) + size();
+        }
+
+        public: auto operator==(LinkAddress<TLinkAddress> other) const noexcept
+        {
+            return Index == other.Index;
+        }
+
+        public: explicit operator TLinkAddress() const noexcept
+        {
+            return Index;
+        }
+
+    public: operator std::vector<TLinkAddress>() const
+        {
+            return std::vector<TLinkAddress>{Index};
+        }
+
+        public: explicit operator std::string() const { return Converters::To<std::string>(Index); }
+
+        public: friend std::ostream& operator<<(std::ostream& stream, LinkAddress<TLinkAddress> self)
+        {
+            return stream << static_cast<std::string>(self);
         }
     };
+
+    template<typename TLinkAddress>
+    LinkAddress(TLinkAddress) -> LinkAddress<TLinkAddress>;
 }
 
-namespace std
+template<typename TLinkAddress>
+struct std::hash<Platform::Data::LinkAddress<TLinkAddress>>
 {
-    template <typename TLinkAddress>
-    struct hash<Platform::Data::LinkAddress<TLinkAddress>>
+    std::size_t operator()(auto&& self) const
     {
-        std::size_t operator()(const Platform::Data::LinkAddress<TLinkAddress> &obj) const
-        {
-            return Index.GetHashCode();
-        }
-    };
-}
+        return self.Index;
+    }
+};
