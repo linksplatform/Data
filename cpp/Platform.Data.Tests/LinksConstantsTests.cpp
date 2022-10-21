@@ -15,17 +15,16 @@
         using namespace Platform::Data;
         using namespace Platform::Ranges;
 
-        TUnsigned unsingedOne = 1;
-        TUnsigned half = std::numeric_limits<TSigned>::max();
-        auto constants = LinksConstants<TUnsigned>(Range{unsingedOne, half}, Range{TUnsigned(half + unsingedOne), std::numeric_limits<TUnsigned>::max()});
+        constexpr TUnsigned unsingedOne = 1;
+        constexpr TUnsigned half = std::numeric_limits<TSigned>::max();
+        constexpr LinksConstants<TUnsigned> constants {Range{unsingedOne, half}, Range{TUnsigned(half + unsingedOne), std::numeric_limits<TUnsigned>::max()}};
 
         auto minimum = Hybrid<TUnsigned>(0, true);
         auto maximum = Hybrid<TUnsigned>(half, true);
-
-        ASSERT_TRUE(IsExternalReference(constants, minimum.Value));
+        ASSERT_TRUE((IsExternalReference<TUnsigned,constants>(minimum.Value)));
         ASSERT_TRUE(minimum.IsExternal());
         ASSERT_FALSE(minimum.IsInternal());
-        ASSERT_TRUE(IsExternalReference(constants, maximum.Value));
+        ASSERT_TRUE((IsExternalReference<TUnsigned, constants>(maximum.Value)));
         ASSERT_TRUE(maximum.IsExternal());
         ASSERT_FALSE(maximum.IsInternal());
     }
