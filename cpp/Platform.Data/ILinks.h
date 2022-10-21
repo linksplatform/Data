@@ -5,12 +5,12 @@
     struct ILinks
     {
     public:
-        using LinksOptionsType = TLinksOptions;
-        using LinkAddressType = typename LinksOptionsType::LinkAddressType;
-        using LinkType = typename LinksOptionsType::LinkType;
-        using WriteHandlerType = typename LinksOptionsType::WriteHandlerType;
-        using ReadHandlerType = typename LinksOptionsType::ReadHandlerType;
-        static constexpr LinksConstants<LinkAddressType> Constants = LinksOptionsType::Constants;
+      using LinksOptionsType = TLinksOptions;
+      using LinkAddressType = typename LinksOptionsType::LinkAddressType;
+      static constexpr LinksConstants<LinkAddressType> Constants = LinksOptionsType::Constants;
+      using LinkType = typename LinksOptionsType::LinkType;
+      using ReadHandlerType = typename LinksOptionsType::ReadHandlerType;
+      using WriteHandlerType = typename LinksOptionsType::WriteHandlerType;
 
         virtual LinkAddressType Count(const std::vector<LinkAddressType>& restriction) const = 0;
 
