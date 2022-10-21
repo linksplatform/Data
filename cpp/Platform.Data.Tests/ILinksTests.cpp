@@ -1,10 +1,11 @@
 namespace Platform::Data::Tests
 {
-    template<typename TLink, typename TWriteHandler = std::function<typename TLink::value_type(TLink, TLink)>, typename TReadHandler = std::function<typename TLink::value_type(TLink)>, LinksConstants<typename TLink::value_type> VConstants = LinksConstants<typename TLink::value_type>{true}>
-    struct Links : public ILinks<LinksOptions<TLink, TWriteHandler, TReadHandler, VConstants>>
+    template<std::integral TLinkAddress = std::uint64_t, LinksConstants<TLinkAddress> VConstants = LinksConstants<TLinkAddress>{true}, typename TLink = std::vector<TLinkAddress>, typename TReadHandler = std::function<TLinkAddress(TLink)>, typename TWriteHandler = std::function<TLinkAddress(TLink, TLink)>>
+    struct Links : public ILinks<LinksOptions<TLinkAddress, VConstants, TLink,TReadHandler, TWriteHandler>>
     {
-        using base = ILinks<LinksOptions<TLink, TWriteHandler, TReadHandler, VConstants>>;
+        using base = ILinks<LinksOptions<TLinkAddress, VConstants, TLink, TReadHandler, TWriteHandler>>;
         using typename base::LinkAddressType;
+        using typename base::LinkType;
         using typename base::WriteHandlerType;
         using typename base::ReadHandlerType;
         using base::Constants;
@@ -25,15 +26,15 @@ namespace Platform::Data::Tests
         using TLink = std::vector<TLinkAddress>;
         using TWriteHandler = std::function<TLinkAddress(TLink, TLink)>;
         using TReadHandler = std::function<TLinkAddress(TLink)>;
-        Links<TLink> storage{};
-        const Links<TLink> const_links {storage};
+        Links<TLinkAddress> storage{};
+        const Links<TLinkAddress> const_links {storage};
         const TLinkAddress linkAddress {1};
         Create(storage, linkAddress);
-        Update(storage, std::vector<TLinkAddress>{1}, std::vector<TLinkAddress>{1, 1});
-        storage.Count(std::vector<TLinkAddress>{1});
-        const_links.Count(std::vector<TLinkAddress>{1});
-        storage.Each(std::vector<TLinkAddress>{1}, [](const TLink& link){ return 1; });
-        const_links.Each(std::vector<TLinkAddress>{1}, [](const TLink& link){ return 1; });
-        Delete(storage, std::vector<TLinkAddress>{1});
+        Update(storage, TLink{1}, TLink{1, 1});
+        storage.Count(TLink{1});
+        const_links.Count(TLink{1});
+        storage.Each(TLink{1}, [](const TLink& link){ return 1; });
+        const_links.Each(TLink{1}, [](const TLink& link){ return 1; });
+        Delete(storage, TLink{1});
     }
 }
