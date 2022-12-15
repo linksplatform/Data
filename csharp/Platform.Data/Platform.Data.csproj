@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.11.4</VersionPrefix>
+    <VersionPrefix>0.12.0</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -12,7 +12,7 @@
     <PackageTags>LinksPlatform;Data;ArgumentLinkDoesNotExistsException;ArgumentLinkHasDependenciesException;LinksLimitReachedException;LinksLimitReachedExceptionBase;LinkWithSameValueAlreadyExistsException;AddressToRawNumberConverter;RawNumberToAddressConverter;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;Hybrid;ILinks;ILinksExtensions;ISynchronizedLinks;LinkAddress;LinksConstants;LinksConstantsBase;LinksConstantsExtensions;Point</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Data</PackageProjectUrl>
-    <PackageLicenseExpression>Unlicensed</PackageLicenseExpression>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/linksplatform/Data</RepositoryUrl>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -23,23 +23,24 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Setters dependency is updated from 0.3.3 to 0.4.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Target frameworks are changed to net7.
+License is changed to Unlicense.
+Platform.Threading dependency is updated from 0.4.0 to 0.5.0.
+Platform.Numbers dependency is updated from 0.5.2 to 0.6.0.
+Platform.Setters dependency is updated from 0.4.1 to 0.5.0.
+Platform.Delegates dependency is updated from 0.0.1 to 0.1.1.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="All" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Delegates" Version="0.0.1" />
+    <PackageReference Include="Platform.Delegates" Version="0.1.1" />
     <PackageReference Include="Platform.Numbers" Version="0.5.2" />
     <PackageReference Include="Platform.Threading" Version="0.4.0" />
-    <PackageReference Include="Platform.Setters" Version="0.4.1" />
+    <PackageReference Include="Platform.Setters" Version="0.5.0" />
   </ItemGroup>
 
 </Project>
