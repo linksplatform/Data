@@ -50,7 +50,7 @@ namespace Platform.Data.Tests
             LinksConstants<TUnsigned> constants = new LinksConstants<TUnsigned>((unsingedOne, half), (half+ unsingedOne, NumericType<TUnsigned>.MaxValue));
 
             var minimum = new Hybrid<TUnsigned>(default, isExternal: true);
-            var maximum = new Hybrid<TUnsigned>((TUnsigned.One/(TUnsigned.One+TUnsigned.One)), isExternal: true);
+            var maximum = new Hybrid<TUnsigned>(half, isExternal: true);
 
             Assert.True(constants.IsExternalReference(minimum));
             Assert.True(minimum.IsExternal);
