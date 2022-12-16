@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.12.0</VersionPrefix>
+    <VersionPrefix>0.12.1</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -23,12 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Target frameworks are changed to net7.
-License is changed to Unlicense.
-Platform.Threading dependency is updated from 0.4.0 to 0.5.0.
-Platform.Numbers dependency is updated from 0.5.2 to 0.6.0.
-Platform.Setters dependency is updated from 0.4.1 to 0.5.0.
-Platform.Delegates dependency is updated from 0.0.1 to 0.1.1.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Numbers dependency is updated from 0.6.2 to 0.7.0.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -38,7 +33,7 @@ Platform.Delegates dependency is updated from 0.0.1 to 0.1.1.</PackageReleaseNot
 
   <ItemGroup>
     <PackageReference Include="Platform.Delegates" Version="0.1.1" />
-    <PackageReference Include="Platform.Numbers" Version="0.5.2" />
+    <PackageReference Include="Platform.Numbers" Version="0.7.0" />
     <PackageReference Include="Platform.Threading" Version="0.4.0" />
     <PackageReference Include="Platform.Setters" Version="0.5.0" />
   </ItemGroup>
