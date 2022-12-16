@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
@@ -15,7 +16,7 @@ namespace Platform.Data
     /// </summary>
     /// <seealso cref="IEquatable{LinkAddress{TLinkAddress}}"/>
     /// <seealso cref="IList{TLinkAddress}"/>
-    public class LinkAddress<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
+    public class LinkAddress<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress> where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
 
         /// <summary>

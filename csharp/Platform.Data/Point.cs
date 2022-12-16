@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Ranges;
@@ -18,7 +19,7 @@ namespace Platform.Data
     /// </summary>
     /// <seealso cref="IEquatable{LinkAddress{TLinkAddress}}"/>
     /// <seealso cref="IList{TLinkAddress}"/>
-    public class Point<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
+    public class Point<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>  where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
 
         /// <summary>

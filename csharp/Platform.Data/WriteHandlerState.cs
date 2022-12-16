@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using System.Numerics;
 using Platform.Delegates;
 
 namespace Platform.Data
 {
-    public struct WriteHandlerState<TLinkAddress>
+    public struct WriteHandlerState<TLinkAddress>  where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
         public TLinkAddress Result;
         public WriteHandler<TLinkAddress>? Handler;
