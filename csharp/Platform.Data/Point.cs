@@ -20,7 +20,6 @@ namespace Platform.Data
     /// <seealso cref="IList{TLinkAddress}"/>
     public class Point<TLinkAddress> : IEquatable<LinkAddress<TLinkAddress>>, IList<TLinkAddress>
     {
-        private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
 
         /// <summary>
         /// <para>
@@ -152,7 +151,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual bool Contains(TLinkAddress item) => _equalityComparer.Equals(item, Index);
+        public virtual bool Contains(TLinkAddress item) => (item == Index);
 
         /// <summary>
         /// <para>
@@ -205,7 +204,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual int IndexOf(TLinkAddress item) => _equalityComparer.Equals(item, Index) ? 0 : -1;
+        public virtual int IndexOf(TLinkAddress item) => (item == Index) ? 0 : -1;
 
         /// <summary>
         /// <para>
@@ -288,7 +287,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public virtual bool Equals(LinkAddress<TLinkAddress> other) => other == null ? false : _equalityComparer.Equals(Index, other.Index);
+        public virtual bool Equals(LinkAddress<TLinkAddress> other) => other == null ? false : (Index == other.Index);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator TLinkAddress(Point<TLinkAddress> linkAddress) => linkAddress.Index;
@@ -412,7 +411,7 @@ namespace Platform.Data
             var result = true;
             for (var i = 1; result && i < link.Count; i++)
             {
-                result = _equalityComparer.Equals(link[0], link[i]);
+                result = (link[0] == link[i]);
             }
             return result;
         }
@@ -476,7 +475,7 @@ namespace Platform.Data
             var result = false;
             for (var i = 1; !result && i < link.Count; i++)
             {
-                result = _equalityComparer.Equals(link[0], link[i]);
+                result = (link[0] == link[i]);
             }
             return result;
         }

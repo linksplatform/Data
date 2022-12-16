@@ -20,7 +20,6 @@ namespace Platform.Data
     /// </summary>
     public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>> where TLinkAddress:IUnsignedNumber<TLinkAddress>
     {
-        private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
         private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
         private static readonly UncheckedConverter<long, TLinkAddress> _int64ToAddressConverter = UncheckedConverter<long, TLinkAddress>.Default;
         private static readonly UncheckedConverter<TLinkAddress, ulong> _addressToUInt64Converter = UncheckedConverter<TLinkAddress, ulong>.Default;
@@ -59,7 +58,7 @@ namespace Platform.Data
         public bool IsNothing
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue == 0;
+            get => (Value == ExternalZero) || SignedValue == 0;
         }
 
         /// <summary>
@@ -83,7 +82,7 @@ namespace Platform.Data
         public bool IsExternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue < 0;
+            get => (Value == ExternalZero) || SignedValue < 0;
         }
 
         /// <summary>
@@ -107,7 +106,7 @@ namespace Platform.Data
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : System.Math.Abs(SignedValue);
+            get => (Value == ExternalZero) ? 0 : System.Math.Abs(SignedValue);
         }
 
         /// <summary>
@@ -144,7 +143,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(TLinkAddress value, bool isExternal)
         {
-            if (_equalityComparer.Equals(value, default) && isExternal)
+            if ((value == default) && isExternal)
             {
                 Value = ExternalZero;
             }
@@ -285,7 +284,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Equals(Hybrid<TLinkAddress> other) => _equalityComparer.Equals(Value, other.Value);
+        public bool Equals(Hybrid<TLinkAddress> other) => (Value == other.Value);
 
         /// <summary>
         /// <para>

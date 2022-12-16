@@ -42,12 +42,11 @@ namespace Platform.Data.Tests
             TestExternalReferences<ushort, short>();
             TestExternalReferences<byte, sbyte>();
         }
-        private static void TestExternalReferences<TUnsigned, TSigned>() where TUnsigned : IUnsignedNumber<TUnsigned>
+        private static void TestExternalReferences<TUnsigned, TSigned>() where TUnsigned : IUnsignedNumber<TUnsigned> where TSigned : ISignedNumber<TSigned>
         {
             var unsingedOne = TUnsigned.One;
-            var converter = UncheckedConverter<TSigned, TUnsigned>.Default;
-            var half = converter.Convert(NumericType<TSigned>.MaxValue);
-            LinksConstants<TUnsigned> constants = new LinksConstants<TUnsigned>((unsingedOne, half), (half+ unsingedOne, NumericType<TUnsigned>.MaxValue));
+            var half = TUnsigned.CreateTruncating((NumericType<TSigned>.MaxValue));
+            LinksConstants<TUnsigned> constants = new LinksConstants<TUnsigned>((unsingedOne, half), (half+unsingedOne, NumericType<TUnsigned>.MaxValue));
 
             var minimum = new Hybrid<TUnsigned>(default, isExternal: true);
             var maximum = new Hybrid<TUnsigned>(half, isExternal: true);
