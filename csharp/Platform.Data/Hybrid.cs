@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Reflection;
 using Platform.Converters;
 using Platform.Numbers;
+using Math = System.Math;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -16,7 +18,7 @@ namespace Platform.Data
     /// </para>
     /// <para></para>
     /// </summary>
-    public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>>
+    public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>> where TLinkAddress:IUnsignedNumber<TLinkAddress>
     {
         private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
         private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
@@ -105,7 +107,7 @@ namespace Platform.Data
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : Platform.Numbers.Math.Abs(SignedValue);
+            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : System.Math.Abs(SignedValue);
         }
 
         /// <summary>
@@ -150,7 +152,7 @@ namespace Platform.Data
             {
                 if (isExternal)
                 {
-                    Value = Math<TLinkAddress>.Negate(value);
+                    Value = -(value);
                 }
                 else
                 {
