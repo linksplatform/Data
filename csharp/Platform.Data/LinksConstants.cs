@@ -260,7 +260,7 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return (TLinkAddress.One, _uInt64ToAddressConverter.Convert(Hybrid<TLinkAddress>.HalfOfNumberValuesRange));
+                return (TLinkAddress.One, Hybrid<TLinkAddress>.HalfOfNumberValuesRange);
             }
             else
             {
