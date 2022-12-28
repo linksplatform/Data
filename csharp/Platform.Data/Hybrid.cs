@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Reflection;
 using Platform.Converters;
 using Platform.Numbers;
+using Math = System.Math;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -16,13 +18,9 @@ namespace Platform.Data
     /// </para>
     /// <para></para>
     /// </summary>
-    public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>>
+    public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>> where TLinkAddress:IUnsignedNumber<TLinkAddress>
     {
-        private static readonly EqualityComparer<TLinkAddress> _equalityComparer = EqualityComparer<TLinkAddress>.Default;
         private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
-        private static readonly UncheckedConverter<long, TLinkAddress> _int64ToAddressConverter = UncheckedConverter<long, TLinkAddress>.Default;
-        private static readonly UncheckedConverter<TLinkAddress, ulong> _addressToUInt64Converter = UncheckedConverter<TLinkAddress, ulong>.Default;
-        private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
         private static readonly UncheckedConverter<object, long> _objectToInt64Converter = UncheckedConverter<object, long>.Default;
 
         /// <summary>
@@ -31,14 +29,14 @@ namespace Platform.Data
         /// </para>
         /// <para></para>
         /// </summary>
-        public static readonly ulong HalfOfNumberValuesRange = _addressToUInt64Converter.Convert(NumericType<TLinkAddress>.MaxValue) / 2;
+        public static readonly TLinkAddress HalfOfNumberValuesRange = (NumericType<TLinkAddress>.MaxValue) / TLinkAddress.CreateTruncating(2);
         /// <summary>
         /// <para>
         /// The half of number values range.
         /// </para>
         /// <para></para>
         /// </summary>
-        public static readonly TLinkAddress ExternalZero = _uInt64ToAddressConverter.Convert(HalfOfNumberValuesRange + 1UL);
+        public static readonly TLinkAddress ExternalZero = (HalfOfNumberValuesRange + TLinkAddress.CreateTruncating(1));
 
         /// <summary>
         /// <para>
@@ -57,7 +55,7 @@ namespace Platform.Data
         public bool IsNothing
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue == 0;
+            get => (Value == ExternalZero) || SignedValue == 0;
         }
 
         /// <summary>
@@ -81,7 +79,7 @@ namespace Platform.Data
         public bool IsExternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) || SignedValue < 0;
+            get => (Value == ExternalZero) || SignedValue < 0;
         }
 
         /// <summary>
@@ -105,7 +103,7 @@ namespace Platform.Data
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => _equalityComparer.Equals(Value, ExternalZero) ? 0 : Platform.Numbers.Math.Abs(SignedValue);
+            get => (Value == ExternalZero) ? 0 : System.Math.Abs(SignedValue);
         }
 
         /// <summary>
@@ -142,7 +140,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Hybrid(TLinkAddress value, bool isExternal)
         {
-            if (_equalityComparer.Equals(value, default) && isExternal)
+            if ((value == default) && isExternal)
             {
                 Value = ExternalZero;
             }
@@ -150,7 +148,7 @@ namespace Platform.Data
             {
                 if (isExternal)
                 {
-                    Value = Math<TLinkAddress>.Negate(value);
+                    Value = -(value);
                 }
                 else
                 {
@@ -170,7 +168,7 @@ namespace Platform.Data
         /// <para></para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Hybrid(object value) => Value = _int64ToAddressConverter.Convert(_objectToInt64Converter.Convert(value));
+        public Hybrid(object value) => Value = TLinkAddress.CreateTruncating(_objectToInt64Converter.Convert(value));
 
         /// <summary>
         /// <para>
@@ -197,7 +195,7 @@ namespace Platform.Data
             else
             {
                 var absoluteValue = System.Math.Abs(signedValue);
-                Value = isExternal ? _int64ToAddressConverter.Convert(-absoluteValue) : _int64ToAddressConverter.Convert(absoluteValue);
+                Value = isExternal ? TLinkAddress.CreateTruncating(-absoluteValue) : TLinkAddress.CreateTruncating(absoluteValue);
             }
         }
 
@@ -283,7 +281,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Equals(Hybrid<TLinkAddress> other) => _equalityComparer.Equals(Value, other.Value);
+        public bool Equals(Hybrid<TLinkAddress> other) => (Value == other.Value);
 
         /// <summary>
         /// <para>

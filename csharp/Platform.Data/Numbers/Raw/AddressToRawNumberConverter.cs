@@ -1,3 +1,4 @@
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using Platform.Converters;
 
@@ -12,7 +13,7 @@ namespace Platform.Data.Numbers.Raw
     /// <para></para>
     /// </summary>
     /// <seealso cref="IConverter{TLinkAddress}"/>
-    public class AddressToRawNumberConverter<TLinkAddress> : IConverter<TLinkAddress>
+    public class AddressToRawNumberConverter<TLinkAddress> : IConverter<TLinkAddress> where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
         /// <summary>
         /// <para>

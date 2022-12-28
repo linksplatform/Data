@@ -1,18 +1,17 @@
 using System.Collections.Generic;
+using System.Numerics;
 using Platform.Delegates;
 
 namespace Platform.Data
 {
-    public struct WriteHandlerState<TLinkAddress>
+    public struct WriteHandlerState<TLinkAddress>  where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
-        private readonly EqualityComparer<TLinkAddress> _equalityComparer;
         public TLinkAddress Result;
         public WriteHandler<TLinkAddress>? Handler;
         private TLinkAddress Break;
 
         public WriteHandlerState(TLinkAddress @continue, TLinkAddress @break, WriteHandler<TLinkAddress>? handler)
         {
-            _equalityComparer = EqualityComparer<TLinkAddress>.Default;
             Break = @break;
             Result = @continue;
             Handler = handler;
@@ -20,8 +19,8 @@ namespace Platform.Data
 
         public void Apply(TLinkAddress result)
         {
-            var isAlreadyBreak = _equalityComparer.Equals(Break, Result);
-            var isCurrentlyBreak = _equalityComparer.Equals(Break, result);
+            var isAlreadyBreak = (Break == Result);
+            var isCurrentlyBreak = (Break == result);
             if (isAlreadyBreak || !isCurrentlyBreak)
             {
                 return;

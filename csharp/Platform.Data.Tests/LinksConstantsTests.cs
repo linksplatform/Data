@@ -1,3 +1,4 @@
+using System.Numerics;
 using Xunit;
 using Platform.Reflection;
 using Platform.Converters;
@@ -41,12 +42,11 @@ namespace Platform.Data.Tests
             TestExternalReferences<ushort, short>();
             TestExternalReferences<byte, sbyte>();
         }
-        private static void TestExternalReferences<TUnsigned, TSigned>()
+        private static void TestExternalReferences<TUnsigned, TSigned>() where TUnsigned : IUnsignedNumber<TUnsigned> where TSigned : ISignedNumber<TSigned>
         {
-            var unsingedOne = Arithmetic.Increment(default(TUnsigned));
-            var converter = UncheckedConverter<TSigned, TUnsigned>.Default;
-            var half = converter.Convert(NumericType<TSigned>.MaxValue);
-            LinksConstants<TUnsigned> constants = new LinksConstants<TUnsigned>((unsingedOne, half), (Arithmetic.Add(half, unsingedOne), NumericType<TUnsigned>.MaxValue));
+            var unsingedOne = TUnsigned.One;
+            var half = TUnsigned.CreateTruncating((NumericType<TSigned>.MaxValue));
+            LinksConstants<TUnsigned> constants = new LinksConstants<TUnsigned>((unsingedOne, half), (half+unsingedOne, NumericType<TUnsigned>.MaxValue));
 
             var minimum = new Hybrid<TUnsigned>(default, isExternal: true);
             var maximum = new Hybrid<TUnsigned>(half, isExternal: true);

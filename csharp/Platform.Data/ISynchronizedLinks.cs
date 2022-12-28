@@ -1,3 +1,4 @@
+using System.Numerics;
 using Platform.Threading.Synchronization;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
@@ -13,6 +14,7 @@ namespace Platform.Data
     /// <seealso cref="ISynchronized{TLinks}"/>
     /// <seealso cref="ILinks{TLinkAddress, TConstants}"/>
     public interface ISynchronizedLinks<TLinkAddress, TLinks, TConstants> : ISynchronized<TLinks>, ILinks<TLinkAddress, TConstants>
+        where TLinkAddress : IUnsignedNumber<TLinkAddress>
         where TLinks : ILinks<TLinkAddress, TConstants>
         where TConstants : LinksConstants<TLinkAddress>
     {

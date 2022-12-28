@@ -1,3 +1,4 @@
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using Platform.Ranges;
 using Platform.Reflection;
@@ -15,9 +16,8 @@ namespace Platform.Data
     /// <para></para>
     /// </summary>
     /// <seealso cref="LinksConstantsBase"/>
-    public class LinksConstants<TLinkAddress> : LinksConstantsBase
+    public class LinksConstants<TLinkAddress> : LinksConstantsBase where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
-        private static readonly TLinkAddress _one = Arithmetic<TLinkAddress>.Increment(default);
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
 
         #region Link parts
@@ -145,12 +145,12 @@ namespace Platform.Data
             var currentInternalReferenceIndex = possibleInternalReferencesRange.Maximum;
             Null = default;
             Continue = currentInternalReferenceIndex;
-            Break = Arithmetic.Decrement(ref currentInternalReferenceIndex);
-            Skip = Arithmetic.Decrement(ref currentInternalReferenceIndex);
-            Any = Arithmetic.Decrement(ref currentInternalReferenceIndex);
-            Itself = Arithmetic.Decrement(ref currentInternalReferenceIndex);
-            Error = Arithmetic.Decrement(ref currentInternalReferenceIndex);
-            Arithmetic.Decrement(ref currentInternalReferenceIndex);
+            Break = --currentInternalReferenceIndex;
+            Skip = --currentInternalReferenceIndex;
+            Any = --currentInternalReferenceIndex;
+            Itself = --currentInternalReferenceIndex;
+            Error = --currentInternalReferenceIndex;
+            --currentInternalReferenceIndex;
             InternalReferencesRange = (possibleInternalReferencesRange.Minimum, currentInternalReferenceIndex);
             ExternalReferencesRange = possibleExternalReferencesRange;
         }
@@ -260,11 +260,11 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return (_one, _uInt64ToAddressConverter.Convert(Hybrid<TLinkAddress>.HalfOfNumberValuesRange));
+                return (TLinkAddress.One, Hybrid<TLinkAddress>.HalfOfNumberValuesRange);
             }
             else
             {
-                return (_one, NumericType<TLinkAddress>.MaxValue);
+                return (TLinkAddress.One, NumericType<TLinkAddress>.MaxValue);
             }
         }
 

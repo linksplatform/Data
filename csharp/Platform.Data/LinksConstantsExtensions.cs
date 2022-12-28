@@ -1,5 +1,6 @@
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
+using System.Numerics;
 using System.Runtime.CompilerServices;
 
 namespace Platform.Data
@@ -35,7 +36,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.IsInternalReference(address) || linksConstants.IsExternalReference(address);
+        public static bool IsReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) where TLinkAddress : IUnsignedNumber<TLinkAddress> => linksConstants.IsInternalReference(address) || linksConstants.IsExternalReference(address);
 
         /// <summary>
         /// <para>
@@ -60,7 +61,7 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsInternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.InternalReferencesRange.Contains(address);
+        public static bool IsInternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) where TLinkAddress : IUnsignedNumber<TLinkAddress> => linksConstants.InternalReferencesRange.Contains(address);
 
         /// <summary>
         /// <para>
@@ -85,6 +86,6 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsExternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) => linksConstants.ExternalReferencesRange?.Contains(address) ?? false;
+        public static bool IsExternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) where TLinkAddress : IUnsignedNumber<TLinkAddress> => linksConstants.ExternalReferencesRange?.Contains(address) ?? false;
     }
 }
