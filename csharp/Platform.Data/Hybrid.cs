@@ -20,6 +20,7 @@ namespace Platform.Data
     /// </summary>
     public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>> where TLinkAddress:IUnsignedNumber<TLinkAddress>
     {
+        private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
         private static readonly UncheckedConverter<object, long> _objectToInt64Converter = UncheckedConverter<object, long>.Default;
 
         /// <summary>
@@ -90,7 +91,7 @@ namespace Platform.Data
         public long SignedValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => long.CreateTruncating(Value);
+            get => _addressToInt64Converter.Convert(Value);
         }
 
         /// <summary>
