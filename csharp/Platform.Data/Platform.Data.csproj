@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.13.0</VersionPrefix>
+    <VersionPrefix>0.14.1</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -23,7 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Generic constraints are added.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Numbers dependency is updated from 0.7.0 to 0.8.0.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -33,7 +33,7 @@
 
   <ItemGroup>
     <PackageReference Include="Platform.Delegates" Version="0.1.1" />
-    <PackageReference Include="Platform.Numbers" Version="0.7.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.8.0" />
     <PackageReference Include="Platform.Threading" Version="0.4.0" />
     <PackageReference Include="Platform.Setters" Version="0.5.0" />
   </ItemGroup>
