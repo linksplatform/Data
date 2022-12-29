@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.14.0</VersionPrefix>
+    <VersionPrefix>0.14.1</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
