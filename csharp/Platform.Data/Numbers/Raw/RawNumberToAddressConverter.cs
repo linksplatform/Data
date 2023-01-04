@@ -13,7 +13,7 @@ namespace Platform.Data.Numbers.Raw
     /// <para></para>
     /// </summary>
     /// <seealso cref="IConverter{TLinkAddress}"/>
-    public class RawNumberToAddressConverter<TLinkAddress> : IConverter<TLinkAddress> where TLinkAddress : INumberBase<TLinkAddress>
+    public class RawNumberToAddressConverter<TLinkAddress> : IConverter<TLinkAddress> where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
         /// <summary>
         /// <para>

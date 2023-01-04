@@ -18,7 +18,7 @@ namespace Platform.Data
     /// </para>
     /// <para></para>
     /// </summary>
-    public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>> where TLinkAddress:INumberBase<TLinkAddress>
+    public struct Hybrid<TLinkAddress> : IEquatable<Hybrid<TLinkAddress>> where TLinkAddress:IUnsignedNumber<TLinkAddress>
     {
         private static readonly UncheckedSignExtendingConverter<TLinkAddress, long> _addressToInt64Converter = UncheckedSignExtendingConverter<TLinkAddress, long>.Default;
         private static readonly UncheckedConverter<object, long> _objectToInt64Converter = UncheckedConverter<object, long>.Default;

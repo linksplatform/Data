@@ -16,7 +16,7 @@ namespace Platform.Data
     /// <para></para>
     /// </summary>
     /// <seealso cref="LinksConstantsBase"/>
-    public class LinksConstants<TLinkAddress> : LinksConstantsBase where TLinkAddress : INumberBase<TLinkAddress>
+    public class LinksConstants<TLinkAddress> : LinksConstantsBase where TLinkAddress : IUnsignedNumber<TLinkAddress>
     {
         private static readonly UncheckedConverter<ulong, TLinkAddress> _uInt64ToAddressConverter = UncheckedConverter<ulong, TLinkAddress>.Default;
 
