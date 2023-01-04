@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.15.0</VersionPrefix>
+    <VersionPrefix>0.16.0</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
@@ -23,7 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Generic type parameter constraints are changed to INumberBase in AddressToRawNumberConverter, Hybrid, LinksConstants, RawNumberToAddressConverter.</PackageReleaseNotes>
+    <PackageReleaseNotes>Generic type constraints are changed from INumberBase to IUnsignedNumber in AddressToRawNumberConverter, Hybrid, LinksConstants, RawNumberToAddressConverter classes</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
