@@ -48,7 +48,7 @@
         typename TStorage::LinkAddressType deletedLinkAddress;
         storage.Delete(restriction, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
         {
-            deletedLinkAddress = after[0];
+            deletedLinkAddress = before[0];
             return $continue;
         });
         return deletedLinkAddress;
