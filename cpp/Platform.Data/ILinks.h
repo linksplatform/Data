@@ -16,7 +16,7 @@
 
         virtual LinkAddressType Each(const std::vector<LinkAddressType>& restriction, const ReadHandlerType& handler) const = 0;
 
-        virtual LinkAddressType Create(const std::vector<LinkAddressType>& restriction, const WriteHandlerType& handler) = 0;
+        virtual LinkAddressType Create(const std::vector<LinkAddressType>& substitution, const WriteHandlerType& handler) = 0;
 
         virtual LinkAddressType Update(const std::vector<LinkAddressType>& restriction, const std::vector<LinkAddressType>& substitution, const WriteHandlerType& handler) = 0;
 
