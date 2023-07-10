@@ -8,8 +8,8 @@
 - doublets, triplets and etc.
 Use Platform.Data.h file to include the whole library.
 </description>
-    <releaseNotes> First release for C++ </releaseNotes>
-    <version>0.1.0</version>
+    <releaseNotes> Fixed segfault. </releaseNotes>
+    <version>0.1.1</version>
     <authors>Konstantin Diachenko</authors>
     <owners>Konstantin Diachenko</owners>
     <copyright>Konstantin Diachenko</copyright>
