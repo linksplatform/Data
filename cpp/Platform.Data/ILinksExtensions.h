@@ -6,11 +6,11 @@
     {
         auto $continue { storage.Constants.Continue };
         typename TStorage::LinkAddressType createdLinkAddress;
-		storage.Create(substitution, [&createdLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
-        {
-            createdLinkAddress = after[0];
-            return $continue;
-        });
+		      DIRECT_METHOD_CALL(storage.Create, substitution, [&createdLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+		      {
+		          createdLinkAddress = after[0];
+		          return $continue;
+		      });
 		return createdLinkAddress;
 	}
 
@@ -20,7 +20,7 @@
         typename TStorage::LinkType substitution { static_cast<typename TStorage::LinkAddressType>(substitutionPack)... };
         auto $continue { storage.Constants.Continue };
         typename TStorage::LinkAddressType createdLinkAddress;
-        storage.Create(substitution, [&createdLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+        DIRECT_METHOD_CALL(storage.Create, substitution, [&createdLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
                        {
                            createdLinkAddress = after[0];
                            return $continue;
@@ -33,7 +33,7 @@
     {
         auto $continue{storage.Constants.Continue};
         typename TStorage::LinkAddressType updatedLinkAddress;
-        storage.Update(restriction, substitution, [&updatedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+        DIRECT_METHOD_CALL(storage.Update, restriction, substitution, [&updatedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
         {
             updatedLinkAddress = after[0];
             return $continue;
@@ -46,7 +46,7 @@
     {
         auto $continue{storage.Constants.Continue};
         typename TStorage::LinkAddressType deletedLinkAddress;
-        storage.Delete(restriction, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+        DIRECT_METHOD_CALL(storage.Delete, restriction, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
         {
             deletedLinkAddress = before[0];
             return $continue;
@@ -59,7 +59,7 @@
     {
         auto $continue{storage.Constants.Continue};
         typename TStorage::LinkAddressType deletedLinkAddress;
-        storage.Delete(typename TStorage::LinkType{linkAddress}, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+        DIRECT_METHOD_CALL(storage.Delete, typename TStorage::LinkType{linkAddress}, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
         {
             deletedLinkAddress = before[0];
             return $continue;
@@ -72,14 +72,14 @@
     // TODO: later add noexcept(expr)
     {
         typename TStorage::LinkType restriction { static_cast<typename TStorage::LinkAddressType>(restrictionPack)... };
-        return storage.Count(restriction);
+        return DIRECT_METHOD_CALL(storage.Count, restriction);
     }
 
     template<typename TStorage>
     static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
     {
         constexpr auto constants = storage.Constants;
-        return IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) || (IsInternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) && Count(storage, linkAddress) > 0);
+        return IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) || (IsInternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) && DIRECT_METHOD_CALL(storage.Count, linkAddress) > 0);
     }
 
     template<typename TStorage>
@@ -87,7 +87,7 @@
     // TODO: later create noexcept(expr)
     {
         typename TStorage::LinkType restrictionContainer { static_cast<typename TStorage::LinkAddressType>(restriction)... };
-        return storage.Each(restrictionContainer, handler);
+        return DIRECT_METHOD_CALL(storage.Each, restrictionContainer, handler);
     }
 
     template<typename TStorage>
@@ -102,7 +102,7 @@
             return resultLink;
         }
         typename TStorage::LinkType resultLink;
-        storage.Each(typename TStorage::LinkType{linkAddress}, [&resultLink, $continue](const typename TStorage::LinkType& link)
+        DIRECT_METHOD_CALL(storage.Each, typename TStorage::LinkType{linkAddress}, [&resultLink, $continue](const typename TStorage::LinkType& link)
         {
             resultLink = link;
             return $continue;
@@ -119,7 +119,7 @@
             return true;
         }
         Ensures(Exists(storage, link));
-        return Point<typename TStorage::LinkAddressType>::IsFullPoint(storage.GetLink(link));
+        return DIRECT_METHOD_CALL(Point<typename TStorage::LinkAddressType>::IsFullPoint, storage.GetLink(link));
     }
 
     template<typename TStorage>
@@ -130,6 +130,6 @@
             return true;
         }
         Ensures(Exists(storage, link));
-        return Point<typename TStorage::LinkAddressType>::IsPartialPoint(storage.GetLink(link));
+        return DIRECT_METHOD_CALL(Point<typename TStorage::LinkAddressType>::IsPartialPoint, storage.GetLink(link));
     }
 }
