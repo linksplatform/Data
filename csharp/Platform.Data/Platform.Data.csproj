@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Data</AssemblyTitle>
     <VersionPrefix>0.16.1</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
-    <TargetFramework>net7</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
     <PackageTags>LinksPlatform;Data;ArgumentLinkDoesNotExistsException;ArgumentLinkHasDependenciesException;LinksLimitReachedException;LinksLimitReachedExceptionBase;LinkWithSameValueAlreadyExistsException;AddressToRawNumberConverter;RawNumberToAddressConverter;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;Hybrid;ILinks;ILinksExtensions;ISynchronizedLinks;LinkAddress;LinksConstants;LinksConstantsBase;LinksConstantsExtensions;Point</PackageTags>
@@ -23,7 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Numbers dependency is updated to 0.9.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Target framework is updated to net8.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
