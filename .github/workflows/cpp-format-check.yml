@@ -1,0 +1,52 @@
+name: C++ Format Check
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - 'cpp/**/*.h'
+      - 'cpp/**/*.hpp'
+      - 'cpp/**/*.cpp'
+      - 'cpp/**/*.cc'
+      - 'cpp/**/*.c'
+      - '.clang-format'
+      - 'format-check.sh'
+
+jobs:
+  format-check:
+    name: Check C++ Code Formatting
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install clang-format
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y clang-format
+        
+    - name: Verify clang-format version
+      run: clang-format --version
+      
+    - name: Run format check
+      run: |
+        chmod +x ./format-check.sh
+        ./format-check.sh
+        
+    - name: Format check failed
+      if: failure()
+      run: |
+        echo ""
+        echo "❌ C++ code formatting check failed!"
+        echo ""
+        echo "Some files are not properly formatted according to .clang-format"
+        echo ""
+        echo "To fix formatting issues:"
+        echo "1. Run: ./format-apply.sh"
+        echo "2. Commit the changes"
+        echo "3. Push to update your PR"
+        echo ""
+        exit 1

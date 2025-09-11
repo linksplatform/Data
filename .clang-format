@@ -1,0 +1,55 @@
+# Based on observed code style in the repository
+BasedOnStyle: LLVM
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# Braces
+BreakBeforeBraces: Allman
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortCaseLabelsOnASingleLine: false
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceAfterCStyleCast: true
+SpaceBeforeAssignmentOperators: true
+SpaceAfterTemplateKeyword: false
+
+# Alignment
+AlignEscapedNewlines: Left
+AlignOperands: true
+AlignTrailingComments: true
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# Line length and wrapping
+ColumnLimit: 120
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowAllArgumentsOnNextLine: true
+BinPackParameters: false
+BinPackArguments: false
+
+# Includes
+SortIncludes: true
+IncludeBlocks: Preserve
+
+# Namespaces
+NamespaceIndentation: None
+CompactNamespaces: false
+
+# Access modifiers
+AccessModifierOffset: -4
+
+# Other formatting
+ReflowComments: true
+FixNamespaceComments: true
+SpaceBeforeRangeBasedForLoopColon: true
+Standard: c++20
