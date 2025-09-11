@@ -18,13 +18,28 @@ namespace Platform.Data
     /// </summary>
     public static class ILinksExtensions
     {
+        /// <summary>
+        /// <para>Performs direct method call optimization equivalent to C++ DIRECT_METHOD_CALL macro.</para>
+        /// <para>Выполняет оптимизацию прямого вызова метода, эквивалентную макросу DIRECT_METHOD_CALL из C++.</para>
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private static TResult DirectMethodCall<TLinkAddress, TConstants, TResult>(
+            ILinks<TLinkAddress, TConstants> links, 
+            Func<ILinks<TLinkAddress, TConstants>, TResult> action) 
+            where TConstants : LinksConstants<TLinkAddress>
+            where TLinkAddress : IUnsignedNumber<TLinkAddress>
+        {
+            // In C#, the JIT compiler will optimize this call when the concrete type is known
+            return action(links);
+        }
+
         public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links) where TLinkAddress : IUnsignedNumber<TLinkAddress> => links.Create(null);
 
         public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? substitution) where TLinkAddress : IUnsignedNumber<TLinkAddress>
         {
             var constants = links.Constants;
             Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
-            links.Create(substitution, setter.SetFirstFromNonNullSecondListAndReturnTrue);
+            DirectMethodCall(links, l => l.Create(substitution, setter.SetFirstFromNonNullSecondListAndReturnTrue));
             return setter.Result;
         }
 
@@ -32,7 +47,7 @@ namespace Platform.Data
         {
             var constants = links.Constants;
             Setter<TLinkAddress, TLinkAddress> setter = new(constants.Continue, constants.Break, constants.Null);
-            links.Update(restriction, substitution, setter.SetFirstFromNonNullSecondListAndReturnTrue);
+            DirectMethodCall(links, l => l.Update(restriction, substitution, setter.SetFirstFromNonNullSecondListAndReturnTrue));
             return setter.Result;
         }
 
@@ -42,7 +57,7 @@ namespace Platform.Data
         {
             var constants = links.Constants;
             Setter<TLinkAddress, TLinkAddress> setter = new Setter<TLinkAddress, TLinkAddress>(constants.Continue, constants.Break, constants.Null);
-            links.Delete(restriction, setter.SetFirstFromNonNullFirstListAndReturnTrue);
+            DirectMethodCall(links, l => l.Delete(restriction, setter.SetFirstFromNonNullFirstListAndReturnTrue));
             return setter.Result;
         }
 
@@ -88,7 +103,7 @@ namespace Platform.Data
             where TConstants : LinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
-            return constants.IsExternalReference(link) || (constants.IsInternalReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count(new LinkAddress<TLinkAddress>(link)), default) > 0);
+            return constants.IsExternalReference(link) || (constants.IsInternalReference(link) && Comparer<TLinkAddress>.Default.Compare(DirectMethodCall(links, l => l.Count(new LinkAddress<TLinkAddress>(link))), default) > 0);
         }
 
         /// <param name="links">Хранилище связей.</param>
@@ -129,7 +144,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
             where TConstants : LinksConstants<TLinkAddress>
-            => links.Each(restrictions, handler);
+            => DirectMethodCall(links, l => l.Each(restrictions, handler));
 
         /// <summary>
         /// Возвращает части-значения для связи с указанным индексом.
@@ -147,7 +162,7 @@ namespace Platform.Data
                 return new Point<TLinkAddress>(link, constants.TargetPart + 1);
             }
             var linkPartsSetter = new Setter<IList<TLinkAddress>?, TLinkAddress>(constants.Continue, constants.Break);
-            links.Each(linkPartsSetter.SetAndReturnTrue, link);
+            DirectMethodCall(links, l => l.Each(new LinkAddress<TLinkAddress>(link), linkPartsSetter.SetAndReturnTrue));
             return linkPartsSetter.Result;
         }
 
