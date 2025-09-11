@@ -73,8 +73,8 @@ namespace Platform.Data
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLinkAddress Count<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+        public static TLinkAddress Count<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, params TLinkAddress[] restrictions)
+            where TConstants : ILinksConstants<TLinkAddress>
             => links.Count(restrictions);
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace Platform.Data
         /// <returns>Значение, определяющее существует ли связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool Exists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+            where TConstants : ILinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
             return constants.IsExternalReference(link) || (constants.IsInternalReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count(new LinkAddress<TLinkAddress>(link)), default) > 0);
@@ -98,7 +98,7 @@ namespace Platform.Data
         /// </remarks>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnsureLinkExists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+            where TConstants : ILinksConstants<TLinkAddress>
         {
             if (!links.Exists(link))
             {
@@ -111,7 +111,7 @@ namespace Platform.Data
         /// <param name="argumentName">Имя аргумента, в который передаётся индекс связи.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnsureLinkExists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link, string argumentName) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+            where TConstants : ILinksConstants<TLinkAddress>
         {
             if (!links.Exists(link))
             {
@@ -127,8 +127,8 @@ namespace Platform.Data
         /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions)
+            where TConstants : ILinksConstants<TLinkAddress>
             => links.Each(restrictions, handler);
 
         /// <summary>
@@ -139,7 +139,7 @@ namespace Platform.Data
         /// <returns>Уникальную связь.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static IList<TLinkAddress>? GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+            where TConstants : ILinksConstants<TLinkAddress>
         {
             var constants = links.Constants;
             if (constants.IsExternalReference(link))
@@ -177,7 +177,7 @@ namespace Platform.Data
         /// </remarks>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsFullPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+            where TConstants : ILinksConstants<TLinkAddress>
         {
             if (links.Constants.IsExternalReference(link))
             {
@@ -197,7 +197,7 @@ namespace Platform.Data
         /// </remarks>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsPartialPoint<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
-            where TConstants : LinksConstants<TLinkAddress>
+            where TConstants : ILinksConstants<TLinkAddress>
         {
             if (links.Constants.IsExternalReference(link))
             {
