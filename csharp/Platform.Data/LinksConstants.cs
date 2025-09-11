@@ -287,7 +287,7 @@ namespace Platform.Data
         {
             if (enableExternalReferencesSupport)
             {
-                return (Hybrid<TLinkAddress>.ExternalZero, NumericType<TLinkAddress>.MaxValue);
+                return (TLinkAddress.CreateTruncating(0), NumericType<TLinkAddress>.MaxValue);
             }
             else
             {

@@ -24,7 +24,7 @@ namespace Platform.Data.Tests
         public static void ConstructorTest()
         {
             var constants = new LinksConstants<ulong>(enableExternalReferencesSupport: true);
-            Assert.Equal(Hybrid<ulong>.ExternalZero, constants.ExternalReferencesRange.Value.Minimum);
+            Assert.Equal((ulong)0, constants.ExternalReferencesRange.Value.Minimum);
             Assert.Equal(ulong.MaxValue, constants.ExternalReferencesRange.Value.Maximum);
         }
 
