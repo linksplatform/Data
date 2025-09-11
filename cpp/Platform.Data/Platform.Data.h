@@ -1,3 +1,19 @@
+/// @file Platform.Data.h
+/// @brief Main header file for the Platform.Data library.
+/// 
+/// This header includes all the essential components of the Platform.Data library,
+/// which provides a flexible framework for working with links - connections or 
+/// relationships between data elements. The library supports various addressing
+/// schemes, link representations, and extensible operations through templates.
+/// 
+/// Key components included:
+/// - Core interfaces (ILinks)
+/// - Link addressing (LinkAddress)
+/// - Configuration options (LinksOptions, LinksConstants)
+/// - Extension methods (ILinksExtensions)
+/// - Data conversion utilities
+/// - Exception handling
+///
 #pragma once
 
 #include <Platform.Ranges.h>
