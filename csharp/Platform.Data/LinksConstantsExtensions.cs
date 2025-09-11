@@ -1,5 +1,6 @@
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 
@@ -87,5 +88,55 @@ namespace Platform.Data
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsExternalReference<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) where TLinkAddress : IUnsignedNumber<TLinkAddress> => linksConstants.ExternalReferencesRange?.Contains(address) ?? false;
+
+        /// <summary>
+        /// <para>
+        /// Determines whether the specified address is null (empty value).
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The link address.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="linksConstants">
+        /// <para>The links constants.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="address">
+        /// <para>The address.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>True if the address equals Constants.Null; otherwise, false</para>
+        /// <para></para>
+        /// </returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool IsNull<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) where TLinkAddress : IUnsignedNumber<TLinkAddress> => EqualityComparer<TLinkAddress>.Default.Equals(address, linksConstants.Null);
+
+        /// <summary>
+        /// <para>
+        /// Determines whether the specified address is not null (not empty value).
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The link address.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="linksConstants">
+        /// <para>The links constants.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="address">
+        /// <para>The address.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>True if the address does not equal Constants.Null; otherwise, false</para>
+        /// <para></para>
+        /// </returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool IsNotNull<TLinkAddress>(this LinksConstants<TLinkAddress> linksConstants, TLinkAddress address) where TLinkAddress : IUnsignedNumber<TLinkAddress> => !EqualityComparer<TLinkAddress>.Default.Equals(address, linksConstants.Null);
     }
 }
