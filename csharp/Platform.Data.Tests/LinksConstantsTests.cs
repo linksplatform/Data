@@ -42,6 +42,32 @@ namespace Platform.Data.Tests
             TestExternalReferences<ushort, short>();
             TestExternalReferences<byte, sbyte>();
         }
+
+        /// <summary>
+        /// <para>
+        /// Tests that null checking methods work correctly.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        [Fact]
+        public static void NullCheckingTest()
+        {
+            var constants = new LinksConstants<ulong>();
+            
+            // Test IsNull method
+            Assert.True(constants.IsNull(constants.Null));
+            Assert.True(constants.IsNull(0UL)); // Null is default which is 0 for ulong
+            Assert.False(constants.IsNull(1UL));
+            Assert.False(constants.IsNull(constants.Any));
+            Assert.False(constants.IsNull(constants.Continue));
+            
+            // Test IsNotNull method
+            Assert.False(constants.IsNotNull(constants.Null));
+            Assert.False(constants.IsNotNull(0UL)); // Null is default which is 0 for ulong
+            Assert.True(constants.IsNotNull(1UL));
+            Assert.True(constants.IsNotNull(constants.Any));
+            Assert.True(constants.IsNotNull(constants.Continue));
+        }
         private static void TestExternalReferences<TUnsigned, TSigned>() where TUnsigned : IUnsignedNumber<TUnsigned> where TSigned : ISignedNumber<TSigned>
         {
             var unsingedOne = TUnsigned.One;
