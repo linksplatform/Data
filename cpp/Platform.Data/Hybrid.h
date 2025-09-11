@@ -13,13 +13,12 @@
     class Hybrid
     {
         public: static constexpr TLinkAddress HalfOfNumberValuesRange = std::numeric_limits<TLinkAddress>::max() / 2;
-        public: static constexpr TLinkAddress ExternalZero = static_cast<TLinkAddress>(HalfOfNumberValuesRange + 1);
 
         public: const TLinkAddress Value = 0;
 
         public: [[nodiscard]] bool IsNothing() const noexcept
         {
-            return (Value == ExternalZero) || (SignedValue() == 0);
+            return Value == 0;
         }
 
         public: [[nodiscard]] bool IsInternal() const noexcept
@@ -29,7 +28,7 @@
 
         public: [[nodiscard]] bool IsExternal() const noexcept
         {
-            return (Value == ExternalZero) || (SignedValue() < 0);
+            return (Value == 0) || (SignedValue() < 0);
         }
 
         public: [[nodiscard]] auto SignedValue() const noexcept -> decltype(Internal::smart_to_signed(Value))
@@ -39,7 +38,7 @@
 
         public: [[nodiscard]] TLinkAddress AbsoluteValue() const noexcept
         {
-            return (Value == ExternalZero) ? 0 : std::abs(SignedValue());
+            return (Value == 0) ? 0 : std::abs(SignedValue());
         }
 
         public: explicit Hybrid(TLinkAddress value) noexcept : Value(value) { }
@@ -58,7 +57,7 @@
         {
             if (value == 0 && isExternal)
             {
-                return ExternalZero;
+                return 0;
             }
             else
             {

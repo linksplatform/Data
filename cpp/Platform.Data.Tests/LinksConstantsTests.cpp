@@ -5,7 +5,7 @@
         using namespace Platform::Data;
 
         auto constants = LinksConstants<std::uint64_t>(true);
-        ASSERT_EQ(Hybrid<std::uint64_t>::ExternalZero, constants.ExternalReferencesRange.Minimum);
+        ASSERT_EQ(std::uint64_t{0}, constants.ExternalReferencesRange.Minimum);
         ASSERT_EQ(std::numeric_limits<std::uint64_t>::max(), constants.ExternalReferencesRange.Maximum);
     }
 

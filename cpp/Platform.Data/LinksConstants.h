@@ -116,7 +116,7 @@
         {
             if (enableExternalReferencesSupport)
             {
-                return Ranges::Range{Hybrid<TLinkAddress>::ExternalZero, std::numeric_limits<TLinkAddress>::max()};
+                return Ranges::Range{TLinkAddress{0}, std::numeric_limits<TLinkAddress>::max()};
             }
             else
             {

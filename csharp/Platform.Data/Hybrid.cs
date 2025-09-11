@@ -30,13 +30,6 @@ namespace Platform.Data
         /// <para></para>
         /// </summary>
         public static readonly TLinkAddress HalfOfNumberValuesRange = (NumericType<TLinkAddress>.MaxValue) / TLinkAddress.CreateTruncating(2);
-        /// <summary>
-        /// <para>
-        /// The half of number values range.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        public static readonly TLinkAddress ExternalZero = (HalfOfNumberValuesRange + TLinkAddress.CreateTruncating(1));
 
         /// <summary>
         /// <para>
@@ -55,7 +48,7 @@ namespace Platform.Data
         public bool IsNothing
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (Value == ExternalZero) || SignedValue == 0;
+            get => Value == default;
         }
 
         /// <summary>
@@ -79,7 +72,7 @@ namespace Platform.Data
         public bool IsExternal
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (Value == ExternalZero) || SignedValue < 0;
+            get => (Value == default) || SignedValue < 0;
         }
 
         /// <summary>
@@ -103,7 +96,7 @@ namespace Platform.Data
         public long AbsoluteValue
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (Value == ExternalZero) ? 0 : System.Math.Abs(SignedValue);
+            get => (Value == default) ? 0 : System.Math.Abs(SignedValue);
         }
 
         /// <summary>
@@ -142,7 +135,7 @@ namespace Platform.Data
         {
             if ((value == default) && isExternal)
             {
-                Value = ExternalZero;
+                Value = default;
             }
             else
             {
@@ -190,7 +183,7 @@ namespace Platform.Data
             var signedValue = value == null ? 0 : _objectToInt64Converter.Convert(value);
             if (signedValue == 0 && isExternal)
             {
-                Value = ExternalZero;
+                Value = default;
             }
             else
             {
