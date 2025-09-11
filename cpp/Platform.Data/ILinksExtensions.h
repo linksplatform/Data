@@ -1,135 +1,173 @@
 ﻿namespace Platform::Data
 {
-    using namespace Platform::Interfaces;
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Create(TStorage& storage, const typename TStorage::LinkType& substitution)
-    {
-        auto $continue { storage.Constants.Continue };
-        typename TStorage::LinkAddressType createdLinkAddress;
-        DIRECT_METHOD_CALL(TStorage, storage, Create, substitution, [&createdLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
-        {
-            createdLinkAddress = after[0];
-            return $continue;
-        });
-        return createdLinkAddress;
-    }
-    
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Create(TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...substitutionPack)
-    {
-        typename TStorage::LinkType substitution { static_cast<typename TStorage::LinkAddressType>(substitutionPack)... };
-        auto $continue { storage.Constants.Continue };
-        typename TStorage::LinkAddressType createdLinkAddress;
-        DIRECT_METHOD_CALL(TStorage, storage, Create, substitution, [&createdLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
+using namespace Platform::Interfaces;
+template<typename TStorage>
+static typename TStorage::LinkAddressType Create(TStorage& storage, const typename TStorage::LinkType& substitution)
+{
+    auto $continue{storage.Constants.Continue};
+    typename TStorage::LinkAddressType createdLinkAddress;
+    DIRECT_METHOD_CALL(TStorage,
+                       storage,
+                       Create,
+                       substitution,
+                       [&createdLinkAddress, $continue](const typename TStorage::LinkType& before,
+                                                        const typename TStorage::LinkType& after)
                        {
                            createdLinkAddress = after[0];
                            return $continue;
                        });
-        return createdLinkAddress;
-    }
-    
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Update(TStorage& storage, const typename TStorage::LinkType& restriction, const typename TStorage::LinkType& substitution)
-    {
-        auto $continue{storage.Constants.Continue};
-        typename TStorage::LinkAddressType updatedLinkAddress;
-        DIRECT_METHOD_CALL(TStorage, storage, Update, restriction, substitution, [&updatedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
-        {
-            updatedLinkAddress = after[0];
-            return $continue;
-        });
-        return updatedLinkAddress;
-    }
-    
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Delete(TStorage& storage, const typename TStorage::LinkType& restriction)
-    {
-        auto $continue{storage.Constants.Continue};
-        typename TStorage::LinkAddressType deletedLinkAddress;
-        DIRECT_METHOD_CALL(TStorage, storage, Delete, restriction, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
-        {
-            deletedLinkAddress = before[0];
-            return $continue;
-        });
-        return deletedLinkAddress;
-    }
-    
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Delete(TStorage& storage, typename TStorage::LinkAddressType linkAddress)
-    {
-        auto $continue{storage.Constants.Continue};
-        typename TStorage::LinkAddressType deletedLinkAddress;
-        DIRECT_METHOD_CALL(TStorage, storage, Delete, typename TStorage::LinkType{linkAddress}, [&deletedLinkAddress, $continue] (const typename TStorage::LinkType& before, const typename TStorage::LinkType& after)
-        {
-            deletedLinkAddress = before[0];
-            return $continue;
-        });
-        return deletedLinkAddress;
-    }
-    
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restrictionPack)
-    // TODO: later add noexcept(expr)
-    {
-        typename TStorage::LinkType restriction { static_cast<typename TStorage::LinkAddressType>(restrictionPack)... };
-        return DIRECT_METHOD_CALL(TStorage, storage, Count, restriction);
-    }
-    
-    template<typename TStorage>
-    static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
-    {
-        constexpr auto constants = storage.Constants;
-        return IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) || (IsInternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) && DIRECT_METHOD_CALL(TStorage, storage, Count, linkAddress) > 0);
-    }
-    
-    template<typename TStorage>
-    static typename TStorage::LinkAddressType Each(const TStorage& storage, const typename TStorage::ReadHandlerType& handler, std::convertible_to<typename TStorage::LinkAddressType> auto... restriction)
-    // TODO: later create noexcept(expr)
-    {
-        typename TStorage::LinkType restrictionContainer { static_cast<typename TStorage::LinkAddressType>(restriction)... };
-        return DIRECT_METHOD_CALL(TStorage, storage, Each, restrictionContainer, handler);
-    }
+    return createdLinkAddress;
+}
 
-    template<typename TStorage>
-    static typename TStorage::LinkType GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
+template<typename TStorage>
+static typename TStorage::LinkAddressType
+Create(TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto... substitutionPack)
+{
+    typename TStorage::LinkType substitution{static_cast<typename TStorage::LinkAddressType>(substitutionPack)...};
+    auto $continue{storage.Constants.Continue};
+    typename TStorage::LinkAddressType createdLinkAddress;
+    DIRECT_METHOD_CALL(TStorage,
+                       storage,
+                       Create,
+                       substitution,
+                       [&createdLinkAddress, $continue](const typename TStorage::LinkType& before,
+                                                        const typename TStorage::LinkType& after)
+                       {
+                           createdLinkAddress = after[0];
+                           return $continue;
+                       });
+    return createdLinkAddress;
+}
+
+template<typename TStorage>
+static typename TStorage::LinkAddressType Update(TStorage& storage,
+                                                 const typename TStorage::LinkType& restriction,
+                                                 const typename TStorage::LinkType& substitution)
+{
+    auto $continue{storage.Constants.Continue};
+    typename TStorage::LinkAddressType updatedLinkAddress;
+    DIRECT_METHOD_CALL(TStorage,
+                       storage,
+                       Update,
+                       restriction,
+                       substitution,
+                       [&updatedLinkAddress, $continue](const typename TStorage::LinkType& before,
+                                                        const typename TStorage::LinkType& after)
+                       {
+                           updatedLinkAddress = after[0];
+                           return $continue;
+                       });
+    return updatedLinkAddress;
+}
+
+template<typename TStorage>
+static typename TStorage::LinkAddressType Delete(TStorage& storage, const typename TStorage::LinkType& restriction)
+{
+    auto $continue{storage.Constants.Continue};
+    typename TStorage::LinkAddressType deletedLinkAddress;
+    DIRECT_METHOD_CALL(TStorage,
+                       storage,
+                       Delete,
+                       restriction,
+                       [&deletedLinkAddress, $continue](const typename TStorage::LinkType& before,
+                                                        const typename TStorage::LinkType& after)
+                       {
+                           deletedLinkAddress = before[0];
+                           return $continue;
+                       });
+    return deletedLinkAddress;
+}
+
+template<typename TStorage>
+static typename TStorage::LinkAddressType Delete(TStorage& storage, typename TStorage::LinkAddressType linkAddress)
+{
+    auto $continue{storage.Constants.Continue};
+    typename TStorage::LinkAddressType deletedLinkAddress;
+    DIRECT_METHOD_CALL(TStorage,
+                       storage,
+                       Delete,
+                       typename TStorage::LinkType{linkAddress},
+                       [&deletedLinkAddress, $continue](const typename TStorage::LinkType& before,
+                                                        const typename TStorage::LinkType& after)
+                       {
+                           deletedLinkAddress = before[0];
+                           return $continue;
+                       });
+    return deletedLinkAddress;
+}
+
+template<typename TStorage>
+static typename TStorage::LinkAddressType
+Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto... restrictionPack)
+// TODO: later add noexcept(expr)
+{
+    typename TStorage::LinkType restriction{static_cast<typename TStorage::LinkAddressType>(restrictionPack)...};
+    return DIRECT_METHOD_CALL(TStorage, storage, Count, restriction);
+}
+
+template<typename TStorage>
+static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
+{
+    constexpr auto constants = storage.Constants;
+    return IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) ||
+           (IsInternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) &&
+            DIRECT_METHOD_CALL(TStorage, storage, Count, linkAddress) > 0);
+}
+
+template<typename TStorage>
+static typename TStorage::LinkAddressType
+Each(const TStorage& storage,
+     const typename TStorage::ReadHandlerType& handler,
+     std::convertible_to<typename TStorage::LinkAddressType> auto... restriction)
+// TODO: later create noexcept(expr)
+{
+    typename TStorage::LinkType restrictionContainer{static_cast<typename TStorage::LinkAddressType>(restriction)...};
+    return DIRECT_METHOD_CALL(TStorage, storage, Each, restrictionContainer, handler);
+}
+
+template<typename TStorage>
+static typename TStorage::LinkType GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
+{
+    constexpr auto constants = storage.Constants;
+    auto $continue = constants.Continue;
+    auto any = constants.Any;
+    if (IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress))
     {
-        constexpr auto constants = storage.Constants;
-        auto $continue = constants.Continue;
-        auto any = constants.Any;
-        if (IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress))
-        {
-            typename TStorage::LinkType resultLink {linkAddress, linkAddress, linkAddress};
-            return resultLink;
-        }
-        typename TStorage::LinkType resultLink;
-        DIRECT_METHOD_CALL(TStorage, storage, Each, typename TStorage::LinkType{linkAddress}, [&resultLink, $continue](const typename TStorage::LinkType& link)
-        {
-            resultLink = link;
-            return $continue;
-        });
-        Ensures(!resultLink.empty());
+        typename TStorage::LinkType resultLink{linkAddress, linkAddress, linkAddress};
         return resultLink;
     }
-
-    template<typename TStorage>
-    static bool IsFullPoint(TStorage& storage, typename TStorage::LinkAddressType link)
-    {
-        if (IsExternalReference(storage.Constants, link))
-        {
-            return true;
-        }
-        Ensures(DIRECT_METHOD_CALL(TStorage, storage, Exists, link));
-        return Point<typename TStorage::LinkAddressType>::IsFullPoint(DIRECT_METHOD_CALL(TStorage, storage, GetLink, link));
-    }
-
-    template<typename TStorage>
-    static bool IsPartialPoint(TStorage& storage, typename TStorage::LinkAddressType link)
-    {
-        if (IsExternalReference(storage.Constants, link))
-        {
-            return true;
-        }
-        Ensures(DIRECT_METHOD_CALL(TStorage, storage, Exists, link));
-        return Point<typename TStorage::LinkAddressType>::IsPartialPoint(DIRECT_METHOD_CALL(TStorage, storage, GetLink, link));
-    }
+    typename TStorage::LinkType resultLink;
+    DIRECT_METHOD_CALL(TStorage,
+                       storage,
+                       Each,
+                       typename TStorage::LinkType{linkAddress},
+                       [&resultLink, $continue](const typename TStorage::LinkType& link)
+                       {
+                           resultLink = link;
+                           return $continue;
+                       });
+    Ensures(!resultLink.empty());
+    return resultLink;
 }
+
+template<typename TStorage> static bool IsFullPoint(TStorage& storage, typename TStorage::LinkAddressType link)
+{
+    if (IsExternalReference(storage.Constants, link))
+    {
+        return true;
+    }
+    Ensures(DIRECT_METHOD_CALL(TStorage, storage, Exists, link));
+    return Point<typename TStorage::LinkAddressType>::IsFullPoint(DIRECT_METHOD_CALL(TStorage, storage, GetLink, link));
+}
+
+template<typename TStorage> static bool IsPartialPoint(TStorage& storage, typename TStorage::LinkAddressType link)
+{
+    if (IsExternalReference(storage.Constants, link))
+    {
+        return true;
+    }
+    Ensures(DIRECT_METHOD_CALL(TStorage, storage, Exists, link));
+    return Point<typename TStorage::LinkAddressType>::IsPartialPoint(
+        DIRECT_METHOD_CALL(TStorage, storage, GetLink, link));
+}
+} // namespace Platform::Data

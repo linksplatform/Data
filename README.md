@@ -23,6 +23,25 @@ Interface [ILinks\<TLinkAddress, TConstants\>](https://linksplatform.github.io/D
 *   [Platform.Numbers](https://github.com/linksplatform/Numbers)
 *   [Platform.Setters](https://github.com/linksplatform/Setters)
 
+## C++ Code Formatting
+
+This repository uses [clang-format](https://clang.llvm.org/docs/ClangFormat.html) to ensure consistent C++ code formatting. The formatting rules are defined in `.clang-format`.
+
+### Format Commands
+
+Similar to Java's `./gradlew spotlessCheck` and `./gradlew spotlessApply`, we provide equivalent scripts for C++:
+
+- **Check formatting**: `./format-check.sh` - Checks if all C++ files are properly formatted
+- **Apply formatting**: `./format-apply.sh` - Formats all C++ files according to the style guide
+
+### CI Integration
+
+Pull requests automatically check C++ code formatting using GitHub Actions. If formatting issues are found, the PR will be marked as failed until the code is properly formatted.
+
+To fix formatting issues in your PR:
+1. Run `./format-apply.sh` to format your code
+2. Commit and push the changes
+
 ## Dependent libraries
 *   [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets)
 *   [Platform.Data.Triplets](https://github.com/linksplatform/Data.Triplets)
