@@ -1,36 +1,55 @@
-﻿namespace Platform::Data
+﻿/// @file LinksConstants.h
+/// @brief Core constants and configuration values for the links system.
+
+namespace Platform::Data
 {
+    /// @brief Configuration constants for the links system.
+    /// @tparam TLinkAddress The integral type used for link addressing.
+    /// 
+    /// This structure contains all the essential constants used throughout the links system,
+    /// including part indices, control flow values, and address ranges.
     template<std::integral TLinkAddress>
     struct LinksConstants
     {
+        /// @brief Default index for the target part of a link.
         static constexpr int DefaultTargetPart = 2;
+        /// @brief Index for the link identifier part (typically 0).
     public:
         const TLinkAddress IndexPart{};
 
+        /// @brief Index for the source part of a link (typically 1).
     public:
         const TLinkAddress SourcePart{};
 
+        /// @brief Index for the target part of a link (configurable, typically 2).
     public:
         const TLinkAddress TargetPart{};
 
+        /// @brief Value indicating continuation of operations.
     public:
         const TLinkAddress Continue{};
 
+        /// @brief Value indicating termination of operations.
     public:
         const TLinkAddress Break{};
 
+        /// @brief Value indicating to skip current item in operations.
     public:
         const TLinkAddress Skip{};
 
+        /// @brief Value representing null/empty reference.
     public:
         const TLinkAddress Null{};
 
+        /// @brief Value representing any/wildcard match in queries.
     public:
         const TLinkAddress Any{};
 
+        /// @brief Value representing self-reference.
     public:
         const TLinkAddress Itself{};
 
+        /// @brief Value representing error condition.
     public:
         const TLinkAddress Error{};
 
