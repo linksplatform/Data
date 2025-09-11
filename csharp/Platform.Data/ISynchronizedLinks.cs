@@ -14,9 +14,8 @@ namespace Platform.Data
     /// <seealso cref="ISynchronized{TLinks}"/>
     /// <seealso cref="ILinks{TLinkAddress, TConstants}"/>
     public interface ISynchronizedLinks<TLinkAddress, TLinks, TConstants> : ISynchronized<TLinks>, ILinks<TLinkAddress, TConstants>
-        where TLinkAddress : IUnsignedNumber<TLinkAddress>
         where TLinks : ILinks<TLinkAddress, TConstants>
-        where TConstants : LinksConstants<TLinkAddress>
+        where TConstants : ILinksConstants<TLinkAddress>
     {
     }
 }

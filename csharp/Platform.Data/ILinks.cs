@@ -17,8 +17,7 @@ namespace Platform.Data
     /// <para>Этот интерфейс не зависит от размера содержимого связи, а значит подходит как для дуплетов, триплетов и последовательностей связей любого размера.</para>
     /// </remarks>
     public interface ILinks<TLinkAddress, TConstants>
-        where TLinkAddress : IUnsignedNumber<TLinkAddress>
-        where TConstants : LinksConstants<TLinkAddress>
+        where TConstants : ILinksConstants<TLinkAddress>
     {
         #region Constants
 
