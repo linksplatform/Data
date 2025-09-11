@@ -127,7 +127,7 @@ namespace Platform.Data
         /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
+        public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress> handler, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
             where TConstants : LinksConstants<TLinkAddress>
             => links.Each(restrictions, handler);
 
