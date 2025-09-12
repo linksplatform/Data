@@ -1,21 +1,23 @@
 ﻿namespace Platform::Data
 {
-    template <typename TLinkAddress, LinksConstants<TLinkAddress> VLinksConstants>
-    static bool IsInternalReference(TLinkAddress linkAddress) noexcept
+    template <typename TLinksConstants>
+    static bool IsInternalReference(typename TLinksConstants::LinkAddressType linkAddress) noexcept
     {
-        return VLinksConstants.InternalReferencesRange.Contains(linkAddress);
+        static constexpr TLinksConstants constants{true};
+        return constants.InternalReferencesRange.Contains(linkAddress);
     }
 
-    template <typename TLinkAddress, LinksConstants<TLinkAddress> VLinksConstants>
-    static bool IsReference(TLinkAddress linkAddress) noexcept
+    template <typename TLinksConstants>
+    static bool IsReference(typename TLinksConstants::LinkAddressType linkAddress) noexcept
     {
-        return IsInternalReference(VLinksConstants, linkAddress) || IsExternalReference(VLinksConstants, linkAddress);
+        return IsInternalReference<TLinksConstants>(linkAddress) || IsExternalReference<TLinksConstants>(linkAddress);
     }
 
-    template <typename TLinkAddress, LinksConstants<TLinkAddress> VLinksConstants>
-    static bool IsExternalReference(TLinkAddress linkAddress) noexcept
+    template <typename TLinksConstants>
+    static bool IsExternalReference(typename TLinksConstants::LinkAddressType linkAddress) noexcept
     {
-        auto&& range = VLinksConstants.ExternalReferencesRange;
+        static constexpr TLinksConstants constants{true};
+        auto&& range = constants.ExternalReferencesRange;
         return range.Contains(linkAddress);
     }
 }
