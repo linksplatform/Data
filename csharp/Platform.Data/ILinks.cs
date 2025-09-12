@@ -16,7 +16,7 @@ namespace Platform.Data
     /// <para>This interface is independent of the size of the content of the link, meaning it is suitable for both doublets, triplets, and link sequences of any size.</para>
     /// <para>Этот интерфейс не зависит от размера содержимого связи, а значит подходит как для дуплетов, триплетов и последовательностей связей любого размера.</para>
     /// </remarks>
-    public interface ILinks<TLinkAddress, TConstants>
+    public interface ILinks<TLinkAddress, TConstants> : IDynamicLinks
         where TLinkAddress : IUnsignedNumber<TLinkAddress>
         where TConstants : LinksConstants<TLinkAddress>
     {
