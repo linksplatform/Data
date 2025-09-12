@@ -1,9 +1,14 @@
-﻿namespace Platform::Data::Exceptions
+﻿#pragma once
+#include <string>
+#include "LinksLimitReachedExceptionBase.h"
+#include "Platform.Converters.Fallback.h"
+
+namespace Platform::Data::Exceptions
 {
     template <typename ...> class LinksLimitReachedException;
     template <typename TLinkAddress> class LinksLimitReachedException<TLinkAddress> : public LinksLimitReachedExceptionBase
     {
-        public: LinksLimitReachedException(TLinkAddress limit) : this(FormatMessage(limit)) { }
+        public: LinksLimitReachedException(TLinkAddress limit) : LinksLimitReachedExceptionBase(FormatMessage(limit)) { }
 
         public: LinksLimitReachedException(std::string message, const std::exception& innerException) : LinksLimitReachedExceptionBase(message, innerException) { }
 
