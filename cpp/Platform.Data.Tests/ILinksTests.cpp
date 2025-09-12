@@ -1,9 +1,9 @@
 namespace Platform::Data::Tests
 {
-    template<std::integral TLinkAddress = std::uint64_t, LinksConstants<TLinkAddress> VConstants = LinksConstants<TLinkAddress>{true}, typename TLink = std::vector<TLinkAddress>, typename TReadHandler = std::function<TLinkAddress(TLink)>, typename TWriteHandler = std::function<TLinkAddress(TLink, TLink)>>
-    struct Links : public ILinks<LinksOptions<TLinkAddress, VConstants, TLink,TReadHandler, TWriteHandler>>
+    template<std::integral TLinkAddress = std::uint64_t, typename TLinksConstants = LinksConstants<TLinkAddress>, typename TLink = std::vector<TLinkAddress>, typename TReadHandler = std::function<TLinkAddress(TLink)>, typename TWriteHandler = std::function<TLinkAddress(TLink, TLink)>>
+    struct Links : public ILinks<LinksOptions<TLinkAddress, TLinksConstants, TLink,TReadHandler, TWriteHandler>>
     {
-        using base = ILinks<LinksOptions<TLinkAddress, VConstants, TLink, TReadHandler, TWriteHandler>>;
+        using base = ILinks<LinksOptions<TLinkAddress, TLinksConstants, TLink, TReadHandler, TWriteHandler>>;
         using typename base::LinkAddressType;
         using typename base::LinkType;
         using typename base::WriteHandlerType;

@@ -3,6 +3,7 @@
     template<std::integral TLinkAddress>
     struct LinksConstants
     {
+        using LinkAddressType = TLinkAddress;
         static constexpr int DefaultTargetPart = 2;
     public:
         const TLinkAddress IndexPart{};
