@@ -89,6 +89,13 @@
         typename TStorage::LinkType restrictionContainer { static_cast<typename TStorage::LinkAddressType>(restriction)... };
         return DIRECT_METHOD_CALL(TStorage, storage, Each, restrictionContainer, handler);
     }
+    
+    template<typename TStorage>
+    static typename TStorage::LinkAddressType Update(TStorage& storage, const typename TStorage::LinkType& substitution, std::convertible_to<typename TStorage::LinkAddressType> auto... restrictions)
+    {
+        typename TStorage::LinkType restrictionContainer { static_cast<typename TStorage::LinkAddressType>(restrictions)... };
+        return Update(storage, restrictionContainer, substitution);
+    }
 
     template<typename TStorage>
     static typename TStorage::LinkType GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)

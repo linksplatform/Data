@@ -31,6 +31,7 @@ namespace Platform::Data::Tests
         const TLinkAddress linkAddress {1};
         Create(storage, linkAddress);
         Update(storage, TLink{1}, TLink{1, 1});
+        Update(storage, TLink{1, 1}, linkAddress);  // Test new variadic Update method
         storage.Count(TLink{1});
         const_links.Count(TLink{1});
         storage.Each(TLink{1}, [](const TLink& link){ return 1; });
