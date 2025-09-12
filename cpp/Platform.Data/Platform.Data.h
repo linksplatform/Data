@@ -16,5 +16,6 @@
 #include "LinksOptions.h"
 #include "LinksConstantsExtensions.h"
 #include "ILinks.h"
+#include "CLinks.h"
 
 #include "ILinksExtensions.h"
