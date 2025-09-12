@@ -1,7 +1,18 @@
-﻿namespace Platform::Data
+﻿#pragma once
+#include "CLinks.h"
+#include "LinksConstantsExtensions.h"
+#include "Point.h"
+#include "Exceptions/ArgumentLinkDoesNotExistsException.h"
+#include <Platform.Interfaces.h>
+
+#define DIRECT_METHOD_CALL(TStorage, storage, method, ...) storage.method(__VA_ARGS__)
+#define Ensures(condition) // TODO: Add proper assertion logic
+
+namespace Platform::Data
 {
     using namespace Platform::Interfaces;
-    template<typename TStorage>
+    
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Create(TStorage& storage, const typename TStorage::LinkType& substitution)
     {
         auto $continue { storage.Constants.Continue };
@@ -14,7 +25,7 @@
         return createdLinkAddress;
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Create(TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...substitutionPack)
     {
         typename TStorage::LinkType substitution { static_cast<typename TStorage::LinkAddressType>(substitutionPack)... };
@@ -28,7 +39,7 @@
         return createdLinkAddress;
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Update(TStorage& storage, const typename TStorage::LinkType& restriction, const typename TStorage::LinkType& substitution)
     {
         auto $continue{storage.Constants.Continue};
@@ -41,7 +52,7 @@
         return updatedLinkAddress;
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Delete(TStorage& storage, const typename TStorage::LinkType& restriction)
     {
         auto $continue{storage.Constants.Continue};
@@ -54,7 +65,7 @@
         return deletedLinkAddress;
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Delete(TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
         auto $continue{storage.Constants.Continue};
@@ -67,7 +78,7 @@
         return deletedLinkAddress;
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Count(const TStorage& storage, std::convertible_to<typename TStorage::LinkAddressType> auto ...restrictionPack)
     // TODO: later add noexcept(expr)
     {
@@ -75,14 +86,14 @@
         return DIRECT_METHOD_CALL(TStorage, storage, Count, restriction);
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static bool Exists(const TStorage& storage, typename TStorage::LinkAddressType linkAddress) noexcept
     {
         constexpr auto constants = storage.Constants;
         return IsExternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) || (IsInternalReference<typename TStorage::LinkAddressType, constants>(linkAddress) && DIRECT_METHOD_CALL(TStorage, storage, Count, linkAddress) > 0);
     }
     
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkAddressType Each(const TStorage& storage, const typename TStorage::ReadHandlerType& handler, std::convertible_to<typename TStorage::LinkAddressType> auto... restriction)
     // TODO: later create noexcept(expr)
     {
@@ -90,7 +101,7 @@
         return DIRECT_METHOD_CALL(TStorage, storage, Each, restrictionContainer, handler);
     }
 
-    template<typename TStorage>
+    template<CLinks TStorage>
     static typename TStorage::LinkType GetLink(const TStorage& storage, typename TStorage::LinkAddressType linkAddress)
     {
         constexpr auto constants = storage.Constants;
@@ -111,10 +122,10 @@
         return resultLink;
     }
 
-    template<typename TStorage>
+    template<CLinks TStorage>
     static bool IsFullPoint(TStorage& storage, typename TStorage::LinkAddressType link)
     {
-        if (IsExternalReference(storage.Constants, link))
+        if (IsExternalReference<typename TStorage::LinkAddressType, storage.Constants>(link))
         {
             return true;
         }
@@ -122,10 +133,10 @@
         return Point<typename TStorage::LinkAddressType>::IsFullPoint(DIRECT_METHOD_CALL(TStorage, storage, GetLink, link));
     }
 
-    template<typename TStorage>
+    template<CLinks TStorage>
     static bool IsPartialPoint(TStorage& storage, typename TStorage::LinkAddressType link)
     {
-        if (IsExternalReference(storage.Constants, link))
+        if (IsExternalReference<typename TStorage::LinkAddressType, storage.Constants>(link))
         {
             return true;
         }
