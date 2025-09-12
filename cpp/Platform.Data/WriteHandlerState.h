@@ -10,6 +10,9 @@ namespace Platform::Data
 
         WriteHandlerState(typename TStorage::LinkAddressType $continue, typename TStorage::LinkAddressType $break, auto&& handler) :
             Result{$continue}, Break{$break}, Handler{handler} {}
+        
+        WriteHandlerState(typename TStorage::LinkAddressType $continue, typename TStorage::LinkAddressType $break, std::nullptr_t) :
+            Result{$continue}, Break{$break}, Handler{nullptr} {}
 
         typename TStorage::LinkAddressType Apply(typename TStorage::LinkAddressType result)
         {
