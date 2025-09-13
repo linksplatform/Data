@@ -4,12 +4,12 @@
     <Description>LinksPlatform's Platform.Data Class Library</Description>
     <Copyright>konard, FreePhoenix888</Copyright>
     <AssemblyTitle>Platform.Data</AssemblyTitle>
-    <VersionPrefix>0.16.1</VersionPrefix>
+    <VersionPrefix>0.16.2</VersionPrefix>
     <Authors>konard, FreePhoenix888</Authors>
     <TargetFramework>net8</TargetFramework>
     <AssemblyName>Platform.Data</AssemblyName>
     <PackageId>Platform.Data</PackageId>
-    <PackageTags>LinksPlatform;Data;ArgumentLinkDoesNotExistsException;ArgumentLinkHasDependenciesException;LinksLimitReachedException;LinksLimitReachedExceptionBase;LinkWithSameValueAlreadyExistsException;AddressToRawNumberConverter;RawNumberToAddressConverter;ISequenceAppender;ISequenceWalker;SequenceWalker;StopableSequenceWalker;Hybrid;ILinks;ILinksExtensions;ISynchronizedLinks;LinkAddress;LinksConstants;LinksConstantsBase;LinksConstantsExtensions;Point</PackageTags>
+    <PackageTags>LinksPlatform;Data;ArgumentLinkDoesNotExistsException;ArgumentLinkHasDependenciesException;LinksLimitReachedException;LinksLimitReachedExceptionBase;LinkWithSameValueAlreadyExistsException;AddressToRawNumberConverter;RawNumberToAddressConverter;Hybrid;ILinks;ILinksExtensions;ISynchronizedLinks;LinkAddress;LinksConstants;LinksConstantsBase;LinksConstantsExtensions;Point</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Data</PackageProjectUrl>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
@@ -23,7 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Update target framework from net7 to net8.</PackageReleaseNotes>
+    <PackageReleaseNotes>Remove Sequences-related PackageTags that were moved to separate repository.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
