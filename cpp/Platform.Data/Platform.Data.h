@@ -12,6 +12,7 @@
 #include "LinkAddress.h"
 #include "Point.h"
 #include "Hybrid.h"
+#include "LinksConstantsBase.h"
 #include "LinksConstants.h"
 #include "LinksOptions.h"
 #include "LinksConstantsExtensions.h"
