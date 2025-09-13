@@ -34,17 +34,6 @@ namespace Platform.Data
             get;
         }
 
-        /// <summary>
-        /// <para>
-        /// Gets the size value.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        public int Size
-        {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get;
-        }
 
         /// <summary>
         /// <para>
@@ -57,7 +46,7 @@ namespace Platform.Data
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get
             {
-                if (index < Size)
+                if (index < Count)
                 {
                     return Index;
                 }
@@ -79,7 +68,7 @@ namespace Platform.Data
         public int Count
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => Size;
+            get;
         }
 
         /// <summary>
@@ -104,15 +93,15 @@ namespace Platform.Data
         /// <para>A index.</para>
         /// <para></para>
         /// </param>
-        /// <param name="size">
-        /// <para>A size.</para>
+        /// <param name="count">
+        /// <para>A count.</para>
         /// <para></para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Point(TLinkAddress index, int size)
+        public Point(TLinkAddress index, int count)
         {
             Index = index;
-            Size = size;
+            Count = count;
         }
 
         /// <summary>
@@ -184,7 +173,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public IEnumerator<TLinkAddress> GetEnumerator()
         {
-            for (int i = 0; i < Size; i++)
+            for (int i = 0; i < Count; i++)
             {
                 yield return Index;
             }
@@ -267,7 +256,7 @@ namespace Platform.Data
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         IEnumerator IEnumerable.GetEnumerator()
         {
-            for (int i = 0; i < Size; i++)
+            for (int i = 0; i < Count; i++)
             {
                 yield return Index;
             }
