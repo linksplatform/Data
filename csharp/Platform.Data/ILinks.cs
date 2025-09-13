@@ -46,8 +46,21 @@ namespace Platform.Data
         /// </summary>
         /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничение на содержимое связей.</para></param>
         /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para></returns>
+        /// <remarks>
+        /// <para>This method is an optimization. It can be implemented using the Each method, but this default implementation may not be efficient enough for all use cases.</para>
+        /// <para>Этот метод является оптимизацией. Он может быть реализован с использованием метода Each, но эта реализация по умолчанию может быть недостаточно эффективной для всех случаев использования.</para>
+        /// </remarks>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TLinkAddress Count(IList<TLinkAddress>? restriction);
+        TLinkAddress Count(IList<TLinkAddress>? restriction)
+        {
+            var counter = TLinkAddress.Zero;
+            Each(restriction, link =>
+            {
+                counter++;
+                return Constants.Continue;
+            });
+            return counter;
+        }
 
         /// <summary>
         /// <para>Passes through all the links matching the pattern, invoking a handler for each matching link.</para>
