@@ -1,0 +1,80 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.14.0")  
+CMake Warning at CMakeLists.txt:11 (find_package):
+  By not providing "FindPlatform.Interfaces.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "Platform.Interfaces", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "Platform.Interfaces" with any of the following names:
+
+    Platform.InterfacesConfig.cmake
+    platform.interfaces-config.cmake
+
+  Add the installation prefix of "Platform.Interfaces" to CMAKE_PREFIX_PATH
+  or set "Platform.Interfaces_DIR" to a directory containing one of the above
+  files.  If "Platform.Interfaces" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+CMake Warning at CMakeLists.txt:12 (find_package):
+  By not providing "FindPlatform.Setters.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "Platform.Setters", but CMake did not find one.
+
+  Could not find a package configuration file provided by "Platform.Setters"
+  with any of the following names:
+
+    Platform.SettersConfig.cmake
+    platform.setters-config.cmake
+
+  Add the installation prefix of "Platform.Setters" to CMAKE_PREFIX_PATH or
+  set "Platform.Setters_DIR" to a directory containing one of the above
+  files.  If "Platform.Setters" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+CMake Warning at CMakeLists.txt:13 (find_package):
+  By not providing "FindPlatform.Ranges.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "Platform.Ranges", but CMake did not find one.
+
+  Could not find a package configuration file provided by "Platform.Ranges"
+  with any of the following names:
+
+    Platform.RangesConfig.cmake
+    platform.ranges-config.cmake
+
+  Add the installation prefix of "Platform.Ranges" to CMAKE_PREFIX_PATH or
+  set "Platform.Ranges_DIR" to a directory containing one of the above files.
+  If "Platform.Ranges" provides a separate development package or SDK, be
+  sure it has been installed.
+
+
+-- Configuring done (1.6s)
+CMake Error at CMakeLists.txt:18 (target_link_libraries):
+  The link interface of target "Platform.Data.Library" contains:
+
+    Platform.Interfaces::Platform.Interfaces
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+
+
+-- Generating done (0.0s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.
