@@ -31,9 +31,37 @@ namespace Platform.Data.Universal
         IList<IList<IList<TLinkAddress>?>> Trigger(IList<TLinkAddress>? condition, IList<TLinkAddress>? substitution);
     }
 
+    /// <summary>
+    /// <para>
+    /// Defines the universal links interface for step by step operations.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     /// <remarks>Minimal sufficient universal Links API (for step by step operations).</remarks>
     public partial interface IUniLinks<TLinkAddress>
     {
+        /// <summary>
+        /// <para>
+        /// Triggers an operation based on pattern matching and substitution with handlers.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="patternOrCondition">
+        /// <para>The pattern or condition for matching links.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="matchHandler">
+        /// <para>The handler function called for each matched link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitution">
+        /// <para>The substitution content to apply.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitutionHandler">
+        /// <para>The handler function called for each substitution operation.</para>
+        /// <para></para>
+        /// </param>
         /// <returns>
         /// TLinkAddress that represents True (was finished fully) or TLinkAddress that represents False (was stopped).
         /// This is done to assure ability to push up stop signal through recursion stack.
@@ -76,9 +104,29 @@ namespace Platform.Data.Universal
               IList<TLinkAddress>? substitution, WriteHandler<TLinkAddress>? substitutedHandler);
     }
 
+    /// <summary>
+    /// <para>
+    /// Defines the universal links interface extended with optimization methods.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     /// <remarks>Extended with small optimization.</remarks>
     public partial interface IUniLinks<TLinkAddress>
     {
+        /// <summary>
+        /// <para>
+        /// Counts the number of links that match the specified restrictions.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="restrictions">
+        /// <para>The restrictions to apply when counting links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The count of links matching the restrictions.</para>
+        /// <para></para>
+        /// </returns>
         /// <remarks>
         /// Something simple should be simple and optimized.
         /// </remarks>

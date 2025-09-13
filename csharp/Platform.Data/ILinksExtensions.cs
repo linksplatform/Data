@@ -18,8 +18,48 @@ namespace Platform.Data
     /// </summary>
     public static class ILinksExtensions
     {
+        /// <summary>
+        /// <para>
+        /// Creates a new link with no specific content.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The type used to represent link addresses.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links storage to create the link in.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The address of the created link.</para>
+        /// <para></para>
+        /// </returns>
         public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links) where TLinkAddress : IUnsignedNumber<TLinkAddress> => links.Create(null);
 
+        /// <summary>
+        /// <para>
+        /// Creates a new link with the specified content.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The type used to represent link addresses.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links storage to create the link in.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitution">
+        /// <para>The content for the new link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The address of the created link.</para>
+        /// <para></para>
+        /// </returns>
         public static TLinkAddress Create<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? substitution) where TLinkAddress : IUnsignedNumber<TLinkAddress>
         {
             var constants = links.Constants;
@@ -28,6 +68,32 @@ namespace Platform.Data
             return setter.Result;
         }
 
+        /// <summary>
+        /// <para>
+        /// Updates links that match the specified restriction with new content.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The type used to represent link addresses.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links storage to update links in.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="restriction">
+        /// <para>The restriction criteria for selecting links to update.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="substitution">
+        /// <para>The new content for the matching links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The address of the updated link.</para>
+        /// <para></para>
+        /// </returns>
         public static TLinkAddress Update<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? restriction, IList<TLinkAddress>? substitution) where TLinkAddress : IUnsignedNumber<TLinkAddress>
         {
             var constants = links.Constants;
@@ -36,8 +102,52 @@ namespace Platform.Data
             return setter.Result;
         }
 
+        /// <summary>
+        /// <para>
+        /// Deletes the specified link from the storage.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The type used to represent link addresses.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links storage to delete the link from.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="linkToDelete">
+        /// <para>The address of the link to delete.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result of the delete operation.</para>
+        /// <para></para>
+        /// </returns>
         public static TLinkAddress Delete<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, TLinkAddress linkToDelete) where TLinkAddress : IUnsignedNumber<TLinkAddress> => Delete(links, (IList<TLinkAddress>?)new LinkAddress<TLinkAddress>(linkToDelete));
 
+        /// <summary>
+        /// <para>
+        /// Deletes links that match the specified restriction criteria.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TLinkAddress">
+        /// <para>The type used to represent link addresses.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="links">
+        /// <para>The links storage to delete links from.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="restriction">
+        /// <para>The restriction criteria for selecting links to delete.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result of the delete operation.</para>
+        /// <para></para>
+        /// </returns>
         public static TLinkAddress Delete<TLinkAddress>(this ILinks<TLinkAddress, LinksConstants<TLinkAddress>> links, IList<TLinkAddress>? restriction) where TLinkAddress : IUnsignedNumber<TLinkAddress>
         {
             var constants = links.Constants;

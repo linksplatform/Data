@@ -12,6 +12,24 @@ namespace Platform.Data.Universal
     /// </remarks>
     public interface IUniLinksIO<TLinkAddress>
     {
+        /// <summary>
+        /// <para>
+        /// Outputs links that match the specified pattern using the provided handler.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="handler">
+        /// <para>The handler function to process each matching link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="pattern">
+        /// <para>The pattern to match against links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>True if all links were processed successfully, false if stopped by handler.</para>
+        /// <para></para>
+        /// </returns>
         /// <remarks>
         /// default(TLinkAddress) means any link.
         /// Single element pattern means just element (link).
@@ -31,6 +49,24 @@ namespace Platform.Data.Universal
         /// </remarks>
         bool Out(Func<IList<TLinkAddress>?, bool> handler, IList<TLinkAddress>? pattern);
 
+        /// <summary>
+        /// <para>
+        /// Performs an input operation to create, update, or delete links based on before/after states.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="before">
+        /// <para>The state of the link before the operation.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="after">
+        /// <para>The state of the link after the operation.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result of the input operation.</para>
+        /// <para></para>
+        /// </returns>
         /// <remarks>
         /// default(TLinkAddress) means itself.
         /// Equivalent to:
