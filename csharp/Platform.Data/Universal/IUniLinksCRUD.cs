@@ -93,6 +93,10 @@ namespace Platform.Data.Universal
         /// <para>The parts.</para>
         /// <para></para>
         /// </param>
+        /// <returns>
+        /// <para>The result of the delete operation.</para>
+        /// <para></para>
+        /// </returns>
         TLinkAddress Delete(IList<TLinkAddress>? parts);
     }
 }

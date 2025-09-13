@@ -8,6 +8,24 @@ namespace Platform.Data.Universal
     /// <remarks>Contains some optimizations of Out.</remarks>
     public interface IUniLinksIOWithExtensions<TLinkAddress> : IUniLinksIO<TLinkAddress>
     {
+        /// <summary>
+        /// <para>
+        /// Outputs a specific part of a link matching the pattern.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="partType">
+        /// <para>The type of part to retrieve (0=index, 1=source, 2=target, etc.).</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="pattern">
+        /// <para>The pattern to match against links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The specified part of the matching link, or default value if not found.</para>
+        /// <para></para>
+        /// </returns>
         /// <remarks>
         /// default(TLinkAddress) means nothing or null.
         /// Single element pattern means just element (link).
@@ -22,9 +40,37 @@ namespace Platform.Data.Universal
         /// </remarks>
         TLinkAddress OutOne(int partType, IList<TLinkAddress>? pattern);
 
+        /// <summary>
+        /// <para>
+        /// Outputs all links matching the specified pattern as an array.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="pattern">
+        /// <para>The pattern to match against links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>An array of all links matching the pattern.</para>
+        /// <para></para>
+        /// </returns>
         /// <remarks>OutCount() returns total links in store as array.</remarks>
         IList<IList<TLinkAddress>?> OutAll(IList<TLinkAddress>? pattern);
 
+        /// <summary>
+        /// <para>
+        /// Counts the total number of links matching the specified pattern.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="pattern">
+        /// <para>The pattern to match against links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The total count of links matching the pattern.</para>
+        /// <para></para>
+        /// </returns>
         /// <remarks>OutCount() returns total amount of links in store.</remarks>
         ulong OutCount(IList<TLinkAddress>? pattern);
     }
