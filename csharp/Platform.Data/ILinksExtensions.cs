@@ -148,7 +148,12 @@ namespace Platform.Data
             }
             var linkPartsSetter = new Setter<IList<TLinkAddress>?, TLinkAddress>(constants.Continue, constants.Break);
             links.Each(linkPartsSetter.SetAndReturnTrue, link);
-            return linkPartsSetter.Result;
+            var result = linkPartsSetter.Result;
+            if (result == null)
+            {
+                throw new ArgumentLinkDoesNotExistsException<TLinkAddress>(link);
+            }
+            return result;
         }
 
         #region Points
