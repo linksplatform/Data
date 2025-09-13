@@ -57,14 +57,11 @@ namespace Platform.Data
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get
             {
-                if (index < Size)
-                {
-                    return Index;
-                }
-                else
+                if (index < 0 || index >= Size)
                 {
                     throw new IndexOutOfRangeException();
                 }
+                return Index;
             }
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             set => throw new NotSupportedException();
