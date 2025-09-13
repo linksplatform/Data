@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Platform.Data.Tests.dir/Platform.Data.Tests/AllTests.cpp.o -o bin/Platform.Data.Tests  /usr/lib/x86_64-linux-gnu/libgtest.a /usr/lib/x86_64-linux-gnu/libgtest_main.a -lPlatform.Interfaces::Platform.Interfaces -lPlatform.Ranges::Platform.Ranges -lPlatform.Setters::Platform.Setters /usr/lib/x86_64-linux-gnu/libgtest.a 
