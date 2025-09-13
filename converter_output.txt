@@ -1,0 +1,79 @@
+/home/hive/.nuget/packages/microsoft.build.tasks.git/1.1.1/build/Microsoft.Build.Tasks.Git.targets(25,5): warning : Could not find file '/tmp/gh-issue-solver-1757751473984/rust/.git'. The source code won't be available via Source Link. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(20,24): warning CS1584: XML comment has syntactically incorrect cref attribute 'IEquatable{LinkAddress{TLinkAddress}}' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(20,35): warning CS1658: Type parameter declaration must be an identifier not a type. See also error CS0081. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(17,24): warning CS1584: XML comment has syntactically incorrect cref attribute 'IEquatable{LinkAddress{TLinkAddress}}' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(17,35): warning CS1658: Type parameter declaration must be an identifier not a type. See also error CS0081. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(311,30): warning CS8765: Nullability of type of parameter 'obj' doesn't match overridden member (possibly because of nullability attributes). [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(291,29): warning CS8767: Nullability of reference types in type of parameter 'other' of 'bool Point<TLinkAddress>.Equals(LinkAddress<TLinkAddress> other)' doesn't match implicitly implemented member 'bool IEquatable<LinkAddress<TLinkAddress>>.Equals(LinkAddress<TLinkAddress>? other)' (possibly because of nullability attributes). [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Hybrid.cs(301,30): warning CS8765: Nullability of type of parameter 'obj' doesn't match overridden member (possibly because of nullability attributes). [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(285,30): warning CS8765: Nullability of type of parameter 'obj' doesn't match overridden member (possibly because of nullability attributes). [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(262,29): warning CS8767: Nullability of reference types in type of parameter 'other' of 'bool LinkAddress<TLinkAddress>.Equals(LinkAddress<TLinkAddress> other)' doesn't match implicitly implemented member 'bool IEquatable<LinkAddress<TLinkAddress>>.Equals(LinkAddress<TLinkAddress>? other)' (possibly because of nullability attributes). [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(291,81): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(337,46): warning CS8603: Possible null reference return. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(342,25): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(342,42): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(346,17): warning CS8604: Possible null reference argument for parameter 'left' in 'bool Point<TLinkAddress>.operator ==(Point<TLinkAddress> left, Point<TLinkAddress> right)'. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(346,25): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(390,44): warning CS8604: Possible null reference argument for parameter 'argument' in 'void EnsureExtensions.ArgumentNotEmpty<TLinkAddress>(EnsureAlwaysExtensionRoot root, ICollection<TLinkAddress> argument, string argumentName)'. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(413,43): warning CS8602: Dereference of a possibly null reference. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(454,44): warning CS8604: Possible null reference argument for parameter 'argument' in 'void EnsureExtensions.ArgumentNotEmpty<TLinkAddress>(EnsureAlwaysExtensionRoot root, ICollection<TLinkAddress> argument, string argumentName)'. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Point.cs(477,44): warning CS8602: Dereference of a possibly null reference. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinksConstants.cs(146,20): warning CS8601: Possible null reference assignment. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinksConstants.cs(140,16): warning CS8618: Non-nullable property 'Null' must contain a non-null value when exiting constructor. Consider declaring the property as nullable. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(262,81): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(311,46): warning CS8603: Possible null reference return. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(316,25): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(316,42): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(320,17): warning CS8604: Possible null reference argument for parameter 'left' in 'bool LinkAddress<TLinkAddress>.operator ==(LinkAddress<TLinkAddress> left, LinkAddress<TLinkAddress> right)'. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/LinkAddress.cs(320,25): warning CS8625: Cannot convert null literal to non-nullable reference type. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Hybrid.cs(267,46): warning CS8603: Possible null reference return. [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/WriteHandlerState.cs(7,19): warning CS1591: Missing XML comment for publicly visible type or member 'WriteHandlerState<TLinkAddress>' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/WriteHandlerState.cs(9,29): warning CS1591: Missing XML comment for publicly visible type or member 'WriteHandlerState<TLinkAddress>.Result' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/WriteHandlerState.cs(10,44): warning CS1591: Missing XML comment for publicly visible type or member 'WriteHandlerState<TLinkAddress>.Handler' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/WriteHandlerState.cs(13,16): warning CS1591: Missing XML comment for publicly visible type or member 'WriteHandlerState<TLinkAddress>.WriteHandlerState(TLinkAddress, TLinkAddress, WriteHandler<TLinkAddress>?)' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/WriteHandlerState.cs(20,21): warning CS1591: Missing XML comment for publicly visible type or member 'WriteHandlerState<TLinkAddress>.Apply(TLinkAddress)' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/WriteHandlerState.cs(33,29): warning CS1591: Missing XML comment for publicly visible type or member 'WriteHandlerState<TLinkAddress>.Handle(IList<TLinkAddress>, IList<TLinkAddress>)' [/tmp/gh-issue-solver-1757751473984/csharp/Platform.Data/Platform.Data.csproj]
+Testing AddressToRawNumberConverter with byte:
+Input: 0 (0x00)
+  Current converter result: 128 (0x80)
+  Hybrid(input, true): 128 (0x80)
+  Binary: 10000000
+  MSB set? True
+
+Input: 1 (0x01)
+  Current converter result: 255 (0xFF)
+  Hybrid(input, true): 255 (0xFF)
+  Binary: 11111111
+  MSB set? True
+
+Input: 2 (0x02)
+  Current converter result: 254 (0xFE)
+  Hybrid(input, true): 254 (0xFE)
+  Binary: 11111110
+  MSB set? True
+
+Input: 127 (0x7F)
+  Current converter result: 129 (0x81)
+  Hybrid(input, true): 129 (0x81)
+  Binary: 10000001
+  MSB set? True
+
+Input: 128 (0x80)
+  Current converter result: 128 (0x80)
+  Hybrid(input, true): 128 (0x80)
+  Binary: 10000000
+  MSB set? True
+
+Input: 255 (0xFF)
+  Current converter result: 1 (0x01)
+  Hybrid(input, true): 1 (0x01)
+  Binary: 00000001
+  MSB set? False
+
+What 'set MSB to 1' would mean:
+Input: 0 -> MSB set: 128 (0x80) Binary: 10000000
+Input: 1 -> MSB set: 129 (0x81) Binary: 10000001
+Input: 2 -> MSB set: 130 (0x82) Binary: 10000010
+Input: 127 -> MSB set: 255 (0xFF) Binary: 11111111
+Input: 128 -> MSB set: 128 (0x80) Binary: 10000000
+Input: 255 -> MSB set: 255 (0xFF) Binary: 11111111
