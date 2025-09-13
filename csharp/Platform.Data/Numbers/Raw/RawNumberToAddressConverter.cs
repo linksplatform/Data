@@ -17,14 +17,6 @@ namespace Platform.Data.Numbers.Raw
     {
         /// <summary>
         /// <para>
-        /// The default.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        static private readonly UncheckedConverter<long, TLinkAddress> _converter = UncheckedConverter<long, TLinkAddress>.Default;
-
-        /// <summary>
-        /// <para>
         /// Converts the source.
         /// </para>
         /// <para></para>
@@ -38,6 +30,14 @@ namespace Platform.Data.Numbers.Raw
         /// <para></para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public TLinkAddress Convert(TLinkAddress source) => _converter.Convert(new Hybrid<TLinkAddress>(source).AbsoluteValue);
+        public TLinkAddress Convert(TLinkAddress source)
+        {
+            // Simplified: just clear the most significant bit to get a positive address
+            // This replaces the complex Hybrid<TLinkAddress>(source).AbsoluteValue logic  
+            // The key insight is that we just need to ensure the result has MSB = 0
+            var longValue = long.CreateTruncating(source);
+            var clearedMSB = longValue & 0x7FFFFFFFFFFFFFFF; // Clear MSB using bitwise AND
+            return TLinkAddress.CreateTruncating(clearedMSB);
+        }
     }
 }
