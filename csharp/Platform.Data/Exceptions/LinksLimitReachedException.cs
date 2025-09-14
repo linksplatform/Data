@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using Platform.Data.Resources;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -66,6 +67,6 @@ namespace Platform.Data.Exceptions
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public LinksLimitReachedException() : base(DefaultMessage) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string FormatMessage(TLinkAddress limit) => $"Достигнут лимит количества связей в хранилище ({limit}).";
+        private static string FormatMessage(TLinkAddress limit) => ExceptionMessages.LinksLimitReached(limit);
     }
 }

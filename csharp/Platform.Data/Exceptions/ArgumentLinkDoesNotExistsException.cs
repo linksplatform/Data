@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using Platform.Data.Resources;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -95,8 +96,8 @@ namespace Platform.Data.Exceptions
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkDoesNotExistsException() { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string FormatMessage(TLinkAddress link, string argumentName) => $"Связь [{link}] переданная в аргумент [{argumentName}] не существует.";
+        private static string FormatMessage(TLinkAddress link, string argumentName) => ExceptionMessages.ArgumentLinkDoesNotExist(link, argumentName);
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string FormatMessage(TLinkAddress link) => $"Связь [{link}] переданная в качестве аргумента не существует.";
+        private static string FormatMessage(TLinkAddress link) => ExceptionMessages.ArgumentLinkDoesNotExistSimple(link);
     }
 }
