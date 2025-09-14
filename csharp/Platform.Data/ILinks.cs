@@ -4,7 +4,6 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using Platform.Delegates;
 
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 namespace Platform.Data
 {
@@ -92,16 +91,14 @@ namespace Platform.Data
         TLinkAddress Create(IList<TLinkAddress>? substitution, WriteHandler<TLinkAddress>? handler);
 
         /// <summary>
-        /// Обновляет связь с указанными restriction[Constants.IndexPart] в адресом связи
-        /// на связь с указанным новым содержимым.
+        /// <para>Updates a link with the specified restriction[Constants.IndexPart] containing the link address to a link with the specified new content.</para>
+        /// <para>Обновляет связь с указанными restriction[Constants.IndexPart] в адресом связи на связь с указанным новым содержимым.</para>
         /// </summary>
         /// <param name="restriction">
-        /// Ограничение на содержимое связей.
-        /// Предполагается, что будет указан индекс связи (в restriction[Constants.IndexPart]) и далее за ним будет следовать содержимое связи.
-        /// Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту,
-        /// Constants.Itself - требование установить ссылку на себя, 1..∞ конкретный индекс другой связи.
+        /// <para>Restriction on the contents of links. It is assumed that the link index will be specified (in restriction[Constants.IndexPart]) and then the link content will follow. Each constraint can have values: Constants.Null - the 0th link denoting a reference to the void, Constants.Itself - a requirement to set a reference to itself, 1..∞ a specific index of another link.</para>
+        /// <para>Ограничение на содержимое связей. Предполагается, что будет указан индекс связи (в restriction[Constants.IndexPart]) и далее за ним будет следовать содержимое связи. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Constants.Itself - требование установить ссылку на себя, 1..∞ конкретный индекс другой связи.</para>
         /// </param>
-        /// <param name="substitution"></param>
+        /// <param name="substitution"><para>The new content of the link.</para><para>Новое содержимое связи.</para></param>
         /// <param name="handler">
         /// <para>A function to handle each executed change. This function can use Constants.Continue to continue proccess each change. Constants.Break can be used to stop receiving of executed changes.</para>
         /// <para>Функция для обработки каждого выполненного изменения. Эта функция может использовать Constants.Continue чтобы продолжить обрабатывать каждое изменение. Constants.Break может быть использована для остановки получения выполненных изменений.</para>
