@@ -22,21 +22,21 @@ namespace Platform.Data
 
         #region Link parts
 
-        /// <summary>Возвращает индекс части, которая отвечает за индекс (адрес, идентификатор) самой связи.</summary>
+        /// <summary>Returns the index of the part that is responsible for the index (address, identifier) of the link itself.</summary>
         public int IndexPart
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get;
         }
 
-        /// <summary>Возвращает индекс части, которая отвечает за ссылку на связь-начало (первая часть-значение).</summary>
+        /// <summary>Returns the index of the part that is responsible for the reference to the source link (first part-value).</summary>
         public int SourcePart
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get;
         }
 
-        /// <summary>Возвращает индекс части, которая отвечает за ссылку на связь-конец (последняя часть-значение).</summary>
+        /// <summary>Returns the index of the part that is responsible for the reference to the target link (last part-value).</summary>
         public int TargetPart
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -47,7 +47,7 @@ namespace Platform.Data
 
         #region Flow control
 
-        /// <summary>Возвращает значение, обозначающее продолжение прохода по связям.</summary>
+        /// <summary>Returns a value that represents the continuation of link traversal.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
         public TLinkAddress Continue
         {
@@ -55,7 +55,7 @@ namespace Platform.Data
             get;
         }
 
-        /// <summary>Возвращает значение, обозначающее остановку прохода по связям.</summary>
+        /// <summary>Returns a value that represents the stopping of link traversal.</summary>
         /// <remarks>Используется в функции обработчике, который передаётся в функцию Each.</remarks>
         public TLinkAddress Break
         {
@@ -63,7 +63,7 @@ namespace Platform.Data
             get;
         }
 
-        /// <summary>Возвращает значение, обозначающее пропуск в проходе по связям.</summary>
+        /// <summary>Returns a value that represents the skipping in link traversal.</summary>
         public TLinkAddress Skip
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -74,14 +74,14 @@ namespace Platform.Data
 
         #region Special symbols
 
-        /// <summary>Возвращает значение, обозначающее отсутствие связи.</summary>
+        /// <summary>Returns a value that represents the absence of a link.</summary>
         public TLinkAddress Null
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get;
         }
 
-        /// <summary>Возвращает значение, обозначающее любую связь.</summary>
+        /// <summary>Returns a value that represents any link.</summary>
         /// <remarks>Возможно нужно зарезервировать отдельное значение, тогда можно будет создавать все варианты последовательностей в функции Create.</remarks>
         public TLinkAddress Any
         {
@@ -89,7 +89,7 @@ namespace Platform.Data
             get;
         }
 
-        /// <summary>Возвращает значение, обозначающее связь-ссылку на саму связь.</summary>
+        /// <summary>Returns a value that represents a link-reference to the link itself.</summary>
         public TLinkAddress Itself
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -102,14 +102,14 @@ namespace Platform.Data
 
         #region References
 
-        /// <summary>Возвращает диапазон возможных индексов для внутренних связей (внутренних ссылок).</summary>
+        /// <summary>Returns the range of possible indexes for internal links (internal references).</summary>
         public Range<TLinkAddress> InternalReferencesRange
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             get;
         }
 
-        /// <summary>Возвращает диапазон возможных индексов для внешних связей (внешних ссылок).</summary>
+        /// <summary>Returns the range of possible indexes for external links (external references).</summary>
         public Range<TLinkAddress>? ExternalReferencesRange
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]

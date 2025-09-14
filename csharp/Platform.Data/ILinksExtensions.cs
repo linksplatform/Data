@@ -78,11 +78,11 @@ namespace Platform.Data
             => links.Count(restrictions);
 
         /// <summary>
-        /// Возвращает значение, определяющее существует ли связь с указанным индексом в хранилище связей.
+        /// Returns a value indicating whether a link with the specified index exists in the links storage.
         /// </summary>
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="link">Индекс проверяемой на существование связи.</param>
-        /// <returns>Значение, определяющее существует ли связь.</returns>
+        /// <param name="links">The links storage.</param>
+        /// <param name="link">The index of the link being checked for existence.</param>
+        /// <returns>A value indicating whether the link exists.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool Exists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
             where TConstants : LinksConstants<TLinkAddress>
@@ -91,8 +91,8 @@ namespace Platform.Data
             return constants.IsExternalReference(link) || (constants.IsInternalReference(link) && Comparer<TLinkAddress>.Default.Compare(links.Count(new LinkAddress<TLinkAddress>(link)), default) > 0);
         }
 
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="link">Индекс проверяемой на существование связи.</param>
+        /// <param name="links">The links storage.</param>
+        /// <param name="link">The index of the link being checked for existence.</param>
         /// <remarks>
         /// TODO: May be move to EnsureExtensions or make it both there and here
         /// </remarks>
@@ -106,9 +106,9 @@ namespace Platform.Data
             }
         }
 
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="link">Индекс проверяемой на существование связи.</param>
-        /// <param name="argumentName">Имя аргумента, в который передаётся индекс связи.</param>
+        /// <param name="links">The links storage.</param>
+        /// <param name="link">The index of the link being checked for existence.</param>
+        /// <param name="argumentName">The name of the argument to which the link index is passed.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnsureLinkExists<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link, string argumentName) where TLinkAddress : IUnsignedNumber<TLinkAddress>
             where TConstants : LinksConstants<TLinkAddress>
@@ -120,23 +120,23 @@ namespace Platform.Data
         }
 
         /// <summary>
-        /// Выполняет проход по всем связям, соответствующим шаблону, вызывая обработчик (handler) для каждой подходящей связи.
+        /// Performs traversal of all links matching the pattern, calling the handler for each suitable link.
         /// </summary>
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="handler">Обработчик каждой подходящей связи.</param>
-        /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
-        /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
+        /// <param name="links">The links storage.</param>
+        /// <param name="handler">The handler for each suitable link.</param>
+        /// <param name="restrictions">Restrictions on the contents of links. Each restriction can have values: Constants.Null - the 0th link, representing a reference to emptiness, Any - no restriction, 1..∞ specific link index.</param>
+        /// <returns>True if the link traversal was not interrupted, and False otherwise.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
             where TConstants : LinksConstants<TLinkAddress>
             => links.Each(restrictions, handler);
 
         /// <summary>
-        /// Возвращает части-значения для связи с указанным индексом.
+        /// Returns the part-values for the link with the specified index.
         /// </summary>
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="link">Индекс связи.</param>
-        /// <returns>Уникальную связь.</returns>
+        /// <param name="links">The links storage.</param>
+        /// <param name="link">The link index.</param>
+        /// <returns>The unique link.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static IList<TLinkAddress>? GetLink<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, TLinkAddress link) where TLinkAddress : IUnsignedNumber<TLinkAddress>
             where TConstants : LinksConstants<TLinkAddress>
@@ -153,10 +153,10 @@ namespace Platform.Data
 
         #region Points
 
-        /// <summary>Возвращает значение, определяющее является ли связь с указанным индексом точкой полностью (связью замкнутой на себе дважды).</summary>
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="link">Индекс проверяемой связи.</param>
-        /// <returns>Значение, определяющее является ли связь точкой полностью.</returns>
+        /// <summary>Returns a value indicating whether the link with the specified index is a full point (a link closed on itself twice).</summary>
+        /// <param name="links">The links storage.</param>
+        /// <param name="link">The index of the link being checked.</param>
+        /// <returns>A value indicating whether the link is a full point.</returns>
         /// <remarks>
         /// Связь точка - это связь, у которой начало (Source) и конец (Target) есть сама эта связь.
         /// Но что, если точка уже есть, а нужно создать пару с таким же значением? Должны ли точка и пара существовать одновременно?
@@ -187,10 +187,10 @@ namespace Platform.Data
             return Point<TLinkAddress>.IsFullPoint(links.GetLink(link));
         }
 
-        /// <summary>Возвращает значение, определяющее является ли связь с указанным индексом точкой частично (связью замкнутой на себе как минимум один раз).</summary>
-        /// <param name="links">Хранилище связей.</param>
-        /// <param name="link">Индекс проверяемой связи.</param>
-        /// <returns>Значение, определяющее является ли связь точкой частично.</returns>
+        /// <summary>Returns a value indicating whether the link with the specified index is a partial point (a link closed on itself at least once).</summary>
+        /// <param name="links">The links storage.</param>
+        /// <param name="link">The index of the link being checked.</param>
+        /// <returns>A value indicating whether the link is a partial point.</returns>
         /// <remarks>
         /// Достаточно любой одной ссылки на себя.
         /// Также в будущем можно будет проверять и всех родителей, чтобы проверить есть ли ссылки на себя (на эту связь).
