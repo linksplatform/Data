@@ -124,7 +124,7 @@ namespace Platform.Data
         /// </summary>
         /// <param name="links">Хранилище связей.</param>
         /// <param name="handler">Обработчик каждой подходящей связи.</param>
-        /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</param>
+        /// <param name="restrictions">Ограничения на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Constants.Any - соответствует любой связи в этой позиции, 1..∞ конкретный индекс связи.</param>
         /// <returns>True, в случае если проход по связям не был прерван и False в обратном случае.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TLinkAddress Each<TLinkAddress, TConstants>(this ILinks<TLinkAddress, TConstants> links, ReadHandler<TLinkAddress>? handler, params TLinkAddress[] restrictions) where TLinkAddress : IUnsignedNumber<TLinkAddress>
