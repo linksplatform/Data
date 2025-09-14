@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using Platform.Data.Resources;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -20,7 +21,7 @@ namespace Platform.Data.Exceptions
         /// </para>
         /// <para></para>
         /// </summary>
-        public static readonly string DefaultMessage = "Достигнут лимит количества связей в хранилище.";
+        public static string DefaultMessage => ExceptionMessages.LinksLimitReachedDefault;
 
         /// <summary>
         /// <para>

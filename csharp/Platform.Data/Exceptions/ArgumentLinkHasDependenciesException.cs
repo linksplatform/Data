@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using Platform.Data.Resources;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -83,8 +84,8 @@ namespace Platform.Data.Exceptions
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ArgumentLinkHasDependenciesException() { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string FormatMessage(TLinkAddress link, string paramName) => $"У связи [{link}] переданной в аргумент [{paramName}] присутствуют зависимости, которые препятствуют изменению её внутренней структуры.";
+        private static string FormatMessage(TLinkAddress link, string paramName) => ExceptionMessages.ArgumentLinkHasDependencies(link, paramName);
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string FormatMessage(TLinkAddress link) => $"У связи [{link}] переданной в качестве аргумента присутствуют зависимости, которые препятствуют изменению её внутренней структуры.";
+        private static string FormatMessage(TLinkAddress link) => ExceptionMessages.ArgumentLinkHasDependenciesSimple(link);
     }
 }
