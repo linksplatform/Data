@@ -44,7 +44,10 @@ namespace Platform.Data
         /// <para>Counts and returns the total number of links in the storage that meet the specified restriction.</para>
         /// <para>Подсчитывает и возвращает общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para>
         /// </summary>
-        /// <param name="restriction"><para>Restriction on the contents of links.</para><para>Ограничение на содержимое связей.</para></param>
+        /// <param name="restriction">
+        /// <para>Restriction on the contents of links. If null is passed, returns 0 (no links match an empty restriction). To count all links, use a restriction array containing only Constants.Any.</para>
+        /// <para>Ограничение на содержимое связей. Если передан null, возвращается 0 (ни одна связь не соответствует пустому ограничению). Чтобы подсчитать все связи, используйте массив ограничений, содержащий только Constants.Any.</para>
+        /// </param>
         /// <returns><para>The total number of links in the storage that meet the specified restriction.</para><para>Общее число связей находящихся в хранилище, соответствующих указанному ограничению.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         TLinkAddress Count(IList<TLinkAddress>? restriction);
@@ -54,8 +57,8 @@ namespace Platform.Data
         /// <para>Выполняет проход по всем связям, соответствующим шаблону, вызывая обработчик (handler) для каждой подходящей связи.</para>
         /// </summary>
         /// <param name="restriction">
-        /// <para>Restriction on the contents of links. Each constraint can have values: Constants.Null - the 0th link denoting a reference to the void, Any - the absence of a constraint, 1..∞ a specific link index.</para>
-        /// <para>Ограничение на содержимое связей. Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Any - отсутствие ограничения, 1..∞ конкретный индекс связи.</para>
+        /// <para>Restriction on the contents of links. If null is passed, no links are processed. Each constraint in a non-null restriction can have values: Constants.Null - the 0th link denoting a reference to the void, Constants.Any - matches any link in that position, 1..∞ a specific link index.</para>
+        /// <para>Ограничение на содержимое связей. Если передан null, ни одна связь не обрабатывается. Каждое ограничение в не-null ограничении может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Constants.Any - соответствует любой связи в этой позиции, 1..∞ конкретный индекс связи.</para>
         /// </param>
         /// <param name="handler"><para>A handler for each matching link.</para><para>Обработчик для каждой подходящей связи.</para></param>
         /// <returns><para>Constants.Continue, if the pass through the links was not interrupted, and Constants.Break otherwise.</para><para>Constants.Continue, в случае если проход по связям не был прерван и Constants.Break в обратном случае.</para></returns>
@@ -70,8 +73,8 @@ namespace Platform.Data
         /// <para>Creates a link.</para>
         /// <para>Создаёт связь.</para>
         /// <param name="substitution">
-        /// <para>The content of a new link. This argument is optional, if the null passed as value that means no content of a link is set.</para>
-        /// <para>Содержимое новой связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никакого содержимого для связи не установлено.</para>
+        /// <para>The content of a new link. If null is passed, creates a point (self-referencing link). For other link types, provide an array with source and target addresses.</para>
+        /// <para>Содержимое новой связи. Если передан null, создаётся точка (самосылающаяся связь). Для других типов связей предоставьте массив с адресами источника и цели.</para>
         /// </param>
         /// <param name="handler">
         /// <para>A function to handle each executed change. This function can use Constants.Continue to continue proccess each change. Constants.Break can be used to stop receiving of executed changes.</para>
@@ -96,10 +99,12 @@ namespace Platform.Data
         /// на связь с указанным новым содержимым.
         /// </summary>
         /// <param name="restriction">
-        /// Ограничение на содержимое связей.
-        /// Предполагается, что будет указан индекс связи (в restriction[Constants.IndexPart]) и далее за ним будет следовать содержимое связи.
-        /// Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту,
-        /// Constants.Itself - требование установить ссылку на себя, 1..∞ конкретный индекс другой связи.
+        /// <para>Restriction on the contents of links. If null is passed, no links are updated (safer default).</para>
+        /// <para>Ограничение на содержимое связей. Если передан null, ни одна связь не обновляется (более безопасное поведение по умолчанию).</para>
+        /// <para>Expected format: restriction[Constants.IndexPart] contains the link address, followed by link content.</para>
+        /// <para>Предполагается, что будет указан индекс связи (в restriction[Constants.IndexPart]) и далее за ним будет следовать содержимое связи.</para>
+        /// <para>Each constraint can have values: Constants.Null - the 0th link (void reference), Constants.Itself - self-reference requirement, 1..∞ specific link index.</para>
+        /// <para>Каждое ограничение может иметь значения: Constants.Null - 0-я связь, обозначающая ссылку на пустоту, Constants.Itself - требование установить ссылку на себя, 1..∞ конкретный индекс другой связи.</para>
         /// </param>
         /// <param name="substitution"></param>
         /// <param name="handler">
@@ -124,8 +129,8 @@ namespace Platform.Data
         /// <para>Удаляет связи соответствующие указанному ограничению.</para>
         /// </summary>
         /// <param name="restriction">
-        /// <para>Restriction on the content of a link. This argument is optional, if the null passed as value that means no restriction on the content of a link are set.</para>
-        /// <para>Ограничение на содержимое связи. Этот аргумент опционален, если null передан в качестве значения это означает, что никаких ограничений на содержимое связи не установлено.</para>
+        /// <para>Restriction on the content of links to delete. IMPORTANT: If null is passed, NO links are deleted (safe default). To delete all links, explicitly pass an array containing only Constants.Any. To delete specific links, provide their addresses or patterns.</para>
+        /// <para>Ограничение на содержимое связей для удаления. ВАЖНО: Если передан null, НИ ОДНА связь не удаляется (безопасное поведение по умолчанию). Чтобы удалить все связи, явно передайте массив, содержащий только Constants.Any. Чтобы удалить конкретные связи, предоставьте их адреса или шаблоны.</para>
         /// </param>
         /// <param name="handler">
         /// <para>A function to handle each executed change. This function can use Constants.Continue to continue proccess each change. Constants.Break can be used to stop receiving of executed changes.</para>
